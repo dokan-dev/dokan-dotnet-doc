@@ -103,6 +103,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DokanNet.FormatProviders Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Provide support to format object with <code>null</code>  
+ <a href="class_dokan_net_1_1_format_providers.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for DokanNet.FormatProviders:</div>
 <div class="dyncontent">
@@ -115,27 +118,108 @@ Inheritance diagram for DokanNet.FormatProviders:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a8e0c5c5f9c7c2e43449e8faf84acaa12"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e0c5c5f9c7c2e43449e8faf84acaa12"></a>
-object&#160;</td><td class="memItemRight" valign="bottom"><b>GetFormat</b> (Type service)</td></tr>
+object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_format_providers.html#a8e0c5c5f9c7c2e43449e8faf84acaa12">GetFormat</a> (Type service)</td></tr>
 <tr class="separator:a8e0c5c5f9c7c2e43449e8faf84acaa12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9de1ac654a12ddf840be48710295c47"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9de1ac654a12ddf840be48710295c47"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>Format</b> (string format, object arg, IFormatProvider provider)</td></tr>
+string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_format_providers.html#ac9de1ac654a12ddf840be48710295c47">Format</a> (string format, object arg, IFormatProvider provider)</td></tr>
 <tr class="separator:ac9de1ac654a12ddf840be48710295c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a261df858f92afbb1acaf7257548bda2e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a261df858f92afbb1acaf7257548bda2e"></a>
-static string&#160;</td><td class="memItemRight" valign="bottom"><b>DokanFormat</b> (FormattableString formattable)</td></tr>
+<tr class="memitem:a261df858f92afbb1acaf7257548bda2e"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_format_providers.html#a261df858f92afbb1acaf7257548bda2e">DokanFormat</a> (FormattableString formattable)</td></tr>
+<tr class="memdesc:a261df858f92afbb1acaf7257548bda2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a FormattableString using <a class="el" href="class_dokan_net_1_1_format_providers.html#a5e2da0dc7099791e7afb64e78e868be5" title="A Singleton instanse of this class. ">DefaultFormatProvider</a>.  <a href="#a261df858f92afbb1acaf7257548bda2e">More...</a><br /></td></tr>
 <tr class="separator:a261df858f92afbb1acaf7257548bda2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a5e2da0dc7099791e7afb64e78e868be5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e2da0dc7099791e7afb64e78e868be5"></a>
-static readonly <a class="el" href="class_dokan_net_1_1_format_providers.html">FormatProviders</a>&#160;</td><td class="memItemRight" valign="bottom"><b>DefaultFormatProvider</b> = new <a class="el" href="class_dokan_net_1_1_format_providers.html">FormatProviders</a>()</td></tr>
+<tr class="memitem:a5e2da0dc7099791e7afb64e78e868be5"><td class="memItemLeft" align="right" valign="top">static readonly <a class="el" href="class_dokan_net_1_1_format_providers.html">FormatProviders</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_format_providers.html#a5e2da0dc7099791e7afb64e78e868be5">DefaultFormatProvider</a> = new <a class="el" href="class_dokan_net_1_1_format_providers.html">FormatProviders</a>()</td></tr>
+<tr class="memdesc:a5e2da0dc7099791e7afb64e78e868be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A Singleton instanse of this class.  <a href="#a5e2da0dc7099791e7afb64e78e868be5">More...</a><br /></td></tr>
 <tr class="separator:a5e2da0dc7099791e7afb64e78e868be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43c16aaafc3a0c5ee97b47b2d0fd7eeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43c16aaafc3a0c5ee97b47b2d0fd7eeb"></a>
-static readonly string&#160;</td><td class="memItemRight" valign="bottom"><b>NullStringRapresentation</b> = &quot;&lt;null&gt;&quot;</td></tr>
-<tr class="separator:a43c16aaafc3a0c5ee97b47b2d0fd7eeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1271fea423668716de9c5ff65a50c131"><td class="memItemLeft" align="right" valign="top">static readonly string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_format_providers.html#a1271fea423668716de9c5ff65a50c131">NullStringRepresentation</a> = &quot;&lt;null&gt;&quot;</td></tr>
+<tr class="memdesc:a1271fea423668716de9c5ff65a50c131"><td class="mdescLeft">&#160;</td><td class="mdescRight">A constant string that representet what to use if the formated object is <code>null</code>.  <a href="#a1271fea423668716de9c5ff65a50c131">More...</a><br /></td></tr>
+<tr class="separator:a1271fea423668716de9c5ff65a50c131"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Provide support to format object with <code>null</code> </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a261df858f92afbb1acaf7257548bda2e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static string DokanNet.FormatProviders.DokanFormat </td>
+          <td>(</td>
+          <td class="paramtype">FormattableString&#160;</td>
+          <td class="paramname"><em>formattable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Format a FormattableString using <a class="el" href="class_dokan_net_1_1_format_providers.html#a5e2da0dc7099791e7afb64e78e868be5" title="A Singleton instanse of this class. ">DefaultFormatProvider</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">formattable</td><td>The FormattableString to format.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The formated string.</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a class="anchor" id="a5e2da0dc7099791e7afb64e78e868be5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly <a class="el" href="class_dokan_net_1_1_format_providers.html">FormatProviders</a> DokanNet.FormatProviders.DefaultFormatProvider = new <a class="el" href="class_dokan_net_1_1_format_providers.html">FormatProviders</a>()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A Singleton instanse of this class. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1271fea423668716de9c5ff65a50c131"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">readonly string DokanNet.FormatProviders.NullStringRepresentation = &quot;&lt;null&gt;&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A constant string that representet what to use if the formated object is <code>null</code>. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>NullFormatProvider.cs</li>
 </ul>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['usermodelock',['UserModeLock',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d',1,'DokanNet']]]
+  ['mountmanager',['MountManager',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6aa2ded7048f566ba78b285a02bc9d087f',1,'DokanNet']]]
 ];

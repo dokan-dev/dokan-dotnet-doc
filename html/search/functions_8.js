@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['tostring',['ToString',['../class_dokan_net_1_1_dokan_file_info.html#abb180495aaffe36c244827178c265ffa',1,'DokanNet::DokanFileInfo']]],
-  ['tryresettimeout',['TryResetTimeout',['../class_dokan_net_1_1_dokan_file_info.html#a827602b0f4a34486e38ca0322d2317fa',1,'DokanNet::DokanFileInfo']]]
+  ['readfile',['ReadFile',['../interface_dokan_net_1_1_i_dokan_operations.html#a5e7bc940f2e31b6ae6b989dc81818294',1,'DokanNet::IDokanOperations']]]
 ];

@@ -102,32 +102,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Use to provide file informations to Dokan during operations <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">IDokanOperations.FindFiles</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5" title="Retrieve all FileStreams informations on the file. This is only called if DokanOptions.AltStream is enabled. ">IDokanOperations.FindStreams</a> or <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern ">IDokanOperations.FindFilesWithPattern</a>  
+<p>Use to provide file information to Dokan during operations <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">IDokanOperations.FindFiles</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5" title="Retrieve all FileStreams informations on the file. This is only called if DokanOptions.AltStream is enabled. ">IDokanOperations.FindStreams</a> or <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern to filter the result. ">IDokanOperations.FindFilesWithPattern</a>  
  <a href="struct_dokan_net_1_1_file_information.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a38847e871b5f45a2fe6514cb322c1f16"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dokan_net_1_1_file_information.html#a38847e871b5f45a2fe6514cb322c1f16">FileName</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a38847e871b5f45a2fe6514cb322c1f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">File name.  <a href="#a38847e871b5f45a2fe6514cb322c1f16">More...</a><br /></td></tr>
+<tr class="memdesc:a38847e871b5f45a2fe6514cb322c1f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the name of the file or directory.  <a href="#a38847e871b5f45a2fe6514cb322c1f16">More...</a><br /></td></tr>
 <tr class="separator:a38847e871b5f45a2fe6514cb322c1f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a933a967a022f91ed7d28e1608f2f0f1c"><td class="memItemLeft" align="right" valign="top">FileAttributes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dokan_net_1_1_file_information.html#a933a967a022f91ed7d28e1608f2f0f1c">Attributes</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a933a967a022f91ed7d28e1608f2f0f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">File Attributes.  <a href="#a933a967a022f91ed7d28e1608f2f0f1c">More...</a><br /></td></tr>
+<tr class="memdesc:a933a967a022f91ed7d28e1608f2f0f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the FileAttributes for the file or directory.  <a href="#a933a967a022f91ed7d28e1608f2f0f1c">More...</a><br /></td></tr>
 <tr class="separator:a933a967a022f91ed7d28e1608f2f0f1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abdbbbea971e03ec94ab39f0ea79848a6"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dokan_net_1_1_file_information.html#abdbbbea971e03ec94ab39f0ea79848a6">CreationTime</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:abdbbbea971e03ec94ab39f0ea79848a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">File creation time. If equal to null, the value will not be set or the file has no creation time.  <a href="#abdbbbea971e03ec94ab39f0ea79848a6">More...</a><br /></td></tr>
+<tr class="memdesc:abdbbbea971e03ec94ab39f0ea79848a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the creation time of the file or directory. If equal to <code>null</code>, the value will not be set or the file has no creation time.  <a href="#abdbbbea971e03ec94ab39f0ea79848a6">More...</a><br /></td></tr>
 <tr class="separator:abdbbbea971e03ec94ab39f0ea79848a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6a11c13757fad48196856e9d09c6b84"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dokan_net_1_1_file_information.html#ab6a11c13757fad48196856e9d09c6b84">LastAccessTime</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ab6a11c13757fad48196856e9d09c6b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">File alst access time. If equal to null, the value will not be set or the file has no creation time.  <a href="#ab6a11c13757fad48196856e9d09c6b84">More...</a><br /></td></tr>
+<tr class="memdesc:ab6a11c13757fad48196856e9d09c6b84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the last access time of the file or directory. If equal to <code>null</code>, the value will not be set or the file has no creation time.  <a href="#ab6a11c13757fad48196856e9d09c6b84">More...</a><br /></td></tr>
 <tr class="separator:ab6a11c13757fad48196856e9d09c6b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a387a02a48da59e93567a41360f891a39"><td class="memItemLeft" align="right" valign="top">DateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dokan_net_1_1_file_information.html#a387a02a48da59e93567a41360f891a39">LastWriteTime</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a387a02a48da59e93567a41360f891a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">File last write time. If equal to null, the value will not be set or the file has no last write time.  <a href="#a387a02a48da59e93567a41360f891a39">More...</a><br /></td></tr>
+<tr class="memdesc:a387a02a48da59e93567a41360f891a39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the last write time of the file or directory. If equal to <code>null</code>, the value will not be set or the file has no last write time.  <a href="#a387a02a48da59e93567a41360f891a39">More...</a><br /></td></tr>
 <tr class="separator:a387a02a48da59e93567a41360f891a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcf7f0b52c9433fbe3b46ee9f8ab3dc0"><td class="memItemLeft" align="right" valign="top">long&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dokan_net_1_1_file_information.html#abcf7f0b52c9433fbe3b46ee9f8ab3dc0">Length</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:abcf7f0b52c9433fbe3b46ee9f8ab3dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">File length.  <a href="#abcf7f0b52c9433fbe3b46ee9f8ab3dc0">More...</a><br /></td></tr>
+<tr class="memdesc:abcf7f0b52c9433fbe3b46ee9f8ab3dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the length of the file.  <a href="#abcf7f0b52c9433fbe3b46ee9f8ab3dc0">More...</a><br /></td></tr>
 <tr class="separator:abcf7f0b52c9433fbe3b46ee9f8ab3dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Use to provide file informations to Dokan during operations <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">IDokanOperations.FindFiles</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5" title="Retrieve all FileStreams informations on the file. This is only called if DokanOptions.AltStream is enabled. ">IDokanOperations.FindStreams</a> or <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern ">IDokanOperations.FindFilesWithPattern</a> </p>
+<div class="textblock"><p>Use to provide file information to Dokan during operations <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">IDokanOperations.FindFiles</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5" title="Retrieve all FileStreams informations on the file. This is only called if DokanOptions.AltStream is enabled. ">IDokanOperations.FindStreams</a> or <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern to filter the result. ">IDokanOperations.FindFilesWithPattern</a> </p>
 </div><h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="a933a967a022f91ed7d28e1608f2f0f1c"></a>
 <div class="memitem">
@@ -147,7 +147,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>File Attributes. </p>
+<p>Gets or sets the FileAttributes for the file or directory. </p>
 
 </div>
 </div>
@@ -169,7 +169,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>File creation time. If equal to null, the value will not be set or the file has no creation time. </p>
+<p>Gets or sets the creation time of the file or directory. If equal to <code>null</code>, the value will not be set or the file has no creation time. </p>
 
 </div>
 </div>
@@ -191,7 +191,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>File name. </p>
+<p>Gets or sets the name of the file or directory. </p>
 
 </div>
 </div>
@@ -213,7 +213,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>File alst access time. If equal to null, the value will not be set or the file has no creation time. </p>
+<p>Gets or sets the last access time of the file or directory. If equal to <code>null</code>, the value will not be set or the file has no creation time. </p>
 
 </div>
 </div>
@@ -235,7 +235,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>File last write time. If equal to null, the value will not be set or the file has no last write time. </p>
+<p>Gets or sets the last write time of the file or directory. If equal to <code>null</code>, the value will not be set or the file has no last write time. </p>
 
 </div>
 </div>
@@ -257,7 +257,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>File length. </p>
+<p>Gets or sets the length of the file. </p>
 
 </div>
 </div>

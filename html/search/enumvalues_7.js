@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['networkdrive',['NetworkDrive',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6af9a84196014cf6417761dfb69a085bb9',1,'DokanNet']]]
+  ['handlesclosed',['HandlesClosed',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a77b0f9216c5dcf3b01065bf45d238a27',1,'DokanNet']]]
 ];

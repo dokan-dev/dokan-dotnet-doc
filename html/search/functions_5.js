@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mounted',['Mounted',['../interface_dokan_net_1_1_i_dokan_operations.html#ae7d6baa2cbb6faa408f20aa7ce8292e1',1,'DokanNet::IDokanOperations']]],
-  ['movefile',['MoveFile',['../interface_dokan_net_1_1_i_dokan_operations.html#a4e79c42cd1dd2689f8c06c9528c2b643',1,'DokanNet::IDokanOperations']]]
+  ['info',['Info',['../class_dokan_net_1_1_logging_1_1_console_logger.html#aa848f07b006839eaea108b1230ce84dc',1,'DokanNet.Logging.ConsoleLogger.Info()'],['../class_dokan_net_1_1_logging_1_1_debug_view_logger.html#ad775a63017ba6013d612ad14336dd2bc',1,'DokanNet.Logging.DebugViewLogger.Info()'],['../interface_dokan_net_1_1_logging_1_1_i_logger.html#a6e00f5f65df532fd323aede33c6fbaaf',1,'DokanNet.Logging.ILogger.Info()'],['../class_dokan_net_1_1_logging_1_1_logger.html#aa398de46081f93c14fc58f118e1333f7',1,'DokanNet.Logging.Logger.Info()'],['../class_dokan_net_1_1_logging_1_1_null_logger.html#ac4c4dbdd5668bb4daf6efd66dba53956',1,'DokanNet.Logging.NullLogger.Info()'],['../class_dokan_net_1_1_logging_1_1_trace_logger.html#a79db0d9b67b7f14b0a75e4bcc4ede013',1,'DokanNet.Logging.TraceLogger.Info()']]]
 ];

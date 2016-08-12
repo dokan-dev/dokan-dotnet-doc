@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>To see the output in visual studio Project + <a class="el" href="namespace_dokan_net_1_1_properties.html">Properties</a>, Debug tab, check "Enable unmanaged code debugging".  
+<p>Write log using OutputDebugString  
  <a href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for DokanNet.Logging.DebugViewLogger:</div>
@@ -110,34 +110,73 @@ Inheritance diagram for DokanNet.Logging.DebugViewLogger:</div>
  <div class="center">
   <img src="class_dokan_net_1_1_logging_1_1_debug_view_logger.png" usemap="#DokanNet.Logging.DebugViewLogger_map" alt=""/>
   <map id="DokanNet.Logging.DebugViewLogger_map" name="DokanNet.Logging.DebugViewLogger_map">
-<area href="interface_dokan_net_1_1_logging_1_1_i_logger.html" alt="DokanNet.Logging.ILogger" shape="rect" coords="0,0,225,24"/>
+<area href="interface_dokan_net_1_1_logging_1_1_i_logger.html" title="The Logger interface. " alt="DokanNet.Logging.ILogger" shape="rect" coords="0,0,225,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3b5d63ce065364efb25d9b99ff5f37ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b5d63ce065364efb25d9b99ff5f37ce"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DebugViewLogger</b> (string loggerName=&quot;&quot;)</td></tr>
+<tr class="memitem:a3b5d63ce065364efb25d9b99ff5f37ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#a3b5d63ce065364efb25d9b99ff5f37ce">DebugViewLogger</a> (string loggerName=&quot;&quot;)</td></tr>
+<tr class="memdesc:a3b5d63ce065364efb25d9b99ff5f37ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html" title="Write log using OutputDebugString ">DebugViewLogger</a> class.  <a href="#a3b5d63ce065364efb25d9b99ff5f37ce">More...</a><br /></td></tr>
 <tr class="separator:a3b5d63ce065364efb25d9b99ff5f37ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3df43ed3cbd5f4739653c082d7f2e96f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3df43ed3cbd5f4739653c082d7f2e96f"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Debug</b> (string message, params object[] args)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#a3df43ed3cbd5f4739653c082d7f2e96f">Debug</a> (string message, params object[] args)</td></tr>
+<tr class="memdesc:a3df43ed3cbd5f4739653c082d7f2e96f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a debug message  <br /></td></tr>
 <tr class="separator:a3df43ed3cbd5f4739653c082d7f2e96f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad775a63017ba6013d612ad14336dd2bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad775a63017ba6013d612ad14336dd2bc"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Info</b> (string message, params object[] args)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#ad775a63017ba6013d612ad14336dd2bc">Info</a> (string message, params object[] args)</td></tr>
+<tr class="memdesc:ad775a63017ba6013d612ad14336dd2bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a info message  <br /></td></tr>
 <tr class="separator:ad775a63017ba6013d612ad14336dd2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c8f56690c24fcfdf7ae908a6acf37c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55c8f56690c24fcfdf7ae908a6acf37c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Warn</b> (string message, params object[] args)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#a55c8f56690c24fcfdf7ae908a6acf37c">Warn</a> (string message, params object[] args)</td></tr>
+<tr class="memdesc:a55c8f56690c24fcfdf7ae908a6acf37c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a warning message  <br /></td></tr>
 <tr class="separator:a55c8f56690c24fcfdf7ae908a6acf37c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e1bdf1b5739a93082bf4ddd8fb41b96"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e1bdf1b5739a93082bf4ddd8fb41b96"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Error</b> (string message, params object[] args)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#a4e1bdf1b5739a93082bf4ddd8fb41b96">Error</a> (string message, params object[] args)</td></tr>
+<tr class="memdesc:a4e1bdf1b5739a93082bf4ddd8fb41b96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a error message  <br /></td></tr>
 <tr class="separator:a4e1bdf1b5739a93082bf4ddd8fb41b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae51ec3fa4d7e04426449171b306049b8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae51ec3fa4d7e04426449171b306049b8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Fatal</b> (string message, params object[] args)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#ae51ec3fa4d7e04426449171b306049b8">Fatal</a> (string message, params object[] args)</td></tr>
+<tr class="memdesc:ae51ec3fa4d7e04426449171b306049b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a fatal error message  <br /></td></tr>
 <tr class="separator:ae51ec3fa4d7e04426449171b306049b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>To see the output in visual studio Project + <a class="el" href="namespace_dokan_net_1_1_properties.html">Properties</a>, Debug tab, check "Enable unmanaged code debugging". </p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Write log using OutputDebugString </p>
+<p>To see the output in visual studio Project + <a class="el" href="namespace_dokan_net_1_1_properties.html">Properties</a>, Debug tab, check "Enable unmanaged code debugging". </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a3b5d63ce065364efb25d9b99ff5f37ce"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DokanNet.Logging.DebugViewLogger.DebugViewLogger </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>loggerName</em> = <code>&quot;&quot;</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html" title="Write log using OutputDebugString ">DebugViewLogger</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">loggerName</td><td>Optional name to be added to each log line.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>DebugViewLogger.cs</li>
 </ul>
 </div><!-- contents -->

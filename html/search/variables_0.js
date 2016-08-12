@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nocache',['NoCache',['../class_dokan_net_1_1_dokan_file_info.html#a5ae772f3564391ecea23b87903b788ec',1,'DokanNet::DokanFileInfo']]]
+  ['defaultformatprovider',['DefaultFormatProvider',['../class_dokan_net_1_1_format_providers.html#a5e2da0dc7099791e7afb64e78e868be5',1,'DokanNet::FormatProviders']]]
 ];

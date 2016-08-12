@@ -101,38 +101,229 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DokanNet.Logging.ILogger Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The <a class="el" href="class_dokan_net_1_1_logging_1_1_logger.html" title="Handle log messages with callbacks ">Logger</a> interface.  
+ <a href="interface_dokan_net_1_1_logging_1_1_i_logger.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for DokanNet.Logging.ILogger:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="interface_dokan_net_1_1_logging_1_1_i_logger.png" usemap="#DokanNet.Logging.ILogger_map" alt=""/>
   <map id="DokanNet.Logging.ILogger_map" name="DokanNet.Logging.ILogger_map">
-<area href="class_dokan_net_1_1_logging_1_1_console_logger.html" alt="DokanNet.Logging.ConsoleLogger" shape="rect" coords="0,56,225,80"/>
-<area href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html" title="To see the output in visual studio Project + Properties, Debug tab, check &quot;Enable unmanaged code debu..." alt="DokanNet.Logging.DebugViewLogger" shape="rect" coords="235,56,460,80"/>
-<area href="class_dokan_net_1_1_logging_1_1_logger.html" alt="DokanNet.Logging.Logger" shape="rect" coords="470,56,695,80"/>
-<area href="class_dokan_net_1_1_logging_1_1_null_logger.html" alt="DokanNet.Logging.NullLogger" shape="rect" coords="705,56,930,80"/>
-<area href="class_dokan_net_1_1_logging_1_1_trace_logger.html" alt="DokanNet.Logging.TraceLogger" shape="rect" coords="940,56,1165,80"/>
+<area href="class_dokan_net_1_1_logging_1_1_console_logger.html" title="Log to the console. " alt="DokanNet.Logging.ConsoleLogger" shape="rect" coords="0,56,225,80"/>
+<area href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html" title="Write log using OutputDebugString " alt="DokanNet.Logging.DebugViewLogger" shape="rect" coords="235,56,460,80"/>
+<area href="class_dokan_net_1_1_logging_1_1_logger.html" title="Handle log messages with callbacks " alt="DokanNet.Logging.Logger" shape="rect" coords="470,56,695,80"/>
+<area href="class_dokan_net_1_1_logging_1_1_null_logger.html" title="Ignore all log messages. " alt="DokanNet.Logging.NullLogger" shape="rect" coords="705,56,930,80"/>
+<area href="class_dokan_net_1_1_logging_1_1_trace_logger.html" title="Write all log messages to the Trace. " alt="DokanNet.Logging.TraceLogger" shape="rect" coords="940,56,1165,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a47cb726bb7191b8a7c5e8064c298ebeb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47cb726bb7191b8a7c5e8064c298ebeb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Debug</b> (string format, params object[] args)</td></tr>
-<tr class="separator:a47cb726bb7191b8a7c5e8064c298ebeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88223614daa6f0f235b58ff8e889e3f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88223614daa6f0f235b58ff8e889e3f9"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Info</b> (string format, params object[] args)</td></tr>
-<tr class="separator:a88223614daa6f0f235b58ff8e889e3f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a63d0578beaa8c70486f16db8fec487e2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63d0578beaa8c70486f16db8fec487e2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Warn</b> (string format, params object[] args)</td></tr>
-<tr class="separator:a63d0578beaa8c70486f16db8fec487e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8ab0b8ea45ce2f8188a3c99ee5c6742a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8ab0b8ea45ce2f8188a3c99ee5c6742a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Error</b> (string format, params object[] args)</td></tr>
-<tr class="separator:a8ab0b8ea45ce2f8188a3c99ee5c6742a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac75139343b353602d998efe8bea0a6ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac75139343b353602d998efe8bea0a6ca"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Fatal</b> (string format, params object[] args)</td></tr>
-<tr class="separator:ac75139343b353602d998efe8bea0a6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecbcd7972c0bf929e86136d9c507130"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html#aaecbcd7972c0bf929e86136d9c507130">Debug</a> (string message, params object[] args)</td></tr>
+<tr class="memdesc:aaecbcd7972c0bf929e86136d9c507130"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a debug message  <a href="#aaecbcd7972c0bf929e86136d9c507130">More...</a><br /></td></tr>
+<tr class="separator:aaecbcd7972c0bf929e86136d9c507130"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e00f5f65df532fd323aede33c6fbaaf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html#a6e00f5f65df532fd323aede33c6fbaaf">Info</a> (string message, params object[] args)</td></tr>
+<tr class="memdesc:a6e00f5f65df532fd323aede33c6fbaaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a info message  <a href="#a6e00f5f65df532fd323aede33c6fbaaf">More...</a><br /></td></tr>
+<tr class="separator:a6e00f5f65df532fd323aede33c6fbaaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447ead5262a79a6fc34a4dcfdc53a701"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html#a447ead5262a79a6fc34a4dcfdc53a701">Warn</a> (string message, params object[] args)</td></tr>
+<tr class="memdesc:a447ead5262a79a6fc34a4dcfdc53a701"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a warning message  <a href="#a447ead5262a79a6fc34a4dcfdc53a701">More...</a><br /></td></tr>
+<tr class="separator:a447ead5262a79a6fc34a4dcfdc53a701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f167f6a5396e1f322e036389931c8a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html#a21f167f6a5396e1f322e036389931c8a">Error</a> (string message, params object[] args)</td></tr>
+<tr class="memdesc:a21f167f6a5396e1f322e036389931c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a error message  <a href="#a21f167f6a5396e1f322e036389931c8a">More...</a><br /></td></tr>
+<tr class="separator:a21f167f6a5396e1f322e036389931c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1551db168cdaf32793114a49a3cb2822"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html#a1551db168cdaf32793114a49a3cb2822">Fatal</a> (string message, params object[] args)</td></tr>
+<tr class="memdesc:a1551db168cdaf32793114a49a3cb2822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log a fatal error message  <a href="#a1551db168cdaf32793114a49a3cb2822">More...</a><br /></td></tr>
+<tr class="separator:a1551db168cdaf32793114a49a3cb2822"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The <a class="el" href="class_dokan_net_1_1_logging_1_1_logger.html" title="Handle log messages with callbacks ">Logger</a> interface. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aaecbcd7972c0bf929e86136d9c507130"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DokanNet.Logging.ILogger.Debug </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params object[]&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log a debug message </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The message to write to the log</td></tr>
+    <tr><td class="paramname">args</td><td>Arguments to use to format the <em>message</em> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_dokan_net_1_1_logging_1_1_logger.html#a616b711a12c932dda069cedab1e7652b">DokanNet.Logging.Logger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#a3df43ed3cbd5f4739653c082d7f2e96f">DokanNet.Logging.DebugViewLogger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_console_logger.html#a9503037d3e7e11830651fcb34fafa666">DokanNet.Logging.ConsoleLogger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_trace_logger.html#a80d9afba83a5c81c8cfc51924aa9a047">DokanNet.Logging.TraceLogger</a>, and <a class="el" href="class_dokan_net_1_1_logging_1_1_null_logger.html#a6201e761cbee03d0c9fc78811374e032">DokanNet.Logging.NullLogger</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a21f167f6a5396e1f322e036389931c8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DokanNet.Logging.ILogger.Error </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params object[]&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log a error message </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The message to write to the log</td></tr>
+    <tr><td class="paramname">args</td><td>Arguments to use to format the <em>message</em> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_dokan_net_1_1_logging_1_1_logger.html#a8adf7b6b52a9aee9112739e6616c78bc">DokanNet.Logging.Logger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#a4e1bdf1b5739a93082bf4ddd8fb41b96">DokanNet.Logging.DebugViewLogger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_console_logger.html#a73b1cb42d7f45d48f84e001aa3e7af21">DokanNet.Logging.ConsoleLogger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_trace_logger.html#a8cbfe9bfaa24ec78cba3987aabfcd812">DokanNet.Logging.TraceLogger</a>, and <a class="el" href="class_dokan_net_1_1_logging_1_1_null_logger.html#a990d586873c6eeacb66b0624d864d5b3">DokanNet.Logging.NullLogger</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a1551db168cdaf32793114a49a3cb2822"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DokanNet.Logging.ILogger.Fatal </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params object[]&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log a fatal error message </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The message to write to the log</td></tr>
+    <tr><td class="paramname">args</td><td>Arguments to use to format the <em>message</em> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_dokan_net_1_1_logging_1_1_logger.html#abf83341ea9f646872e413ce95ca1c24f">DokanNet.Logging.Logger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#ae51ec3fa4d7e04426449171b306049b8">DokanNet.Logging.DebugViewLogger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_console_logger.html#a8e14a3df1883cfd656757e779c1e1315">DokanNet.Logging.ConsoleLogger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_trace_logger.html#a7ce45b9bb397a9c595b0058d2c2ad21e">DokanNet.Logging.TraceLogger</a>, and <a class="el" href="class_dokan_net_1_1_logging_1_1_null_logger.html#ad2d73a8eafec2c79043b9cece31c8d35">DokanNet.Logging.NullLogger</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6e00f5f65df532fd323aede33c6fbaaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DokanNet.Logging.ILogger.Info </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params object[]&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log a info message </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The message to write to the log</td></tr>
+    <tr><td class="paramname">args</td><td>Arguments to use to format the <em>message</em> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_dokan_net_1_1_logging_1_1_logger.html#aa398de46081f93c14fc58f118e1333f7">DokanNet.Logging.Logger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#ad775a63017ba6013d612ad14336dd2bc">DokanNet.Logging.DebugViewLogger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_console_logger.html#aa848f07b006839eaea108b1230ce84dc">DokanNet.Logging.ConsoleLogger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_null_logger.html#ac4c4dbdd5668bb4daf6efd66dba53956">DokanNet.Logging.NullLogger</a>, and <a class="el" href="class_dokan_net_1_1_logging_1_1_trace_logger.html#a79db0d9b67b7f14b0a75e4bcc4ede013">DokanNet.Logging.TraceLogger</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a447ead5262a79a6fc34a4dcfdc53a701"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DokanNet.Logging.ILogger.Warn </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>message</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">params object[]&#160;</td>
+          <td class="paramname"><em>args</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Log a warning message </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">message</td><td>The message to write to the log</td></tr>
+    <tr><td class="paramname">args</td><td>Arguments to use to format the <em>message</em> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="class_dokan_net_1_1_logging_1_1_logger.html#a4c6c066d03945c8be51c1f14dcc0237d">DokanNet.Logging.Logger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_debug_view_logger.html#a55c8f56690c24fcfdf7ae908a6acf37c">DokanNet.Logging.DebugViewLogger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_console_logger.html#aebca3ba5f66c670adec2ae600d922f7e">DokanNet.Logging.ConsoleLogger</a>, <a class="el" href="class_dokan_net_1_1_logging_1_1_null_logger.html#aaa6e9afc1694c9ad963468ae6757be1f">DokanNet.Logging.NullLogger</a>, and <a class="el" href="class_dokan_net_1_1_logging_1_1_trace_logger.html#a2875c36c9f933570470254e483d9f640">DokanNet.Logging.TraceLogger</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this interface was generated from the following file:<ul>
 <li>ILogger.cs</li>
 </ul>

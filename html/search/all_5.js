@@ -1,11 +1,15 @@
 var searchData=
 [
-  ['genericexecute',['GenericExecute',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a2590aa05c13a089855c36062a36c2279',1,'DokanNet']]],
-  ['genericread',['GenericRead',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720ae94aab556e7fb8e739eeb1d24ce5db63',1,'DokanNet']]],
-  ['genericwrite',['GenericWrite',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a9a803576ff84a1f98a9d56984d3b1559',1,'DokanNet']]],
-  ['getdiskfreespace',['GetDiskFreeSpace',['../interface_dokan_net_1_1_i_dokan_operations.html#ab2574f9b34b8bd244a3268d2cedd78c6',1,'DokanNet::IDokanOperations']]],
-  ['getfileinformation',['GetFileInformation',['../interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b',1,'DokanNet::IDokanOperations']]],
-  ['getfilesecurity',['GetFileSecurity',['../interface_dokan_net_1_1_i_dokan_operations.html#abc92826efe0dce94755e94fa380f9345',1,'DokanNet::IDokanOperations']]],
-  ['getrequestor',['GetRequestor',['../class_dokan_net_1_1_dokan_file_info.html#aed4f7da802a9fe3097517f86287b109e',1,'DokanNet::DokanFileInfo']]],
-  ['getvolumeinformation',['GetVolumeInformation',['../interface_dokan_net_1_1_i_dokan_operations.html#a1f21331221a8365f260e17e0def8759a',1,'DokanNet::IDokanOperations']]]
+  ['fatal',['Fatal',['../class_dokan_net_1_1_logging_1_1_console_logger.html#a8e14a3df1883cfd656757e779c1e1315',1,'DokanNet.Logging.ConsoleLogger.Fatal()'],['../class_dokan_net_1_1_logging_1_1_debug_view_logger.html#ae51ec3fa4d7e04426449171b306049b8',1,'DokanNet.Logging.DebugViewLogger.Fatal()'],['../interface_dokan_net_1_1_logging_1_1_i_logger.html#a1551db168cdaf32793114a49a3cb2822',1,'DokanNet.Logging.ILogger.Fatal()'],['../class_dokan_net_1_1_logging_1_1_logger.html#abf83341ea9f646872e413ce95ca1c24f',1,'DokanNet.Logging.Logger.Fatal()'],['../class_dokan_net_1_1_logging_1_1_null_logger.html#ad2d73a8eafec2c79043b9cece31c8d35',1,'DokanNet.Logging.NullLogger.Fatal()'],['../class_dokan_net_1_1_logging_1_1_trace_logger.html#a7ce45b9bb397a9c595b0058d2c2ad21e',1,'DokanNet.Logging.TraceLogger.Fatal()']]],
+  ['fileaccess',['FileAccess',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720',1,'DokanNet']]],
+  ['fileinformation',['FileInformation',['../struct_dokan_net_1_1_file_information.html',1,'DokanNet']]],
+  ['filename',['FileName',['../struct_dokan_net_1_1_file_information.html#a38847e871b5f45a2fe6514cb322c1f16',1,'DokanNet::FileInformation']]],
+  ['filesystemfeatures',['FileSystemFeatures',['../namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30',1,'DokanNet']]],
+  ['findfiles',['FindFiles',['../interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969',1,'DokanNet::IDokanOperations']]],
+  ['findfileswithpattern',['FindFilesWithPattern',['../interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8',1,'DokanNet::IDokanOperations']]],
+  ['findstreams',['FindStreams',['../interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5',1,'DokanNet::IDokanOperations']]],
+  ['fixeddrive',['FixedDrive',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a2b5e39dc8372c99a6fa12b6d3c6b8c88',1,'DokanNet']]],
+  ['flushfilebuffers',['FlushFileBuffers',['../interface_dokan_net_1_1_i_dokan_operations.html#a3f0b7c046ed4d42de1dec0e4356f38d9',1,'DokanNet::IDokanOperations']]],
+  ['format',['Format',['../class_dokan_net_1_1_format_providers.html#ac9de1ac654a12ddf840be48710295c47',1,'DokanNet::FormatProviders']]],
+  ['formatproviders',['FormatProviders',['../class_dokan_net_1_1_format_providers.html',1,'DokanNet']]]
 ];

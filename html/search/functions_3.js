@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['getdiskfreespace',['GetDiskFreeSpace',['../interface_dokan_net_1_1_i_dokan_operations.html#ab2574f9b34b8bd244a3268d2cedd78c6',1,'DokanNet::IDokanOperations']]],
-  ['getfileinformation',['GetFileInformation',['../interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b',1,'DokanNet::IDokanOperations']]],
-  ['getfilesecurity',['GetFileSecurity',['../interface_dokan_net_1_1_i_dokan_operations.html#abc92826efe0dce94755e94fa380f9345',1,'DokanNet::IDokanOperations']]],
-  ['getrequestor',['GetRequestor',['../class_dokan_net_1_1_dokan_file_info.html#aed4f7da802a9fe3097517f86287b109e',1,'DokanNet::DokanFileInfo']]],
-  ['getvolumeinformation',['GetVolumeInformation',['../interface_dokan_net_1_1_i_dokan_operations.html#a1f21331221a8365f260e17e0def8759a',1,'DokanNet::IDokanOperations']]]
+  ['fatal',['Fatal',['../class_dokan_net_1_1_logging_1_1_console_logger.html#a8e14a3df1883cfd656757e779c1e1315',1,'DokanNet.Logging.ConsoleLogger.Fatal()'],['../class_dokan_net_1_1_logging_1_1_debug_view_logger.html#ae51ec3fa4d7e04426449171b306049b8',1,'DokanNet.Logging.DebugViewLogger.Fatal()'],['../interface_dokan_net_1_1_logging_1_1_i_logger.html#a1551db168cdaf32793114a49a3cb2822',1,'DokanNet.Logging.ILogger.Fatal()'],['../class_dokan_net_1_1_logging_1_1_logger.html#abf83341ea9f646872e413ce95ca1c24f',1,'DokanNet.Logging.Logger.Fatal()'],['../class_dokan_net_1_1_logging_1_1_null_logger.html#ad2d73a8eafec2c79043b9cece31c8d35',1,'DokanNet.Logging.NullLogger.Fatal()'],['../class_dokan_net_1_1_logging_1_1_trace_logger.html#a7ce45b9bb397a9c595b0058d2c2ad21e',1,'DokanNet.Logging.TraceLogger.Fatal()']]],
+  ['findfiles',['FindFiles',['../interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969',1,'DokanNet::IDokanOperations']]],
+  ['findfileswithpattern',['FindFilesWithPattern',['../interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8',1,'DokanNet::IDokanOperations']]],
+  ['findstreams',['FindStreams',['../interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5',1,'DokanNet::IDokanOperations']]],
+  ['flushfilebuffers',['FlushFileBuffers',['../interface_dokan_net_1_1_i_dokan_operations.html#a3f0b7c046ed4d42de1dec0e4356f38d9',1,'DokanNet::IDokanOperations']]],
+  ['format',['Format',['../class_dokan_net_1_1_format_providers.html#ac9de1ac654a12ddf840be48710295c47',1,'DokanNet::FormatProviders']]]
 ];

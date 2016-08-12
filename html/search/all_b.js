@@ -1,10 +1,13 @@
 var searchData=
 [
-  ['readattributes',['ReadAttributes',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a29d5eebe071ec16a16eaf04b7cf717f5',1,'DokanNet']]],
-  ['readdata',['ReadData',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a9737b198b43957e0daee34be05d34687',1,'DokanNet']]],
-  ['readextendedattributes',['ReadExtendedAttributes',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a721920642d6f43e0f5d2172e0afee463',1,'DokanNet']]],
-  ['readfile',['ReadFile',['../interface_dokan_net_1_1_i_dokan_operations.html#a5e7bc940f2e31b6ae6b989dc81818294',1,'DokanNet::IDokanOperations']]],
-  ['readpermissions',['ReadPermissions',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720ae1c92b30b08d486bf4793cf49a55d6af',1,'DokanNet']]],
-  ['removabledrive',['RemovableDrive',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6aa1a9f7bd5437f518e9afb2fe890baabe',1,'DokanNet']]],
-  ['reserved',['Reserved',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a942d4e37dd5607ab68e54755540d4a47',1,'DokanNet']]]
+  ['namedstreams',['NamedStreams',['../namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a55093eda98a143ae71b8188a4052fb1c',1,'DokanNet']]],
+  ['networkdrive',['NetworkDrive',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6af9a84196014cf6417761dfb69a085bb9',1,'DokanNet']]],
+  ['nocache',['NoCache',['../class_dokan_net_1_1_dokan_file_info.html#a5ae772f3564391ecea23b87903b788ec',1,'DokanNet::DokanFileInfo']]],
+  ['nomoreentries',['NoMoreEntries',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad8a7f9e387c5a767b938b46a4ca73787',1,'DokanNet']]],
+  ['nomorefiles',['NoMoreFiles',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a61ec615cd0fbb7cc63d8ff557ccaf6d8',1,'DokanNet']]],
+  ['none',['None',['../namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a6adf97f83acf6453d4a6a4b1070f3754',1,'DokanNet']]],
+  ['notimplemented',['NotImplemented',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e',1,'DokanNet']]],
+  ['ntstatus',['NtStatus',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209',1,'DokanNet']]],
+  ['nulllogger',['NullLogger',['../class_dokan_net_1_1_logging_1_1_null_logger.html',1,'DokanNet::Logging']]],
+  ['nullstringrepresentation',['NullStringRepresentation',['../class_dokan_net_1_1_format_providers.html#a1271fea423668716de9c5ff65a50c131',1,'DokanNet::FormatProviders']]]
 ];
