@@ -46,6 +46,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li>
@@ -102,7 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>The DokanOperations interface.  
+<p>Dokan API callbacks interface  
  <a href="interface_dokan_net_1_1_i_dokan_operations.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -111,16 +113,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:add1cb05cafe40dd895988da80a65e7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateFile is called each time a request is made on a file system object.  <a href="#add1cb05cafe40dd895988da80a65e7f1">More...</a><br /></td></tr>
 <tr class="separator:add1cb05cafe40dd895988da80a65e7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7c6bd120d685675fd133f38e41b0efb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb">Cleanup</a> (string fileName, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:ae7c6bd120d685675fd133f38e41b0efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Cleanup request before <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8bfc215b2758fe7f7eaa54dc5b5988cc" title="CloseFile is called at the end of the life of the context. DokanFileInfo.Context has to be cleared be...">CloseFile</a> is called.  <a href="#ae7c6bd120d685675fd133f38e41b0efb">More...</a><br /></td></tr>
+<tr class="memdesc:ae7c6bd120d685675fd133f38e41b0efb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receipt of this request indicates that the last handle for a file object that is associated with the target device object has been closed (but, due to outstanding I/O requests, might not have been released).  <a href="#ae7c6bd120d685675fd133f38e41b0efb">More...</a><br /></td></tr>
 <tr class="separator:ae7c6bd120d685675fd133f38e41b0efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8bfc215b2758fe7f7eaa54dc5b5988cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8bfc215b2758fe7f7eaa54dc5b5988cc">CloseFile</a> (string fileName, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:a8bfc215b2758fe7f7eaa54dc5b5988cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">CloseFile is called at the end of the life of the context. <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592" title="Context that can be used to carry information between operation. The Context can carry whatever type ...">DokanFileInfo.Context</a> has to be cleared before return.  <a href="#a8bfc215b2758fe7f7eaa54dc5b5988cc">More...</a><br /></td></tr>
+<tr class="memdesc:a8bfc215b2758fe7f7eaa54dc5b5988cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">CloseFile is called at the end of the life of the context.  <a href="#a8bfc215b2758fe7f7eaa54dc5b5988cc">More...</a><br /></td></tr>
 <tr class="separator:a8bfc215b2758fe7f7eaa54dc5b5988cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e7bc940f2e31b6ae6b989dc81818294"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5e7bc940f2e31b6ae6b989dc81818294">ReadFile</a> (string fileName, byte[] buffer, out int bytesRead, long offset, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:a5e7bc940f2e31b6ae6b989dc81818294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read event on the file previously opened in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> It can be called by different thread at the same time, therefor the read has to be thread safe.  <a href="#a5e7bc940f2e31b6ae6b989dc81818294">More...</a><br /></td></tr>
+<tr class="memdesc:a5e7bc940f2e31b6ae6b989dc81818294"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadFile callback on the file previously opened in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a>. It can be called by different thread at the same time, therefor the read has to be thread safe.  <a href="#a5e7bc940f2e31b6ae6b989dc81818294">More...</a><br /></td></tr>
 <tr class="separator:a5e7bc940f2e31b6ae6b989dc81818294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a364edca5bba4029c110460504eb89c3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a364edca5bba4029c110460504eb89c3e">WriteFile</a> (string fileName, byte[] buffer, out int bytesWritten, long offset, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:a364edca5bba4029c110460504eb89c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write event on the file previously opened in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> WriteFile can be called by different thread at the same time, therefor the write has to be thread safe.  <a href="#a364edca5bba4029c110460504eb89c3e">More...</a><br /></td></tr>
+<tr class="memdesc:a364edca5bba4029c110460504eb89c3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">WriteFile callback on the file previously opened in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> It can be called by different thread at the same time, therefor the write/context has to be thread safe.  <a href="#a364edca5bba4029c110460504eb89c3e">More...</a><br /></td></tr>
 <tr class="separator:a364edca5bba4029c110460504eb89c3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f0b7c046ed4d42de1dec0e4356f38d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3f0b7c046ed4d42de1dec0e4356f38d9">FlushFileBuffers</a> (string fileName, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a3f0b7c046ed4d42de1dec0e4356f38d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears buffers for this context and causes any buffered data to be written to the file.  <a href="#a3f0b7c046ed4d42de1dec0e4356f38d9">More...</a><br /></td></tr>
@@ -135,16 +137,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3c05700fe6694e7ec218ed1583fb39d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">FindFiles</a> but with a search pattern to filter the result.  <a href="#a3c05700fe6694e7ec218ed1583fb39d8">More...</a><br /></td></tr>
 <tr class="separator:a3c05700fe6694e7ec218ed1583fb39d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06cb9e98b32336feaacedd86876989bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a06cb9e98b32336feaacedd86876989bb">SetFileAttributes</a> (string fileName, FileAttributes attributes, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:a06cb9e98b32336feaacedd86876989bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set file attributes on a specific file  <a href="#a06cb9e98b32336feaacedd86876989bb">More...</a><br /></td></tr>
+<tr class="memdesc:a06cb9e98b32336feaacedd86876989bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set file attributes on a specific file.  <a href="#a06cb9e98b32336feaacedd86876989bb">More...</a><br /></td></tr>
 <tr class="separator:a06cb9e98b32336feaacedd86876989bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cfd4e36517d748c59e1933cd1b9a2a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5cfd4e36517d748c59e1933cd1b9a2a2">SetFileTime</a> (string fileName, DateTime?creationTime, DateTime?lastAccessTime, DateTime?lastWriteTime, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a5cfd4e36517d748c59e1933cd1b9a2a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set file times on a specific file. If DateTime is <code>null</code>, this should not be updated.  <a href="#a5cfd4e36517d748c59e1933cd1b9a2a2">More...</a><br /></td></tr>
 <tr class="separator:a5cfd4e36517d748c59e1933cd1b9a2a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa2977365c84a88375ce06d088137914f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aa2977365c84a88375ce06d088137914f">DeleteFile</a> (string fileName, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:aa2977365c84a88375ce06d088137914f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if it is possible to delete a file. The file should not be delete in DeleteFile but in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Cleanup request before CloseFile is called. ">Cleanup</a>.  <a href="#aa2977365c84a88375ce06d088137914f">More...</a><br /></td></tr>
+<tr class="memdesc:aa2977365c84a88375ce06d088137914f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if it is possible to delete a file. The file should not be delete in DeleteFile but in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a>.  <a href="#aa2977365c84a88375ce06d088137914f">More...</a><br /></td></tr>
 <tr class="separator:aa2977365c84a88375ce06d088137914f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b5af8c7eba19f3d8517844854974895"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5b5af8c7eba19f3d8517844854974895">DeleteDirectory</a> (string fileName, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:a5b5af8c7eba19f3d8517844854974895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Cleanup request before CloseFile is called. ">Cleanup</a>.  <a href="#a5b5af8c7eba19f3d8517844854974895">More...</a><br /></td></tr>
+<tr class="memdesc:a5b5af8c7eba19f3d8517844854974895"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a>.  <a href="#a5b5af8c7eba19f3d8517844854974895">More...</a><br /></td></tr>
 <tr class="separator:a5b5af8c7eba19f3d8517844854974895"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e79c42cd1dd2689f8c06c9528c2b643"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a4e79c42cd1dd2689f8c06c9528c2b643">MoveFile</a> (string oldName, string newName, bool replace, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a4e79c42cd1dd2689f8c06c9528c2b643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a file or directory to his new destination  <a href="#a4e79c42cd1dd2689f8c06c9528c2b643">More...</a><br /></td></tr>
@@ -156,35 +158,40 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a2b5df111cd7c099e1340a80340d32206"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetAllocationSize is used to truncate or extend a file.  <a href="#a2b5df111cd7c099e1340a80340d32206">More...</a><br /></td></tr>
 <tr class="separator:a2b5df111cd7c099e1340a80340d32206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb2905515f5cb72df9748585c92530cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aeb2905515f5cb72df9748585c92530cd">LockFile</a> (string fileName, long offset, long length, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:aeb2905515f5cb72df9748585c92530cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock file at a specific offset and data length. This is only used if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d" title="Enable Lockfile/Unlockfile operations">DokanOptions.UserModeLock</a> is enabled.  <a href="#aeb2905515f5cb72df9748585c92530cd">More...</a><br /></td></tr>
+<tr class="memdesc:aeb2905515f5cb72df9748585c92530cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock file at a specific offset and data length. This is only used if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d" title="Enable Lockfile/Unlockfile operations. Otherwise Dokan will take care of it">DokanOptions.UserModeLock</a> is enabled.  <a href="#aeb2905515f5cb72df9748585c92530cd">More...</a><br /></td></tr>
 <tr class="separator:aeb2905515f5cb72df9748585c92530cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a26864d3577f2f90885a1b27f9b8181"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5a26864d3577f2f90885a1b27f9b8181">UnlockFile</a> (string fileName, long offset, long length, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:a5a26864d3577f2f90885a1b27f9b8181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock file at a specific offset and data length. This is only used if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d" title="Enable Lockfile/Unlockfile operations">DokanOptions.UserModeLock</a> is enabled.  <a href="#a5a26864d3577f2f90885a1b27f9b8181">More...</a><br /></td></tr>
+<tr class="memdesc:a5a26864d3577f2f90885a1b27f9b8181"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock file at a specific offset and data length. This is only used if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d" title="Enable Lockfile/Unlockfile operations. Otherwise Dokan will take care of it">DokanOptions.UserModeLock</a> is enabled.  <a href="#a5a26864d3577f2f90885a1b27f9b8181">More...</a><br /></td></tr>
 <tr class="separator:a5a26864d3577f2f90885a1b27f9b8181"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2574f9b34b8bd244a3268d2cedd78c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ab2574f9b34b8bd244a3268d2cedd78c6">GetDiskFreeSpace</a> (out long freeBytesAvailable, out long totalNumberOfBytes, out long totalNumberOfFreeBytes, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:ab2574f9b34b8bd244a3268d2cedd78c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetDiskFreeSpace request device space informations  <a href="#ab2574f9b34b8bd244a3268d2cedd78c6">More...</a><br /></td></tr>
+<tr class="memdesc:ab2574f9b34b8bd244a3268d2cedd78c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves information about the amount of space that is available on a disk volume, which is the total amount of space, the total amount of free space, and the total amount of free space available to the user that is associated with the calling thread.  <a href="#ab2574f9b34b8bd244a3268d2cedd78c6">More...</a><br /></td></tr>
 <tr class="separator:ab2574f9b34b8bd244a3268d2cedd78c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f21331221a8365f260e17e0def8759a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a1f21331221a8365f260e17e0def8759a">GetVolumeInformation</a> (out string volumeLabel, out <a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30">FileSystemFeatures</a> features, out string fileSystemName, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:a1f21331221a8365f260e17e0def8759a"><td class="mdescLeft">&#160;</td><td class="mdescRight">GetVolumeInformation request volume informations  <a href="#a1f21331221a8365f260e17e0def8759a">More...</a><br /></td></tr>
+<tr class="memdesc:a1f21331221a8365f260e17e0def8759a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves information about the file system and volume associated with the specified root directory.  <a href="#a1f21331221a8365f260e17e0def8759a">More...</a><br /></td></tr>
 <tr class="separator:a1f21331221a8365f260e17e0def8759a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc92826efe0dce94755e94fa380f9345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#abc92826efe0dce94755e94fa380f9345">GetFileSecurity</a> (string fileName, out FileSystemSecurity security, AccessControlSections sections, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:abc92826efe0dce94755e94fa380f9345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get ACL information on the requested file.  <a href="#abc92826efe0dce94755e94fa380f9345">More...</a><br /></td></tr>
+<tr class="memdesc:abc92826efe0dce94755e94fa380f9345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get specified information about the security of a file or directory.  <a href="#abc92826efe0dce94755e94fa380f9345">More...</a><br /></td></tr>
 <tr class="separator:abc92826efe0dce94755e94fa380f9345"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90bf07522e3673cf359bb854eca1be71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a90bf07522e3673cf359bb854eca1be71">SetFileSecurity</a> (string fileName, FileSystemSecurity security, AccessControlSections sections, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:a90bf07522e3673cf359bb854eca1be71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set ACL information on the requested file.  <a href="#a90bf07522e3673cf359bb854eca1be71">More...</a><br /></td></tr>
+<tr class="memdesc:a90bf07522e3673cf359bb854eca1be71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the security of a file or directory object.  <a href="#a90bf07522e3673cf359bb854eca1be71">More...</a><br /></td></tr>
 <tr class="separator:a90bf07522e3673cf359bb854eca1be71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d6baa2cbb6faa408f20aa7ce8292e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7d6baa2cbb6faa408f20aa7ce8292e1">Mounted</a> (<a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:ae7d6baa2cbb6faa408f20aa7ce8292e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount is called when Dokan succeed to mount the volume.  <a href="#ae7d6baa2cbb6faa408f20aa7ce8292e1">More...</a><br /></td></tr>
+<tr class="memdesc:ae7d6baa2cbb6faa408f20aa7ce8292e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when Dokan succeed to mount the volume.  <a href="#ae7d6baa2cbb6faa408f20aa7ce8292e1">More...</a><br /></td></tr>
 <tr class="separator:ae7d6baa2cbb6faa408f20aa7ce8292e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a918e1aae658759f4872665578668ace2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a918e1aae658759f4872665578668ace2">Unmounted</a> (<a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:a918e1aae658759f4872665578668ace2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmounted is called when Dokan is unmounting the volume.  <a href="#a918e1aae658759f4872665578668ace2">More...</a><br /></td></tr>
+<tr class="memdesc:a918e1aae658759f4872665578668ace2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when Dokan is unmounting the volume.  <a href="#a918e1aae658759f4872665578668ace2">More...</a><br /></td></tr>
 <tr class="separator:a918e1aae658759f4872665578668ace2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ec3c2770d85940b909b7cd0e3589c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5">FindStreams</a> (string fileName, out IList&lt; <a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a> &gt; streams, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:ae7ec3c2770d85940b909b7cd0e3589c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve all FileStreams informations on the file. This is only called if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6ad8fe8feefa750b9723759954632c391f" title="Use alternate stream">DokanOptions.AltStream</a> is enabled.  <a href="#ae7ec3c2770d85940b909b7cd0e3589c5">More...</a><br /></td></tr>
+<tr class="memdesc:ae7ec3c2770d85940b909b7cd0e3589c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve all NTFS Streams informations on the file. This is only called if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6ad8fe8feefa750b9723759954632c391f" title="Use alternate stream.">DokanOptions.AltStream</a> is enabled.  <a href="#ae7ec3c2770d85940b909b7cd0e3589c5">More...</a><br /></td></tr>
 <tr class="separator:ae7ec3c2770d85940b909b7cd0e3589c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The DokanOperations interface. </p>
+<div class="textblock"><p>Dokan API callbacks interface </p>
+<p>A struct of callbacks that describe all Dokan API operation that will be called when Windows access to the filesystem.</p>
+<p>If an error occurs, return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a>.</p>
+<p>All this callbacks can return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="{Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a> if you dont want to support one of them. Be aware that returning such value to important callbacks such <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a>/<a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5e7bc940f2e31b6ae6b989dc81818294" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">ReadFile</a>/... would make the filesystem not working or unstable. </p>
+<p>This is the same struct as <code>_DOKAN_OPERATIONS</code> (dokan.h) in the C++ version of Dokan.</p>
+<dl class="section see"><dt>See also</dt><dd>DOKAN_OPERATIONS </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae7c6bd120d685675fd133f38e41b0efb"></a>
 <div class="memitem">
@@ -210,16 +217,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Cleanup request before <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8bfc215b2758fe7f7eaa54dc5b5988cc" title="CloseFile is called at the end of the life of the context. DokanFileInfo.Context has to be cleared be...">CloseFile</a> is called. </p>
-<p>When <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#abe8f97a17b7e66b4a7013a08c7730f5b" title="Indicate if the file has to be delete during the IDokanOperations.Cleanup event. ">DokanFileInfo.DeleteOnClose</a> is <code>true</code>, you must delete the file in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Cleanup request before CloseFile is called. ">Cleanup</a>. Refer to comment at <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aa2977365c84a88375ce06d088137914f" title="Check if it is possible to delete a file. The file should not be delete in DeleteFile but in Cleanup...">DeleteFile</a> for explanation. </p>
+<p>Receipt of this request indicates that the last handle for a file object that is associated with the target device object has been closed (but, due to outstanding I/O requests, might not have been released). </p>
+<p>Cleanup request before <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8bfc215b2758fe7f7eaa54dc5b5988cc" title="CloseFile is called at the end of the life of the context. ">CloseFile</a> is called. </p>
+<p>When <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#abe8f97a17b7e66b4a7013a08c7730f5b" title="Flag if the file has to be delete during IDokanOperations.Cleanup event. ">DokanFileInfo.DeleteOnClose</a> is <code>true</code>, you must delete the file in Cleanup. Refer to <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aa2977365c84a88375ce06d088137914f" title="Check if it is possible to delete a file. The file should not be delete in DeleteFile but in Cleanup...">DeleteFile</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5b5af8c7eba19f3d8517844854974895" title="Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in Cle...">DeleteDirectory</a> for explanation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aa2977365c84a88375ce06d088137914f" title="Check if it is possible to delete a file. The file should not be delete in DeleteFile but in Cleanup...">DeleteFile</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5b5af8c7eba19f3d8517844854974895" title="Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in Cle...">DeleteDirectory</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aa2977365c84a88375ce06d088137914f" title="Check if it is possible to delete a file. The file should not be delete in DeleteFile but in Cleanup...">DeleteFile</a> </dd>
+<dd>
+<a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5b5af8c7eba19f3d8517844854974895" title="Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in Cle...">DeleteDirectory</a> </dd></dl>
 
 </div>
 </div>
@@ -247,11 +257,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>CloseFile is called at the end of the life of the context. <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592" title="Context that can be used to carry information between operation. The Context can carry whatever type ...">DokanFileInfo.Context</a> has to be cleared before return. </p>
+<p>CloseFile is called at the end of the life of the context. </p>
+<p>Receipt of this request indicates that the last handle of the file object that is associated with the target device object has been closed and released. All outstanding I/O requests have been completed or canceled.</p>
+<p>Remainings in <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592" title="Context that can be used to carry information between operation. The Context can carry whatever type ...">DokanFileInfo.Context</a> has to be cleared before return. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
@@ -313,9 +325,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>CreateFile is called each time a request is made on a file system object. </p>
-<p>In case <em>mode</em>  is FileMode.OpenOrCreate and FileMode.Create are opening successfully a already existing file, you have to SetLastError(ERROR_ALREADY_EXISTS).</p>
-<p>You should set <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#afbb9e08595d9c6ee7b3815a3aaa5b8bf" title="Requesting a directory file IsDirectory has to be set in IDokanOperations.CreateFileif the file appea...">DokanFileInfo.IsDirectory</a> to <code>true</code> when it is a file is a directory.</p>
-<p><a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592" title="Context that can be used to carry information between operation. The Context can carry whatever type ...">DokanFileInfo.Context</a> can be use to store data (like FileStream) that can be retrieved in all other request related to the context. </p>
+<p>In case <em>mode</em>  is FileMode.OpenOrCreate and FileMode.Create are opening successfully a already existing file, you have to <code>SetLastError(ERROR_ALREADY_EXISTS)</code>.</p>
+<p>If the file is a directory, CreateFile is also called. In this case, CreateFile should return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="The operation completed successfully. ">NtStatus.Success</a> when that directory can be opened and <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#afbb9e08595d9c6ee7b3815a3aaa5b8bf" title="Requesting a directory file. Must be set in IDokanOperations.CreateFile if the file appear to be a fo...">DokanFileInfo.IsDirectory</a> has to be set to <code>true</code>.</p>
+<p><a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592" title="Context that can be used to carry information between operation. The Context can carry whatever type ...">DokanFileInfo.Context</a> can be used to store data (like FileStream) that can be retrieved in all other request related to the context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
@@ -324,11 +336,17 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">mode</td><td>Specifies how the operating system should open a file. See <a href="https://msdn.microsoft.com/en-us/library/system.io.filemode(v=vs.110).aspx">https://msdn.microsoft.com/en-us/library/system.io.filemode(v=vs.110).aspx</a> </td></tr>
     <tr><td class="paramname">options</td><td>Represents advanced options for creating a FileStream object. See <a href="https://msdn.microsoft.com/en-us/library/system.io.fileoptions(v=vs.110).aspx">https://msdn.microsoft.com/en-us/library/system.io.fileoptions(v=vs.110).aspx</a> </td></tr>
     <tr><td class="paramname">attributes</td><td>Provides attributes for files and directories. See <a href="https://msdn.microsoft.com/en-us/library/system.io.fileattributes(v=vs.110).aspx">https://msdn.microsoft.com/en-us/library/system.io.fileattributes(v=vs.110).aspx</a> </td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566424(v=vs.85).aspx">See ZwCreateFile for more information about the parameters of this callback (MSDN).</a> </dd>
+<dd>
+DokanNet.Native.NativeMethods.DokanMapKernelToUserCreateFileFlags </dd>
+<dd>
+DokanOperationProxy.ZwCreateFileProxy </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Update the second paragraph in this documentation. </dd></dl>
 
 </div>
 </div>
@@ -356,17 +374,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Cleanup request before CloseFile is called. ">Cleanup</a>. </p>
-<p>You should not delete the file on <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aa2977365c84a88375ce06d088137914f" title="Check if it is possible to delete a file. The file should not be delete in DeleteFile but in Cleanup...">DeleteFile</a> or <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5b5af8c7eba19f3d8517844854974895" title="Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in Cle...">DeleteDirectory</a>, but instead you must only check whether you can delete the file or not, and return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="The operation completed successfully. ">NtStatus.Success</a> (when you can delete it) or appropriate error codes such as NtStatus.AccessDenied, NtStatus.ObjectPathNotFound, NtStatus.ObjectNameNotFound. When you return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="The operation completed successfully. ">NtStatus.Success</a>, you get a <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Cleanup request before CloseFile is called. ">Cleanup</a> call afterwards with <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#abe8f97a17b7e66b4a7013a08c7730f5b" title="Indicate if the file has to be delete during the IDokanOperations.Cleanup event. ">DokanFileInfo.DeleteOnClose</a> set to <code>true</code> and only then you have to actually delete the file being closed. </p>
+<p>Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a>. </p>
+<p>You should not delete the file in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5b5af8c7eba19f3d8517844854974895" title="Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in Cle...">DeleteDirectory</a>, but instead you must only check whether you can delete the file or not, and return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="The operation completed successfully. ">NtStatus.Success</a> (when you can delete it) or appropriate error codes such as NtStatus.AccessDenied, NtStatus.ObjectPathNotFound, NtStatus.ObjectNameNotFound. When you return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="The operation completed successfully. ">NtStatus.Success</a>, you get a <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a> call afterwards with <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#abe8f97a17b7e66b4a7013a08c7730f5b" title="Flag if the file has to be delete during IDokanOperations.Cleanup event. ">DokanFileInfo.DeleteOnClose</a> set to <code>true</code> and only then you have to actually delete the file being closed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="The operation completed successfully. ">DokanResult.Success</a> if file can be delete or <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> appropriate.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aa2977365c84a88375ce06d088137914f" title="Check if it is possible to delete a file. The file should not be delete in DeleteFile but in Cleanup...">DeleteFile</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Cleanup request before CloseFile is called. ">Cleanup</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aa2977365c84a88375ce06d088137914f" title="Check if it is possible to delete a file. The file should not be delete in DeleteFile but in Cleanup...">DeleteFile</a> </dd>
+<dd>
+<a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a> </dd></dl>
 
 </div>
 </div>
@@ -394,17 +414,20 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Check if it is possible to delete a file. The file should not be delete in DeleteFile but in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Cleanup request before CloseFile is called. ">Cleanup</a>. </p>
-<p>You should not delete the file on <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aa2977365c84a88375ce06d088137914f" title="Check if it is possible to delete a file. The file should not be delete in DeleteFile but in Cleanup...">DeleteFile</a> or <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5b5af8c7eba19f3d8517844854974895" title="Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in Cle...">DeleteDirectory</a>, but instead you must only check whether you can delete the file or not, and return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="The operation completed successfully. ">NtStatus.Success</a> (when you can delete it) or appropriate error codes such as NtStatus.AccessDenied, NtStatus.ObjectPathNotFound, NtStatus.ObjectNameNotFound. When you return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="The operation completed successfully. ">NtStatus.Success</a>, you get a <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Cleanup request before CloseFile is called. ">Cleanup</a> call afterwards with <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#abe8f97a17b7e66b4a7013a08c7730f5b" title="Indicate if the file has to be delete during the IDokanOperations.Cleanup event. ">DokanFileInfo.DeleteOnClose</a> set to <code>true</code> and only then you have to actually delete the file being closed. </p>
+<p>Check if it is possible to delete a file. The file should not be delete in DeleteFile but in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a>. </p>
+<p>You should not delete the file in DeleteFile, but instead you must only check whether you can delete the file or not, and return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="The operation completed successfully. ">NtStatus.Success</a> (when you can delete it) or appropriate error codes such as NtStatus.AccessDenied, NtStatus.ObjectNameNotFound.</p>
+<p>When you return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="The operation completed successfully. ">NtStatus.Success</a>, you get a <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a> call afterwards with <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#abe8f97a17b7e66b4a7013a08c7730f5b" title="Flag if the file has to be delete during IDokanOperations.Cleanup event. ">DokanFileInfo.DeleteOnClose</a> set to <code>true</code> and only then you have to actually delete the file being closed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="The operation completed successfully. ">DokanResult.Success</a> if file can be delete or <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> appropriate.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5b5af8c7eba19f3d8517844854974895" title="Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in Cle...">DeleteDirectory</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Cleanup request before CloseFile is called. ">Cleanup</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5b5af8c7eba19f3d8517844854974895" title="Check if it is possible to delete a directory. The file should not be delete in DeleteFile but in Cle...">DeleteDirectory</a> </dd>
+<dd>
+<a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a> </dd></dl>
 
 </div>
 </div>
@@ -442,14 +465,14 @@ Public Member Functions</h2></td></tr>
 <p><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern to filter the result. ">FindFilesWithPattern</a> is checking first. If it is not implemented or returns <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="{Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a>, then FindFiles is called. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
     <tr><td class="paramname">files</td><td><a class="el" href="struct_dokan_net_1_1_file_information.html" title="Use to provide file information to Dokan during operations IDokanOperations.GetFileInformation, IDokanOperations.FindFiles, IDokanOperations.FindStreams or IDokanOperations.FindFilesWithPattern ">FileInformation</a> list to fill</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern to filter the result. ">FindFilesWithPattern</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern to filter the result. ">FindFilesWithPattern</a> </dd></dl>
 
 </div>
 </div>
@@ -492,15 +515,15 @@ Public Member Functions</h2></td></tr>
 <p>Same as <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">FindFiles</a> but with a search pattern to filter the result. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
+    <tr><td class="paramname">fileName</td><td>Path requested by the Kernel on the FileSystem.</td></tr>
     <tr><td class="paramname">searchPattern</td><td>Search pattern</td></tr>
     <tr><td class="paramname">files</td><td><a class="el" href="struct_dokan_net_1_1_file_information.html" title="Use to provide file information to Dokan during operations IDokanOperations.GetFileInformation, IDokanOperations.FindFiles, IDokanOperations.FindStreams or IDokanOperations.FindFilesWithPattern ">FileInformation</a> list to fill</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">FindFiles</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">FindFiles</a> </dd></dl>
 
 </div>
 </div>
@@ -534,16 +557,21 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Retrieve all FileStreams informations on the file. This is only called if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6ad8fe8feefa750b9723759954632c391f" title="Use alternate stream">DokanOptions.AltStream</a> is enabled. </p>
+<p>Retrieve all NTFS Streams informations on the file. This is only called if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6ad8fe8feefa750b9723759954632c391f" title="Use alternate stream.">DokanOptions.AltStream</a> is enabled. </p>
+<p>For files, the first item in <em>streams</em>  is information about the default data stream <code>"::$DATA"</code>.</p>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.8.0. You must specify the version in Dokan.Mount.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
     <tr><td class="paramname">streams</td><td>List of <a class="el" href="struct_dokan_net_1_1_file_information.html" title="Use to provide file information to Dokan during operations IDokanOperations.GetFileInformation, IDokanOperations.FindFiles, IDokanOperations.FindStreams or IDokanOperations.FindFilesWithPattern ">FileInformation</a> for each streams present on the file.</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa364424(v=vs.85).aspx">FindFirstStreamW function (MSDN)</a> </dd>
+<dd>
+<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa365993(v=vs.85).aspx">About KTM (MSDN)</a> </dd></dl>
 
 </div>
 </div>
@@ -574,8 +602,8 @@ Public Member Functions</h2></td></tr>
 <p>Clears buffers for this context and causes any buffered data to be written to the file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
@@ -619,17 +647,21 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>GetDiskFreeSpace request device space informations </p>
+<p>Retrieves information about the amount of space that is available on a disk volume, which is the total amount of space, the total amount of free space, and the total amount of free space available to the user that is associated with the calling thread. </p>
+<p>Neither GetDiskFreeSpace nor <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a1f21331221a8365f260e17e0def8759a" title="Retrieves information about the file system and volume associated with the specified root directory...">GetVolumeInformation</a> save the <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592" title="Context that can be used to carry information between operation. The Context can carry whatever type ...">DokanFileInfo.Context</a>. Before these methods are called, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> may not be called. (ditto <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8bfc215b2758fe7f7eaa54dc5b5988cc" title="CloseFile is called at the end of the life of the context. ">CloseFile</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">freeBytesAvailable</td><td>Amount of available space.</td></tr>
     <tr><td class="paramname">totalNumberOfBytes</td><td>Total size of storage space.</td></tr>
     <tr><td class="paramname">totalNumberOfFreeBytes</td><td>Amount of free space.</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa364937(v=vs.85).aspx">GetDiskFreeSpaceEx function (MSDN)</a> </dd>
+<dd>
+<a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a1f21331221a8365f260e17e0def8759a" title="Retrieves information about the file system and volume associated with the specified root directory...">GetVolumeInformation</a> </dd></dl>
 
 </div>
 </div>
@@ -666,9 +698,9 @@ Public Member Functions</h2></td></tr>
 <p>Get specific informations on a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
     <tr><td class="paramname">fileInfo</td><td><a class="el" href="struct_dokan_net_1_1_file_information.html" title="Use to provide file information to Dokan during operations IDokanOperations.GetFileInformation, IDokanOperations.FindFiles, IDokanOperations.FindStreams or IDokanOperations.FindFilesWithPattern ">FileInformation</a> struct to fill</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
@@ -712,18 +744,21 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get ACL information on the requested file. </p>
+<p>Get specified information about the security of a file or directory. </p>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the version in Dokan.Mount.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
-    <tr><td class="paramname">security</td><td>Security information result.</td></tr>
-    <tr><td class="paramname">sections</td><td>Access sections requested.</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">security</td><td>A FileSystemSecurity with security information to return.</td></tr>
+    <tr><td class="paramname">sections</td><td>A AccessControlSections with access sections to return.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a90bf07522e3673cf359bb854eca1be71" title="Set ACL information on the requested file. ">SetFileSecurity</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a90bf07522e3673cf359bb854eca1be71" title="Sets the security of a file or directory object. ">SetFileSecurity</a> </dd>
+<dd>
+<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa446639(v=vs.85).aspx">GetFileSecurity function (MSDN)</a> </dd></dl>
 
 </div>
 </div>
@@ -763,17 +798,34 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>GetVolumeInformation request volume informations </p>
+<p>Retrieves information about the file system and volume associated with the specified root directory. </p>
+<p>Neither GetVolumeInformation nor <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ab2574f9b34b8bd244a3268d2cedd78c6" title="Retrieves information about the amount of space that is available on a disk volume, which is the total amount of space, the total amount of free space, and the total amount of free space available to the user that is associated with the calling thread. ">GetDiskFreeSpace</a> save the <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592" title="Context that can be used to carry information between operation. The Context can carry whatever type ...">DokanFileInfo.Context</a>. Before these methods are called, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> may not be called. (ditto <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8bfc215b2758fe7f7eaa54dc5b5988cc" title="CloseFile is called at the end of the life of the context. ">CloseFile</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a>).</p>
+<p><a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a8182fddd26c19c338b2f62a887601a7f" title="Specified volume is read-only. ">FileSystemFeatures.ReadOnlyVolume</a> is automatically added to the <em>features</em>  if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a57da18a8e1746b49db5386ee136c594c" title="Enable mount drive as write-protected.">DokanOptions.WriteProtection</a> was specified when the volume was mounted.</p>
+<p>If <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="{Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a> is returned, the Dokan kernel driver use following settings by default: </p><table class="doxtable">
+<tr>
+<th>Parameter </th><th>Default value  </th></tr>
+<tr>
+<td><em>rawVolumeNameBuffer</em> </td><td><code>"DOKAN"</code> </td></tr>
+<tr>
+<td><em>rawVolumeSerialNumber</em> </td><td><code>0x19831116</code> </td></tr>
+<tr>
+<td><em>rawMaximumComponentLength</em> </td><td><code>256</code> </td></tr>
+<tr>
+<td><em>rawFileSystemFlags</em> </td><td><code>CaseSensitiveSearch || CasePreservedNames || SupportsRemoteStorage || UnicodeOnDisk</code> </td></tr>
+<tr>
+<td><em>rawFileSystemNameBuffer</em> </td><td><code>"NTFS"</code> </td></tr>
+</table>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">volumeLabel</td><td>Volume name</td></tr>
-    <tr><td class="paramname">features</td><td>Features enabled on the volume.</td></tr>
-    <tr><td class="paramname">fileSystemName</td><td>FileSystem name.</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">features</td><td><a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30" title="Defines File System Attribute Extensions ">FileSystemFeatures</a> with features enabled on the volume.</td></tr>
+    <tr><td class="paramname">fileSystemName</td><td>The name of the specified volume.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa364993(v=vs.85).aspx">GetVolumeInformation function (MSDN)</a> </dd></dl>
 
 </div>
 </div>
@@ -813,18 +865,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Lock file at a specific offset and data length. This is only used if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d" title="Enable Lockfile/Unlockfile operations">DokanOptions.UserModeLock</a> is enabled. </p>
+<p>Lock file at a specific offset and data length. This is only used if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d" title="Enable Lockfile/Unlockfile operations. Otherwise Dokan will take care of it">DokanOptions.UserModeLock</a> is enabled. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
-    <tr><td class="paramname">offset</td><td>Offset from where the lock has to be proceed</td></tr>
-    <tr><td class="paramname">length</td><td>Data length to lock</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
+    <tr><td class="paramname">offset</td><td>Offset from where the lock has to be proceed.</td></tr>
+    <tr><td class="paramname">length</td><td>Data length to lock.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5a26864d3577f2f90885a1b27f9b8181" title="Unlock file at a specific offset and data length. This is only used if DokanOptions.UserModeLock is enabled. ">UnlockFile</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5a26864d3577f2f90885a1b27f9b8181" title="Unlock file at a specific offset and data length. This is only used if DokanOptions.UserModeLock is enabled. ">UnlockFile</a> </dd></dl>
 
 </div>
 </div>
@@ -842,15 +894,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Mount is called when Dokan succeed to mount the volume. </p>
+<p>Is called when Dokan succeed to mount the volume. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a918e1aae658759f4872665578668ace2" title="Unmounted is called when Dokan is unmounting the volume. ">Unmounted</a></dd></dl>
+<p><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a918e1aae658759f4872665578668ace2">Unmounted</a> </p>
 
 </div>
 </div>
@@ -896,7 +948,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">oldName</td><td>Path to the file to move.</td></tr>
     <tr><td class="paramname">newName</td><td>Path for the new location of the file.</td></tr>
     <tr><td class="paramname">replace</td><td>Can replace or not if destination already exist</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
@@ -946,19 +998,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Read event on the file previously opened in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> It can be called by different thread at the same time, therefor the read has to be thread safe. </p>
+<p>ReadFile callback on the file previously opened in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a>. It can be called by different thread at the same time, therefor the read has to be thread safe. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
     <tr><td class="paramname">buffer</td><td>Read buffer that has to be fill with the read result. The buffer size depend of the read size requested by the kernel.</td></tr>
-    <tr><td class="paramname">bytesRead</td><td>Total number of bytes that has been read</td></tr>
-    <tr><td class="paramname">offset</td><td>Offset from where the read has to be proceed</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">bytesRead</td><td>Total number of bytes that has been read.</td></tr>
+    <tr><td class="paramname">offset</td><td>Offset from where the read has to be proceed.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a364edca5bba4029c110460504eb89c3e" title="Write event on the file previously opened in CreateFile WriteFile can be called by different thread a...">WriteFile</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a364edca5bba4029c110460504eb89c3e" title="WriteFile callback on the file previously opened in CreateFile It can be called by different thread a...">WriteFile</a> </dd></dl>
 
 </div>
 </div>
@@ -995,9 +1047,9 @@ Public Member Functions</h2></td></tr>
 <p>SetAllocationSize is used to truncate or extend a file. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
     <tr><td class="paramname">length</td><td>File length to set</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1038,9 +1090,9 @@ Public Member Functions</h2></td></tr>
 <p>SetEndOfFile is used to truncate or extend a file (physical file size). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
     <tr><td class="paramname">length</td><td>File length to set</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1078,12 +1130,13 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set file attributes on a specific file </p>
+<p>Set file attributes on a specific file. </p>
+<p>SetFileAttributes and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5cfd4e36517d748c59e1933cd1b9a2a2" title="Set file times on a specific file. If DateTime is null, this should not be updated. ">SetFileTime</a> are called only if both of them are implemented.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
     <tr><td class="paramname">attributes</td><td>FileAttributes to set on file</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1127,18 +1180,21 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set ACL information on the requested file. </p>
+<p>Sets the security of a file or directory object. </p>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the version in Dokan.Mount.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
-    <tr><td class="paramname">security</td><td>Security information to set.</td></tr>
-    <tr><td class="paramname">sections</td><td>Access sections on which.</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
+    <tr><td class="paramname">security</td><td>A FileSystemSecurity with security information to set.</td></tr>
+    <tr><td class="paramname">sections</td><td>A AccessControlSections with access sections on which.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#abc92826efe0dce94755e94fa380f9345" title="Get ACL information on the requested file. ">GetFileSecurity</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#abc92826efe0dce94755e94fa380f9345" title="Get specified information about the security of a file or directory. ">GetFileSecurity</a> </dd>
+<dd>
+<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa379577(v=vs.85).aspx">SetFileSecurity function (MSDN)</a> </dd></dl>
 
 </div>
 </div>
@@ -1185,13 +1241,14 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Set file times on a specific file. If DateTime is <code>null</code>, this should not be updated. </p>
+<p><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a06cb9e98b32336feaacedd86876989bb" title="Set file attributes on a specific file. ">SetFileAttributes</a> and SetFileTime are called only if both of them are implemented.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
     <tr><td class="paramname">creationTime</td><td>DateTime when the file was created.</td></tr>
     <tr><td class="paramname">lastWriteTime</td><td>DateTime when the file was last written to.</td></tr>
     <tr><td class="paramname">lastAccessTime</td><td>DateTime when the file was last accessed.</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1235,18 +1292,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unlock file at a specific offset and data length. This is only used if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d" title="Enable Lockfile/Unlockfile operations">DokanOptions.UserModeLock</a> is enabled. </p>
+<p>Unlock file at a specific offset and data length. This is only used if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d" title="Enable Lockfile/Unlockfile operations. Otherwise Dokan will take care of it">DokanOptions.UserModeLock</a> is enabled. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
-    <tr><td class="paramname">offset</td><td>Offset from where the unlock has to be proceed</td></tr>
-    <tr><td class="paramname">length</td><td>Data length to lock</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
+    <tr><td class="paramname">offset</td><td>Offset from where the unlock has to be proceed.</td></tr>
+    <tr><td class="paramname">length</td><td>Data length to lock.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aeb2905515f5cb72df9748585c92530cd" title="Lock file at a specific offset and data length. This is only used if DokanOptions.UserModeLock is enabled. ">LockFile</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aeb2905515f5cb72df9748585c92530cd" title="Lock file at a specific offset and data length. This is only used if DokanOptions.UserModeLock is enabled. ">LockFile</a> </dd></dl>
 
 </div>
 </div>
@@ -1264,15 +1321,15 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unmounted is called when Dokan is unmounting the volume. </p>
+<p>Is called when Dokan is unmounting the volume. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7d6baa2cbb6faa408f20aa7ce8292e1" title="Mount is called when Dokan succeed to mount the volume. ">Mounted</a></dd></dl>
+<p><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7d6baa2cbb6faa408f20aa7ce8292e1">Mounted</a> </p>
 
 </div>
 </div>
@@ -1318,19 +1375,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Write event on the file previously opened in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> WriteFile can be called by different thread at the same time, therefor the write has to be thread safe. </p>
+<p>WriteFile callback on the file previously opened in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> It can be called by different thread at the same time, therefor the write/context has to be thread safe. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
-    <tr><td class="paramname">buffer</td><td>Data that has to be written</td></tr>
-    <tr><td class="paramname">bytesWritten</td><td>Total number of bytes that has been write</td></tr>
-    <tr><td class="paramname">offset</td><td>Offset from where the write has to be proceed</td></tr>
-    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Contains information about a specific file or directory. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
+    <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
+    <tr><td class="paramname">buffer</td><td>Data that has to be written.</td></tr>
+    <tr><td class="paramname">bytesWritten</td><td>Total number of bytes that has been write.</td></tr>
+    <tr><td class="paramname">offset</td><td>Offset from where the write has to be proceed.</td></tr>
+    <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="A NT status value. ">NtStatus</a> or DokanResult appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5e7bc940f2e31b6ae6b989dc81818294" title="Read event on the file previously opened in CreateFile It can be called by different thread at the sa...">ReadFile</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5e7bc940f2e31b6ae6b989dc81818294" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">ReadFile</a> </dd></dl>
 
 </div>
 </div>

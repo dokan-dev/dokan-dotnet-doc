@@ -8,7 +8,8 @@ var indexSectionsWithContent =
   5: "dfn",
   6: "abcdefghilmnoprstuvw",
   7: "acdfil",
-  8: "d"
+  8: "d",
+  9: "dt"
 };
 
 var indexSectionNames =
@@ -21,7 +22,8 @@ var indexSectionNames =
   5: "enums",
   6: "enumvalues",
   7: "properties",
-  8: "pages"
+  8: "groups",
+  9: "pages"
 };
 
 var indexSectionLabels =
@@ -34,6 +36,7 @@ var indexSectionLabels =
   5: "Enumerations",
   6: "Enumerator",
   7: "Properties",
-  8: "Pages"
+  8: "Modules",
+  9: "Pages"
 };
 

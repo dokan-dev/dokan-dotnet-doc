@@ -46,6 +46,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li>
@@ -99,6 +101,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
+<tr class="memitem:namespace_dokan_net_1_1_logging"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_dokan_net_1_1_logging.html">Logging</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -109,7 +113,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dokan exception.  <a href="class_dokan_net_1_1_dokan_exception.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains information about a specific file or directory.  <a href="class_dokan_net_1_1_dokan_file_info.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan file information on the current operation.  <a href="class_dokan_net_1_1_dokan_file_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>DokanOperationProxy</b></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dokan operation proxy. <br /></td></tr>
@@ -118,13 +122,13 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines result status codes for Dokan operations. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use to provide file information to Dokan during operations <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">IDokanOperations.FindFiles</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5" title="Retrieve all FileStreams informations on the file. This is only called if DokanOptions.AltStream is enabled. ">IDokanOperations.FindStreams</a> or <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern to filter the result. ">IDokanOperations.FindFilesWithPattern</a>  <a href="struct_dokan_net_1_1_file_information.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use to provide file information to Dokan during operations <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">IDokanOperations.FindFiles</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5" title="Retrieve all NTFS Streams informations on the file. This is only called if DokanOptions.AltStream is enabled. ">IDokanOperations.FindStreams</a> or <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern to filter the result. ">IDokanOperations.FindFilesWithPattern</a>  <a href="struct_dokan_net_1_1_file_information.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_format_providers.html">FormatProviders</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide support to format object with <code>null</code>  <a href="class_dokan_net_1_1_format_providers.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The DokanOperations interface.  <a href="interface_dokan_net_1_1_i_dokan_operations.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan API callbacks interface  <a href="interface_dokan_net_1_1_i_dokan_operations.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -635,15 +639,16 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Dokan mount options used to describe dokan device behavior. </p>
+<dl class="section see"><dt>See also</dt><dd>DOKAN_OPTIONS.Options </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6afe2e30f9ad4dc8f704457dfbd9c782ed"></a>DebugMode&#160;</td><td class="fielddoc">
-<p>Enable output debug message</p>
+<p>Enable output debug message.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a4f6d71cceccbcb25f0d92039afd3cd70"></a>StderrOutput&#160;</td><td class="fielddoc">
-<p>Enable output debug message to stderr</p>
+<p>Enable output debug message to stderr.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6ad8fe8feefa750b9723759954632c391f"></a>AltStream&#160;</td><td class="fielddoc">
-<p>Use alternate stream</p>
+<p>Use alternate stream.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a57da18a8e1746b49db5386ee136c594c"></a>WriteProtection&#160;</td><td class="fielddoc">
 <p>Enable mount drive as write-protected.</p>
@@ -652,16 +657,16 @@ Enumerations</h2></td></tr>
 <p>Use network drive - Dokan network provider need to be installed.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6aa1a9f7bd5437f518e9afb2fe890baabe"></a>RemovableDrive&#160;</td><td class="fielddoc">
-<p>Use removable drive</p>
+<p>Use removable drive.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6aa2ded7048f566ba78b285a02bc9d087f"></a>MountManager&#160;</td><td class="fielddoc">
-<p>Use mount manager</p>
+<p>Use mount manager.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a80d08dd9dedb771d8a7e94aaf9e0bf7d"></a>CurrentSession&#160;</td><td class="fielddoc">
-<p>Mount the drive on current session only</p>
+<p>Mount the drive on current session only.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d"></a>UserModeLock&#160;</td><td class="fielddoc">
-<p>Enable Lockfile/Unlockfile operations</p>
+<p>Enable Lockfile/Unlockfile operations. Otherwise Dokan will take care of it</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a2b5e39dc8372c99a6fa12b6d3c6b8c88"></a>FixedDrive&#160;</td><td class="fielddoc">
 <p>Fixed Driver</p>
@@ -790,9 +795,12 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a637415f5b3bab2a6f1a22cf9b04fd2ec"></a>SupportsSparseFiles&#160;</td><td class="fielddoc">
 <p>File system supports sparse files. </p>
+<p>This feature allows programs to create very large files, but to consume disk space only as needed. A sparse file is a file that contains much of zeros, and a file system that support this are removing repeating zeros to save space. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa365564(v=vs.85).aspx">Sparse Files (MSDN)</a> </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a5d7b747b0324273724ce4348a7f7d977"></a>SupportsReparsePoints&#160;</td><td class="fielddoc">
 <p>File system supports reparse points. </p>
+<p>Programs can trap open operations against objects in the file system and run their own code before returning file data. This feature can be used to extend file system features such as mount points, which you can use to redirect data read and written from a folder to another volume or physical disk. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a0b7f1304f74d9f94fb48d363c4ab2892"></a>VolumeIsCompressed&#160;</td><td class="fielddoc">
 <p>Volume is a compressed volume. This flag is incompatible with FILE_FILE_COMPRESSION. This does not affect how data is transferred over the network. </p>
@@ -805,6 +813,7 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a55093eda98a143ae71b8188a4052fb1c"></a>NamedStreams&#160;</td><td class="fielddoc">
 <p>File system supports multiple named data streams for a file. </p>
+<p>The unnamed data stream is the stream where the content in the file is stored. A named stream is a stream where extra data can be stored. The data is connected to the file and if the file is moved, the data is copied to the new place if that file system support it. </p><dl class="section see"><dt>See also</dt><dd><a href="https://blogs.technet.microsoft.com/askcore/2013/03/24/alternate-data-streams-in-ntfs/">Alternate Data Streams in NTFS (TechNet)</a> </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a8182fddd26c19c338b2f62a887601a7f"></a>ReadOnlyVolume&#160;</td><td class="fielddoc">
 <p>Specified volume is read-only. </p>
@@ -813,7 +822,8 @@ Enumerations</h2></td></tr>
 <p>Specified volume can be written to one time only. The write MUST be performed in sequential order. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30abb655e1f7f0d2a48d9757b637a13cd88"></a>SupportsTransactions&#160;</td><td class="fielddoc">
-<p>File system supports transaction processing. </p>
+<p>File system supports transaction processing to group changes to files into a transaction. The transaction will guarantee that all changes happens, or none of them. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa365993(v=vs.85).aspx">About KTM (MSDN)</a> </dd></dl>
 </td></tr>
 </table>
 
@@ -838,7 +848,7 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>A NT status value. </p>
-<dl class="section see"><dt>See also</dt><dd>http://msdn.microsoft.com/en-us/library/cc704588.aspx?f=255&amp;MSPPError=-2147217396</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>NTSTATUS Values (MSDN) </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38"></a>Success&#160;</td><td class="fielddoc">
 <p>The operation completed successfully. </p>

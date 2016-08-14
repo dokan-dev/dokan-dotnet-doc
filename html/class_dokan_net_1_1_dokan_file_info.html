@@ -46,6 +46,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
+      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
+      <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li>
@@ -104,13 +106,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Contains information about a specific file or directory.  
+<p>Dokan file information on the current operation.  
  <a href="class_dokan_net_1_1_dokan_file_info.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aed4f7da802a9fe3097517f86287b109e"><td class="memItemLeft" align="right" valign="top">WindowsIdentity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_file_info.html#aed4f7da802a9fe3097517f86287b109e">GetRequestor</a> ()</td></tr>
-<tr class="memdesc:aed4f7da802a9fe3097517f86287b109e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method needs to be called in the <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">IDokanOperations.CreateFile</a>, OpenDirectory or CreateDirectly callback.  <a href="#aed4f7da802a9fe3097517f86287b109e">More...</a><br /></td></tr>
+<tr class="memdesc:aed4f7da802a9fe3097517f86287b109e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method needs to be called in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">IDokanOperations.CreateFile</a>, OpenDirectory or CreateDirectly callback.  <a href="#aed4f7da802a9fe3097517f86287b109e">More...</a><br /></td></tr>
 <tr class="separator:aed4f7da802a9fe3097517f86287b109e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a827602b0f4a34486e38ca0322d2317fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_file_info.html#a827602b0f4a34486e38ca0322d2317fa">TryResetTimeout</a> (int milliseconds)</td></tr>
 <tr class="memdesc:a827602b0f4a34486e38ca0322d2317fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extends the time out of the current IO operation in driver.  <a href="#a827602b0f4a34486e38ca0322d2317fa">More...</a><br /></td></tr>
@@ -122,7 +124,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a3753b7557e71b74cd5f1cbef8fea7753"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_file_info.html#a3753b7557e71b74cd5f1cbef8fea7753">ProcessId</a> =&gt; (int) _processId</td></tr>
-<tr class="memdesc:a3753b7557e71b74cd5f1cbef8fea7753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process id for the thread that originally requested a given I/O operation  <a href="#a3753b7557e71b74cd5f1cbef8fea7753">More...</a><br /></td></tr>
+<tr class="memdesc:a3753b7557e71b74cd5f1cbef8fea7753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process id for the thread that originally requested a given I/O operation.  <a href="#a3753b7557e71b74cd5f1cbef8fea7753">More...</a><br /></td></tr>
 <tr class="separator:a3753b7557e71b74cd5f1cbef8fea7753"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aef03cf7980abfe1a77d184faf0f648dc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_file_info.html#aef03cf7980abfe1a77d184faf0f648dc">PagingIo</a> =&gt; _pagingIo</td></tr>
 <tr class="memdesc:aef03cf7980abfe1a77d184faf0f648dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read or write is paging IO.  <a href="#aef03cf7980abfe1a77d184faf0f648dc">More...</a><br /></td></tr>
@@ -140,19 +142,18 @@ Public Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ade36ce0f3cc96c63a324c861ff2a3592"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592">Context</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:ade36ce0f3cc96c63a324c861ff2a3592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context that can be used to carry information between operation. The Context can carry whatever type like FileStream, <code>struct</code>, <code>int</code>, or internal reference that will help the implementation understand the request context of the event.  <a href="#ade36ce0f3cc96c63a324c861ff2a3592">More...</a><br /></td></tr>
+<tr class="memdesc:ade36ce0f3cc96c63a324c861ff2a3592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Context that can be used to carry information between operation. The Context can carry whatever type like System.IO.FileStream, <code>struct</code>, <code>int</code>, or internal reference that will help the implementation understand the request context of the event.  <a href="#ade36ce0f3cc96c63a324c861ff2a3592">More...</a><br /></td></tr>
 <tr class="separator:ade36ce0f3cc96c63a324c861ff2a3592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbb9e08595d9c6ee7b3815a3aaa5b8bf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_file_info.html#afbb9e08595d9c6ee7b3815a3aaa5b8bf">IsDirectory</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:afbb9e08595d9c6ee7b3815a3aaa5b8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requesting a directory file <code>IsDirectory</code> has to be set in </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">IDokanOperations.CreateFile</a></dd></dl>
-<p>if the file appear to be a folder.  <a href="#afbb9e08595d9c6ee7b3815a3aaa5b8bf">More...</a><br /></td></tr>
+<tr class="memdesc:afbb9e08595d9c6ee7b3815a3aaa5b8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Requesting a directory file. Must be set in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">IDokanOperations.CreateFile</a> if the file appear to be a folder.  <a href="#afbb9e08595d9c6ee7b3815a3aaa5b8bf">More...</a><br /></td></tr>
 <tr class="separator:afbb9e08595d9c6ee7b3815a3aaa5b8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe8f97a17b7e66b4a7013a08c7730f5b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_file_info.html#abe8f97a17b7e66b4a7013a08c7730f5b">DeleteOnClose</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:abe8f97a17b7e66b4a7013a08c7730f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicate if the file has to be delete during the <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Cleanup request before CloseFile is called. ">IDokanOperations.Cleanup</a> event.  <a href="#abe8f97a17b7e66b4a7013a08c7730f5b">More...</a><br /></td></tr>
+<tr class="memdesc:abe8f97a17b7e66b4a7013a08c7730f5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Flag if the file has to be delete during <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">IDokanOperations.Cleanup</a> event.  <a href="#abe8f97a17b7e66b4a7013a08c7730f5b">More...</a><br /></td></tr>
 <tr class="separator:abe8f97a17b7e66b4a7013a08c7730f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains information about a specific file or directory. </p>
-<p>This class cannot be instantiated in C#, it is created by the kernel Dokan driver. </p>
+<div class="textblock"><p>Dokan file information on the current operation. </p>
+<p>This class cannot be instantiated in C#, it is created by the kernel Dokan driver. This is the same structure as <code>_DOKAN_FILE_INFO</code> (dokan.h) in the C++ version of Dokan. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="aed4f7da802a9fe3097517f86287b109e"></a>
 <div class="memitem">
@@ -175,7 +176,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>This method needs to be called in the <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">IDokanOperations.CreateFile</a>, OpenDirectory or CreateDirectly callback. </p>
+<p>This method needs to be called in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">IDokanOperations.CreateFile</a>, OpenDirectory or CreateDirectly callback. </p>
 <dl class="section return"><dt>Returns</dt><dd>An WindowsIdentity with the access token, -or- <code>null</code> if the operation was not successful</dd></dl>
 
 </div>
@@ -278,7 +279,7 @@ Properties</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Process id for the thread that originally requested a given I/O operation </p>
+<p>Process id for the thread that originally requested a given I/O operation. </p>
 
 </div>
 </div>
@@ -329,7 +330,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Context that can be used to carry information between operation. The Context can carry whatever type like FileStream, <code>struct</code>, <code>int</code>, or internal reference that will help the implementation understand the request context of the event. </p>
+<p>Context that can be used to carry information between operation. The Context can carry whatever type like System.IO.FileStream, <code>struct</code>, <code>int</code>, or internal reference that will help the implementation understand the request context of the event. </p>
 
 </div>
 </div>
@@ -351,7 +352,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Indicate if the file has to be delete during the <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Cleanup request before CloseFile is called. ">IDokanOperations.Cleanup</a> event. </p>
+<p>Flag if the file has to be delete during <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">IDokanOperations.Cleanup</a> event. </p>
 
 </div>
 </div>
@@ -373,8 +374,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Requesting a directory file <code>IsDirectory</code> has to be set in </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">IDokanOperations.CreateFile</a></dd></dl>
-<p>if the file appear to be a folder. </p>
+<p>Requesting a directory file. Must be set in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">IDokanOperations.CreateFile</a> if the file appear to be a folder. </p>
 
 </div>
 </div>
