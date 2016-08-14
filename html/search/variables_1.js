@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['nocache',['NoCache',['../class_dokan_net_1_1_dokan_file_info.html#a5ae772f3564391ecea23b87903b788ec',1,'DokanNet::DokanFileInfo']]],
-  ['nullstringrepresentation',['NullStringRepresentation',['../class_dokan_net_1_1_format_providers.html#a1271fea423668716de9c5ff65a50c131',1,'DokanNet::FormatProviders']]]
+  ['bufferoverflow',['BufferOverflow',['../class_dokan_net_1_1_dokan_result.html#a47f2c53e5bb9362f162877f4e8007e85',1,'DokanNet::DokanResult']]],
+  ['buffertoosmall',['BufferTooSmall',['../class_dokan_net_1_1_dokan_result.html#a90cbebd5c41bac2f9d8e72e133806420',1,'DokanNet::DokanResult']]]
 ];
