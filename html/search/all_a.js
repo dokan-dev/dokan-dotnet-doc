@@ -1,7 +1,22 @@
 var searchData=
 [
-  ['mount',['Mount',['../class_dokan_net_1_1_dokan.html#ac5166c38bbe42cb737aac4e09b117503',1,'DokanNet.Dokan.Mount(this IDokanOperations operations, string mountPoint, ILogger logger=null)'],['../class_dokan_net_1_1_dokan.html#a2ff823c243a33432c874b0e30aebd544',1,'DokanNet.Dokan.Mount(this IDokanOperations operations, string mountPoint, DokanOptions mountOptions, ILogger logger=null)'],['../class_dokan_net_1_1_dokan.html#a5f258d30f34238856bf3ced81dcd90e1',1,'DokanNet.Dokan.Mount(this IDokanOperations operations, string mountPoint, DokanOptions mountOptions, int threadCount, ILogger logger=null)'],['../class_dokan_net_1_1_dokan.html#abb84a478c828f44cb4b4cf4e96f465bb',1,'DokanNet.Dokan.Mount(this IDokanOperations operations, string mountPoint, DokanOptions mountOptions, int threadCount, int version, ILogger logger=null)'],['../class_dokan_net_1_1_dokan.html#aa9600aca97fbfda40e22c4f4fe477296',1,'DokanNet.Dokan.Mount(this IDokanOperations operations, string mountPoint, DokanOptions mountOptions, int threadCount, int version, TimeSpan timeout, ILogger logger=null)'],['../class_dokan_net_1_1_dokan.html#a397d1de61639bd02516c1a816b49421b',1,'DokanNet.Dokan.Mount(this IDokanOperations operations, string mountPoint, DokanOptions mountOptions, int threadCount, int version, TimeSpan timeout, string uncName, ILogger logger=null)'],['../class_dokan_net_1_1_dokan.html#a349f7ef2866b424ab6b66a3dced347e2',1,'DokanNet.Dokan.Mount(this IDokanOperations operations, string mountPoint, DokanOptions mountOptions, int threadCount, int version, TimeSpan timeout, string uncName=null, int allocationUnitSize=512, int sectorSize=512, ILogger logger=null)']]],
-  ['mounted',['Mounted',['../interface_dokan_net_1_1_i_dokan_operations.html#ae7d6baa2cbb6faa408f20aa7ce8292e1',1,'DokanNet::IDokanOperations']]],
-  ['mountmanager',['MountManager',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6aa2ded7048f566ba78b285a02bc9d087f',1,'DokanNet']]],
-  ['movefile',['MoveFile',['../interface_dokan_net_1_1_i_dokan_operations.html#a4e79c42cd1dd2689f8c06c9528c2b643',1,'DokanNet::IDokanOperations']]]
+  ['lastaccesstime',['LastAccessTime',['../struct_dokan_net_1_1_file_information.html#ab6a11c13757fad48196856e9d09c6b84',1,'DokanNet::FileInformation']]],
+  ['lastadmin',['LastAdmin',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2c47a97552d3b12ec010fffc647ed8bd',1,'DokanNet']]],
+  ['lastwritetime',['LastWriteTime',['../struct_dokan_net_1_1_file_information.html#a387a02a48da59e93567a41360f891a39',1,'DokanNet::FileInformation']]],
+  ['length',['Length',['../struct_dokan_net_1_1_file_information.html#abcf7f0b52c9433fbe3b46ee9f8ab3dc0',1,'DokanNet::FileInformation']]],
+  ['lockfile',['LockFile',['../interface_dokan_net_1_1_i_dokan_operations.html#aeb2905515f5cb72df9748585c92530cd',1,'DokanNet::IDokanOperations']]],
+  ['locknotgranted',['LockNotGranted',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af37aaaa523144be1aa6ffe098729f051',1,'DokanNet']]],
+  ['logcorruptiondetected',['LogCorruptionDetected',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac66d6e4ab28555f9038d0502dad32253',1,'DokanNet']]],
+  ['logger',['Logger',['../class_dokan_net_1_1_logging_1_1_logger.html',1,'DokanNet::Logging']]],
+  ['logger',['Logger',['../class_dokan_net_1_1_logging_1_1_logger.html#a6db8edafe2220bbbd740419fdb4ecdfc',1,'DokanNet::Logging::Logger']]],
+  ['loggerextensions',['LoggerExtensions',['../class_dokan_net_1_1_logging_1_1_logger_extensions.html',1,'DokanNet::Logging']]],
+  ['loggrowthfailed',['LogGrowthFailed',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4bc0e46613ffcf91ca5fb74113db306e',1,'DokanNet']]],
+  ['logonfailure',['LogonFailure',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2d0faca29a1edf5465b61dd0f449a332',1,'DokanNet']]],
+  ['logonserver',['LogonServer',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a706635f21c529f4ab648eb6d2567cd18',1,'DokanNet']]],
+  ['logresizeinvalidsize',['LogResizeInvalidSize',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae4ff151c6e0fae7c71b34af80451f4d0',1,'DokanNet']]],
+  ['longjump',['LongJump',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a85664a26e6948b37cf54bc2fb6b92a65',1,'DokanNet']]],
+  ['lpcinvalidconnectionusage',['LpcInvalidConnectionUsage',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afddcd6b44f09d09d76c7c3d297cf0191',1,'DokanNet']]],
+  ['lpcreceivebufferexpected',['LpcReceiveBufferExpected',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a349b268aa0a4be5a7cf4e41cc0a8172d',1,'DokanNet']]],
+  ['lpcrequestsnotallowed',['LpcRequestsNotAllowed',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a3c1ad5b389c2904a16921aff2a88bdf7',1,'DokanNet']]],
+  ['luidsexhausted',['LuidsExhausted',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209abf4869552c1b94571310d844dd81aca6',1,'DokanNet']]]
 ];

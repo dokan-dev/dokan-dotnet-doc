@@ -46,8 +46,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
-      <li><a href="modules.html"><span>Modules</span></a></li>
       <li class="current"><a href="namespaces.html"><span>Namespaces</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li>
@@ -98,10 +96,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DokanNet Namespace Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Base namespace for <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a>.  
+<a href="#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespace_dokan_net_1_1_logging"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_dokan_net_1_1_logging.html">Logging</a></td></tr>
+<tr class="memdesc:namespace_dokan_net_1_1_logging"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for interface and classes related to logging. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_dokan_net_1_1_native"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_dokan_net_1_1_native.html">Native</a></td></tr>
+<tr class="memdesc:namespace_dokan_net_1_1_native"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for structures and classes related to native API. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespace_dokan_net_1_1_properties"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_dokan_net_1_1_properties.html">Properties</a></td></tr>
+<tr class="memdesc:namespace_dokan_net_1_1_properties"><td class="mdescLeft">&#160;</td><td class="mdescRight">Namespace for AssemblyInfo and resource strings <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
@@ -119,16 +127,16 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dokan operation proxy. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_result.html">DokanResult</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines result status codes for <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> operations.  <a href="class_dokan_net_1_1_dokan_result.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines common result status codes in <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> for <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> operations.  <a href="class_dokan_net_1_1_dokan_result.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Use to provide file information to <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> during operations <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">IDokanOperations.FindFiles</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5" title="Retrieve all NTFS Streams informations on the file. This is only called if DokanOptions.AltStream is enabled. ">IDokanOperations.FindStreams</a> or <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern to filter the result. ">IDokanOperations.FindFilesWithPattern</a>  <a href="struct_dokan_net_1_1_file_information.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to provide file information to <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> during operations <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">IDokanOperations.FindFiles</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5" title="Retrieve all NTFS Streams informations on the file. This is only called if DokanOptions.AltStream is enabled. ">IDokanOperations.FindStreams</a> or <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern to filter the result. ">IDokanOperations.FindFilesWithPattern</a>.  <a href="struct_dokan_net_1_1_file_information.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_format_providers.html">FormatProviders</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide support to format object with <code>null</code>  <a href="class_dokan_net_1_1_format_providers.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide support to format object with <code>null</code>.  <a href="class_dokan_net_1_1_format_providers.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> API callbacks interface  <a href="interface_dokan_net_1_1_i_dokan_operations.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> API callbacks interface.  <a href="interface_dokan_net_1_1_i_dokan_operations.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -183,21 +191,21 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30ae8e2950e4b1843bc68e03d15e7b278bc">FileSystemFeatures.UnicodeOnDisk</a> = 4, 
 <br />
 &#160;&#160;<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a2e427fb1a5175716f1515e6fe30ef1bb">FileSystemFeatures.PersistentAcls</a> = 8, 
-<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a53905f716f20a130b48bde3d9502a9bd">FileSystemFeatures.SupportsRemoteStorage</a> = 256, 
-<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a8acedf0076e220d3d65a7f3e617f0dd2">FileSystemFeatures.VolumeQuotas</a> = 32, 
-<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a637415f5b3bab2a6f1a22cf9b04fd2ec">FileSystemFeatures.SupportsSparseFiles</a> = 64, 
+<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a8acedf0076e220d3d65a7f3e617f0dd2">FileSystemFeatures.VolumeQuotas</a> = 0x20, 
+<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a637415f5b3bab2a6f1a22cf9b04fd2ec">FileSystemFeatures.SupportsSparseFiles</a> = 0x40, 
+<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a5d7b747b0324273724ce4348a7f7d977">FileSystemFeatures.SupportsReparsePoints</a> = 0x80, 
 <br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a5d7b747b0324273724ce4348a7f7d977">FileSystemFeatures.SupportsReparsePoints</a> = 128, 
-<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a0b7f1304f74d9f94fb48d363c4ab2892">FileSystemFeatures.VolumeIsCompressed</a> = 32768, 
-<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a7536b00238a717336a263f092d2c7e47">FileSystemFeatures.SupportsObjectIDs</a> = 65536, 
-<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30ad45a2327209df43d6e53ac6d5aa396a0">FileSystemFeatures.SupportsEncryption</a> = 131072, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a53905f716f20a130b48bde3d9502a9bd">FileSystemFeatures.SupportsRemoteStorage</a> = 0x100, 
+<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a0b7f1304f74d9f94fb48d363c4ab2892">FileSystemFeatures.VolumeIsCompressed</a> = 0x00008000, 
+<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a7536b00238a717336a263f092d2c7e47">FileSystemFeatures.SupportsObjectIDs</a> = 0x00010000, 
+<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30ad45a2327209df43d6e53ac6d5aa396a0">FileSystemFeatures.SupportsEncryption</a> = 0x00020000, 
 <br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a55093eda98a143ae71b8188a4052fb1c">FileSystemFeatures.NamedStreams</a> = 262144, 
-<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a8182fddd26c19c338b2f62a887601a7f">FileSystemFeatures.ReadOnlyVolume</a> = 524288, 
-<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a056382e6f318808aaf69e4d8d726390a">FileSystemFeatures.SequentialWriteOnce</a> = 1048576, 
-<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30abb655e1f7f0d2a48d9757b637a13cd88">FileSystemFeatures.SupportsTransactions</a> = 2097152
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a55093eda98a143ae71b8188a4052fb1c">FileSystemFeatures.NamedStreams</a> = 0x00040000, 
+<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a8182fddd26c19c338b2f62a887601a7f">FileSystemFeatures.ReadOnlyVolume</a> = 0x00080000, 
+<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a056382e6f318808aaf69e4d8d726390a">FileSystemFeatures.SequentialWriteOnce</a> = 0x00100000, 
+<a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30abb655e1f7f0d2a48d9757b637a13cd88">FileSystemFeatures.SupportsTransactions</a> = 0x00200000
 <br />
- }<tr class="memdesc:a0e59c383e7aa7666852adcfa27b03b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines File System Attribute Extensions  <a href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30">More...</a><br /></td></tr>
+ }<tr class="memdesc:a0e59c383e7aa7666852adcfa27b03b30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines feature flags for the file system.  <a href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a0e59c383e7aa7666852adcfa27b03b30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a864b51f40c1d93f1b3b0327ef5c9b209"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> : long { <br />
@@ -207,49 +215,49 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a22c82b647ac61b701febb720888a8fbb">NtStatus.Wait3</a> = 0x00000003, 
 <br />
 &#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aea2693ebdf39ec199f2cb3c16b531928">NtStatus.Wait63</a> = 0x0000003f, 
-<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a255de8cd6ee11ed4dc01a19844c1271e">NtStatus.Abandoned</a> = 0x00000080, 
-<b>AbandonedWait0</b> = 0x00000080, 
-<b>AbandonedWait1</b> = 0x00000081, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a255de8cd6ee11ed4dc01a19844c1271e">NtStatus.Abandoned</a> = AbandonedWait0, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4980bfc9368e1d286ca39cce6f2e797a">NtStatus.AbandonedWait0</a> = 0x00000080, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aacee9cf96bdde9eafec36e5641a9703e">NtStatus.AbandonedWait1</a> = 0x00000081, 
 <br />
-&#160;&#160;<b>AbandonedWait2</b> = 0x00000082, 
-<b>AbandonedWait3</b> = 0x00000083, 
-<b>AbandonedWait63</b> = 0x000000bf, 
-<b>UserApc</b> = 0x000000c0, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aaeb1daabebcd7a143def300d1c7a5237">NtStatus.AbandonedWait2</a> = 0x00000082, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a22c3fcb00c61a721c6334d97a6b3fc6b">NtStatus.AbandonedWait3</a> = 0x00000083, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab1a1c1f271efb6b2d8b328c8f6cf92ac">NtStatus.AbandonedWait63</a> = 0x000000bf, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a797d935fbb55e965119ceda1a5489290">NtStatus.UserApc</a> = 0x000000c0, 
 <br />
-&#160;&#160;<b>KernelApc</b> = 0x00000100, 
-<b>Alerted</b> = 0x00000101, 
-<b>Timeout</b> = 0x00000102, 
-<b>Pending</b> = 0x00000103, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a84837a5a35dcb77ff00e31756288d7a8">NtStatus.KernelApc</a> = 0x00000100, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab40cfb33b5b3f7c0e48f37b691513ef0">NtStatus.Alerted</a> = 0x00000101, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac85a251cc457840f1e032f1b733e9398">NtStatus.Timeout</a> = 0x00000102, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2d13df6f8b5e4c5af9f87e0dc39df69d">NtStatus.Pending</a> = 0x00000103, 
 <br />
-&#160;&#160;<b>Reparse</b> = 0x00000104, 
-<b>MoreEntries</b> = 0x00000105, 
-<b>NotAllAssigned</b> = 0x00000106, 
-<b>SomeNotMapped</b> = 0x00000107, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa7f364d3e8041f72eaaa1ade7e74d8da">NtStatus.Reparse</a> = 0x00000104, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa34dba8ae952fa4edcccb5dd116fa962">NtStatus.MoreEntries</a> = 0x00000105, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab79e51042b1b35320675732c396159e4">NtStatus.NotAllAssigned</a> = 0x00000106, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4876f981b62900da657faef01c6fb494">NtStatus.SomeNotMapped</a> = 0x00000107, 
 <br />
-&#160;&#160;<b>OpLockBreakInProgress</b> = 0x00000108, 
-<b>VolumeMounted</b> = 0x00000109, 
-<b>RxActCommitted</b> = 0x0000010a, 
-<b>NotifyCleanup</b> = 0x0000010b, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a07795859b15d4bba8f02e803d024227d">NtStatus.OpLockBreakInProgress</a> = 0x00000108, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5d3bd7e7524dfc96ccec939c31259320">NtStatus.VolumeMounted</a> = 0x00000109, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a24eac56617b69f9293a4a5070b248c33">NtStatus.RxActCommitted</a> = 0x0000010a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2d47a1b7f4b8ae9ddf51b7917781b7ad">NtStatus.NotifyCleanup</a> = 0x0000010b, 
 <br />
-&#160;&#160;<b>NotifyEnumDir</b> = 0x0000010c, 
-<b>NoQuotasForAccount</b> = 0x0000010d, 
-<b>PrimaryTransportConnectFailed</b> = 0x0000010e, 
-<b>PageFaultTransition</b> = 0x00000110, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a78e33bc40259fe51041e679c4ea986cc">NtStatus.NotifyEnumDir</a> = 0x0000010c, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af10e3b97ba316010a1d19f6649790f07">NtStatus.NoQuotasForAccount</a> = 0x0000010d, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6104c67e2515db9f7abde0dbf217e790">NtStatus.PrimaryTransportConnectFailed</a> = 0x0000010e, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209adfaa1a2b42de3d3fc0e5130cd16b68d4">NtStatus.PageFaultTransition</a> = 0x00000110, 
 <br />
-&#160;&#160;<b>PageFaultDemandZero</b> = 0x00000111, 
-<b>PageFaultCopyOnWrite</b> = 0x00000112, 
-<b>PageFaultGuardPage</b> = 0x00000113, 
-<b>PageFaultPagingFile</b> = 0x00000114, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a280779577e23fbfb22acd5148c57a619">NtStatus.PageFaultDemandZero</a> = 0x00000111, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa44eb6f6d482e7d9b4f000d5779439b6">NtStatus.PageFaultCopyOnWrite</a> = 0x00000112, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad622ed06bb6a8980af4db958d1138164">NtStatus.PageFaultGuardPage</a> = 0x00000113, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa0bba75f1d41e15fcedb197a390f1c07">NtStatus.PageFaultPagingFile</a> = 0x00000114, 
 <br />
-&#160;&#160;<b>CrashDump</b> = 0x00000116, 
-<b>ReparseObject</b> = 0x00000118, 
-<b>NothingToTerminate</b> = 0x00000122, 
-<b>ProcessNotInJob</b> = 0x00000123, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0345aa7197efcde615ec1b2ea9d42630">NtStatus.CrashDump</a> = 0x00000116, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a137369ee596210a9cedaf7479bdcfbe1">NtStatus.ReparseObject</a> = 0x00000118, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae37e59aaf84bf6a3a2dffe0b8a93f94e">NtStatus.NothingToTerminate</a> = 0x00000122, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aef605344b27760f24920701d8a82f75a">NtStatus.ProcessNotInJob</a> = 0x00000123, 
 <br />
-&#160;&#160;<b>ProcessInJob</b> = 0x00000124, 
-<b>ProcessCloned</b> = 0x00000129, 
-<b>FileLockedWithOnlyReaders</b> = 0x0000012a, 
-<b>FileLockedWithWriters</b> = 0x0000012b, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209abbbf0c5f66507763700a50e850f9ff54">NtStatus.ProcessInJob</a> = 0x00000124, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae9e74f49d3dccf0c65f910752e57acf5">NtStatus.ProcessCloned</a> = 0x00000129, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa9e0929bb11d121d82be27cd1d3eba7d">NtStatus.FileLockedWithOnlyReaders</a> = 0x0000012a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae3dd2f66bdbaf63aa04aa94fa94d1730">NtStatus.FileLockedWithWriters</a> = 0x0000012b, 
 <br />
 &#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5391f9a882a54c787b206138ed6d28b0">NtStatus.Informational</a> = 0x40000000, 
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad1a0fcc7dd6c4189f1edd099bf7b0386">NtStatus.ObjectNameExists</a> = 0x40000000, 
@@ -258,368 +266,370 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209adc27aee4edc74671376b43a3e299c3e8">NtStatus.ImageNotAtBase</a> = 0x40000003, 
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a58d1fc0d84f607bb24c80e7d839c0e7b">NtStatus.RegistryRecovered</a> = 0x40000009, 
-<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0eaadb4fcb48a0a0ed7bc9868be9fbaa">NtStatus.Warning</a> = 0x80000000, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab23d19cbe3d558de1fe3e1a472831dde">NtStatus.RecoveryNotNeeded</a> = 0x40190034, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af5371945dc67d0685e98c0b0f150b486">NtStatus.RmAlreadyStarted</a> = 0x40190035, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0eaadb4fcb48a0a0ed7bc9868be9fbaa">NtStatus.Warning</a> = 0x80000000, 
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa97af09be048086360072b6cf2e4b4bc">NtStatus.GuardPageViolation</a> = 0x80000001, 
-<br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a54a08d9d9dbfd7e7995a0c3b1e6ca4e6">NtStatus.DatatypeMisalignment</a> = 0x80000002, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a54a08d9d9dbfd7e7995a0c3b1e6ca4e6">NtStatus.DatatypeMisalignment</a> = 0x80000002, 
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a7129472c5eb598faf47e4e877f2618fd">NtStatus.Breakpoint</a> = 0x80000003, 
-<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a3fab8eeffb49bbdf87b258766a5def23">NtStatus.SingleStep</a> = 0x80000004, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a3fab8eeffb49bbdf87b258766a5def23">NtStatus.SingleStep</a> = 0x80000004, 
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a68ec6e62c5fcbbb68b5ce093bdd60717">NtStatus.BufferOverflow</a> = 0x80000005, 
-<br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a61ec615cd0fbb7cc63d8ff557ccaf6d8">NtStatus.NoMoreFiles</a> = 0x80000006, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a61ec615cd0fbb7cc63d8ff557ccaf6d8">NtStatus.NoMoreFiles</a> = 0x80000006, 
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a77b0f9216c5dcf3b01065bf45d238a27">NtStatus.HandlesClosed</a> = 0x8000000a, 
-<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a132e99c1fc503426106090e32120bf23">NtStatus.PartialCopy</a> = 0x8000000d, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a132e99c1fc503426106090e32120bf23">NtStatus.PartialCopy</a> = 0x8000000d, 
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a3bff0a13500d51fabd0e4e4e0ec6b48c">NtStatus.DeviceBusy</a> = 0x80000011, 
-<br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2f9f2e8bc26af79700e12744ce941fa5">NtStatus.InvalidEaName</a> = 0x80000013, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2f9f2e8bc26af79700e12744ce941fa5">NtStatus.InvalidEaName</a> = 0x80000013, 
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a3495688338fc2dc0e4dfdc36d1bc737c">NtStatus.EaListInconsistent</a> = 0x80000014, 
-<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad8a7f9e387c5a767b938b46a4ca73787">NtStatus.NoMoreEntries</a> = 0x8000001a, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad8a7f9e387c5a767b938b46a4ca73787">NtStatus.NoMoreEntries</a> = 0x8000001a, 
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a85664a26e6948b37cf54bc2fb6b92a65">NtStatus.LongJump</a> = 0x80000026, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a67d9e43115ea475aae0089ae6b0d530f">NtStatus.DllMightBeInsecure</a> = 0x8000002b, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac66d6e4ab28555f9038d0502dad32253">NtStatus.LogCorruptionDetected</a> = 0x80190029, 
 <br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a67d9e43115ea475aae0089ae6b0d530f">NtStatus.DllMightBeInsecure</a> = 0x8000002b, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac9bea76a483a0ec00ef8b28936cc9e9d">NtStatus.CantRecoverWithHandleOpen</a> = 0x80190031, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a74943845fcb6c860274bfa071089cbe3">NtStatus.TxfMetadataAlreadyPresent</a> = 0x80190041, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afcda25438f9248a19adee04527c8e976">NtStatus.TransactionScopeCallbacksNotSet</a> = 0x80190042, 
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a902b0d55fddef6f8d651fe1035b7d4bd">NtStatus.Error</a> = 0xc0000000, 
-<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a500ada6743997288e65fb5a71e850928">NtStatus.Unsuccessful</a> = 0xc0000001, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a500ada6743997288e65fb5a71e850928">NtStatus.Unsuccessful</a> = 0xc0000001, 
 <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e">NtStatus.NotImplemented</a> = 0xc0000002, 
-<br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2622b3081bb24b1956c5b46eae3fc23b">NtStatus.InvalidInfoClass</a> = 0xc0000003, 
-<b>InfoLengthMismatch</b> = 0xc0000004, 
-<b>AccessViolation</b> = 0xc0000005, 
-<b>InPageError</b> = 0xc0000006, 
-<br />
-&#160;&#160;<b>PagefileQuota</b> = 0xc0000007, 
-<b>InvalidHandle</b> = 0xc0000008, 
-<b>BadInitialStack</b> = 0xc0000009, 
-<b>BadInitialPc</b> = 0xc000000a, 
-<br />
-&#160;&#160;<b>InvalidCid</b> = 0xc000000b, 
-<b>TimerNotCanceled</b> = 0xc000000c, 
-<b>InvalidParameter</b> = 0xc000000d, 
-<b>NoSuchDevice</b> = 0xc000000e, 
-<br />
-&#160;&#160;<b>NoSuchFile</b> = 0xc000000f, 
-<b>InvalidDeviceRequest</b> = 0xc0000010, 
-<b>EndOfFile</b> = 0xc0000011, 
-<b>WrongVolume</b> = 0xc0000012, 
-<br />
-&#160;&#160;<b>NoMediaInDevice</b> = 0xc0000013, 
-<b>NoMemory</b> = 0xc0000017, 
-<b>NotMappedView</b> = 0xc0000019, 
-<b>UnableToFreeVm</b> = 0xc000001a, 
-<br />
-&#160;&#160;<b>UnableToDeleteSection</b> = 0xc000001b, 
-<b>IllegalInstruction</b> = 0xc000001d, 
-<b>AlreadyCommitted</b> = 0xc0000021, 
-<b>AccessDenied</b> = 0xc0000022, 
-<br />
-&#160;&#160;<b>BufferTooSmall</b> = 0xc0000023, 
-<b>ObjectTypeMismatch</b> = 0xc0000024, 
-<b>NonContinuableException</b> = 0xc0000025, 
-<b>BadStack</b> = 0xc0000028, 
-<br />
-&#160;&#160;<b>NotLocked</b> = 0xc000002a, 
-<b>NotCommitted</b> = 0xc000002d, 
-<b>InvalidParameterMix</b> = 0xc0000030, 
-<b>ObjectNameInvalid</b> = 0xc0000033, 
-<br />
-&#160;&#160;<b>ObjectNameNotFound</b> = 0xc0000034, 
-<b>ObjectNameCollision</b> = 0xc0000035, 
-<b>ObjectPathInvalid</b> = 0xc0000039, 
-<b>ObjectPathNotFound</b> = 0xc000003a, 
-<br />
-&#160;&#160;<b>ObjectPathSyntaxBad</b> = 0xc000003b, 
-<b>DataOverrun</b> = 0xc000003c, 
-<b>DataLate</b> = 0xc000003d, 
-<b>DataError</b> = 0xc000003e, 
-<br />
-&#160;&#160;<b>CrcError</b> = 0xc000003f, 
-<b>SectionTooBig</b> = 0xc0000040, 
-<b>PortConnectionRefused</b> = 0xc0000041, 
-<b>InvalidPortHandle</b> = 0xc0000042, 
-<br />
-&#160;&#160;<b>SharingViolation</b> = 0xc0000043, 
-<b>QuotaExceeded</b> = 0xc0000044, 
-<b>InvalidPageProtection</b> = 0xc0000045, 
-<b>MutantNotOwned</b> = 0xc0000046, 
-<br />
-&#160;&#160;<b>SemaphoreLimitExceeded</b> = 0xc0000047, 
-<b>PortAlreadySet</b> = 0xc0000048, 
-<b>SectionNotImage</b> = 0xc0000049, 
-<b>SuspendCountExceeded</b> = 0xc000004a, 
-<br />
-&#160;&#160;<b>ThreadIsTerminating</b> = 0xc000004b, 
-<b>BadWorkingSetLimit</b> = 0xc000004c, 
-<b>IncompatibleFileMap</b> = 0xc000004d, 
-<b>SectionProtection</b> = 0xc000004e, 
-<br />
-&#160;&#160;<b>EasNotSupported</b> = 0xc000004f, 
-<b>EaTooLarge</b> = 0xc0000050, 
-<b>NonExistentEaEntry</b> = 0xc0000051, 
-<b>NoEasOnFile</b> = 0xc0000052, 
-<br />
-&#160;&#160;<b>EaCorruptError</b> = 0xc0000053, 
-<b>FileLockConflict</b> = 0xc0000054, 
-<b>LockNotGranted</b> = 0xc0000055, 
-<b>DeletePending</b> = 0xc0000056, 
-<br />
-&#160;&#160;<b>CtlFileNotSupported</b> = 0xc0000057, 
-<b>UnknownRevision</b> = 0xc0000058, 
-<b>RevisionMismatch</b> = 0xc0000059, 
-<b>InvalidOwner</b> = 0xc000005a, 
-<br />
-&#160;&#160;<b>InvalidPrimaryGroup</b> = 0xc000005b, 
-<b>NoImpersonationToken</b> = 0xc000005c, 
-<b>CantDisableMandatory</b> = 0xc000005d, 
-<b>NoLogonServers</b> = 0xc000005e, 
-<br />
-&#160;&#160;<b>NoSuchLogonSession</b> = 0xc000005f, 
-<b>NoSuchPrivilege</b> = 0xc0000060, 
-<b>PrivilegeNotHeld</b> = 0xc0000061, 
-<b>InvalidAccountName</b> = 0xc0000062, 
-<br />
-&#160;&#160;<b>UserExists</b> = 0xc0000063, 
-<b>NoSuchUser</b> = 0xc0000064, 
-<b>GroupExists</b> = 0xc0000065, 
-<b>NoSuchGroup</b> = 0xc0000066, 
-<br />
-&#160;&#160;<b>MemberInGroup</b> = 0xc0000067, 
-<b>MemberNotInGroup</b> = 0xc0000068, 
-<b>LastAdmin</b> = 0xc0000069, 
-<b>WrongPassword</b> = 0xc000006a, 
-<br />
-&#160;&#160;<b>IllFormedPassword</b> = 0xc000006b, 
-<b>PasswordRestriction</b> = 0xc000006c, 
-<b>LogonFailure</b> = 0xc000006d, 
-<b>AccountRestriction</b> = 0xc000006e, 
-<br />
-&#160;&#160;<b>InvalidLogonHours</b> = 0xc000006f, 
-<b>InvalidWorkstation</b> = 0xc0000070, 
-<b>PasswordExpired</b> = 0xc0000071, 
-<b>AccountDisabled</b> = 0xc0000072, 
-<br />
-&#160;&#160;<b>NoneMapped</b> = 0xc0000073, 
-<b>TooManyLuidsRequested</b> = 0xc0000074, 
-<b>LuidsExhausted</b> = 0xc0000075, 
-<b>InvalidSubAuthority</b> = 0xc0000076, 
-<br />
-&#160;&#160;<b>InvalidAcl</b> = 0xc0000077, 
-<b>InvalidSid</b> = 0xc0000078, 
-<b>InvalidSecurityDescr</b> = 0xc0000079, 
-<b>ProcedureNotFound</b> = 0xc000007a, 
-<br />
-&#160;&#160;<b>InvalidImageFormat</b> = 0xc000007b, 
-<b>NoToken</b> = 0xc000007c, 
-<b>BadInheritanceAcl</b> = 0xc000007d, 
-<b>RangeNotLocked</b> = 0xc000007e, 
-<br />
-&#160;&#160;<b>DiskFull</b> = 0xc000007f, 
-<b>ServerDisabled</b> = 0xc0000080, 
-<b>ServerNotDisabled</b> = 0xc0000081, 
-<b>TooManyGuidsRequested</b> = 0xc0000082, 
-<br />
-&#160;&#160;<b>GuidsExhausted</b> = 0xc0000083, 
-<b>InvalidIdAuthority</b> = 0xc0000084, 
-<b>AgentsExhausted</b> = 0xc0000085, 
-<b>InvalidVolumeLabel</b> = 0xc0000086, 
-<br />
-&#160;&#160;<b>SectionNotExtended</b> = 0xc0000087, 
-<b>NotMappedData</b> = 0xc0000088, 
-<b>ResourceDataNotFound</b> = 0xc0000089, 
-<b>ResourceTypeNotFound</b> = 0xc000008a, 
-<br />
-&#160;&#160;<b>ResourceNameNotFound</b> = 0xc000008b, 
-<b>ArrayBoundsExceeded</b> = 0xc000008c, 
-<b>FloatDenormalOperand</b> = 0xc000008d, 
-<b>FloatDivideByZero</b> = 0xc000008e, 
-<br />
-&#160;&#160;<b>FloatInexactResult</b> = 0xc000008f, 
-<b>FloatInvalidOperation</b> = 0xc0000090, 
-<b>FloatOverflow</b> = 0xc0000091, 
-<b>FloatStackCheck</b> = 0xc0000092, 
-<br />
-&#160;&#160;<b>FloatUnderflow</b> = 0xc0000093, 
-<b>IntegerDivideByZero</b> = 0xc0000094, 
-<b>IntegerOverflow</b> = 0xc0000095, 
-<b>PrivilegedInstruction</b> = 0xc0000096, 
-<br />
-&#160;&#160;<b>TooManyPagingFiles</b> = 0xc0000097, 
-<b>FileInvalid</b> = 0xc0000098, 
-<b>InstanceNotAvailable</b> = 0xc00000ab, 
-<b>PipeNotAvailable</b> = 0xc00000ac, 
-<br />
-&#160;&#160;<b>InvalidPipeState</b> = 0xc00000ad, 
-<b>PipeBusy</b> = 0xc00000ae, 
-<b>IllegalFunction</b> = 0xc00000af, 
-<b>PipeDisconnected</b> = 0xc00000b0, 
-<br />
-&#160;&#160;<b>PipeClosing</b> = 0xc00000b1, 
-<b>PipeConnected</b> = 0xc00000b2, 
-<b>PipeListening</b> = 0xc00000b3, 
-<b>InvalidReadMode</b> = 0xc00000b4, 
-<br />
-&#160;&#160;<b>IoTimeout</b> = 0xc00000b5, 
-<b>FileForcedClosed</b> = 0xc00000b6, 
-<b>ProfilingNotStarted</b> = 0xc00000b7, 
-<b>ProfilingNotStopped</b> = 0xc00000b8, 
-<br />
-&#160;&#160;<b>NotSameDevice</b> = 0xc00000d4, 
-<b>FileRenamed</b> = 0xc00000d5, 
-<b>CantWait</b> = 0xc00000d8, 
-<b>PipeEmpty</b> = 0xc00000d9, 
-<br />
-&#160;&#160;<b>CantTerminateSelf</b> = 0xc00000db, 
-<b>InternalError</b> = 0xc00000e5, 
-<b>InvalidParameter1</b> = 0xc00000ef, 
-<b>InvalidParameter2</b> = 0xc00000f0, 
-<br />
-&#160;&#160;<b>InvalidParameter3</b> = 0xc00000f1, 
-<b>InvalidParameter4</b> = 0xc00000f2, 
-<b>InvalidParameter5</b> = 0xc00000f3, 
-<b>InvalidParameter6</b> = 0xc00000f4, 
-<br />
-&#160;&#160;<b>InvalidParameter7</b> = 0xc00000f5, 
-<b>InvalidParameter8</b> = 0xc00000f6, 
-<b>InvalidParameter9</b> = 0xc00000f7, 
-<b>InvalidParameter10</b> = 0xc00000f8, 
-<br />
-&#160;&#160;<b>InvalidParameter11</b> = 0xc00000f9, 
-<b>InvalidParameter12</b> = 0xc00000fa, 
-<b>DirectoryNotEmpty</b> = 0xc0000101, 
-<b>NotADirectory</b> = 0xc0000103, 
-<br />
-&#160;&#160;<b>MappedFileSizeZero</b> = 0xc000011e, 
-<b>TooManyOpenedFiles</b> = 0xc000011f, 
-<b>Cancelled</b> = 0xc0000120, 
-<b>CannotDelete</b> = 0xc0000121, 
-<br />
-&#160;&#160;<b>InvalidComputerName</b> = 0xc0000122, 
-<b>FileDeleted</b> = 0xc0000123, 
-<b>SpecialAccount</b> = 0xc0000124, 
-<b>SpecialGroup</b> = 0xc0000125, 
-<br />
-&#160;&#160;<b>SpecialUser</b> = 0xc0000126, 
-<b>MembersPrimaryGroup</b> = 0xc0000127, 
-<b>FileClosed</b> = 0xc0000128, 
-<b>TooManyThreads</b> = 0xc0000129, 
-<br />
-&#160;&#160;<b>ThreadNotInProcess</b> = 0xc000012a, 
-<b>TokenAlreadyInUse</b> = 0xc000012b, 
-<b>PagefileQuotaExceeded</b> = 0xc000012c, 
-<b>CommitmentLimit</b> = 0xc000012d, 
-<br />
-&#160;&#160;<b>InvalidImageLeFormat</b> = 0xc000012e, 
-<b>InvalidImageNotMz</b> = 0xc000012f, 
-<b>InvalidImageProtect</b> = 0xc0000130, 
-<b>InvalidImageWin16</b> = 0xc0000131, 
-<br />
-&#160;&#160;<b>LogonServer</b> = 0xc0000132, 
-<b>DifferenceAtDc</b> = 0xc0000133, 
-<b>SynchronizationRequired</b> = 0xc0000134, 
-<b>DllNotFound</b> = 0xc0000135, 
-<br />
-&#160;&#160;<b>IoPrivilegeFailed</b> = 0xc0000137, 
-<b>OrdinalNotFound</b> = 0xc0000138, 
-<b>EntryPointNotFound</b> = 0xc0000139, 
-<b>ControlCExit</b> = 0xc000013a, 
-<br />
-&#160;&#160;<b>PortNotSet</b> = 0xc0000353, 
-<b>DebuggerInactive</b> = 0xc0000354, 
-<b>CallbackBypass</b> = 0xc0000503, 
-<b>PortClosed</b> = 0xc0000700, 
-<br />
-&#160;&#160;<b>MessageLost</b> = 0xc0000701, 
-<b>InvalidMessage</b> = 0xc0000702, 
-<b>RequestCanceled</b> = 0xc0000703, 
-<b>RecursiveDispatch</b> = 0xc0000704, 
-<br />
-&#160;&#160;<b>LpcReceiveBufferExpected</b> = 0xc0000705, 
-<b>LpcInvalidConnectionUsage</b> = 0xc0000706, 
-<b>LpcRequestsNotAllowed</b> = 0xc0000707, 
-<b>ResourceInUse</b> = 0xc0000708, 
-<br />
-&#160;&#160;<b>ProcessIsProtected</b> = 0xc0000712, 
-<b>VolumeDirty</b> = 0xc0000806, 
-<b>FileCheckedOut</b> = 0xc0000901, 
-<b>CheckOutRequired</b> = 0xc0000902, 
-<br />
-&#160;&#160;<b>BadFileType</b> = 0xc0000903, 
-<b>FileTooLarge</b> = 0xc0000904, 
-<b>FormsAuthRequired</b> = 0xc0000905, 
-<b>VirusInfected</b> = 0xc0000906, 
-<br />
-&#160;&#160;<b>VirusDeleted</b> = 0xc0000907, 
-<b>TransactionalConflict</b> = 0xc0190001, 
-<b>InvalidTransaction</b> = 0xc0190002, 
-<b>TransactionNotActive</b> = 0xc0190003, 
-<br />
-&#160;&#160;<b>TmInitializationFailed</b> = 0xc0190004, 
-<b>RmNotActive</b> = 0xc0190005, 
-<b>RmMetadataCorrupt</b> = 0xc0190006, 
-<b>TransactionNotJoined</b> = 0xc0190007, 
-<br />
-&#160;&#160;<b>DirectoryNotRm</b> = 0xc0190008, 
-<b>CouldNotResizeLog</b> = 0xc0190009, 
-<b>TransactionsUnsupportedRemote</b> = 0xc019000a, 
-<b>LogResizeInvalidSize</b> = 0xc019000b, 
-<br />
-&#160;&#160;<b>RemoteFileVersionMismatch</b> = 0xc019000c, 
-<b>CrmProtocolAlreadyExists</b> = 0xc019000f, 
-<b>TransactionPropagationFailed</b> = 0xc0190010, 
-<b>CrmProtocolNotFound</b> = 0xc0190011, 
-<br />
-&#160;&#160;<b>TransactionSuperiorExists</b> = 0xc0190012, 
-<b>TransactionRequestNotValid</b> = 0xc0190013, 
-<b>TransactionNotRequested</b> = 0xc0190014, 
-<b>TransactionAlreadyAborted</b> = 0xc0190015, 
-<br />
-&#160;&#160;<b>TransactionAlreadyCommitted</b> = 0xc0190016, 
-<b>TransactionInvalidMarshallBuffer</b> = 0xc0190017, 
-<b>CurrentTransactionNotValid</b> = 0xc0190018, 
-<b>LogGrowthFailed</b> = 0xc0190019, 
-<br />
-&#160;&#160;<b>ObjectNoLongerExists</b> = 0xc0190021, 
-<b>StreamMiniversionNotFound</b> = 0xc0190022, 
-<b>StreamMiniversionNotValid</b> = 0xc0190023, 
-<b>MiniversionInaccessibleFromSpecifiedTransaction</b> = 0xc0190024, 
-<br />
-&#160;&#160;<b>CantOpenMiniversionWithModifyIntent</b> = 0xc0190025, 
-<b>CantCreateMoreStreamMiniversions</b> = 0xc0190026, 
-<b>HandleNoLongerValid</b> = 0xc0190028, 
-<b>NoTxfMetadata</b> = 0xc0190029, 
-<br />
-&#160;&#160;<b>LogCorruptionDetected</b> = 0xc0190030, 
-<b>CantRecoverWithHandleOpen</b> = 0xc0190031, 
-<b>RmDisconnected</b> = 0xc0190032, 
-<b>EnlistmentNotSuperior</b> = 0xc0190033, 
-<br />
-&#160;&#160;<b>RecoveryNotNeeded</b> = 0xc0190034, 
-<b>RmAlreadyStarted</b> = 0xc0190035, 
-<b>FileIdentityNotPersistent</b> = 0xc0190036, 
-<b>CantBreakTransactionalDependency</b> = 0xc0190037, 
-<br />
-&#160;&#160;<b>CantCrossRmBoundary</b> = 0xc0190038, 
-<b>TxfDirNotEmpty</b> = 0xc0190039, 
-<b>IndoubtTransactionsExist</b> = 0xc019003a, 
-<b>TmVolatile</b> = 0xc019003b, 
-<br />
-&#160;&#160;<b>RollbackTimerExpired</b> = 0xc019003c, 
-<b>TxfAttributeCorrupt</b> = 0xc019003d, 
-<b>EfsNotAllowedInTransaction</b> = 0xc019003e, 
-<b>TransactionalOpenNotAllowed</b> = 0xc019003f, 
-<br />
-&#160;&#160;<b>TransactedMappingUnsupportedRemote</b> = 0xc0190040, 
-<b>TxfMetadataAlreadyPresent</b> = 0xc0190041, 
-<b>TransactionScopeCallbacksNotSet</b> = 0xc0190042, 
-<b>TransactionRequiredPromotion</b> = 0xc0190043, 
-<br />
-&#160;&#160;<b>CannotExecuteFileInTransaction</b> = 0xc0190044, 
-<b>TransactionsNotFrozen</b> = 0xc0190045, 
-<b>MaximumNtStatus</b> = 0xffffffff
-<br />
- }<tr class="memdesc:a864b51f40c1d93f1b3b0327ef5c9b209"><td class="mdescLeft">&#160;</td><td class="mdescRight">A NT status value.  <a href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">More...</a><br /></td></tr>
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2622b3081bb24b1956c5b46eae3fc23b">NtStatus.InvalidInfoClass</a> = 0xc0000003, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5c1580983e7cb0ca3d19867438823ab8">NtStatus.InfoLengthMismatch</a> = 0xc0000004, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac86b6caf254b06854e24c5c4510c5f85">NtStatus.AccessViolation</a> = 0xc0000005, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a54356d3c602bdb23cd9c94c09c149a28">NtStatus.InPageError</a> = 0xc0000006, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5dd0a703b582f3c0b29762a0d7abbfa1">NtStatus.PagefileQuota</a> = 0xc0000007, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2d0e462e9958ce7bb443e70023241dfe">NtStatus.InvalidHandle</a> = 0xc0000008, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4b8ed0a02f1949e0b71ce35727cf8a78">NtStatus.BadInitialStack</a> = 0xc0000009, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a63064da018e50a0a049ee5ab8842abb5">NtStatus.BadInitialPc</a> = 0xc000000a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afa0650a5a14460bf2ea197e06586d75e">NtStatus.InvalidCid</a> = 0xc000000b, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af6348a18d48e4ee33669207401e6320e">NtStatus.TimerNotCanceled</a> = 0xc000000c, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a627251310d3384b591e4138be21145d5">NtStatus.InvalidParameter</a> = 0xc000000d, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a8f7a04953f2e2a02acef1c74dcc446ba">NtStatus.NoSuchDevice</a> = 0xc000000e, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae13bda1c3f7ac029e44f9887fe887c95">NtStatus.NoSuchFile</a> = 0xc000000f, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4d10a912855899a1a531fbf12736ce69">NtStatus.InvalidDeviceRequest</a> = 0xc0000010, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a9556e151da49cd4bcf0352857cb33509">NtStatus.EndOfFile</a> = 0xc0000011, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a1d0b4f75446a80a5b47d91368a80050c">NtStatus.WrongVolume</a> = 0xc0000012, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a674b342b7c13ab13faa10401a6713efb">NtStatus.NoMediaInDevice</a> = 0xc0000013, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a9f13a978003af046bdd4b13f7cdac5b2">NtStatus.NoMemory</a> = 0xc0000017, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad386f8e16b344b0ec5a1597dbdf3a684">NtStatus.NotMappedView</a> = 0xc0000019, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2b1e518a141acb472e5b83720121746d">NtStatus.UnableToFreeVm</a> = 0xc000001a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5ad077c992b76eb6585b3c24b00797a5">NtStatus.UnableToDeleteSection</a> = 0xc000001b, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6f4f5c78e350362878889062f2b9294b">NtStatus.IllegalInstruction</a> = 0xc000001d, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a49df42a3a569ff9c1933d4116377255f">NtStatus.AlreadyCommitted</a> = 0xc0000021, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acbcc0759909213e7cdba1f0cbf253126">NtStatus.AccessDenied</a> = 0xc0000022, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab801c4d44abd4738b7f69c4e390ed61d">NtStatus.BufferTooSmall</a> = 0xc0000023, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aae0736bae2b59a20d813ec0847206aab">NtStatus.ObjectTypeMismatch</a> = 0xc0000024, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6148798b6e90ec93983d433ec1d0396b">NtStatus.NonContinuableException</a> = 0xc0000025, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af9669a6597fcc4bf3cec3fbb245a2227">NtStatus.BadStack</a> = 0xc0000028, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a8883b7d0d879f17136925252f3505ceb">NtStatus.NotLocked</a> = 0xc000002a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad7d2f52d9cc160d27da1eaad34d86f16">NtStatus.NotCommitted</a> = 0xc000002d, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a1a14e3a009f0e5a562389507c51e09c2">NtStatus.InvalidParameterMix</a> = 0xc0000030, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae1528f19ff1a584c211d07c18d3b68ea">NtStatus.ObjectNameInvalid</a> = 0xc0000033, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0aa7fa6b105327c13daac2d070c1d8c6">NtStatus.ObjectNameNotFound</a> = 0xc0000034, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a06214eeec5a3e849ee7b3f1aa888e5a2">NtStatus.ObjectNameCollision</a> = 0xc0000035, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2c798b0b854d03dfa596d761d739b69b">NtStatus.ObjectPathInvalid</a> = 0xc0000039, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4e9aef496cde0a3cc70114838e250fcc">NtStatus.ObjectPathNotFound</a> = 0xc000003a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a7a5685ad9c8459b6bd54ed6b12021f33">NtStatus.ObjectPathSyntaxBad</a> = 0xc000003b, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a3530d4690d1b267ca53c58a51d4e6f69">NtStatus.DataOverrun</a> = 0xc000003c, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a72b0ce4ce899efbf2fdaad45cb63d3a4">NtStatus.DataLate</a> = 0xc000003d, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a824286430ecf0d286a3214d0d4f6293f">NtStatus.DataError</a> = 0xc000003e, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad2fdb4a266ac32c36d708fc86004e87c">NtStatus.CrcError</a> = 0xc000003f, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a93ac431e922ff82d0f0f6af380fb7fc8">NtStatus.SectionTooBig</a> = 0xc0000040, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a20855783f6646fdadfab2e473057f0ec">NtStatus.PortConnectionRefused</a> = 0xc0000041, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6e716aa9601107318f14a3c856322107">NtStatus.InvalidPortHandle</a> = 0xc0000042, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a24aaceb3c291037a214c35c38becfd77">NtStatus.SharingViolation</a> = 0xc0000043, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209abab718430d4b68d21036fb9f29a16fb7">NtStatus.QuotaExceeded</a> = 0xc0000044, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a7265bea8f3e690534fbd96a2341ce8e1">NtStatus.InvalidPageProtection</a> = 0xc0000045, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a9959bdcd676a33e56cbd658f46dd8006">NtStatus.MutantNotOwned</a> = 0xc0000046, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aff0a6fccfad5be7e311f10b3b086d870">NtStatus.SemaphoreLimitExceeded</a> = 0xc0000047, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6d0af737d98de9706e7a344c96b0ebb8">NtStatus.PortAlreadySet</a> = 0xc0000048, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5b202a5f4bdcdb4ec1467d8d4c6fabb9">NtStatus.SectionNotImage</a> = 0xc0000049, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0d93bd9e72f1a84456de7adec38acd24">NtStatus.SuspendCountExceeded</a> = 0xc000004a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad3aab18d103d02ddcae84cbb89b05416">NtStatus.ThreadIsTerminating</a> = 0xc000004b, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acb8f96e0eae7fd98921ac03b835c3a4c">NtStatus.BadWorkingSetLimit</a> = 0xc000004c, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad46db5735805a986fbc8f9082d399a77">NtStatus.IncompatibleFileMap</a> = 0xc000004d, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af912dbdd80d4917849b3a076b4d6482c">NtStatus.SectionProtection</a> = 0xc000004e, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a048e631a7ea0a8eea15896c5b073be0e">NtStatus.EasNotSupported</a> = 0xc000004f, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a161b29876c58388aaa3e6ba21fb4437e">NtStatus.EaTooLarge</a> = 0xc0000050, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa93f42ba1111afe1c30254eef4279d88">NtStatus.NonExistentEaEntry</a> = 0xc0000051, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a29329b1368aacdfdad34031915877a79">NtStatus.NoEasOnFile</a> = 0xc0000052, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a8bd8d1b659b05cd2dd4716a8111c523a">NtStatus.EaCorruptError</a> = 0xc0000053, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a30cc27d11e4ee6626d86d19fb25723cc">NtStatus.FileLockConflict</a> = 0xc0000054, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af37aaaa523144be1aa6ffe098729f051">NtStatus.LockNotGranted</a> = 0xc0000055, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a722fd493c8511dacbde0c67f45544304">NtStatus.DeletePending</a> = 0xc0000056, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a175cc38970fbe9224edd58d9af42c403">NtStatus.CtlFileNotSupported</a> = 0xc0000057, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa9fcec3ed301d4aed7ed94856b78a6b5">NtStatus.UnknownRevision</a> = 0xc0000058, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a55e3a9ebc1a7a7d05b7da580014ff86d">NtStatus.RevisionMismatch</a> = 0xc0000059, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aaaf94be12ec357bc6ec00e13b7f6ff3e">NtStatus.InvalidOwner</a> = 0xc000005a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a08bd05cae4a3d3b5e9c6f0a1fbb50573">NtStatus.InvalidPrimaryGroup</a> = 0xc000005b, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a11616104a467853badae5ef93717de9e">NtStatus.NoImpersonationToken</a> = 0xc000005c, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a3a38ae7e2b7fe1325f957ea468d09bb4">NtStatus.CantDisableMandatory</a> = 0xc000005d, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad7f469f607ee81036a4170d35dfe2873">NtStatus.NoLogonServers</a> = 0xc000005e, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af3ccad42ad5f84d4f0c8c2ff55bad774">NtStatus.NoSuchLogonSession</a> = 0xc000005f, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acf631180bb710bf2c5166d31958a2c7e">NtStatus.NoSuchPrivilege</a> = 0xc0000060, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a38bc6c299dc362616daf75f4b82a18b4">NtStatus.PrivilegeNotHeld</a> = 0xc0000061, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2afe86a634d7ea3b1e69dec2425a6ac8">NtStatus.InvalidAccountName</a> = 0xc0000062, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac01f8fd364dc6ba57479a27505b01124">NtStatus.UserExists</a> = 0xc0000063, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a8095d5525a3ea6cb6db06e6c6e0e1611">NtStatus.NoSuchUser</a> = 0xc0000064, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a643dac31026c30b6be4f2b8ebd518a84">NtStatus.GroupExists</a> = 0xc0000065, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0f1839c13fff0301fae4415ccddbb688">NtStatus.NoSuchGroup</a> = 0xc0000066, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5e3849540962f1dd72131f61208b3b8e">NtStatus.MemberInGroup</a> = 0xc0000067, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5c99fb92d65d2b4b6420b04127ab517c">NtStatus.MemberNotInGroup</a> = 0xc0000068, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2c47a97552d3b12ec010fffc647ed8bd">NtStatus.LastAdmin</a> = 0xc0000069, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a929c177ef9cd3b348c4f2f9731b2ca73">NtStatus.WrongPassword</a> = 0xc000006a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aef3b1c62fc61142bc57a02770ed33617">NtStatus.IllFormedPassword</a> = 0xc000006b, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a545e2478ceec58cbbc7a7cd09d32ea54">NtStatus.PasswordRestriction</a> = 0xc000006c, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2d0faca29a1edf5465b61dd0f449a332">NtStatus.LogonFailure</a> = 0xc000006d, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a43c4eef8b5208c3de6b97aa0fbc0f624">NtStatus.AccountRestriction</a> = 0xc000006e, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a3dbf6d16b372e33485154e6a8e563cfb">NtStatus.InvalidLogonHours</a> = 0xc000006f, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a13b78159215b2c11b7dfd291ed923416">NtStatus.InvalidWorkstation</a> = 0xc0000070, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5a1d0e6b08e6c4b559a53eb9a4d1ea0e">NtStatus.PasswordExpired</a> = 0xc0000071, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a037ebf45ec2803c1ea4e18283dd65ec8">NtStatus.AccountDisabled</a> = 0xc0000072, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a665c1f83ec5e6862aec77ef3073539de">NtStatus.NoneMapped</a> = 0xc0000073, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0164ea2e93126fe78d1d797569730a25">NtStatus.TooManyLuidsRequested</a> = 0xc0000074, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209abf4869552c1b94571310d844dd81aca6">NtStatus.LuidsExhausted</a> = 0xc0000075, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad78e342769601510697b99f4d9857884">NtStatus.InvalidSubAuthority</a> = 0xc0000076, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a549216e0d2c5f6be81f9de914dcdbb14">NtStatus.InvalidAcl</a> = 0xc0000077, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a1cb1aa598574fd6f73fd62b139f30e17">NtStatus.InvalidSid</a> = 0xc0000078, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa613e213b59a8cfa22f0dfb915b81fa1">NtStatus.InvalidSecurityDescr</a> = 0xc0000079, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad561a32d7aaea77d3081d52ce45f74b3">NtStatus.ProcedureNotFound</a> = 0xc000007a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4bb4fd071cf54bae94ece53fa687b8bf">NtStatus.InvalidImageFormat</a> = 0xc000007b, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab223364e8c3ac195629f1297336e5984">NtStatus.NoToken</a> = 0xc000007c, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a89d950f3868c74f1ca5a2d35c7d34b1b">NtStatus.BadInheritanceAcl</a> = 0xc000007d, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a52ee0fdc8b1806d28ec2d5cac9c424ca">NtStatus.RangeNotLocked</a> = 0xc000007e, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4f080d03a8ddd688d27f7d7cd8e6d41e">NtStatus.DiskFull</a> = 0xc000007f, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab816eb5ecc20c3e438ca1f144ad93782">NtStatus.ServerDisabled</a> = 0xc0000080, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a836721102656ffba3e1f41f7df554a72">NtStatus.ServerNotDisabled</a> = 0xc0000081, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa0f4dae985fbc35224beb957872d3ab0">NtStatus.TooManyGuidsRequested</a> = 0xc0000082, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a07bee0bcdec621c263e67b3fad9a1350">NtStatus.GuidsExhausted</a> = 0xc0000083, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad2e2f3a6a929c415b43e0f1de9495807">NtStatus.InvalidIdAuthority</a> = 0xc0000084, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a44ebb75a9aca1ae2b7339306016ff158">NtStatus.AgentsExhausted</a> = 0xc0000085, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a53a558c771d38185b130ea6f5032cb69">NtStatus.InvalidVolumeLabel</a> = 0xc0000086, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad7d018ae96140c27ed1e239f5325b689">NtStatus.SectionNotExtended</a> = 0xc0000087, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ace65a406d8c5c46a36cc3fa25af97e1e">NtStatus.NotMappedData</a> = 0xc0000088, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad34cc499dd7ac0b36810adee54ba281f">NtStatus.ResourceDataNotFound</a> = 0xc0000089, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4d05c22aeeacb9dbac3e3d5436451376">NtStatus.ResourceTypeNotFound</a> = 0xc000008a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a882dea441399adb6038c259047521bc6">NtStatus.ResourceNameNotFound</a> = 0xc000008b, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae045f93c8b16d405f06bc8ca6cb970d1">NtStatus.ArrayBoundsExceeded</a> = 0xc000008c, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209abac23b645a7fa571f217d95a2e34ea9d">NtStatus.FloatDenormalOperand</a> = 0xc000008d, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a68c508657e9f92c21ad1661f60998cc9">NtStatus.FloatDivideByZero</a> = 0xc000008e, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a275dee5eca10bb07cda7baabf1a0f4e3">NtStatus.FloatInexactResult</a> = 0xc000008f, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5e528f3f703634e06af0e2fa54495872">NtStatus.FloatInvalidOperation</a> = 0xc0000090, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac6dac0e0b109e698d01934d1779d7e80">NtStatus.FloatOverflow</a> = 0xc0000091, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac454e5dc193fbbab5be21d4e3833c62a">NtStatus.FloatStackCheck</a> = 0xc0000092, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a70ff7b4feb2313482b96be3d2ea79a37">NtStatus.FloatUnderflow</a> = 0xc0000093, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aed356342dbc05c87f7af4886eb06af92">NtStatus.IntegerDivideByZero</a> = 0xc0000094, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aecc7a9702f48a07819e661c15c22f2c1">NtStatus.IntegerOverflow</a> = 0xc0000095, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acbd3aff5a5387247171c8ad08b1d5e75">NtStatus.PrivilegedInstruction</a> = 0xc0000096, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a8562e9a8d099b7e2dd6317133e413ede">NtStatus.TooManyPagingFiles</a> = 0xc0000097, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af35bce0a1a7b4dc9c67260c07e52dd4e">NtStatus.FileInvalid</a> = 0xc0000098, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a7951255a993d996e021b7b439cfcb7ac">NtStatus.InstanceNotAvailable</a> = 0xc00000ab, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aeec4135c14cde6288aa35f4b6386527c">NtStatus.PipeNotAvailable</a> = 0xc00000ac, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2e2da724ea733a1b76e1d173cb6fbff7">NtStatus.InvalidPipeState</a> = 0xc00000ad, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6b9845421e0bb7b9a8662ba01cbd3fbb">NtStatus.PipeBusy</a> = 0xc00000ae, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a96e6b9462fdd161d848d2a1714261b62">NtStatus.IllegalFunction</a> = 0xc00000af, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2f5372d8fc6f02f476583be7981bdfd0">NtStatus.PipeDisconnected</a> = 0xc00000b0, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae6ff5f07d5675e7e97eb4a744ab23ba7">NtStatus.PipeClosing</a> = 0xc00000b1, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a32a486a9eba2dbdad4ac591349e96ea2">NtStatus.PipeConnected</a> = 0xc00000b2, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5146fbff68b92c686330c4fd65300893">NtStatus.PipeListening</a> = 0xc00000b3, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a60aa7bf0590882b3afebc939e66e888d">NtStatus.InvalidReadMode</a> = 0xc00000b4, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5bc733872619646c783551fe99206507">NtStatus.IoTimeout</a> = 0xc00000b5, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac4282b1dd103f15a1b97eb061002d6a3">NtStatus.FileForcedClosed</a> = 0xc00000b6, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5d60723125e23189f2a634411dc58bc0">NtStatus.ProfilingNotStarted</a> = 0xc00000b7, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5b5daed249e6cbbeedcd7d93754c8e55">NtStatus.ProfilingNotStopped</a> = 0xc00000b8, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209abf64617daac7748248f79bc45ebd2624">NtStatus.NotSameDevice</a> = 0xc00000d4, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aeab2dee5d0c84776effe3c43221b807c">NtStatus.FileRenamed</a> = 0xc00000d5, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2a69e5d94e8c727d61020b4ec09a7912">NtStatus.CantWait</a> = 0xc00000d8, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad184b04c0508f5518642b86e2e062d79">NtStatus.PipeEmpty</a> = 0xc00000d9, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0448ed29c53d9d1f210f3a9af3abc473">NtStatus.CantTerminateSelf</a> = 0xc00000db, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a8462b58246e70e5c83e5b939a9332cb5">NtStatus.InternalError</a> = 0xc00000e5, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5ff59deec7488ca606922a59f3f232fa">NtStatus.InvalidParameter1</a> = 0xc00000ef, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4d4a1f0d1ec73b4ef2a3cb35579277a1">NtStatus.InvalidParameter2</a> = 0xc00000f0, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af8ad5b22e6fb24d3694760a26c601660">NtStatus.InvalidParameter3</a> = 0xc00000f1, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab99d174b0685bf609be7491a9721c341">NtStatus.InvalidParameter4</a> = 0xc00000f2, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a472d77d99a7a5ae74043fac1e427fa6e">NtStatus.InvalidParameter5</a> = 0xc00000f3, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a27052a87233e13c95caef8d4024d6e9b">NtStatus.InvalidParameter6</a> = 0xc00000f4, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a037c3337ba69e11de8ef35147799cf45">NtStatus.InvalidParameter7</a> = 0xc00000f5, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af2e26b8ebfa8f88d1c8fbe29463371b8">NtStatus.InvalidParameter8</a> = 0xc00000f6, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0685226852e6595800190ae696d55860">NtStatus.InvalidParameter9</a> = 0xc00000f7, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab3db8d8eab7cd5d5bc3fa5c73b0ad5b4">NtStatus.InvalidParameter10</a> = 0xc00000f8, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a046f28d811827b05eef9f9f3ba56737f">NtStatus.InvalidParameter11</a> = 0xc00000f9, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af8a15a9865aef69c3db69ce4a1211d36">NtStatus.InvalidParameter12</a> = 0xc00000fa, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a7c0bff4c1e77d7a423be79445178c557">NtStatus.DirectoryNotEmpty</a> = 0xc0000101, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab3ee10899abf4bf00265c741b33236f4">NtStatus.NotADirectory</a> = 0xc0000103, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a435cf883ffe929a8d341c990892025ed">NtStatus.MappedFileSizeZero</a> = 0xc000011e, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af5c8c68a95f1e6bdee4e49104b58a799">NtStatus.TooManyOpenedFiles</a> = 0xc000011f, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa149e85a44aeec9140e92733d9ed694e">NtStatus.Cancelled</a> = 0xc0000120, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5183f0936a454855e0764adafccd5f6c">NtStatus.CannotDelete</a> = 0xc0000121, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a8022fb6c8ba15c2bf1fcadb0e7a60bd2">NtStatus.InvalidComputerName</a> = 0xc0000122, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2dffe9b335e135751350836e774b23e7">NtStatus.FileDeleted</a> = 0xc0000123, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a13fb37351fb943e00933e5ec65bad9aa">NtStatus.SpecialAccount</a> = 0xc0000124, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aab19e92d13db656fd5486912b734bcf6">NtStatus.SpecialGroup</a> = 0xc0000125, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad2e711c75efc9ef59115c960fd553f79">NtStatus.SpecialUser</a> = 0xc0000126, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afbbaeae9784519797dac188cbb315b5c">NtStatus.MembersPrimaryGroup</a> = 0xc0000127, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6120bd326934e956c89721dcb787117e">NtStatus.FileClosed</a> = 0xc0000128, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aefa7a340f6e2d3493438fbf54fc6db4d">NtStatus.TooManyThreads</a> = 0xc0000129, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae8eb50053509898f127892b8ae4d7e4a">NtStatus.ThreadNotInProcess</a> = 0xc000012a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a66257186a614cc54e826247c9f389e14">NtStatus.TokenAlreadyInUse</a> = 0xc000012b, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a1de6d2e112141d5b2d58ff1f859780aa">NtStatus.PagefileQuotaExceeded</a> = 0xc000012c, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2ff1d02253aaf58d5f7ff29b8fcd933f">NtStatus.CommitmentLimit</a> = 0xc000012d, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a3b50eb44da01b0cf678a46755affc45a">NtStatus.InvalidImageLeFormat</a> = 0xc000012e, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0307775e4b9498c2dfbb21dce6cbf23c">NtStatus.InvalidImageNotMz</a> = 0xc000012f, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6f6bbdfc6f0a706e8f2b69fa81b8a741">NtStatus.InvalidImageProtect</a> = 0xc0000130, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a83dbbb26b1f675d643a644ad995fb4cf">NtStatus.InvalidImageWin16</a> = 0xc0000131, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a706635f21c529f4ab648eb6d2567cd18">NtStatus.LogonServer</a> = 0xc0000132, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a587dee25984a214792659fbf01bd1b62">NtStatus.DifferenceAtDc</a> = 0xc0000133, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a226f5fd1120930cbc43b0474ae385f82">NtStatus.SynchronizationRequired</a> = 0xc0000134, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a75abd814925cea1e24de9e114ccf6604">NtStatus.DllNotFound</a> = 0xc0000135, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae26216b1ea565517d829d14350e68fb9">NtStatus.IoPrivilegeFailed</a> = 0xc0000137, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a127693fcef013fdfc2deee7db8487b8a">NtStatus.OrdinalNotFound</a> = 0xc0000138, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209adda22a7d33089bcc656aabb4bbba32e9">NtStatus.EntryPointNotFound</a> = 0xc0000139, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a42d5eff5d46155151eae2631dbad985c">NtStatus.ControlCExit</a> = 0xc000013a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a301bb6ac6ca3b2df0d86e02d560e4df6">NtStatus.PortNotSet</a> = 0xc0000353, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a9cb0bcdf7aef9d5f523b3497c7cf139c">NtStatus.DebuggerInactive</a> = 0xc0000354, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6080c66ac4554ab7c291d65a0dba37b1">NtStatus.CallbackBypass</a> = 0xc0000503, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a1c36ac42c5f8d58fa6fdb589c3bed865">NtStatus.PortClosed</a> = 0xc0000700, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a65530d06d563351447a7a53552c84431">NtStatus.MessageLost</a> = 0xc0000701, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad5e88abe375e264803a6f6b436e769e6">NtStatus.InvalidMessage</a> = 0xc0000702, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a1a816592286f73ef46ba3b41838f8afc">NtStatus.RequestCanceled</a> = 0xc0000703, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209abb87ae00160b7029591a657e2c8eea8a">NtStatus.RecursiveDispatch</a> = 0xc0000704, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a349b268aa0a4be5a7cf4e41cc0a8172d">NtStatus.LpcReceiveBufferExpected</a> = 0xc0000705, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afddcd6b44f09d09d76c7c3d297cf0191">NtStatus.LpcInvalidConnectionUsage</a> = 0xc0000706, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a3c1ad5b389c2904a16921aff2a88bdf7">NtStatus.LpcRequestsNotAllowed</a> = 0xc0000707, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aabaf3eab94011f857c29b7619cf35dbb">NtStatus.ResourceInUse</a> = 0xc0000708, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab6dfdb7a1cc07324c46799943837cc23">NtStatus.ProcessIsProtected</a> = 0xc0000712, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0d66396f2422c2c24609641e8b4036e4">NtStatus.VolumeDirty</a> = 0xc0000806, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a942db714b4c2b95e193b976fefb899bf">NtStatus.FileCheckedOut</a> = 0xc0000901, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0ed8a0a2e5b529f50db3cfac23d115eb">NtStatus.CheckOutRequired</a> = 0xc0000902, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a58d21a16c766f90e206f0397a0fa9eb1">NtStatus.BadFileType</a> = 0xc0000903, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a39e3f1d705b11a3afd05cb4127140ef9">NtStatus.FileTooLarge</a> = 0xc0000904, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a56723b762e2ac6341fb1ca5409bfd86a">NtStatus.FormsAuthRequired</a> = 0xc0000905, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a76869ed96d11d0a0158bff72b43246d3">NtStatus.VirusInfected</a> = 0xc0000906, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a1ffbc7bc752040cf33435a35f8a4be92">NtStatus.VirusDeleted</a> = 0xc0000907, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae4e8bc03829f5f5f31a00bce57aab1c4">NtStatus.TransactionalConflict</a> = 0xc0190001, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a7c57bd0cd9e764e09c35a986225b119b">NtStatus.InvalidTransaction</a> = 0xc0190002, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a869b565115962a6195445f074332a12e">NtStatus.TransactionNotActive</a> = 0xc0190003, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a364c69adb0f3bc7dd75beafd33c5da92">NtStatus.TmInitializationFailed</a> = 0xc0190004, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab61fac34c0f4944b5558ee9b90bcc174">NtStatus.RmNotActive</a> = 0xc0190005, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6fb9e7f0ba9d96b5e16059ee59d84219">NtStatus.RmMetadataCorrupt</a> = 0xc0190006, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a220552aa87e48c9cff64c3db530fd6c4">NtStatus.TransactionNotJoined</a> = 0xc0190007, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acb4b14f548334110d3351344588f9b1e">NtStatus.DirectoryNotRm</a> = 0xc0190008, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a8869f52b6cc9866497b0728663a68bf8">NtStatus.CouldNotResizeLog</a> = 0xc0190009, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac7acaa7ede2ece4d29054706b81a527c">NtStatus.TransactionsUnsupportedRemote</a> = 0xc019000a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae4ff151c6e0fae7c71b34af80451f4d0">NtStatus.LogResizeInvalidSize</a> = 0xc019000b, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6b0ea4268e921a630cef9900ec2fcbd1">NtStatus.RemoteFileVersionMismatch</a> = 0xc019000c, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2bc3231beb141cd52999e206ce804080">NtStatus.CrmProtocolAlreadyExists</a> = 0xc019000f, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afba7757a38a976870e18bf0e77c6cabc">NtStatus.TransactionPropagationFailed</a> = 0xc0190010, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a46379c91a9eed191c888c4d954798915">NtStatus.CrmProtocolNotFound</a> = 0xc0190011, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2268627d04a62792642ac490a1ce51ac">NtStatus.TransactionSuperiorExists</a> = 0xc0190012, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afddeae451dc15e596380e2154028c957">NtStatus.TransactionRequestNotValid</a> = 0xc0190013, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a7a1213b09b91f616404ca4ef79fc9735">NtStatus.TransactionNotRequested</a> = 0xc0190014, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2c8e64b21cc35b265e735fc7608832af">NtStatus.TransactionAlreadyAborted</a> = 0xc0190015, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a64164997512193533a9cf789dd52c8df">NtStatus.TransactionAlreadyCommitted</a> = 0xc0190016, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aebab1eecde0e178dbafb24c3bbbf0f9b">NtStatus.TransactionInvalidMarshallBuffer</a> = 0xc0190017, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a00444153fa63fd4b8acd31823705041e">NtStatus.CurrentTransactionNotValid</a> = 0xc0190018, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4bc0e46613ffcf91ca5fb74113db306e">NtStatus.LogGrowthFailed</a> = 0xc0190019, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a59903b03a0dc2cc8a3a98eb564fee452">NtStatus.ObjectNoLongerExists</a> = 0xc0190021, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afbc0e91fbd175c6a15607f1986597287">NtStatus.StreamMiniversionNotFound</a> = 0xc0190022, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a24a05ff63870c2aa827bb5013881c8e3">NtStatus.StreamMiniversionNotValid</a> = 0xc0190023, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afbbeb4e7f4c8d6e242946c099343bcc4">NtStatus.MiniversionInaccessibleFromSpecifiedTransaction</a> = 0xc0190024, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a95f345729799ae9c705eefbeb53dfb9b">NtStatus.CantOpenMiniversionWithModifyIntent</a> = 0xc0190025, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac8cc7e17ec7224ae9f4ffe35dbb00d2c">NtStatus.CantCreateMoreStreamMiniversions</a> = 0xc0190026, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5abd6db079786f30b0608e8611f11e1d">NtStatus.HandleNoLongerValid</a> = 0xc0190028, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afa5592241d64226e23ca2030b0e662d0">NtStatus.NoTxfMetadata</a> = 0xc0190029, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a180edfffc5202bae2303c322faba67ae">NtStatus.RmDisconnected</a> = 0xc0190032, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0768759a23da48e5fecee78544d3e6f6">NtStatus.EnlistmentNotSuperior</a> = 0xc0190033, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a98ace0a47b904526bf49b16f988a2ca7">NtStatus.FileIdentityNotPersistent</a> = 0xc0190036, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aca92662e5b7e6c7c7b3d0fb00602711c">NtStatus.CantBreakTransactionalDependency</a> = 0xc0190037, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af38d3de768dbcbdb7729d82417628015">NtStatus.CantCrossRmBoundary</a> = 0xc0190038, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa0273c872a328e729333a02de76592b7">NtStatus.TxfDirNotEmpty</a> = 0xc0190039, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0800be19f123d8aabd116fe6b87127e5">NtStatus.IndoubtTransactionsExist</a> = 0xc019003a, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6478482c649c50b765fa1e3f317476a2">NtStatus.TmVolatile</a> = 0xc019003b, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a420d442204de128d04500d60e6ab2ec0">NtStatus.RollbackTimerExpired</a> = 0xc019003c, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a64b1c4fef574235e0d1209c8b2948add">NtStatus.TxfAttributeCorrupt</a> = 0xc019003d, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a60fc8d8b6d366b951370c234ab24f7ad">NtStatus.EfsNotAllowedInTransaction</a> = 0xc019003e, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4b9ac4110ea17efb090d46c56e4618d9">NtStatus.TransactionalOpenNotAllowed</a> = 0xc019003f, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab331ecd4ef9abd96ebdff4275ba90728">NtStatus.TransactedMappingUnsupportedRemote</a> = 0xc0190040, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4bee4b927ca03c5bc976afbf5f6e5e33">NtStatus.TransactionRequiredPromotion</a> = 0xc0190043, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a31145e4ae00f39644f6f3d98f3386533">NtStatus.CannotExecuteFileInTransaction</a> = 0xc0190044, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab42c71dfbc76ae56653793ac48cd535d">NtStatus.TransactionsNotFrozen</a> = 0xc0190045, 
+<a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6bdce5aac70763f461e4978021859139">NtStatus.MaximumNtStatus</a> = 0xffffffff
+<br />
+ }<tr class="memdesc:a864b51f40c1d93f1b3b0327ef5c9b209"><td class="mdescLeft">&#160;</td><td class="mdescRight">NT status values.  <a href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a864b51f40c1d93f1b3b0327ef5c9b209"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Base namespace for <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a>. </p>
+</div><h2 class="groupheader">Enumeration Type Documentation</h2>
 <a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6"></a>
 <div class="memitem">
 <div class="memproto">
@@ -639,13 +649,12 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount options used to describe dokan device behavior. </p>
-<dl class="section see"><dt>See also</dt><dd>DOKAN_OPTIONS.Options</dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a2b5e39dc8372c99a6fa12b6d3c6b8c88"></a>FixedDrive&#160;</td><td class="fielddoc">
 <p>Fixed Drive.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6afe2e30f9ad4dc8f704457dfbd9c782ed"></a>DebugMode&#160;</td><td class="fielddoc">
-<p>Enable ouput debug message</p>
+<p>Enable output debug message.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a4f6d71cceccbcb25f0d92039afd3cd70"></a>StderrOutput&#160;</td><td class="fielddoc">
 <p>Enable output debug message to stderr.</p>
@@ -669,7 +678,7 @@ Enumerations</h2></td></tr>
 <p>Mount the drive on current session only.</p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d"></a>UserModeLock&#160;</td><td class="fielddoc">
-<p>Enable Lockfile/Unlockfile operations</p>
+<p>Enable Lockfile/Unlockfile operations.</p>
 </td></tr>
 </table>
 
@@ -694,13 +703,15 @@ Enumerations</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Defines standard, specific, and generic rights. These rights are used in access control entries (ACEs) and are the primary means of specifying the requested or granted access to an object. </p>
-<p><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa374896(v=vs.85).aspx">Access Mask Format (MSDN)</a> <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa374892(v=vs.85).aspx">ACCESS_MASK (MSDN)</a> </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa374896(v=vs.85).aspx">Access Mask Format (MSDN)</a> </dd>
+<dd>
+<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa374892(v=vs.85).aspx">ACCESS_MASK (MSDN)</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a067e91641dd61c40300faa7085610720a9737b198b43957e0daee34be05d34687"></a>ReadData&#160;</td><td class="fielddoc">
-<p>Read access right to an object </p>
+<p>Read access right to an object. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a067e91641dd61c40300faa7085610720a6e1b51cfac84762d246873062581366d"></a>WriteData&#160;</td><td class="fielddoc">
-<p>Write access right to an object </p>
+<p>Write access right to an object. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a067e91641dd61c40300faa7085610720afb0842088cddfff4746fea0f6a0afd01"></a>AppendData&#160;</td><td class="fielddoc">
 <p>For a file object, the right to append data to the file. </p>
@@ -739,13 +750,13 @@ Enumerations</h2></td></tr>
 <p>Access system security (ACCESS_SYSTEM_SECURITY). It is used to indicate access to a system access control list (SACL). This type of access requires the calling process to have the SE_SECURITY_NAME (Manage auditing and security log) privilege. If this flag is set in the access mask of an audit access ACE (successful or unsuccessful access), the SACL access will be audited. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a067e91641dd61c40300faa7085610720a2590aa05c13a089855c36062a36c2279"></a>GenericExecute&#160;</td><td class="fielddoc">
-<p>Generic execute access </p>
+<p>Generic execute access. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a067e91641dd61c40300faa7085610720a9a803576ff84a1f98a9d56984d3b1559"></a>GenericWrite&#160;</td><td class="fielddoc">
-<p>Generic write access </p>
+<p>Generic write access. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a067e91641dd61c40300faa7085610720ae94aab556e7fb8e739eeb1d24ce5db63"></a>GenericRead&#160;</td><td class="fielddoc">
-<p>Generic read access </p>
+<p>Generic read access. </p>
 </td></tr>
 </table>
 
@@ -769,38 +780,38 @@ Enumerations</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Defines File System Attribute Extensions </p>
-<p><a href="https://msdn.microsoft.com/en-us/library/cc246323.aspx">File System Attribute Extensions</a> </p>
+<p>Defines feature flags for the file system. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/cc246323.aspx">File System Attribute Extensions (MSDN)</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a6adf97f83acf6453d4a6a4b1070f3754"></a>None&#160;</td><td class="fielddoc">
-<p>None. </p>
+<p>No features defined. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a88640e94d77c44a4096c0cf9cea4ebfc"></a>CaseSensitiveSearch&#160;</td><td class="fielddoc">
-<p>File system supports case-sensitive file names. </p>
+<p>The file system supports case-sensitive file names. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a527fee3898a9c78e2abcf00e4052bb34"></a>CasePreservedNames&#160;</td><td class="fielddoc">
-<p>File system preserves the case of file names when it stores the name on disk. </p>
+<p>The file system preserves the case of file names when it stores the name on disk. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30ae8e2950e4b1843bc68e03d15e7b278bc"></a>UnicodeOnDisk&#160;</td><td class="fielddoc">
-<p>File system supports Unicode in file names. </p>
+<p>The file system supports Unicode in file names. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a2e427fb1a5175716f1515e6fe30ef1bb"></a>PersistentAcls&#160;</td><td class="fielddoc">
-<p>File system preserves and enforces access control lists. </p>
-</td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a53905f716f20a130b48bde3d9502a9bd"></a>SupportsRemoteStorage&#160;</td><td class="fielddoc">
-<p>File system supports remote storage. </p>
+<p>The file system preserves and enforces access control lists. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a8acedf0076e220d3d65a7f3e617f0dd2"></a>VolumeQuotas&#160;</td><td class="fielddoc">
-<p>File system supports per-user quotas. </p>
+<p>The file system supports per-user quotas. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a637415f5b3bab2a6f1a22cf9b04fd2ec"></a>SupportsSparseFiles&#160;</td><td class="fielddoc">
-<p>File system supports sparse files. </p>
+<p>The file system supports sparse files. </p>
 <p>This feature allows programs to create very large files, but to consume disk space only as needed. A sparse file is a file that contains much of zeros, and a file system that support this are removing repeating zeros to save space. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa365564(v=vs.85).aspx">Sparse Files (MSDN)</a> </dd></dl>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a5d7b747b0324273724ce4348a7f7d977"></a>SupportsReparsePoints&#160;</td><td class="fielddoc">
-<p>File system supports reparse points. </p>
+<p>The file system supports reparse points. </p>
 <p>Programs can trap open operations against objects in the file system and run their own code before returning file data. This feature can be used to extend file system features such as mount points, which you can use to redirect data read and written from a folder to another volume or physical disk. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a53905f716f20a130b48bde3d9502a9bd"></a>SupportsRemoteStorage&#160;</td><td class="fielddoc">
+<p>The file system supports remote storage. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30a0b7f1304f74d9f94fb48d363c4ab2892"></a>VolumeIsCompressed&#160;</td><td class="fielddoc">
 <p>Volume is a compressed volume. This flag is incompatible with FILE_FILE_COMPRESSION. This does not affect how data is transferred over the network. </p>
@@ -822,7 +833,7 @@ Enumerations</h2></td></tr>
 <p>Specified volume can be written to one time only. The write MUST be performed in sequential order. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a0e59c383e7aa7666852adcfa27b03b30abb655e1f7f0d2a48d9757b637a13cd88"></a>SupportsTransactions&#160;</td><td class="fielddoc">
-<p>File system supports transaction processing to group changes to files into a transaction. The transaction will guarantee that all changes happens, or none of them. </p>
+<p>The file system supports transaction processing to group changes to files into a transaction. The transaction will guarantee that all changes happens, or none of them. </p>
 <dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa365993(v=vs.85).aspx">About KTM (MSDN)</a> </dd></dl>
 </td></tr>
 </table>
@@ -847,101 +858,1005 @@ Enumerations</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>A NT status value. </p>
-<dl class="section see"><dt>See also</dt><dd>NTSTATUS Values (MSDN) </dd></dl>
+<p>NT status values. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/cc704588.aspx">NTSTATUS Values (MSDN)</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38"></a>Success&#160;</td><td class="fielddoc">
-<p>The operation completed successfully. </p>
+<p>Success - The operation completed successfully. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0aea9cb3445215834a9c673e8a87afb0"></a>Wait1&#160;</td><td class="fielddoc">
-<p>The caller specified WaitAny for WaitType and one of the dispatcher objects in the Object array has been set to the signaled state. </p>
+<p>Success - The caller specified WaitAny for WaitType and one of the dispatcher objects in the Object array has been set to the signaled state. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0e8f4b6b678f165db16f833d2fa58224"></a>Wait2&#160;</td><td class="fielddoc">
-<p>The caller specified WaitAny for WaitType and one of the dispatcher objects in the Object array has been set to the signaled state. </p>
+<p>Success - The caller specified WaitAny for WaitType and one of the dispatcher objects in the Object array has been set to the signaled state. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a22c82b647ac61b701febb720888a8fbb"></a>Wait3&#160;</td><td class="fielddoc">
-<p>The caller specified WaitAny for WaitType and one of the dispatcher objects in the Object array has been set to the signaled state. </p>
+<p>Success - The caller specified WaitAny for WaitType and one of the dispatcher objects in the Object array has been set to the signaled state. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aea2693ebdf39ec199f2cb3c16b531928"></a>Wait63&#160;</td><td class="fielddoc">
-<p>The caller specified WaitAny for WaitType and one of the dispatcher objects in the Object array has been set to the signaled state. </p>
+<p>Success - The caller specified WaitAny for WaitType and one of the dispatcher objects in the Object array has been set to the signaled state. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a255de8cd6ee11ed4dc01a19844c1271e"></a>Abandoned&#160;</td><td class="fielddoc">
-<p>The caller attempted to wait for a mutex that has been abandoned. </p>
+<p>Success - The caller attempted to wait for a mutex that has been abandoned. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4980bfc9368e1d286ca39cce6f2e797a"></a>AbandonedWait0&#160;</td><td class="fielddoc">
+<p>Success - The caller attempted to wait for a mutex that has been abandoned. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aacee9cf96bdde9eafec36e5641a9703e"></a>AbandonedWait1&#160;</td><td class="fielddoc">
+<p>Success - The caller attempted to wait for a mutex that has been abandoned. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aaeb1daabebcd7a143def300d1c7a5237"></a>AbandonedWait2&#160;</td><td class="fielddoc">
+<p>Success - The caller attempted to wait for a mutex that has been abandoned. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a22c3fcb00c61a721c6334d97a6b3fc6b"></a>AbandonedWait3&#160;</td><td class="fielddoc">
+<p>Success - The caller attempted to wait for a mutex that has been abandoned. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab1a1c1f271efb6b2d8b328c8f6cf92ac"></a>AbandonedWait63&#160;</td><td class="fielddoc">
+<p>Success - The caller attempted to wait for a mutex that has been abandoned. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a797d935fbb55e965119ceda1a5489290"></a>UserApc&#160;</td><td class="fielddoc">
+<p>Success - A user-mode APC was delivered before the given Interval expired. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a84837a5a35dcb77ff00e31756288d7a8"></a>KernelApc&#160;</td><td class="fielddoc">
+<p>Success - ? </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab40cfb33b5b3f7c0e48f37b691513ef0"></a>Alerted&#160;</td><td class="fielddoc">
+<p>Success - The delay completed because the thread was alerted. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ac85a251cc457840f1e032f1b733e9398"></a>Timeout&#160;</td><td class="fielddoc">
+<p>Success - The given Timeout interval expired. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2d13df6f8b5e4c5af9f87e0dc39df69d"></a>Pending&#160;</td><td class="fielddoc">
+<p>Success - The operation that was requested is pending completion. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa7f364d3e8041f72eaaa1ade7e74d8da"></a>Reparse&#160;</td><td class="fielddoc">
+<p>Success - A reparse should be performed by the Object Manager because the name of the file resulted in a symbolic link. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa34dba8ae952fa4edcccb5dd116fa962"></a>MoreEntries&#160;</td><td class="fielddoc">
+<p>Success - Returned by enumeration APIs to indicate more information is available to successive calls. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab79e51042b1b35320675732c396159e4"></a>NotAllAssigned&#160;</td><td class="fielddoc">
+<p>Success - Indicates not all privileges or groups that are referenced are assigned to the caller. This allows, for example, all privileges to be disabled without having to know exactly which privileges are assigned. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4876f981b62900da657faef01c6fb494"></a>SomeNotMapped&#160;</td><td class="fielddoc">
+<p>Success - Some of the information to be translated has not been translated. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a07795859b15d4bba8f02e803d024227d"></a>OpLockBreakInProgress&#160;</td><td class="fielddoc">
+<p>Success - An open/create operation completed while an opportunistic lock (<code>oplock</code>) break is underway. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5d3bd7e7524dfc96ccec939c31259320"></a>VolumeMounted&#160;</td><td class="fielddoc">
+<p>Success - A new volume has been mounted by a file system. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a24eac56617b69f9293a4a5070b248c33"></a>RxActCommitted&#160;</td><td class="fielddoc">
+<p>Success - This success level status indicates that the transaction state already exists for the registry sub-tree but that a transaction commit was previously aborted. The commit has now been completed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2d47a1b7f4b8ae9ddf51b7917781b7ad"></a>NotifyCleanup&#160;</td><td class="fielddoc">
+<p>Success - Indicates that a notify change request has been completed due to closing the handle that made the notify change request. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a78e33bc40259fe51041e679c4ea986cc"></a>NotifyEnumDir&#160;</td><td class="fielddoc">
+<p>Success - Indicates that a notify change request is being completed and that the information is not being returned in the caller's buffer. The caller now needs to enumerate the files to find the changes. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af10e3b97ba316010a1d19f6649790f07"></a>NoQuotasForAccount&#160;</td><td class="fielddoc">
+<p>Success - {No Quotas} No system quota limits are specifically set for this account. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6104c67e2515db9f7abde0dbf217e790"></a>PrimaryTransportConnectFailed&#160;</td><td class="fielddoc">
+<p>Success - {Connect Failure on Primary Transport} An attempt was made to connect to the remote server on the primary transport, but the connection failed. The computer WAS able to connect on a secondary transport. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209adfaa1a2b42de3d3fc0e5130cd16b68d4"></a>PageFaultTransition&#160;</td><td class="fielddoc">
+<p>Success - The page fault was a transition fault. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a280779577e23fbfb22acd5148c57a619"></a>PageFaultDemandZero&#160;</td><td class="fielddoc">
+<p>Success - The page fault was a demand zero fault. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa44eb6f6d482e7d9b4f000d5779439b6"></a>PageFaultCopyOnWrite&#160;</td><td class="fielddoc">
+<p>Success - The page fault was a demand zero fault. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad622ed06bb6a8980af4db958d1138164"></a>PageFaultGuardPage&#160;</td><td class="fielddoc">
+<p>Success - The page fault was a demand zero fault. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa0bba75f1d41e15fcedb197a390f1c07"></a>PageFaultPagingFile&#160;</td><td class="fielddoc">
+<p>Success - The page fault was satisfied by reading from a secondary storage device. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0345aa7197efcde615ec1b2ea9d42630"></a>CrashDump&#160;</td><td class="fielddoc">
+<p>Success - The crash dump exists in a paging file. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a137369ee596210a9cedaf7479bdcfbe1"></a>ReparseObject&#160;</td><td class="fielddoc">
+<p>Success - A reparse should be performed by the Object Manager because the name of the file resulted in a symbolic link. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ae37e59aaf84bf6a3a2dffe0b8a93f94e"></a>NothingToTerminate&#160;</td><td class="fielddoc">
+<p>Success - A process being terminated has no threads to terminate. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aef605344b27760f24920701d8a82f75a"></a>ProcessNotInJob&#160;</td><td class="fielddoc">
+<p>Success - The specified process is not part of a job. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209abbbf0c5f66507763700a50e850f9ff54"></a>ProcessInJob&#160;</td><td class="fielddoc">
+<p>Success - The specified process is part of a job. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ae9e74f49d3dccf0c65f910752e57acf5"></a>ProcessCloned&#160;</td><td class="fielddoc">
+<p>Success - The current process is a cloned process. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa9e0929bb11d121d82be27cd1d3eba7d"></a>FileLockedWithOnlyReaders&#160;</td><td class="fielddoc">
+<p>Success - The file was locked and all users of the file can only read. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ae3dd2f66bdbaf63aa04aa94fa94d1730"></a>FileLockedWithWriters&#160;</td><td class="fielddoc">
+<p>Success - The file was locked and at least one user of the file can write. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5391f9a882a54c787b206138ed6d28b0"></a>Informational&#160;</td><td class="fielddoc">
-<p>General information </p>
+<p>Informational - General information </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad1a0fcc7dd6c4189f1edd099bf7b0386"></a>ObjectNameExists&#160;</td><td class="fielddoc">
-<p>{Object Exists} An attempt was made to create an object but the object name already exists. </p>
+<p>Informational - {Object Exists} An attempt was made to create an object but the object name already exists. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209acb2452200277a33959c3d772181616c3"></a>ThreadWasSuspended&#160;</td><td class="fielddoc">
-<p>{Thread Suspended} A thread termination occurred while the thread was suspended. The thread resumed, and termination proceeded. </p>
+<p>Informational - {Thread Suspended} A thread termination occurred while the thread was suspended. The thread resumed, and termination proceeded. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a3407308c6a4bfe81947717889ce4e657"></a>WorkingSetLimitRange&#160;</td><td class="fielddoc">
-<p>{Working Set Range Error} An attempt was made to set the working set minimum or maximum to values that are outside the allowable range. </p>
+<p>Informational - {Working Set Range Error} An attempt was made to set the working set minimum or maximum to values that are outside the allowable range. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209adc27aee4edc74671376b43a3e299c3e8"></a>ImageNotAtBase&#160;</td><td class="fielddoc">
-<p>{Image Relocated} An image file could not be mapped at the address that is specified in the image file. Local fixes must be performed on this image. </p>
+<p>Informational - {Image Relocated} An image file could not be mapped at the address that is specified in the image file. Local fixes must be performed on this image. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a58d1fc0d84f607bb24c80e7d839c0e7b"></a>RegistryRecovered&#160;</td><td class="fielddoc">
-<p>{Registry Recovery} One of the files that contains the system registry data had to be recovered by using a log or alternate copy. The recovery was successful. </p>
+<p>Informational - {Registry Recovery} One of the files that contains the system registry data had to be recovered by using a log or alternate copy. The recovery was successful. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab23d19cbe3d558de1fe3e1a472831dde"></a>RecoveryNotNeeded&#160;</td><td class="fielddoc">
+<p>Informational - Transaction - The transactional resource manager is already consistent. Recovery is not needed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af5371945dc67d0685e98c0b0f150b486"></a>RmAlreadyStarted&#160;</td><td class="fielddoc">
+<p>Informational - Transaction - The transactional resource manager has already been started. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0eaadb4fcb48a0a0ed7bc9868be9fbaa"></a>Warning&#160;</td><td class="fielddoc">
-<p>General warning </p>
+<p>Warning - General warning </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa97af09be048086360072b6cf2e4b4bc"></a>GuardPageViolation&#160;</td><td class="fielddoc">
-<p>{EXCEPTION} Guard Page Exception A page of memory that marks the end of a data structure, such as a stack or an array, has been accessed. </p>
+<p>Warning - {EXCEPTION} Guard Page Exception A page of memory that marks the end of a data structure, such as a stack or an array, has been accessed. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a54a08d9d9dbfd7e7995a0c3b1e6ca4e6"></a>DatatypeMisalignment&#160;</td><td class="fielddoc">
-<p>{EXCEPTION} Alignment Fault A data type misalignment was detected in a load or store instruction. </p>
+<p>Warning - {EXCEPTION} Alignment Fault A data type misalignment was detected in a load or store instruction. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a7129472c5eb598faf47e4e877f2618fd"></a>Breakpoint&#160;</td><td class="fielddoc">
-<p>{EXCEPTION} Breakpoint A breakpoint has been reached. </p>
+<p>Warning - {EXCEPTION} Breakpoint A breakpoint has been reached. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a3fab8eeffb49bbdf87b258766a5def23"></a>SingleStep&#160;</td><td class="fielddoc">
-<p>{EXCEPTION} Single Step A single step or trace operation has just been completed. </p>
+<p>Warning - {EXCEPTION} Single Step A single step or trace operation has just been completed. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a68ec6e62c5fcbbb68b5ce093bdd60717"></a>BufferOverflow&#160;</td><td class="fielddoc">
-<p>{Buffer Overflow} The data was too large to fit into the specified buffer. </p>
+<p>Warning - {Buffer Overflow} The data was too large to fit into the specified buffer. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a61ec615cd0fbb7cc63d8ff557ccaf6d8"></a>NoMoreFiles&#160;</td><td class="fielddoc">
-<p>{No More Files} No more files were found which match the file specification. </p>
+<p>Warning - {No More Files} No more files were found which match the file specification. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a77b0f9216c5dcf3b01065bf45d238a27"></a>HandlesClosed&#160;</td><td class="fielddoc">
-<p>{Handles Closed} Handles to objects have been automatically closed because of the requested operation. </p>
+<p>Warning - {Handles Closed} Handles to objects have been automatically closed because of the requested operation. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a132e99c1fc503426106090e32120bf23"></a>PartialCopy&#160;</td><td class="fielddoc">
-<p>Because of protection conflicts, not all the requested bytes could be copied. </p>
+<p>Warning - Because of protection conflicts, not all the requested bytes could be copied. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a3bff0a13500d51fabd0e4e4e0ec6b48c"></a>DeviceBusy&#160;</td><td class="fielddoc">
-<p>{Device Busy} The device is currently busy. </p>
+<p>Warning - {Device Busy} The device is currently busy. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2f9f2e8bc26af79700e12744ce941fa5"></a>InvalidEaName&#160;</td><td class="fielddoc">
-<p>{Illegal EA} The specified extended attribute (EA) name contains at least one illegal character. </p>
+<p>Warning - {Illegal EA} The specified extended attribute (EA) name contains at least one illegal character. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a3495688338fc2dc0e4dfdc36d1bc737c"></a>EaListInconsistent&#160;</td><td class="fielddoc">
-<p>{Inconsistent EA List} The extended attribute (EA) list is inconsistent. </p>
+<p>Warning - {Inconsistent EA List} The extended attribute (EA) list is inconsistent. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad8a7f9e387c5a767b938b46a4ca73787"></a>NoMoreEntries&#160;</td><td class="fielddoc">
-<p>{No More Entries} No more entries are available from an enumeration operation. </p>
+<p>Warning - {No More Entries} No more entries are available from an enumeration operation. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a85664a26e6948b37cf54bc2fb6b92a65"></a>LongJump&#160;</td><td class="fielddoc">
-<p>A long jump has been executed. </p>
+<p>Warning - A long jump has been executed. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a67d9e43115ea475aae0089ae6b0d530f"></a>DllMightBeInsecure&#160;</td><td class="fielddoc">
-<p>The application is attempting to run executable code from the module hs. This may be insecure. An alternative, hs, is available. Should the application use the secure module hs? </p>
+<p>Warning - The application is attempting to run executable code. This may be insecure. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ac66d6e4ab28555f9038d0502dad32253"></a>LogCorruptionDetected&#160;</td><td class="fielddoc">
+<p>Warning - Transaction - There is no transaction metadata on the file. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ac9bea76a483a0ec00ef8b28936cc9e9d"></a>CantRecoverWithHandleOpen&#160;</td><td class="fielddoc">
+<p>Warning - Transaction - The file cannot be recovered because there is a handle still open on it. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a74943845fcb6c860274bfa071089cbe3"></a>TxfMetadataAlreadyPresent&#160;</td><td class="fielddoc">
+<p>Warning - Transaction - Transaction metadata is already present on this file and cannot be superseded. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209afcda25438f9248a19adee04527c8e976"></a>TransactionScopeCallbacksNotSet&#160;</td><td class="fielddoc">
+<p>Warning - Transaction - A transaction scope could not be entered because the scope handler has not been initialized. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a902b0d55fddef6f8d651fe1035b7d4bd"></a>Error&#160;</td><td class="fielddoc">
-<p>General error </p>
+<p>Error - General error </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a500ada6743997288e65fb5a71e850928"></a>Unsuccessful&#160;</td><td class="fielddoc">
-<p>{Operation Failed} The requested operation was unsuccessful. </p>
+<p>Error - {Operation Failed} The requested operation was unsuccessful. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e"></a>NotImplemented&#160;</td><td class="fielddoc">
-<p>{Not Implemented} The requested operation is not implemented. </p>
+<p>Error - {Not Implemented} The requested operation is not implemented. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2622b3081bb24b1956c5b46eae3fc23b"></a>InvalidInfoClass&#160;</td><td class="fielddoc">
-<p>{Invalid Parameter} The specified information class is not a valid information class for the specified object. </p>
+<p>Error - {Invalid Parameter} The specified information class is not a valid information class for the specified object. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5c1580983e7cb0ca3d19867438823ab8"></a>InfoLengthMismatch&#160;</td><td class="fielddoc">
+<p>Error - The specified information record length does not match the length that is required for the specified information class. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ac86b6caf254b06854e24c5c4510c5f85"></a>AccessViolation&#160;</td><td class="fielddoc">
+<p>Error - The instruction referenced memory it do not have access to. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a54356d3c602bdb23cd9c94c09c149a28"></a>InPageError&#160;</td><td class="fielddoc">
+<p>Error - The required data was not placed into memory because of an I/O error status. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5dd0a703b582f3c0b29762a0d7abbfa1"></a>PagefileQuota&#160;</td><td class="fielddoc">
+<p>Error - The page file quota for the process has been exhausted. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2d0e462e9958ce7bb443e70023241dfe"></a>InvalidHandle&#160;</td><td class="fielddoc">
+<p>Error - An invalid HANDLE was specified. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4b8ed0a02f1949e0b71ce35727cf8a78"></a>BadInitialStack&#160;</td><td class="fielddoc">
+<p>Error - An invalid initial stack was specified in a call to <code>NtCreateThread</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a63064da018e50a0a049ee5ab8842abb5"></a>BadInitialPc&#160;</td><td class="fielddoc">
+<p>Error - An invalid initial start address was specified in a call to <code>NtCreateThread</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209afa0650a5a14460bf2ea197e06586d75e"></a>InvalidCid&#160;</td><td class="fielddoc">
+<p>Error - An invalid client ID was specified. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af6348a18d48e4ee33669207401e6320e"></a>TimerNotCanceled&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to cancel or set a timer that has an associated APC and the specified thread is not the thread that originally set the timer with an associated APC routine. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a627251310d3384b591e4138be21145d5"></a>InvalidParameter&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a8f7a04953f2e2a02acef1c74dcc446ba"></a>NoSuchDevice&#160;</td><td class="fielddoc">
+<p>Error - A device that does not exist was specified. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ae13bda1c3f7ac029e44f9887fe887c95"></a>NoSuchFile&#160;</td><td class="fielddoc">
+<p>Error - {File Not Found} The file does not exist. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4d10a912855899a1a531fbf12736ce69"></a>InvalidDeviceRequest&#160;</td><td class="fielddoc">
+<p>Error - The specified request is not a valid operation for the target device. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a9556e151da49cd4bcf0352857cb33509"></a>EndOfFile&#160;</td><td class="fielddoc">
+<p>Error - The end-of-file marker has been reached. There is no valid data in the file beyond this marker. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a1d0b4f75446a80a5b47d91368a80050c"></a>WrongVolume&#160;</td><td class="fielddoc">
+<p>Error - {Wrong Volume} The wrong volume is in the drive. Insert volume into drive. </p>
+<p>e. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a674b342b7c13ab13faa10401a6713efb"></a>NoMediaInDevice&#160;</td><td class="fielddoc">
+<p>Error - {No Disk} There is no disk in the drive. Insert a disk into drive. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a9f13a978003af046bdd4b13f7cdac5b2"></a>NoMemory&#160;</td><td class="fielddoc">
+<p>Error - {Not Enough Quota} Not enough virtual memory or paging file quota is available to complete the specified operation. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad386f8e16b344b0ec5a1597dbdf3a684"></a>NotMappedView&#160;</td><td class="fielddoc">
+<p>Error - The address range to un-map is not a mapped view. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2b1e518a141acb472e5b83720121746d"></a>UnableToFreeVm&#160;</td><td class="fielddoc">
+<p>Error - The virtual memory cannot be freed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5ad077c992b76eb6585b3c24b00797a5"></a>UnableToDeleteSection&#160;</td><td class="fielddoc">
+<p>Error - The specified section cannot be deleted. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6f4f5c78e350362878889062f2b9294b"></a>IllegalInstruction&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Illegal Instruction. An attempt was made to execute an illegal instruction. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a49df42a3a569ff9c1933d4116377255f"></a>AlreadyCommitted&#160;</td><td class="fielddoc">
+<p>Error - {Already Committed} The specified address range is already committed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209acbcc0759909213e7cdba1f0cbf253126"></a>AccessDenied&#160;</td><td class="fielddoc">
+<p>Error - {Access Denied} A process has requested access to an object but has not been granted those access rights. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab801c4d44abd4738b7f69c4e390ed61d"></a>BufferTooSmall&#160;</td><td class="fielddoc">
+<p>Error - {Buffer Too Small} The buffer is too small to contain the entry. No information has been written to the buffer. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aae0736bae2b59a20d813ec0847206aab"></a>ObjectTypeMismatch&#160;</td><td class="fielddoc">
+<p>Error - {Wrong Type} There is a mismatch between the type of object that is required by the requested operation and the type of object that is specified in the request. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6148798b6e90ec93983d433ec1d0396b"></a>NonContinuableException&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Cannot Continue. Windows cannot continue from this exception. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af9669a6597fcc4bf3cec3fbb245a2227"></a>BadStack&#160;</td><td class="fielddoc">
+<p>Error - An invalid or unaligned stack was encountered during an unwind operation. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a8883b7d0d879f17136925252f3505ceb"></a>NotLocked&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to unlock a page of memory that was not locked. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad7d2f52d9cc160d27da1eaad34d86f16"></a>NotCommitted&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to change the attributes on memory that has not been committed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a1a14e3a009f0e5a562389507c51e09c2"></a>InvalidParameterMix&#160;</td><td class="fielddoc">
+<p>Error - An invalid combination of parameters was specified. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ae1528f19ff1a584c211d07c18d3b68ea"></a>ObjectNameInvalid&#160;</td><td class="fielddoc">
+<p>Error - The object name is invalid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0aa7fa6b105327c13daac2d070c1d8c6"></a>ObjectNameNotFound&#160;</td><td class="fielddoc">
+<p>Error - The object name is not found. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a06214eeec5a3e849ee7b3f1aa888e5a2"></a>ObjectNameCollision&#160;</td><td class="fielddoc">
+<p>Error - The object name already exists. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2c798b0b854d03dfa596d761d739b69b"></a>ObjectPathInvalid&#160;</td><td class="fielddoc">
+<p>Error - The object path component was not a directory object. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4e9aef496cde0a3cc70114838e250fcc"></a>ObjectPathNotFound&#160;</td><td class="fielddoc">
+<p>Error - {Path Not Found} The path does not exist. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a7a5685ad9c8459b6bd54ed6b12021f33"></a>ObjectPathSyntaxBad&#160;</td><td class="fielddoc">
+<p>Error - The object path component was not a directory object. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a3530d4690d1b267ca53c58a51d4e6f69"></a>DataOverrun&#160;</td><td class="fielddoc">
+<p>Error - {Data Overrun} A data overrun error occurred. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a72b0ce4ce899efbf2fdaad45cb63d3a4"></a>DataLate&#160;</td><td class="fielddoc">
+<p>Error - {Data Late} A data late error occurred. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a824286430ecf0d286a3214d0d4f6293f"></a>DataError&#160;</td><td class="fielddoc">
+<p>Error - {Data Error} An error occurred in reading or writing data. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad2fdb4a266ac32c36d708fc86004e87c"></a>CrcError&#160;</td><td class="fielddoc">
+<p>Error - {Bad CRC} A cyclic redundancy check (CRC) checksum error occurred. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a93ac431e922ff82d0f0f6af380fb7fc8"></a>SectionTooBig&#160;</td><td class="fielddoc">
+<p>Error - {Section Too Large} The specified section is too big to map the file. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a20855783f6646fdadfab2e473057f0ec"></a>PortConnectionRefused&#160;</td><td class="fielddoc">
+<p>Error - The <code>NtConnectPort</code> request is refused. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6e716aa9601107318f14a3c856322107"></a>InvalidPortHandle&#160;</td><td class="fielddoc">
+<p>Error - The type of port handle is invalid for the operation that is requested. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a24aaceb3c291037a214c35c38becfd77"></a>SharingViolation&#160;</td><td class="fielddoc">
+<p>Error - A file cannot be opened because the share access flags are incompatible. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209abab718430d4b68d21036fb9f29a16fb7"></a>QuotaExceeded&#160;</td><td class="fielddoc">
+<p>Error - Insufficient quota exists to complete the operation. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a7265bea8f3e690534fbd96a2341ce8e1"></a>InvalidPageProtection&#160;</td><td class="fielddoc">
+<p>Error - The specified page protection was not valid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a9959bdcd676a33e56cbd658f46dd8006"></a>MutantNotOwned&#160;</td><td class="fielddoc">
+<p>Error - An attempt to release a mutant object was made by a thread that was not the owner of the mutant object. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aff0a6fccfad5be7e311f10b3b086d870"></a>SemaphoreLimitExceeded&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to release a semaphore such that its maximum count would have been exceeded. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6d0af737d98de9706e7a344c96b0ebb8"></a>PortAlreadySet&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to set the DebugPort or ExceptionPort of a process, but a port already exists in the process, or an attempt was made to set the CompletionPort of a file but a port was already set in the file, or an attempt was made to set the associated completion port of an ALPC port but it is already set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5b202a5f4bdcdb4ec1467d8d4c6fabb9"></a>SectionNotImage&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to query image information on a section that does not map an image. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0d93bd9e72f1a84456de7adec38acd24"></a>SuspendCountExceeded&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to suspend a thread whose suspend count was at its maximum. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad3aab18d103d02ddcae84cbb89b05416"></a>ThreadIsTerminating&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to suspend a thread that has begun termination. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209acb8f96e0eae7fd98921ac03b835c3a4c"></a>BadWorkingSetLimit&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to set the working set limit to an invalid value (for example, the minimum greater than maximum). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad46db5735805a986fbc8f9082d399a77"></a>IncompatibleFileMap&#160;</td><td class="fielddoc">
+<p>Error - A section was created to map a file that is not compatible with an already existing section that maps the same file. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af912dbdd80d4917849b3a076b4d6482c"></a>SectionProtection&#160;</td><td class="fielddoc">
+<p>Error - A view to a section specifies a protection that is incompatible with the protection of the initial view. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a048e631a7ea0a8eea15896c5b073be0e"></a>EasNotSupported&#160;</td><td class="fielddoc">
+<p>Error - An operation involving EAs failed because the file system does not support EAs. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a161b29876c58388aaa3e6ba21fb4437e"></a>EaTooLarge&#160;</td><td class="fielddoc">
+<p>Error - An EA operation failed because the EA set is too large. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa93f42ba1111afe1c30254eef4279d88"></a>NonExistentEaEntry&#160;</td><td class="fielddoc">
+<p>Error - An EA operation failed because the name or EA index is invalid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a29329b1368aacdfdad34031915877a79"></a>NoEasOnFile&#160;</td><td class="fielddoc">
+<p>Error - The file for which EAs were requested has no EAs. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a8bd8d1b659b05cd2dd4716a8111c523a"></a>EaCorruptError&#160;</td><td class="fielddoc">
+<p>Error - The EA is corrupt and cannot be read. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a30cc27d11e4ee6626d86d19fb25723cc"></a>FileLockConflict&#160;</td><td class="fielddoc">
+<p>Error - A requested read/write cannot be granted due to a conflicting file lock. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af37aaaa523144be1aa6ffe098729f051"></a>LockNotGranted&#160;</td><td class="fielddoc">
+<p>Error - A requested file lock cannot be granted due to other existing locks. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a722fd493c8511dacbde0c67f45544304"></a>DeletePending&#160;</td><td class="fielddoc">
+<p>Error - A non-close operation has been requested of a file object that has a delete pending. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a175cc38970fbe9224edd58d9af42c403"></a>CtlFileNotSupported&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to set the control attribute on a file. This attribute is not supported in the destination file system. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa9fcec3ed301d4aed7ed94856b78a6b5"></a>UnknownRevision&#160;</td><td class="fielddoc">
+<p>Error - Indicates a revision number that was encountered or specified is not one that is known by the service. It might be a more recent revision than the service is aware of. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a55e3a9ebc1a7a7d05b7da580014ff86d"></a>RevisionMismatch&#160;</td><td class="fielddoc">
+<p>Error - Indicates that two revision levels are incompatible. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aaaf94be12ec357bc6ec00e13b7f6ff3e"></a>InvalidOwner&#160;</td><td class="fielddoc">
+<p>Error - Indicates a particular security ID cannot be assigned as the owner of an object. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a08bd05cae4a3d3b5e9c6f0a1fbb50573"></a>InvalidPrimaryGroup&#160;</td><td class="fielddoc">
+<p>Error - Indicates a particular security ID cannot be assigned as the primary group of an object. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a11616104a467853badae5ef93717de9e"></a>NoImpersonationToken&#160;</td><td class="fielddoc">
+<p>Error - An attempt has been made to operate on an impersonation token by a thread that is not currently impersonating a client. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a3a38ae7e2b7fe1325f957ea468d09bb4"></a>CantDisableMandatory&#160;</td><td class="fielddoc">
+<p>Error - A mandatory group cannot be disabled. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad7f469f607ee81036a4170d35dfe2873"></a>NoLogonServers&#160;</td><td class="fielddoc">
+<p>Error - No logon servers are currently available to service the logon request. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af3ccad42ad5f84d4f0c8c2ff55bad774"></a>NoSuchLogonSession&#160;</td><td class="fielddoc">
+<p>Error - A specified logon session does not exist. It might already have been terminated. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209acf631180bb710bf2c5166d31958a2c7e"></a>NoSuchPrivilege&#160;</td><td class="fielddoc">
+<p>Error - A specified privilege does not exist. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a38bc6c299dc362616daf75f4b82a18b4"></a>PrivilegeNotHeld&#160;</td><td class="fielddoc">
+<p>Error - A required privilege is not held by the client. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2afe86a634d7ea3b1e69dec2425a6ac8"></a>InvalidAccountName&#160;</td><td class="fielddoc">
+<p>Error - The name provided is not a properly formed account name. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ac01f8fd364dc6ba57479a27505b01124"></a>UserExists&#160;</td><td class="fielddoc">
+<p>Error - The specified account already exists. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a8095d5525a3ea6cb6db06e6c6e0e1611"></a>NoSuchUser&#160;</td><td class="fielddoc">
+<p>Error - The specified account does not exist. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a643dac31026c30b6be4f2b8ebd518a84"></a>GroupExists&#160;</td><td class="fielddoc">
+<p>Error - The specified group already exists. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0f1839c13fff0301fae4415ccddbb688"></a>NoSuchGroup&#160;</td><td class="fielddoc">
+<p>Error - The specified group does not exist. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5e3849540962f1dd72131f61208b3b8e"></a>MemberInGroup&#160;</td><td class="fielddoc">
+<p>Error - The specified user account is already in the specified group account. Also used to indicate a group cannot be deleted because it contains a member. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5c99fb92d65d2b4b6420b04127ab517c"></a>MemberNotInGroup&#160;</td><td class="fielddoc">
+<p>Error - The specified user account is not a member of the specified group account. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2c47a97552d3b12ec010fffc647ed8bd"></a>LastAdmin&#160;</td><td class="fielddoc">
+<p>Error - Indicates the requested operation would disable or delete the last remaining administration account. This is not allowed to prevent creating a situation in which the system cannot be administrated. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a929c177ef9cd3b348c4f2f9731b2ca73"></a>WrongPassword&#160;</td><td class="fielddoc">
+<p>Error - When trying to update a password, this return status indicates that the value provided as the current password is not correct. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aef3b1c62fc61142bc57a02770ed33617"></a>IllFormedPassword&#160;</td><td class="fielddoc">
+<p>Error - When trying to update a password, this return status indicates that the value provided for the new password contains values that are not allowed in passwords. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a545e2478ceec58cbbc7a7cd09d32ea54"></a>PasswordRestriction&#160;</td><td class="fielddoc">
+<p>Error - When trying to update a password, this status indicates that some password update rule has been violated. For example, the password might not meet length criteria. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2d0faca29a1edf5465b61dd0f449a332"></a>LogonFailure&#160;</td><td class="fielddoc">
+<p>Error - The attempted logon is invalid. This is either due to a bad username or authentication information. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a43c4eef8b5208c3de6b97aa0fbc0f624"></a>AccountRestriction&#160;</td><td class="fielddoc">
+<p>Error - Indicates a referenced user name and authentication information are valid, but some user account restriction has prevented successful authentication (such as time-of-day restrictions). </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a3dbf6d16b372e33485154e6a8e563cfb"></a>InvalidLogonHours&#160;</td><td class="fielddoc">
+<p>Error - The user account has time restrictions and cannot be logged onto at this time. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a13b78159215b2c11b7dfd291ed923416"></a>InvalidWorkstation&#160;</td><td class="fielddoc">
+<p>Error - The user account is restricted so that it cannot be used to log on from the source workstation. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5a1d0e6b08e6c4b559a53eb9a4d1ea0e"></a>PasswordExpired&#160;</td><td class="fielddoc">
+<p>Error - The user account password has expired. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a037ebf45ec2803c1ea4e18283dd65ec8"></a>AccountDisabled&#160;</td><td class="fielddoc">
+<p>Error - The referenced account is currently disabled and cannot be logged on to. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a665c1f83ec5e6862aec77ef3073539de"></a>NoneMapped&#160;</td><td class="fielddoc">
+<p>Error - None of the information to be translated has been translated. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0164ea2e93126fe78d1d797569730a25"></a>TooManyLuidsRequested&#160;</td><td class="fielddoc">
+<p>Error - The number of LUIDs requested cannot be allocated with a single allocation. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209abf4869552c1b94571310d844dd81aca6"></a>LuidsExhausted&#160;</td><td class="fielddoc">
+<p>Error - Indicates there are no more LUIDs to allocate. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad78e342769601510697b99f4d9857884"></a>InvalidSubAuthority&#160;</td><td class="fielddoc">
+<p>Error - Indicates the sub-authority value is invalid for the particular use. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a549216e0d2c5f6be81f9de914dcdbb14"></a>InvalidAcl&#160;</td><td class="fielddoc">
+<p>Error - Indicates the ACL structure is not valid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a1cb1aa598574fd6f73fd62b139f30e17"></a>InvalidSid&#160;</td><td class="fielddoc">
+<p>Error - Indicates the SID structure is not valid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa613e213b59a8cfa22f0dfb915b81fa1"></a>InvalidSecurityDescr&#160;</td><td class="fielddoc">
+<p>Error - Indicates the <code>SECURITY_DESCRIPTOR</code> structure is not valid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad561a32d7aaea77d3081d52ce45f74b3"></a>ProcedureNotFound&#160;</td><td class="fielddoc">
+<p>Error - Indicates the specified procedure address cannot be found in the DLL. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4bb4fd071cf54bae94ece53fa687b8bf"></a>InvalidImageFormat&#160;</td><td class="fielddoc">
+<p>Error - {Bad Image} Image is either not designed to run on Windows or it contains an error. Try installing the program again using the original installation media or contact your system administrator or the software vendor for support. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab223364e8c3ac195629f1297336e5984"></a>NoToken&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to reference a token that does not exist. This is typically done by referencing the token that is associated with a thread when the thread is not impersonating a client. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a89d950f3868c74f1ca5a2d35c7d34b1b"></a>BadInheritanceAcl&#160;</td><td class="fielddoc">
+<p>Error - Indicates that an attempt to build either an inherited ACL or ACE was not successful. This can be caused by a number of things. One of the more probable causes is the replacement of a CreatorId with a SID that did not fit into the ACE or ACL. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a52ee0fdc8b1806d28ec2d5cac9c424ca"></a>RangeNotLocked&#160;</td><td class="fielddoc">
+<p>Error - The range specified in <code>NtUnlockFile</code> was not locked. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4f080d03a8ddd688d27f7d7cd8e6d41e"></a>DiskFull&#160;</td><td class="fielddoc">
+<p>Error - An operation failed because the disk was full. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab816eb5ecc20c3e438ca1f144ad93782"></a>ServerDisabled&#160;</td><td class="fielddoc">
+<p>Error - The GUID allocation server is disabled at the moment. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a836721102656ffba3e1f41f7df554a72"></a>ServerNotDisabled&#160;</td><td class="fielddoc">
+<p>Error - The GUID allocation server is enabled at the moment. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa0f4dae985fbc35224beb957872d3ab0"></a>TooManyGuidsRequested&#160;</td><td class="fielddoc">
+<p>Error - Too many GUIDs were requested from the allocation server at once. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a07bee0bcdec621c263e67b3fad9a1350"></a>GuidsExhausted&#160;</td><td class="fielddoc">
+<p>Error - The GUIDs could not be allocated because the Authority Agent was exhausted. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad2e2f3a6a929c415b43e0f1de9495807"></a>InvalidIdAuthority&#160;</td><td class="fielddoc">
+<p>Error - The value provided was an invalid value for an identifier authority. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a44ebb75a9aca1ae2b7339306016ff158"></a>AgentsExhausted&#160;</td><td class="fielddoc">
+<p>Error - No more authority agent values are available for the particular identifier authority value. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a53a558c771d38185b130ea6f5032cb69"></a>InvalidVolumeLabel&#160;</td><td class="fielddoc">
+<p>Error - An invalid volume label has been specified. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad7d018ae96140c27ed1e239f5325b689"></a>SectionNotExtended&#160;</td><td class="fielddoc">
+<p>Error - A mapped section could not be extended. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ace65a406d8c5c46a36cc3fa25af97e1e"></a>NotMappedData&#160;</td><td class="fielddoc">
+<p>Error - Specified section to flush does not map a data file. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad34cc499dd7ac0b36810adee54ba281f"></a>ResourceDataNotFound&#160;</td><td class="fielddoc">
+<p>Error - Indicates the specified image file did not contain a resource section. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4d05c22aeeacb9dbac3e3d5436451376"></a>ResourceTypeNotFound&#160;</td><td class="fielddoc">
+<p>Error - Indicates the specified resource type cannot be found in the image file. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a882dea441399adb6038c259047521bc6"></a>ResourceNameNotFound&#160;</td><td class="fielddoc">
+<p>Error - Indicates the specified resource name cannot be found in the image file. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ae045f93c8b16d405f06bc8ca6cb970d1"></a>ArrayBoundsExceeded&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Array bounds exceeded. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209abac23b645a7fa571f217d95a2e34ea9d"></a>FloatDenormalOperand&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Floating-point denormal operand. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a68c508657e9f92c21ad1661f60998cc9"></a>FloatDivideByZero&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Floating-point division by zero. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a275dee5eca10bb07cda7baabf1a0f4e3"></a>FloatInexactResult&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Floating-point inexact result. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5e528f3f703634e06af0e2fa54495872"></a>FloatInvalidOperation&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Floating-point invalid operation. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ac6dac0e0b109e698d01934d1779d7e80"></a>FloatOverflow&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Floating-point overflow. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ac454e5dc193fbbab5be21d4e3833c62a"></a>FloatStackCheck&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Floating-point stack check. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a70ff7b4feb2313482b96be3d2ea79a37"></a>FloatUnderflow&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Floating-point underflow. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aed356342dbc05c87f7af4886eb06af92"></a>IntegerDivideByZero&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Integer division by zero. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aecc7a9702f48a07819e661c15c22f2c1"></a>IntegerOverflow&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Integer overflow. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209acbd3aff5a5387247171c8ad08b1d5e75"></a>PrivilegedInstruction&#160;</td><td class="fielddoc">
+<p>Error - {EXCEPTION} Privileged instruction. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a8562e9a8d099b7e2dd6317133e413ede"></a>TooManyPagingFiles&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to install more paging files than the system supports. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af35bce0a1a7b4dc9c67260c07e52dd4e"></a>FileInvalid&#160;</td><td class="fielddoc">
+<p>Error - The volume for a file has been externally altered such that the opened file is no longer valid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a7951255a993d996e021b7b439cfcb7ac"></a>InstanceNotAvailable&#160;</td><td class="fielddoc">
+<p>Error - The maximum named pipe instance count has been reached. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aeec4135c14cde6288aa35f4b6386527c"></a>PipeNotAvailable&#160;</td><td class="fielddoc">
+<p>Error - An instance of a named pipe cannot be found in the listening state. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2e2da724ea733a1b76e1d173cb6fbff7"></a>InvalidPipeState&#160;</td><td class="fielddoc">
+<p>Error - The named pipe is not in the connected or closing state. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6b9845421e0bb7b9a8662ba01cbd3fbb"></a>PipeBusy&#160;</td><td class="fielddoc">
+<p>Error - The specified pipe is set to complete operations and there are current I/O operations queued so that it cannot be changed to queue operations. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a96e6b9462fdd161d848d2a1714261b62"></a>IllegalFunction&#160;</td><td class="fielddoc">
+<p>Error - The specified handle is not open to the server end of the named pipe. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2f5372d8fc6f02f476583be7981bdfd0"></a>PipeDisconnected&#160;</td><td class="fielddoc">
+<p>Error - The specified named pipe is in the disconnected state. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ae6ff5f07d5675e7e97eb4a744ab23ba7"></a>PipeClosing&#160;</td><td class="fielddoc">
+<p>Error - The specified named pipe is in the closing state. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a32a486a9eba2dbdad4ac591349e96ea2"></a>PipeConnected&#160;</td><td class="fielddoc">
+<p>Error - The specified named pipe is in the connected state. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5146fbff68b92c686330c4fd65300893"></a>PipeListening&#160;</td><td class="fielddoc">
+<p>Error - The specified named pipe is in the listening state. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a60aa7bf0590882b3afebc939e66e888d"></a>InvalidReadMode&#160;</td><td class="fielddoc">
+<p>Error - The specified named pipe is not in message mode. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5bc733872619646c783551fe99206507"></a>IoTimeout&#160;</td><td class="fielddoc">
+<p>Error - {Device Timeout} The specified I/O operation was not completed before the time-out period expired. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ac4282b1dd103f15a1b97eb061002d6a3"></a>FileForcedClosed&#160;</td><td class="fielddoc">
+<p>Error - The specified file has been closed by another process. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5d60723125e23189f2a634411dc58bc0"></a>ProfilingNotStarted&#160;</td><td class="fielddoc">
+<p>Error - Profiling is not started. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5b5daed249e6cbbeedcd7d93754c8e55"></a>ProfilingNotStopped&#160;</td><td class="fielddoc">
+<p>Error - Profiling is not stopped. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209abf64617daac7748248f79bc45ebd2624"></a>NotSameDevice&#160;</td><td class="fielddoc">
+<p>Error - {Incorrect Volume} The destination file of a rename request is located on a different device than the source of the rename request. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aeab2dee5d0c84776effe3c43221b807c"></a>FileRenamed&#160;</td><td class="fielddoc">
+<p>Error - The specified file has been renamed and thus cannot be modified. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2a69e5d94e8c727d61020b4ec09a7912"></a>CantWait&#160;</td><td class="fielddoc">
+<p>Error - Used to indicate that an operation cannot continue without blocking for I/O. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad184b04c0508f5518642b86e2e062d79"></a>PipeEmpty&#160;</td><td class="fielddoc">
+<p>Error - Used to indicate that a read operation was done on an empty pipe. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0448ed29c53d9d1f210f3a9af3abc473"></a>CantTerminateSelf&#160;</td><td class="fielddoc">
+<p>Error - Indicates that a thread attempted to terminate itself by default (called <code>NtTerminateThread</code> with <code>NULL</code>) and it was the last thread in the current process. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a8462b58246e70e5c83e5b939a9332cb5"></a>InternalError&#160;</td><td class="fielddoc">
+<p>Error - An internal error occurred. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5ff59deec7488ca606922a59f3f232fa"></a>InvalidParameter1&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the first argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4d4a1f0d1ec73b4ef2a3cb35579277a1"></a>InvalidParameter2&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the second argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af8ad5b22e6fb24d3694760a26c601660"></a>InvalidParameter3&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the third argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab99d174b0685bf609be7491a9721c341"></a>InvalidParameter4&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the fourth argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a472d77d99a7a5ae74043fac1e427fa6e"></a>InvalidParameter5&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the fifth argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a27052a87233e13c95caef8d4024d6e9b"></a>InvalidParameter6&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the sixth argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a037c3337ba69e11de8ef35147799cf45"></a>InvalidParameter7&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the seventh argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af2e26b8ebfa8f88d1c8fbe29463371b8"></a>InvalidParameter8&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the eighth argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0685226852e6595800190ae696d55860"></a>InvalidParameter9&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the ninth argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab3db8d8eab7cd5d5bc3fa5c73b0ad5b4"></a>InvalidParameter10&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the tenth argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a046f28d811827b05eef9f9f3ba56737f"></a>InvalidParameter11&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the eleventh argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af8a15a9865aef69c3db69ce4a1211d36"></a>InvalidParameter12&#160;</td><td class="fielddoc">
+<p>Error - An invalid parameter was passed to a service or function as the twelfth argument. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a7c0bff4c1e77d7a423be79445178c557"></a>DirectoryNotEmpty&#160;</td><td class="fielddoc">
+<p>Error - Indicates that the directory trying to be deleted is not empty. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab3ee10899abf4bf00265c741b33236f4"></a>NotADirectory&#160;</td><td class="fielddoc">
+<p>Error - A requested opened file is not a directory. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a435cf883ffe929a8d341c990892025ed"></a>MappedFileSizeZero&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to map a file of size zero with the maximum size specified as zero. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af5c8c68a95f1e6bdee4e49104b58a799"></a>TooManyOpenedFiles&#160;</td><td class="fielddoc">
+<p>Error - Too many files are opened on a remote server. This error should only be returned by the Windows redirector on a remote drive. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa149e85a44aeec9140e92733d9ed694e"></a>Cancelled&#160;</td><td class="fielddoc">
+<p>Error - The I/O request was canceled. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5183f0936a454855e0764adafccd5f6c"></a>CannotDelete&#160;</td><td class="fielddoc">
+<p>Error - An attempt has been made to remove a file or directory that cannot be deleted. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a8022fb6c8ba15c2bf1fcadb0e7a60bd2"></a>InvalidComputerName&#160;</td><td class="fielddoc">
+<p>Error - Indicates a name that was specified as a remote computer name is syntactically invalid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2dffe9b335e135751350836e774b23e7"></a>FileDeleted&#160;</td><td class="fielddoc">
+<p>Error - An I/O request other than <code>close</code> was performed on a file after it was deleted, which can only happen to a request that did not complete before the last handle was closed via <code>NtClose</code>. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a13fb37351fb943e00933e5ec65bad9aa"></a>SpecialAccount&#160;</td><td class="fielddoc">
+<p>Error - Indicates an operation that is incompatible with built-in accounts has been attempted on a built-in (special) SAM account. For example, built-in accounts cannot be deleted. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aab19e92d13db656fd5486912b734bcf6"></a>SpecialGroup&#160;</td><td class="fielddoc">
+<p>Error - The operation requested cannot be performed on the specified group because it is a built-in special group. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad2e711c75efc9ef59115c960fd553f79"></a>SpecialUser&#160;</td><td class="fielddoc">
+<p>Error - The operation requested cannot be performed on the specified user because it is a built-in special user. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209afbbaeae9784519797dac188cbb315b5c"></a>MembersPrimaryGroup&#160;</td><td class="fielddoc">
+<p>Error - Indicates a member cannot be removed from a group because the group is currently the member's primary group. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6120bd326934e956c89721dcb787117e"></a>FileClosed&#160;</td><td class="fielddoc">
+<p>Error - An I/O request other than <code>close</code> and several other special case operations was attempted using a file object that had already been closed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aefa7a340f6e2d3493438fbf54fc6db4d"></a>TooManyThreads&#160;</td><td class="fielddoc">
+<p>Error - Indicates a process has too many threads to perform the requested action. For example, assignment of a primary token can be performed only when a process has zero or one threads. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ae8eb50053509898f127892b8ae4d7e4a"></a>ThreadNotInProcess&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to operate on a thread within a specific process, but the specified thread is not in the specified process. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a66257186a614cc54e826247c9f389e14"></a>TokenAlreadyInUse&#160;</td><td class="fielddoc">
+<p>Error - An attempt was made to establish a token for use as a primary token but the token is already in use. A token can only be the primary token of one process at a time. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a1de6d2e112141d5b2d58ff1f859780aa"></a>PagefileQuotaExceeded&#160;</td><td class="fielddoc">
+<p>Error - The page file quota was exceeded. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2ff1d02253aaf58d5f7ff29b8fcd933f"></a>CommitmentLimit&#160;</td><td class="fielddoc">
+<p>Error - {Out of Virtual Memory} Your system is low on virtual memory. To ensure that Windows runs correctly, increase the size of your virtual memory paging file. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a3b50eb44da01b0cf678a46755affc45a"></a>InvalidImageLeFormat&#160;</td><td class="fielddoc">
+<p>Error - The specified image file did not have the correct format: it appears to be LE format. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0307775e4b9498c2dfbb21dce6cbf23c"></a>InvalidImageNotMz&#160;</td><td class="fielddoc">
+<p>Error - The specified image file did not have the correct format: it did not have an initial MZ. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6f6bbdfc6f0a706e8f2b69fa81b8a741"></a>InvalidImageProtect&#160;</td><td class="fielddoc">
+<p>Error - The specified image file did not have the correct format: it did not have a proper <code>e_lfarlc</code> in the MZ header. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a83dbbb26b1f675d643a644ad995fb4cf"></a>InvalidImageWin16&#160;</td><td class="fielddoc">
+<p>Error - The specified image file did not have the correct format: it appears to be a 16-bit Windows image. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a706635f21c529f4ab648eb6d2567cd18"></a>LogonServer&#160;</td><td class="fielddoc">
+<p>Error - The <code>Netlogon</code> service cannot start because another <code>Netlogon</code> service running in the domain conflicts with the specified role. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a587dee25984a214792659fbf01bd1b62"></a>DifferenceAtDc&#160;</td><td class="fielddoc">
+<p>Error - The time at the primary domain controller is different from the time at the backup domain controller or member server by too large an amount. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a226f5fd1120930cbc43b0474ae385f82"></a>SynchronizationRequired&#160;</td><td class="fielddoc">
+<p>Error - The SAM database on a Windows Server operating system is significantly out of synchronization with the copy on the domain controller. A complete synchronization is required. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a75abd814925cea1e24de9e114ccf6604"></a>DllNotFound&#160;</td><td class="fielddoc">
+<p>Error - {Unable To Locate Component} This application has failed to start because DLL was not found. Reinstalling the application might fix this problem. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ae26216b1ea565517d829d14350e68fb9"></a>IoPrivilegeFailed&#160;</td><td class="fielddoc">
+<p>Error - {Privilege Failed} The I/O permissions for the process could not be changed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a127693fcef013fdfc2deee7db8487b8a"></a>OrdinalNotFound&#160;</td><td class="fielddoc">
+<p>Error - {Ordinal Not Found} The ordinal could not be located in the dynamic link library. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209adda22a7d33089bcc656aabb4bbba32e9"></a>EntryPointNotFound&#160;</td><td class="fielddoc">
+<p>Error - {Entry Point Not Found} The procedure entry point could not be located in the dynamic link library. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a42d5eff5d46155151eae2631dbad985c"></a>ControlCExit&#160;</td><td class="fielddoc">
+<p>Error - {Application Exit by CTRL+C} The application terminated as a result of a CTRL+C. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a301bb6ac6ca3b2df0d86e02d560e4df6"></a>PortNotSet&#160;</td><td class="fielddoc">
+<p>Error - An attempt to remove a processes DebugPort was made, but a port was not already associated with the process. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a9cb0bcdf7aef9d5f523b3497c7cf139c"></a>DebuggerInactive&#160;</td><td class="fielddoc">
+<p>Error - An attempt to do an operation on a debug port failed because the port is in the process of being deleted. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6080c66ac4554ab7c291d65a0dba37b1"></a>CallbackBypass&#160;</td><td class="fielddoc">
+<p>Error - A callback has requested to bypass native code. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a1c36ac42c5f8d58fa6fdb589c3bed865"></a>PortClosed&#160;</td><td class="fielddoc">
+<p>Error - The ALPC port is closed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a65530d06d563351447a7a53552c84431"></a>MessageLost&#160;</td><td class="fielddoc">
+<p>Error - The ALPC message requested is no longer available. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ad5e88abe375e264803a6f6b436e769e6"></a>InvalidMessage&#160;</td><td class="fielddoc">
+<p>Error - The ALPC message supplied is invalid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a1a816592286f73ef46ba3b41838f8afc"></a>RequestCanceled&#160;</td><td class="fielddoc">
+<p>Error - The ALPC message has been canceled. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209abb87ae00160b7029591a657e2c8eea8a"></a>RecursiveDispatch&#160;</td><td class="fielddoc">
+<p>Error - Invalid recursive dispatch attempt. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a349b268aa0a4be5a7cf4e41cc0a8172d"></a>LpcReceiveBufferExpected&#160;</td><td class="fielddoc">
+<p>Error - No receive buffer has been supplied in a synchronous request. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209afddcd6b44f09d09d76c7c3d297cf0191"></a>LpcInvalidConnectionUsage&#160;</td><td class="fielddoc">
+<p>Error - The connection port is used in an invalid context. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a3c1ad5b389c2904a16921aff2a88bdf7"></a>LpcRequestsNotAllowed&#160;</td><td class="fielddoc">
+<p>Error - The ALPC port does not accept new request messages. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aabaf3eab94011f857c29b7619cf35dbb"></a>ResourceInUse&#160;</td><td class="fielddoc">
+<p>Error - The resource requested is already in use. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab6dfdb7a1cc07324c46799943837cc23"></a>ProcessIsProtected&#160;</td><td class="fielddoc">
+<p>Error - Either the target process, or the target thread's containing process, is a protected process. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0d66396f2422c2c24609641e8b4036e4"></a>VolumeDirty&#160;</td><td class="fielddoc">
+<p>Error - The operation could not be completed because the volume is dirty. Please run the Chkdsk utility and try again. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a942db714b4c2b95e193b976fefb899bf"></a>FileCheckedOut&#160;</td><td class="fielddoc">
+<p>Error - This file is checked out or locked for editing by another user. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0ed8a0a2e5b529f50db3cfac23d115eb"></a>CheckOutRequired&#160;</td><td class="fielddoc">
+<p>Error - The file must be checked out before saving changes. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a58d21a16c766f90e206f0397a0fa9eb1"></a>BadFileType&#160;</td><td class="fielddoc">
+<p>Error - The file type being saved or retrieved has been blocked. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a39e3f1d705b11a3afd05cb4127140ef9"></a>FileTooLarge&#160;</td><td class="fielddoc">
+<p>Error - The file size exceeds the limit allowed and cannot be saved. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a56723b762e2ac6341fb1ca5409bfd86a"></a>FormsAuthRequired&#160;</td><td class="fielddoc">
+<p>Error - Access Denied. Before opening files in this location, you must first browse to the e.g. site and select the option to log on automatically. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a76869ed96d11d0a0158bff72b43246d3"></a>VirusInfected&#160;</td><td class="fielddoc">
+<p>Error - The operation did not complete successfully because the file contains a virus. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a1ffbc7bc752040cf33435a35f8a4be92"></a>VirusDeleted&#160;</td><td class="fielddoc">
+<p>Error - This file contains a virus and cannot be opened. Due to the nature of this virus, the file has been removed from this location. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ae4e8bc03829f5f5f31a00bce57aab1c4"></a>TransactionalConflict&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The function attempted to use a name that is reserved for use by another transaction. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a7c57bd0cd9e764e09c35a986225b119b"></a>InvalidTransaction&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The transaction handle associated with this operation is invalid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a869b565115962a6195445f074332a12e"></a>TransactionNotActive&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The requested operation was made in the context of a transaction that is no longer active. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a364c69adb0f3bc7dd75beafd33c5da92"></a>TmInitializationFailed&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The transaction manager was unable to be successfully initialized. Transacted operations are not supported. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab61fac34c0f4944b5558ee9b90bcc174"></a>RmNotActive&#160;</td><td class="fielddoc">
+<p>Error - Transaction - Transaction support within the specified file system resource manager was not started or was shut down due to an error. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6fb9e7f0ba9d96b5e16059ee59d84219"></a>RmMetadataCorrupt&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The metadata of the resource manager has been corrupted. The resource manager will not function. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a220552aa87e48c9cff64c3db530fd6c4"></a>TransactionNotJoined&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The resource manager attempted to prepare a transaction that it has not successfully joined. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209acb4b14f548334110d3351344588f9b1e"></a>DirectoryNotRm&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The specified directory does not contain a file system resource manager. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a8869f52b6cc9866497b0728663a68bf8"></a>CouldNotResizeLog&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The log could not be set to the requested size. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ac7acaa7ede2ece4d29054706b81a527c"></a>TransactionsUnsupportedRemote&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The remote server or share does not support transacted file operations. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ae4ff151c6e0fae7c71b34af80451f4d0"></a>LogResizeInvalidSize&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The requested log size for the file system resource manager is invalid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6b0ea4268e921a630cef9900ec2fcbd1"></a>RemoteFileVersionMismatch&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The remote server sent mismatching version number or Fid for a file opened with transactions. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2bc3231beb141cd52999e206ce804080"></a>CrmProtocolAlreadyExists&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The resource manager tried to register a protocol that already exists. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209afba7757a38a976870e18bf0e77c6cabc"></a>TransactionPropagationFailed&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The attempt to propagate the transaction failed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a46379c91a9eed191c888c4d954798915"></a>CrmProtocolNotFound&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The requested propagation protocol was not registered as a CRM. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2268627d04a62792642ac490a1ce51ac"></a>TransactionSuperiorExists&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The transaction object already has a superior enlistment, and the caller attempted an operation that would have created a new superior. Only a single superior enlistment is allowed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209afddeae451dc15e596380e2154028c957"></a>TransactionRequestNotValid&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The requested operation is not valid on the transaction object in its current state. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a7a1213b09b91f616404ca4ef79fc9735"></a>TransactionNotRequested&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The caller has called a response API, but the response is not expected because the transaction manager did not issue the corresponding request to the caller. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a2c8e64b21cc35b265e735fc7608832af"></a>TransactionAlreadyAborted&#160;</td><td class="fielddoc">
+<p>Error - Transaction - It is too late to perform the requested operation, because the transaction has already been aborted. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a64164997512193533a9cf789dd52c8df"></a>TransactionAlreadyCommitted&#160;</td><td class="fielddoc">
+<p>Error - Transaction - It is too late to perform the requested operation, because the transaction has already been committed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aebab1eecde0e178dbafb24c3bbbf0f9b"></a>TransactionInvalidMarshallBuffer&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The buffer passed in to <code>NtPushTransaction</code> or <code>NtPullTransaction</code> is not in a valid format. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a00444153fa63fd4b8acd31823705041e"></a>CurrentTransactionNotValid&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The current transaction context associated with the thread is not a valid handle to a transaction object. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4bc0e46613ffcf91ca5fb74113db306e"></a>LogGrowthFailed&#160;</td><td class="fielddoc">
+<p>Error - Transaction - An attempt to create space in the transactional resource manager's log failed. The failure status has been recorded in the event log. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a59903b03a0dc2cc8a3a98eb564fee452"></a>ObjectNoLongerExists&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The object (file, stream, or link) that corresponds to the handle has been deleted by a transaction save-point rollback. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209afbc0e91fbd175c6a15607f1986597287"></a>StreamMiniversionNotFound&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The specified file mini-version was not found for this transacted file open. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a24a05ff63870c2aa827bb5013881c8e3"></a>StreamMiniversionNotValid&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The specified file mini-version was found but has been invalidated. The most likely cause is a transaction save-point rollback. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209afbbeb4e7f4c8d6e242946c099343bcc4"></a>MiniversionInaccessibleFromSpecifiedTransaction&#160;</td><td class="fielddoc">
+<p>Error - Transaction - A mini-version can be opened only in the context of the transaction that created it. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a95f345729799ae9c705eefbeb53dfb9b"></a>CantOpenMiniversionWithModifyIntent&#160;</td><td class="fielddoc">
+<p>Error - Transaction - It is not possible to open a mini-version with modify access. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ac8cc7e17ec7224ae9f4ffe35dbb00d2c"></a>CantCreateMoreStreamMiniversions&#160;</td><td class="fielddoc">
+<p>Error - Transaction - It is not possible to create any more mini-versions for this stream. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a5abd6db079786f30b0608e8611f11e1d"></a>HandleNoLongerValid&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The handle has been invalidated by a transaction. The most likely cause is the presence of memory mapping on a file or an open handle when the transaction ended or rolled back to save-point. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209afa5592241d64226e23ca2030b0e662d0"></a>NoTxfMetadata&#160;</td><td class="fielddoc">
+<p>Error - Transaction - There is no transaction metadata on the file. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a180edfffc5202bae2303c322faba67ae"></a>RmDisconnected&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The transaction outcome is unavailable because the resource manager responsible for it is disconnected. </p>
+<p>Error - The transaction outcome is unavailable because the resource manager responsible for it is disconnected. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0768759a23da48e5fecee78544d3e6f6"></a>EnlistmentNotSuperior&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The request was rejected because the enlistment in question is not a superior enlistment. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a98ace0a47b904526bf49b16f988a2ca7"></a>FileIdentityNotPersistent&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The file cannot be opened in a transaction because its identity depends on the outcome of an unresolved transaction. </p>
+<p>Error - The file cannot be opened in a transaction because its identity depends on the outcome of an unresolved transaction. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aca92662e5b7e6c7c7b3d0fb00602711c"></a>CantBreakTransactionalDependency&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The operation cannot be performed because another transaction is depending on this property not changing. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209af38d3de768dbcbdb7729d82417628015"></a>CantCrossRmBoundary&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The operation would involve a single file with two transactional resource managers and is, therefore, not allowed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209aa0273c872a328e729333a02de76592b7"></a>TxfDirNotEmpty&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The <code>$Txf</code> directory must be empty for this operation to succeed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a0800be19f123d8aabd116fe6b87127e5"></a>IndoubtTransactionsExist&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The operation would leave a transactional resource manager in an inconsistent state and is therefore not allowed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6478482c649c50b765fa1e3f317476a2"></a>TmVolatile&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The operation could not be completed because the transaction manager does not have a log. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a420d442204de128d04500d60e6ab2ec0"></a>RollbackTimerExpired&#160;</td><td class="fielddoc">
+<p>Error - Transaction - A rollback could not be scheduled because a previously scheduled rollback has already executed or been queued for execution. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a64b1c4fef574235e0d1209c8b2948add"></a>TxfAttributeCorrupt&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The transactional metadata attribute on the file or directory is corrupt and unreadable. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a60fc8d8b6d366b951370c234ab24f7ad"></a>EfsNotAllowedInTransaction&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The encryption operation could not be completed because a transaction is active. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4b9ac4110ea17efb090d46c56e4618d9"></a>TransactionalOpenNotAllowed&#160;</td><td class="fielddoc">
+<p>Error - Transaction - This object is not allowed to be opened in a transaction. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab331ecd4ef9abd96ebdff4275ba90728"></a>TransactedMappingUnsupportedRemote&#160;</td><td class="fielddoc">
+<p>Error - Transaction - Memory mapping (creating a mapped section) a remote file under a transaction is not supported. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a4bee4b927ca03c5bc976afbf5f6e5e33"></a>TransactionRequiredPromotion&#160;</td><td class="fielddoc">
+<p>Error - Transaction - Promotion was required to allow the resource manager to enlist, but the transaction was set to disallow it. </p>
+<p>Error - Promotion was required to allow the resource manager to enlist, but the transaction was set to disallow it. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a31145e4ae00f39644f6f3d98f3386533"></a>CannotExecuteFileInTransaction&#160;</td><td class="fielddoc">
+<p>Error - Transaction - This file is open for modification in an unresolved transaction and can be opened for execute only by a transacted reader. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209ab42c71dfbc76ae56653793ac48cd535d"></a>TransactionsNotFrozen&#160;</td><td class="fielddoc">
+<p>Error - Transaction - The request to thaw frozen transactions was ignored because transactions were not previously frozen. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a864b51f40c1d93f1b3b0327ef5c9b209a6bdce5aac70763f461e4978021859139"></a>MaximumNtStatus&#160;</td><td class="fielddoc">
+<p>Maximal value </p>
 </td></tr>
 </table>
 

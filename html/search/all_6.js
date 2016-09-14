@@ -6,8 +6,10 @@ var searchData=
   ['getdiskfreespace',['GetDiskFreeSpace',['../interface_dokan_net_1_1_i_dokan_operations.html#ab2574f9b34b8bd244a3268d2cedd78c6',1,'DokanNet::IDokanOperations']]],
   ['getfileinformation',['GetFileInformation',['../interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b',1,'DokanNet::IDokanOperations']]],
   ['getfilesecurity',['GetFileSecurity',['../interface_dokan_net_1_1_i_dokan_operations.html#abc92826efe0dce94755e94fa380f9345',1,'DokanNet::IDokanOperations']]],
-  ['getformat',['GetFormat',['../class_dokan_net_1_1_format_providers.html#a8e0c5c5f9c7c2e43449e8faf84acaa12',1,'DokanNet::FormatProviders']]],
+  ['getformat',['GetFormat',['../class_dokan_net_1_1_format_providers.html#a9f25dc50a003e2e763bf64182a3cf5a8',1,'DokanNet::FormatProviders']]],
   ['getrequestor',['GetRequestor',['../class_dokan_net_1_1_dokan_file_info.html#aed4f7da802a9fe3097517f86287b109e',1,'DokanNet::DokanFileInfo']]],
   ['getvolumeinformation',['GetVolumeInformation',['../interface_dokan_net_1_1_i_dokan_operations.html#a1f21331221a8365f260e17e0def8759a',1,'DokanNet::IDokanOperations']]],
-  ['guardpageviolation',['GuardPageViolation',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa97af09be048086360072b6cf2e4b4bc',1,'DokanNet']]]
+  ['groupexists',['GroupExists',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a643dac31026c30b6be4f2b8ebd518a84',1,'DokanNet']]],
+  ['guardpageviolation',['GuardPageViolation',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa97af09be048086360072b6cf2e4b4bc',1,'DokanNet']]],
+  ['guidsexhausted',['GuidsExhausted',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a07bee0bcdec621c263e67b3fad9a1350',1,'DokanNet']]]
 ];

@@ -5,6 +5,6 @@ var searchData=
   ['findfileswithpattern',['FindFilesWithPattern',['../interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8',1,'DokanNet::IDokanOperations']]],
   ['findstreams',['FindStreams',['../interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5',1,'DokanNet::IDokanOperations']]],
   ['flushfilebuffers',['FlushFileBuffers',['../interface_dokan_net_1_1_i_dokan_operations.html#a3f0b7c046ed4d42de1dec0e4356f38d9',1,'DokanNet::IDokanOperations']]],
-  ['format',['Format',['../class_dokan_net_1_1_format_providers.html#ac9de1ac654a12ddf840be48710295c47',1,'DokanNet::FormatProviders']]],
+  ['format',['Format',['../class_dokan_net_1_1_format_providers.html#ae16cb2b2225fc4c139872529e1c92da2',1,'DokanNet::FormatProviders']]],
   ['formatmessageforlogging',['FormatMessageForLogging',['../class_dokan_net_1_1_logging_1_1_logger_extensions.html#a76eaf871ef38b1cfe1d568ce33395bf5',1,'DokanNet.Logging.LoggerExtensions.FormatMessageForLogging(this string message, string category=null, string loggerName=&quot;&quot;)'],['../class_dokan_net_1_1_logging_1_1_logger_extensions.html#a97a14de12e6808d941dff8f0a05a4bd7',1,'DokanNet.Logging.LoggerExtensions.FormatMessageForLogging(this string message, bool addDateTime=false, string category=null, string loggerName=&quot;&quot;)']]]
 ];
