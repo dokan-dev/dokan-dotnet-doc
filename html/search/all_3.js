@@ -11,6 +11,7 @@ var searchData=
   ['debugviewlogger',['DebugViewLogger',['../class_dokan_net_1_1_logging_1_1_debug_view_logger.html#a3b5d63ce065364efb25d9b99ff5f37ce',1,'DokanNet::Logging::DebugViewLogger']]],
   ['defaultformatprovider',['DefaultFormatProvider',['../class_dokan_net_1_1_format_providers.html#a5e2da0dc7099791e7afb64e78e868be5',1,'DokanNet::FormatProviders']]],
   ['delete',['Delete',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720af2a6c498fb90ee345d997f888fce3b18',1,'DokanNet']]],
+  ['deletechild',['DeleteChild',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720ac9cbe5e0e93ae9324b54954af1785298',1,'DokanNet']]],
   ['deletedirectory',['DeleteDirectory',['../interface_dokan_net_1_1_i_dokan_operations.html#a5b5af8c7eba19f3d8517844854974895',1,'DokanNet::IDokanOperations']]],
   ['deletefile',['DeleteFile',['../interface_dokan_net_1_1_i_dokan_operations.html#aa2977365c84a88375ce06d088137914f',1,'DokanNet::IDokanOperations']]],
   ['deleteonclose',['DeleteOnClose',['../class_dokan_net_1_1_dokan_file_info.html#abe8f97a17b7e66b4a7013a08c7730f5b',1,'DokanNet::DokanFileInfo']]],

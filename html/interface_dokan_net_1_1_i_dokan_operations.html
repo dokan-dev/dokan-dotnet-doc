@@ -102,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> API callbacks interface.  
+<p>Dokan API callbacks interface.  
  <a href="interface_dokan_net_1_1_i_dokan_operations.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -174,18 +174,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a90bf07522e3673cf359bb854eca1be71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the security of a file or directory object.  <a href="#a90bf07522e3673cf359bb854eca1be71">More...</a><br /></td></tr>
 <tr class="separator:a90bf07522e3673cf359bb854eca1be71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7d6baa2cbb6faa408f20aa7ce8292e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7d6baa2cbb6faa408f20aa7ce8292e1">Mounted</a> (<a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:ae7d6baa2cbb6faa408f20aa7ce8292e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> succeed to mount the volume.  <a href="#ae7d6baa2cbb6faa408f20aa7ce8292e1">More...</a><br /></td></tr>
+<tr class="memdesc:ae7d6baa2cbb6faa408f20aa7ce8292e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when Dokan succeed to mount the volume.  <a href="#ae7d6baa2cbb6faa408f20aa7ce8292e1">More...</a><br /></td></tr>
 <tr class="separator:ae7d6baa2cbb6faa408f20aa7ce8292e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a918e1aae658759f4872665578668ace2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a918e1aae658759f4872665578668ace2">Unmounted</a> (<a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:a918e1aae658759f4872665578668ace2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> is unmounting the volume.  <a href="#a918e1aae658759f4872665578668ace2">More...</a><br /></td></tr>
+<tr class="memdesc:a918e1aae658759f4872665578668ace2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when Dokan is unmounting the volume.  <a href="#a918e1aae658759f4872665578668ace2">More...</a><br /></td></tr>
 <tr class="separator:a918e1aae658759f4872665578668ace2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ec3c2770d85940b909b7cd0e3589c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5">FindStreams</a> (string fileName, out IList&lt; <a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a> &gt; streams, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:ae7ec3c2770d85940b909b7cd0e3589c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve all NTFS Streams informations on the file. This is only called if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6ad8fe8feefa750b9723759954632c391f" title="Use alternate stream.">DokanOptions.AltStream</a> is enabled.  <a href="#ae7ec3c2770d85940b909b7cd0e3589c5">More...</a><br /></td></tr>
 <tr class="separator:ae7ec3c2770d85940b909b7cd0e3589c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> API callbacks interface. </p>
-<p>A interface of callbacks that describe all <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> API operation that will be called when Windows access to the file system.</p>
+<div class="textblock"><p>Dokan API callbacks interface. </p>
+<p>A interface of callbacks that describe all Dokan API operation that will be called when Windows access to the file system.</p>
 <p>All this callbacks can return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="Error - {Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a> if you dont want to support one of them. Be aware that returning such value to important callbacks such <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a>/<a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5e7bc940f2e31b6ae6b989dc81818294" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">ReadFile</a>/... would make the filesystem not working or unstable. </p>
 <p>This is the same struct as <code>DOKAN_OPERATIONS</code> (dokan.h) in the C++ version of <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
@@ -453,7 +453,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
-    <tr><td class="paramname">files</td><td>A list of <a class="el" href="struct_dokan_net_1_1_file_information.html" title="Used to provide file information to Dokan during operations IDokanOperations.GetFileInformation, IDokanOperations.FindFiles, IDokanOperations.FindStreams or IDokanOperations.FindFilesWithPattern. ">FileInformation</a> to return.</td></tr>
+    <tr><td class="paramname">files</td><td>A list of <a class="el" href="struct_dokan_net_1_1_file_information.html" title="Used to provide file information to Dokan during operations by ">FileInformation</a> to return.</td></tr>
     <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
@@ -504,7 +504,7 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>Path requested by the Kernel on the FileSystem.</td></tr>
     <tr><td class="paramname">searchPattern</td><td>Search pattern</td></tr>
-    <tr><td class="paramname">files</td><td>A list of <a class="el" href="struct_dokan_net_1_1_file_information.html" title="Used to provide file information to Dokan during operations IDokanOperations.GetFileInformation, IDokanOperations.FindFiles, IDokanOperations.FindStreams or IDokanOperations.FindFilesWithPattern. ">FileInformation</a> to return.</td></tr>
+    <tr><td class="paramname">files</td><td>A list of <a class="el" href="struct_dokan_net_1_1_file_information.html" title="Used to provide file information to Dokan during operations by ">FileInformation</a> to return.</td></tr>
     <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
@@ -550,7 +550,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
-    <tr><td class="paramname">streams</td><td>List of <a class="el" href="struct_dokan_net_1_1_file_information.html" title="Used to provide file information to Dokan during operations IDokanOperations.GetFileInformation, IDokanOperations.FindFiles, IDokanOperations.FindStreams or IDokanOperations.FindFilesWithPattern. ">FileInformation</a> for each streams present on the file.</td></tr>
+    <tr><td class="paramname">streams</td><td>List of <a class="el" href="struct_dokan_net_1_1_file_information.html" title="Used to provide file information to Dokan during operations by ">FileInformation</a> for each streams present on the file.</td></tr>
     <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
@@ -685,7 +685,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
-    <tr><td class="paramname">fileInfo</td><td><a class="el" href="struct_dokan_net_1_1_file_information.html" title="Used to provide file information to Dokan during operations IDokanOperations.GetFileInformation, IDokanOperations.FindFiles, IDokanOperations.FindStreams or IDokanOperations.FindFilesWithPattern. ">FileInformation</a> struct to fill</td></tr>
+    <tr><td class="paramname">fileInfo</td><td><a class="el" href="struct_dokan_net_1_1_file_information.html" title="Used to provide file information to Dokan during operations by ">FileInformation</a> struct to fill</td></tr>
     <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
@@ -787,7 +787,7 @@ Public Member Functions</h2></td></tr>
 <p>Retrieves information about the file system and volume associated with the specified root directory. </p>
 <p>Neither GetVolumeInformation nor <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ab2574f9b34b8bd244a3268d2cedd78c6" title="Retrieves information about the amount of space that is available on a disk volume, which is the total amount of space, the total amount of free space, and the total amount of free space available to the user that is associated with the calling thread. ">GetDiskFreeSpace</a> save the <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592" title="Gets or sets context that can be used to carry information between operation. The Context can carry w...">DokanFileInfo.Context</a>. Before these methods are called, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> may not be called. (ditto <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8bfc215b2758fe7f7eaa54dc5b5988cc" title="CloseFile is called at the end of the life of the context. ">CloseFile</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a>).</p>
 <p><a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a8182fddd26c19c338b2f62a887601a7f" title="Specified volume is read-only. ">FileSystemFeatures.ReadOnlyVolume</a> is automatically added to the <em>features</em>  if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a57da18a8e1746b49db5386ee136c594c" title="Enable mount drive as write-protected.">DokanOptions.WriteProtection</a> was specified when the volume was mounted.</p>
-<p>If <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="Error - {Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a> is returned, the <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> kernel driver use following settings by default: </p><table class="doxtable">
+<p>If <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="Error - {Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a> is returned, the Dokan kernel driver use following settings by default: </p><table class="doxtable">
 <tr>
 <th>Parameter </th><th>Default value  </th></tr>
 <tr>
@@ -880,7 +880,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Is called when <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> succeed to mount the volume. </p>
+<p>Is called when Dokan succeed to mount the volume. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
@@ -1307,7 +1307,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Is called when <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> is unmounting the volume. </p>
+<p>Is called when Dokan is unmounting the volume. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>

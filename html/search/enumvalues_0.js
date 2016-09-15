@@ -7,6 +7,7 @@ var searchData=
   ['abandonedwait3',['AbandonedWait3',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a22c3fcb00c61a721c6334d97a6b3fc6b',1,'DokanNet']]],
   ['abandonedwait63',['AbandonedWait63',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab1a1c1f271efb6b2d8b328c8f6cf92ac',1,'DokanNet']]],
   ['accessdenied',['AccessDenied',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acbcc0759909213e7cdba1f0cbf253126',1,'DokanNet']]],
+  ['accesssystemsecurity',['AccessSystemSecurity',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720aca556d817e2efb9285235d5da0e28a8b',1,'DokanNet']]],
   ['accessviolation',['AccessViolation',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac86b6caf254b06854e24c5c4510c5f85',1,'DokanNet']]],
   ['accountdisabled',['AccountDisabled',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a037ebf45ec2803c1ea4e18283dd65ec8',1,'DokanNet']]],
   ['accountrestriction',['AccountRestriction',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a43c4eef8b5208c3de6b97aa0fbc0f624',1,'DokanNet']]],

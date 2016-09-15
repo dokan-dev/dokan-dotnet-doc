@@ -1,6 +1,7 @@
 var searchData=
 [
   ['mappedfilesizezero',['MappedFileSizeZero',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a435cf883ffe929a8d341c990892025ed',1,'DokanNet']]],
+  ['maximumallowed',['MaximumAllowed',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a19a7ff6a045f83b4cf0662c9f7153077',1,'DokanNet']]],
   ['maximumntstatus',['MaximumNtStatus',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6bdce5aac70763f461e4978021859139',1,'DokanNet']]],
   ['memberingroup',['MemberInGroup',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5e3849540962f1dd72131f61208b3b8e',1,'DokanNet']]],
   ['membernotingroup',['MemberNotInGroup',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5c99fb92d65d2b4b6420b04127ab517c',1,'DokanNet']]],
