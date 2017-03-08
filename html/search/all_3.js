@@ -27,6 +27,8 @@ var searchData=
   ['dokanexception',['DokanException',['../class_dokan_net_1_1_dokan_exception.html',1,'DokanNet']]],
   ['dokanfileinfo',['DokanFileInfo',['../class_dokan_net_1_1_dokan_file_info.html',1,'DokanNet']]],
   ['dokanformat',['DokanFormat',['../class_dokan_net_1_1_format_providers.html#a261df858f92afbb1acaf7257548bda2e',1,'DokanNet::FormatProviders']]],
+  ['dokanhelper',['DokanHelper',['../class_dokan_net_1_1_dokan_helper.html',1,'DokanNet']]],
+  ['dokanisnameinexpression',['DokanIsNameInExpression',['../class_dokan_net_1_1_dokan_helper.html#a25fc533cbbb09fb86fac1d536629edac',1,'DokanNet::DokanHelper']]],
   ['dokannet',['DokanNet',['../namespace_dokan_net.html',1,'']]],
   ['dokanoptions',['DokanOptions',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6',1,'DokanNet']]],
   ['dokanresult',['DokanResult',['../class_dokan_net_1_1_dokan_result.html',1,'DokanNet']]],

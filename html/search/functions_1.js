@@ -4,5 +4,6 @@ var searchData=
   ['debugviewlogger',['DebugViewLogger',['../class_dokan_net_1_1_logging_1_1_debug_view_logger.html#a3b5d63ce065364efb25d9b99ff5f37ce',1,'DokanNet::Logging::DebugViewLogger']]],
   ['deletedirectory',['DeleteDirectory',['../interface_dokan_net_1_1_i_dokan_operations.html#a5b5af8c7eba19f3d8517844854974895',1,'DokanNet::IDokanOperations']]],
   ['deletefile',['DeleteFile',['../interface_dokan_net_1_1_i_dokan_operations.html#aa2977365c84a88375ce06d088137914f',1,'DokanNet::IDokanOperations']]],
-  ['dokanformat',['DokanFormat',['../class_dokan_net_1_1_format_providers.html#a261df858f92afbb1acaf7257548bda2e',1,'DokanNet::FormatProviders']]]
+  ['dokanformat',['DokanFormat',['../class_dokan_net_1_1_format_providers.html#a261df858f92afbb1acaf7257548bda2e',1,'DokanNet::FormatProviders']]],
+  ['dokanisnameinexpression',['DokanIsNameInExpression',['../class_dokan_net_1_1_dokan_helper.html#a25fc533cbbb09fb86fac1d536629edac',1,'DokanNet::DokanHelper']]]
 ];
