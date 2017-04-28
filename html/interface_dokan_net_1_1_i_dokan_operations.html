@@ -549,7 +549,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Retrieve all NTFS Streams informations on the file. This is only called if <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6ad8fe8feefa750b9723759954632c391f" title="Use alternate stream.">DokanOptions.AltStream</a> is enabled. </p>
 <p>For files, the first item in <em>streams</em>  is information about the default data stream <code>"::$DATA"</code>.</p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.8.0. You must specify the version in <a class="el" href="class_dokan_net_1_1_dokan.html#ac5166c38bbe42cb737aac4e09b117503" title="Mount a new Dokan Volume. This function block until the device is unmount. ">Dokan.Mount</a> .</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.8.0. You must specify the version in Dokan.Mount(IDokanOperations, string, DokanOptions,int, int, TimeSpan, string, int,int, Logging.ILogger).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
@@ -734,7 +734,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get specified information about the security of a file or directory. </p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the version in <a class="el" href="class_dokan_net_1_1_dokan.html#ac5166c38bbe42cb737aac4e09b117503" title="Mount a new Dokan Volume. This function block until the device is unmount. ">Dokan.Mount</a> .</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the version in Dokan.Mount(IDokanOperations, string, DokanOptions,int, int, TimeSpan, string, int,int, Logging.ILogger).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
@@ -1170,7 +1170,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the security of a file or directory object. </p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the version in <a class="el" href="class_dokan_net_1_1_dokan.html#ac5166c38bbe42cb737aac4e09b117503" title="Mount a new Dokan Volume. This function block until the device is unmount. ">Dokan.Mount</a> .</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the version in Dokan.Mount(IDokanOperations, string, DokanOptions,int, int, TimeSpan, string, int,int, Logging.ILogger).</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
