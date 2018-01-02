@@ -10,7 +10,7 @@ var searchData=
   ['nomoreentries',['NoMoreEntries',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad8a7f9e387c5a767b938b46a4ca73787',1,'DokanNet']]],
   ['nomorefiles',['NoMoreFiles',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a61ec615cd0fbb7cc63d8ff557ccaf6d8',1,'DokanNet']]],
   ['noncontinuableexception',['NonContinuableException',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6148798b6e90ec93983d433ec1d0396b',1,'DokanNet']]],
-  ['none',['None',['../namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a6adf97f83acf6453d4a6a4b1070f3754',1,'DokanNet']]],
+  ['none',['None',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a6adf97f83acf6453d4a6a4b1070f3754',1,'DokanNet.None()'],['../namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a6adf97f83acf6453d4a6a4b1070f3754',1,'DokanNet.None()']]],
   ['nonemapped',['NoneMapped',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a665c1f83ec5e6862aec77ef3073539de',1,'DokanNet']]],
   ['nonexistenteaentry',['NonExistentEaEntry',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa93f42ba1111afe1c30254eef4279d88',1,'DokanNet']]],
   ['noquotasforaccount',['NoQuotasForAccount',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af10e3b97ba316010a1d19f6649790f07',1,'DokanNet']]],
