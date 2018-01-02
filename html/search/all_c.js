@@ -37,5 +37,5 @@ var searchData=
   ['notxfmetadata',['NoTxfMetadata',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afa5592241d64226e23ca2030b0e662d0',1,'DokanNet']]],
   ['ntstatus',['NtStatus',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209',1,'DokanNet']]],
   ['nulllogger',['NullLogger',['../class_dokan_net_1_1_logging_1_1_null_logger.html',1,'DokanNet::Logging']]],
-  ['nullstringrepresentation',['NullStringRepresentation',['../class_dokan_net_1_1_format_providers.html#a1271fea423668716de9c5ff65a50c131',1,'DokanNet::FormatProviders']]]
+  ['nullstringrepresentation',['NullStringRepresentation',['../class_dokan_net_1_1_format_providers.html#ab4b113c1e41e5f218ca501ae2b0d3f7b',1,'DokanNet::FormatProviders']]]
 ];
