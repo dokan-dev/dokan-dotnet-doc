@@ -164,9 +164,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab2574f9b34b8bd244a3268d2cedd78c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ab2574f9b34b8bd244a3268d2cedd78c6">GetDiskFreeSpace</a> (out long freeBytesAvailable, out long totalNumberOfBytes, out long totalNumberOfFreeBytes, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:ab2574f9b34b8bd244a3268d2cedd78c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves information about the amount of space that is available on a disk volume, which is the total amount of space, the total amount of free space, and the total amount of free space available to the user that is associated with the calling thread.  <a href="#ab2574f9b34b8bd244a3268d2cedd78c6">More...</a><br /></td></tr>
 <tr class="separator:ab2574f9b34b8bd244a3268d2cedd78c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f21331221a8365f260e17e0def8759a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a1f21331221a8365f260e17e0def8759a">GetVolumeInformation</a> (out string volumeLabel, out <a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30">FileSystemFeatures</a> features, out string fileSystemName, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:a1f21331221a8365f260e17e0def8759a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves information about the file system and volume associated with the specified root directory.  <a href="#a1f21331221a8365f260e17e0def8759a">More...</a><br /></td></tr>
-<tr class="separator:a1f21331221a8365f260e17e0def8759a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac5fa048e4ecdb18f5786d73fb5538a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aac5fa048e4ecdb18f5786d73fb5538a9">GetVolumeInformation</a> (out string volumeLabel, out <a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30">FileSystemFeatures</a> features, out string fileSystemName, out uint maximumComponentLength, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
+<tr class="memdesc:aac5fa048e4ecdb18f5786d73fb5538a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves information about the file system and volume associated with the specified root directory.  <a href="#aac5fa048e4ecdb18f5786d73fb5538a9">More...</a><br /></td></tr>
+<tr class="separator:aac5fa048e4ecdb18f5786d73fb5538a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abc92826efe0dce94755e94fa380f9345"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#abc92826efe0dce94755e94fa380f9345">GetFileSecurity</a> (string fileName, out FileSystemSecurity security, AccessControlSections sections, <a class="el" href="class_dokan_net_1_1_dokan_file_info.html">DokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:abc92826efe0dce94755e94fa380f9345"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get specified information about the security of a file or directory.  <a href="#abc92826efe0dce94755e94fa380f9345">More...</a><br /></td></tr>
 <tr class="separator:abc92826efe0dce94755e94fa380f9345"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -638,7 +638,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves information about the amount of space that is available on a disk volume, which is the total amount of space, the total amount of free space, and the total amount of free space available to the user that is associated with the calling thread. </p>
-<p>Neither GetDiskFreeSpace nor <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a1f21331221a8365f260e17e0def8759a" title="Retrieves information about the file system and volume associated with the specified root directory...">GetVolumeInformation</a> save the <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592" title="Gets or sets context that can be used to carry information between operation. The Context can carry w...">DokanFileInfo.Context</a>. Before these methods are called, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> may not be called. (ditto <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8bfc215b2758fe7f7eaa54dc5b5988cc" title="CloseFile is called at the end of the life of the context. ">CloseFile</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a>). </p>
+<p>Neither GetDiskFreeSpace nor <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aac5fa048e4ecdb18f5786d73fb5538a9" title="Retrieves information about the file system and volume associated with the specified root directory...">GetVolumeInformation</a> save the <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592" title="Gets or sets context that can be used to carry information between operation. The Context can carry w...">DokanFileInfo.Context</a>. Before these methods are called, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#add1cb05cafe40dd895988da80a65e7f1" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> may not be called. (ditto <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8bfc215b2758fe7f7eaa54dc5b5988cc" title="CloseFile is called at the end of the life of the context. ">CloseFile</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7c6bd120d685675fd133f38e41b0efb" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a>). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">freeBytesAvailable</td><td>Amount of available space.</td></tr>
@@ -649,7 +649,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa364937(v=vs.85).aspx">GetDiskFreeSpaceEx function (MSDN)</a> <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a1f21331221a8365f260e17e0def8759a" title="Retrieves information about the file system and volume associated with the specified root directory...">GetVolumeInformation</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa364937(v=vs.85).aspx">GetDiskFreeSpaceEx function (MSDN)</a> <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aac5fa048e4ecdb18f5786d73fb5538a9" title="Retrieves information about the file system and volume associated with the specified root directory...">GetVolumeInformation</a></dd></dl>
 </dd></dl>
 
 </div>
@@ -751,7 +751,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1f21331221a8365f260e17e0def8759a"></a>
+<a class="anchor" id="aac5fa048e4ecdb18f5786d73fb5538a9"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -772,6 +772,12 @@ Public Member Functions</h2></td></tr>
           <td></td>
           <td class="paramtype">out string&#160;</td>
           <td class="paramname"><em>fileSystemName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">out uint&#160;</td>
+          <td class="paramname"><em>maximumComponentLength</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -809,6 +815,7 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">volumeLabel</td><td>Volume name</td></tr>
     <tr><td class="paramname">features</td><td><a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30" title="Defines feature flags for the file system. ">FileSystemFeatures</a> with features enabled on the volume.</td></tr>
     <tr><td class="paramname">fileSystemName</td><td>The name of the specified volume.</td></tr>
+    <tr><td class="paramname">maximumComponentLength</td><td>File name component that the specified file system supports.</td></tr>
     <tr><td class="paramname">info</td><td>An <a class="el" href="class_dokan_net_1_1_dokan_file_info.html" title="Dokan file information on the current operation. ">DokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
