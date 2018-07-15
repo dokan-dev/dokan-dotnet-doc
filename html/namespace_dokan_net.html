@@ -160,6 +160,20 @@ Enumerations</h2></td></tr>
  }<tr class="memdesc:a8b96a20dbe630fffdb505ca7ff3c32a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan mount options used to describe dokan device behavior.  <a href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a8b96a20dbe630fffdb505ca7ff3c32a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab66850a3fb636b2ee11b3d63edb42a7c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7c">DokanStatus</a> : int { <br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7ca505a83f220c02df2f85c3810cd9ceb38">DokanStatus.Success</a> = 0, 
+<a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7ca902b0d55fddef6f8d651fe1035b7d4bd">DokanStatus.Error</a> = -1, 
+<a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7cae756afb8bb44b7fd8bd67f527a64f72c">DokanStatus.DriveLetterError</a> = -2, 
+<a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7cae28ab79d32d9af2494af89e91f795319">DokanStatus.DriverInstallError</a> = -3, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7cac05e12ecefead2984856c67e685327df">DokanStatus.StartError</a> = -4, 
+<a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7ca5e79e6a248bdf445ed0c75ffd789da1d">DokanStatus.MountError</a> = -5, 
+<a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7cab04e2661eec05ffca78b094d97a47cca">DokanStatus.MountPointError</a> = -6, 
+<a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7caa5f526f48d6a999526db3cd888205288">DokanStatus.VersionError</a> = -7
+<br />
+ }<tr class="memdesc:ab66850a3fb636b2ee11b3d63edb42a7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error codes returned by DokanMain.  <a href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7c">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:ab66850a3fb636b2ee11b3d63edb42a7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a067e91641dd61c40300faa7085610720"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_dokan_net.html#a067e91641dd61c40300faa7085610720">FileAccess</a> : long { <br />
 &#160;&#160;<a class="el" href="namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a6adf97f83acf6453d4a6a4b1070f3754">FileAccess.None</a> = 0, 
 <a class="el" href="namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a9737b198b43957e0daee34be05d34687">FileAccess.ReadData</a> = 1, 
@@ -687,6 +701,54 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d"></a>UserModeLock&#160;</td><td class="fielddoc">
 <p>Enable Lockfile/Unlockfile operations.</p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7c">DokanNet.DokanStatus</a> : int</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Error codes returned by DokanMain. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7ca505a83f220c02df2f85c3810cd9ceb38"></a>Success&#160;</td><td class="fielddoc">
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount succeed. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7ca902b0d55fddef6f8d651fe1035b7d4bd"></a>Error&#160;</td><td class="fielddoc">
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount error. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7cae756afb8bb44b7fd8bd67f527a64f72c"></a>DriveLetterError&#160;</td><td class="fielddoc">
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed - Bad drive letter. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7cae28ab79d32d9af2494af89e91f795319"></a>DriverInstallError&#160;</td><td class="fielddoc">
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed - Can't install driver. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7cac05e12ecefead2984856c67e685327df"></a>StartError&#160;</td><td class="fielddoc">
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed - Driver answer that something is wrong. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7ca5e79e6a248bdf445ed0c75ffd789da1d"></a>MountError&#160;</td><td class="fielddoc">
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed. Can't assign a drive letter or mount point. Probably already used by another volume. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7cab04e2661eec05ffca78b094d97a47cca"></a>MountPointError&#160;</td><td class="fielddoc">
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed. Mount point is invalid. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7caa5f526f48d6a999526db3cd888205288"></a>VersionError&#160;</td><td class="fielddoc">
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed. Requested an incompatible version. </p>
 </td></tr>
 </table>
 

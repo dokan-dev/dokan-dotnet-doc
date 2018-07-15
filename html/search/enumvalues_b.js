@@ -9,6 +9,8 @@ var searchData=
   ['messagelost',['MessageLost',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a65530d06d563351447a7a53552c84431',1,'DokanNet']]],
   ['miniversioninaccessiblefromspecifiedtransaction',['MiniversionInaccessibleFromSpecifiedTransaction',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afbbeb4e7f4c8d6e242946c099343bcc4',1,'DokanNet']]],
   ['moreentries',['MoreEntries',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa34dba8ae952fa4edcccb5dd116fa962',1,'DokanNet']]],
+  ['mounterror',['MountError',['../namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7ca5e79e6a248bdf445ed0c75ffd789da1d',1,'DokanNet']]],
   ['mountmanager',['MountManager',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6aa2ded7048f566ba78b285a02bc9d087f',1,'DokanNet']]],
+  ['mountpointerror',['MountPointError',['../namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7cab04e2661eec05ffca78b094d97a47cca',1,'DokanNet']]],
   ['mutantnotowned',['MutantNotOwned',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a9959bdcd676a33e56cbd658f46dd8006',1,'DokanNet']]]
 ];

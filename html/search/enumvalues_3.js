@@ -15,5 +15,7 @@ var searchData=
   ['directorynotrm',['DirectoryNotRm',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acb4b14f548334110d3351344588f9b1e',1,'DokanNet']]],
   ['diskfull',['DiskFull',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4f080d03a8ddd688d27f7d7cd8e6d41e',1,'DokanNet']]],
   ['dllmightbeinsecure',['DllMightBeInsecure',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a67d9e43115ea475aae0089ae6b0d530f',1,'DokanNet']]],
-  ['dllnotfound',['DllNotFound',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a75abd814925cea1e24de9e114ccf6604',1,'DokanNet']]]
+  ['dllnotfound',['DllNotFound',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a75abd814925cea1e24de9e114ccf6604',1,'DokanNet']]],
+  ['drivelettererror',['DriveLetterError',['../namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7cae756afb8bb44b7fd8bd67f527a64f72c',1,'DokanNet']]],
+  ['driverinstallerror',['DriverInstallError',['../namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7cae28ab79d32d9af2494af89e91f795319',1,'DokanNet']]]
 ];
