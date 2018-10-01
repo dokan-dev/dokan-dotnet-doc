@@ -114,6 +114,9 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>BufferPool</b></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple buffer pool for buffers used by <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5e7bc940f2e31b6ae6b989dc81818294" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">IDokanOperations.ReadFile</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a364edca5bba4029c110460504eb89c3e" title="WriteFile callback on the file previously opened in CreateFile It can be called by different thread a...">IDokanOperations.WriteFile</a> to avoid excessive Gen2 garbage collections due to large buffer allocation on the large object heap (LOH). <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html">Dokan</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper and extension methods to Dokan.  <a href="class_dokan_net_1_1_dokan.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,6 +142,9 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan API callbacks interface.  <a href="interface_dokan_net_1_1_i_dokan_operations.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html">IDokanOperationsUnsafe</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a sub-interface of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that can optionally be implemented to get access to the raw, unmanaged buffers for <a class="el" href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a9d7934c9650c23757ae0c91330b6534e" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">ReadFile()</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a7c79e6bf8ee92a379a38faa1aa16c9cc" title="WriteFile callback on the file previously opened in CreateFile It can be called by different thread a...">WriteFile()</a> for performance optimization. Marshalling the unmanaged buffers to and from byte[] arrays for every call of these APIs incurs an extra copy that can be avoided by reading from or writing directly to the unmanaged buffers.  <a href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>

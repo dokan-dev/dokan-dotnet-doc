@@ -1,6 +1,7 @@
 var searchData=
 [
   ['idokanoperations',['IDokanOperations',['../interface_dokan_net_1_1_i_dokan_operations.html',1,'DokanNet']]],
+  ['idokanoperationsunsafe',['IDokanOperationsUnsafe',['../interface_dokan_net_1_1_i_dokan_operations_unsafe.html',1,'DokanNet']]],
   ['illegalfunction',['IllegalFunction',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a96e6b9462fdd161d848d2a1714261b62',1,'DokanNet']]],
   ['illegalinstruction',['IllegalInstruction',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6f4f5c78e350362878889062f2b9294b',1,'DokanNet']]],
   ['illformedpassword',['IllFormedPassword',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aef3b1c62fc61142bc57a02770ed33617',1,'DokanNet']]],
