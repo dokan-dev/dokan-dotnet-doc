@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['idokanfileinfo',['IDokanFileInfo',['../interface_dokan_net_1_1_i_dokan_file_info.html',1,'DokanNet']]],
   ['idokanoperations',['IDokanOperations',['../interface_dokan_net_1_1_i_dokan_operations.html',1,'DokanNet']]],
   ['idokanoperationsunsafe',['IDokanOperationsUnsafe',['../interface_dokan_net_1_1_i_dokan_operations_unsafe.html',1,'DokanNet']]],
   ['illegalfunction',['IllegalFunction',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a96e6b9462fdd161d848d2a1714261b62',1,'DokanNet']]],
@@ -62,5 +63,5 @@ var searchData=
   ['invalidworkstation',['InvalidWorkstation',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a13b78159215b2c11b7dfd291ed923416',1,'DokanNet']]],
   ['ioprivilegefailed',['IoPrivilegeFailed',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae26216b1ea565517d829d14350e68fb9',1,'DokanNet']]],
   ['iotimeout',['IoTimeout',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5bc733872619646c783551fe99206507',1,'DokanNet']]],
-  ['isdirectory',['IsDirectory',['../class_dokan_net_1_1_dokan_file_info.html#afbb9e08595d9c6ee7b3815a3aaa5b8bf',1,'DokanNet::DokanFileInfo']]]
+  ['isdirectory',['IsDirectory',['../class_dokan_net_1_1_dokan_file_info.html#afbb9e08595d9c6ee7b3815a3aaa5b8bf',1,'DokanNet.DokanFileInfo.IsDirectory()'],['../interface_dokan_net_1_1_i_dokan_file_info.html#a74e72f90f92ff19c7f41485b3529566c',1,'DokanNet.IDokanFileInfo.IsDirectory()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#a55dbc586068bc5a5a4e65f1433ea9d29',1,'DokanNet.MockDokanFileInfo.IsDirectory()']]]
 ];

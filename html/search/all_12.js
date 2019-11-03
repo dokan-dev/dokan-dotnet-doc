@@ -13,7 +13,7 @@ var searchData=
   ['toomanyopenedfiles',['TooManyOpenedFiles',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af5c8c68a95f1e6bdee4e49104b58a799',1,'DokanNet']]],
   ['toomanypagingfiles',['TooManyPagingFiles',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a8562e9a8d099b7e2dd6317133e413ede',1,'DokanNet']]],
   ['toomanythreads',['TooManyThreads',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aefa7a340f6e2d3493438fbf54fc6db4d',1,'DokanNet']]],
-  ['tostring',['ToString',['../class_dokan_net_1_1_dokan_file_info.html#abb180495aaffe36c244827178c265ffa',1,'DokanNet::DokanFileInfo']]],
+  ['tostring',['ToString',['../class_dokan_net_1_1_dokan_file_info.html#abb180495aaffe36c244827178c265ffa',1,'DokanNet.DokanFileInfo.ToString()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#a01adab5aa82bc165adfcf6ca953a8d54',1,'DokanNet.MockDokanFileInfo.ToString()']]],
   ['tracelogger',['TraceLogger',['../class_dokan_net_1_1_logging_1_1_trace_logger.html',1,'DokanNet::Logging']]],
   ['transactedmappingunsupportedremote',['TransactedMappingUnsupportedRemote',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab331ecd4ef9abd96ebdff4275ba90728',1,'DokanNet']]],
   ['transactionalconflict',['TransactionalConflict',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae4e8bc03829f5f5f31a00bce57aab1c4',1,'DokanNet']]],
@@ -31,7 +31,7 @@ var searchData=
   ['transactionsnotfrozen',['TransactionsNotFrozen',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab42c71dfbc76ae56653793ac48cd535d',1,'DokanNet']]],
   ['transactionsunsupportedremote',['TransactionsUnsupportedRemote',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac7acaa7ede2ece4d29054706b81a527c',1,'DokanNet']]],
   ['transactionsuperiorexists',['TransactionSuperiorExists',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2268627d04a62792642ac490a1ce51ac',1,'DokanNet']]],
-  ['tryresettimeout',['TryResetTimeout',['../class_dokan_net_1_1_dokan_file_info.html#a827602b0f4a34486e38ca0322d2317fa',1,'DokanNet::DokanFileInfo']]],
+  ['tryresettimeout',['TryResetTimeout',['../class_dokan_net_1_1_dokan_file_info.html#a827602b0f4a34486e38ca0322d2317fa',1,'DokanNet.DokanFileInfo.TryResetTimeout()'],['../interface_dokan_net_1_1_i_dokan_file_info.html#afdfb54d5c5b1d93e71e82b54bb60afda',1,'DokanNet.IDokanFileInfo.TryResetTimeout()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#ae98b6b75d14ebe9a472a4d17b0ddd720',1,'DokanNet.MockDokanFileInfo.TryResetTimeout()']]],
   ['txfattributecorrupt',['TxfAttributeCorrupt',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a64b1c4fef574235e0d1209c8b2948add',1,'DokanNet']]],
   ['txfdirnotempty',['TxfDirNotEmpty',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa0273c872a328e729333a02de76592b7',1,'DokanNet']]],
   ['txfmetadataalreadypresent',['TxfMetadataAlreadyPresent',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a74943845fcb6c860274bfa071089cbe3',1,'DokanNet']]]

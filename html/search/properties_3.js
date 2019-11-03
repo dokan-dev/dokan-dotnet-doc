@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['filename',['FileName',['../struct_dokan_net_1_1_file_information.html#a38847e871b5f45a2fe6514cb322c1f16',1,'DokanNet::FileInformation']]]
+  ['errorstatus',['ErrorStatus',['../class_dokan_net_1_1_dokan_exception.html#ad0c38bf3b0cfaefd8cf1909ffdd4587f',1,'DokanNet::DokanException']]]
 ];

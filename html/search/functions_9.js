@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['setallocationsize',['SetAllocationSize',['../interface_dokan_net_1_1_i_dokan_operations.html#a2b5df111cd7c099e1340a80340d32206',1,'DokanNet::IDokanOperations']]],
-  ['setendoffile',['SetEndOfFile',['../interface_dokan_net_1_1_i_dokan_operations.html#ac2ab3b848a03c91bb073caeedaddf521',1,'DokanNet::IDokanOperations']]],
-  ['setfileattributes',['SetFileAttributes',['../interface_dokan_net_1_1_i_dokan_operations.html#a06cb9e98b32336feaacedd86876989bb',1,'DokanNet::IDokanOperations']]],
-  ['setfilesecurity',['SetFileSecurity',['../interface_dokan_net_1_1_i_dokan_operations.html#a90bf07522e3673cf359bb854eca1be71',1,'DokanNet::IDokanOperations']]],
-  ['setfiletime',['SetFileTime',['../interface_dokan_net_1_1_i_dokan_operations.html#a5cfd4e36517d748c59e1933cd1b9a2a2',1,'DokanNet::IDokanOperations']]]
+  ['setallocationsize',['SetAllocationSize',['../interface_dokan_net_1_1_i_dokan_operations.html#a75484ffd8aa9ab6268252609ae7ce08c',1,'DokanNet::IDokanOperations']]],
+  ['setendoffile',['SetEndOfFile',['../interface_dokan_net_1_1_i_dokan_operations.html#a14e1c9fd1ef5f9c7357763ddc9a6baf2',1,'DokanNet::IDokanOperations']]],
+  ['setfileattributes',['SetFileAttributes',['../interface_dokan_net_1_1_i_dokan_operations.html#a6cf222e861b2da1a9e39065f9bcec961',1,'DokanNet::IDokanOperations']]],
+  ['setfilesecurity',['SetFileSecurity',['../interface_dokan_net_1_1_i_dokan_operations.html#adf4c4c9d79cb338f4248b7bd9b4b4aed',1,'DokanNet::IDokanOperations']]],
+  ['setfiletime',['SetFileTime',['../interface_dokan_net_1_1_i_dokan_operations.html#aec83b9cd1891b8dd66bd4ba922cc4560',1,'DokanNet::IDokanOperations']]]
 ];

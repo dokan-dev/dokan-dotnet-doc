@@ -115,7 +115,7 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>BufferPool</b></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple buffer pool for buffers used by <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a5e7bc940f2e31b6ae6b989dc81818294" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">IDokanOperations.ReadFile</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a364edca5bba4029c110460504eb89c3e" title="WriteFile callback on the file previously opened in CreateFile It can be called by different thread a...">IDokanOperations.WriteFile</a> to avoid excessive Gen2 garbage collections due to large buffer allocation on the large object heap (LOH). <br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple buffer pool for buffers used by <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acfc6839771400332d0b407ceafa65d72" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">IDokanOperations.ReadFile</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a0f25541dcc4821ba0f49be194e416975" title="WriteFile callback on the file previously opened in CreateFile It can be called by different thread a...">IDokanOperations.WriteFile</a> to avoid excessive Gen2 garbage collections due to large buffer allocation on the large object heap (LOH). <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html">Dokan</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper and extension methods to Dokan.  <a href="class_dokan_net_1_1_dokan.html#details">More...</a><br /></td></tr>
@@ -127,6 +127,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan file information on the current operation.  <a href="class_dokan_net_1_1_dokan_file_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_helper.html">DokanHelper</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan functions helpers for user <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> implementation.  <a href="class_dokan_net_1_1_dokan_helper.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>DokanOperationProxy</b></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dokan operation proxy. <br /></td></tr>
@@ -140,11 +141,17 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_format_providers.html">FormatProviders</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide support to format object with <code>null</code>.  <a href="class_dokan_net_1_1_format_providers.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan file information interface.  <a href="interface_dokan_net_1_1_i_dokan_file_info.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan API callbacks interface.  <a href="interface_dokan_net_1_1_i_dokan_operations.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html">IDokanOperationsUnsafe</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a sub-interface of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that can optionally be implemented to get access to the raw, unmanaged buffers for <a class="el" href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a9d7934c9650c23757ae0c91330b6534e" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">ReadFile()</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a7c79e6bf8ee92a379a38faa1aa16c9cc" title="WriteFile callback on the file previously opened in CreateFile It can be called by different thread a...">WriteFile()</a> for performance optimization. Marshalling the unmanaged buffers to and from byte[] arrays for every call of these APIs incurs an extra copy that can be avoided by reading from or writing directly to the unmanaged buffers.  <a href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a sub-interface of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that can optionally be implemented to get access to the raw, unmanaged buffers for <a class="el" href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a30cd20639acdd667002c7deb76df5c2e" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">ReadFile()</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a3eeb79bb7dd93c93262ae11cb6f574f0" title="WriteFile callback on the file previously opened in CreateFile It can be called by different thread a...">WriteFile()</a> for performance optimization. Marshalling the unmanaged buffers to and from byte[] arrays for every call of these APIs incurs an extra copy that can be avoided by reading from or writing directly to the unmanaged buffers.  <a href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html">MockDokanFileInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mockable <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> file information on the current operation.  <a href="class_dokan_net_1_1_mock_dokan_file_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
@@ -161,7 +168,11 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6aa2ded7048f566ba78b285a02bc9d087f">DokanOptions.MountManager</a> = 64, 
 <br />
 &#160;&#160;<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a80d08dd9dedb771d8a7e94aaf9e0bf7d">DokanOptions.CurrentSession</a> = 128, 
-<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d">DokanOptions.UserModeLock</a> = 256
+<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d">DokanOptions.UserModeLock</a> = 256, 
+<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6ae970794cd5c979c49156fe71c48d7811">DokanOptions.EnableNotificationAPI</a> = 512, 
+<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6add2b9497723a161b7f44caa4fb62f7ce">DokanOptions.DisableOplocks</a> = 1024, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a15d597ea057944646ee037d1fd0d395b">DokanOptions.OptimizeSingleNameSearch</a> = 2048
 <br />
  }<tr class="memdesc:a8b96a20dbe630fffdb505ca7ff3c32a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan mount options used to describe dokan device behavior.  <a href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">More...</a><br /></td></tr>
 </td></tr>
@@ -707,6 +718,16 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d"></a>UserModeLock&#160;</td><td class="fielddoc">
 <p>Enable Lockfile/Unlockfile operations.</p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6ae970794cd5c979c49156fe71c48d7811"></a>EnableNotificationAPI&#160;</td><td class="fielddoc">
+<p>Enable methods in <a class="el" href="class_dokan_net_1_1_dokan_1_1_notify.html" title="Dokan User FS file-change notifications ">Dokan.Notify</a>, which require this library to maintain a special handle while the file system is mounted. Without this flag, the methods in that inner class always return false if invoked. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6add2b9497723a161b7f44caa4fb62f7ce"></a>DisableOplocks&#160;</td><td class="fielddoc">
+<p>Whether to disable any oplock support on the volume.</p>
+<p>Regular range locks are enabled regardless.</p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a15d597ea057944646ee037d1fd0d395b"></a>OptimizeSingleNameSearch&#160;</td><td class="fielddoc">
+<p>Whether <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> should satisfy a single-entry, name-only directory search without dispatching to IDokanOperations.FindFiles(string, out System.Collections.Generic.IList&lt;FileInformation&gt;, IDokanFileInfo), if there is already an open file from which the driver can just copy the normalized name. These searches are frequently done inside of CreateFile calls on Windows 7. </p>
 </td></tr>
 </table>
 

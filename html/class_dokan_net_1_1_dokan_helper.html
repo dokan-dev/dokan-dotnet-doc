@@ -101,6 +101,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DokanNet.DokanHelper Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Dokan functions helpers for user <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> implementation.  
+ <a href="class_dokan_net_1_1_dokan_helper.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -108,7 +111,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a25fc533cbbb09fb86fac1d536629edac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether <em>name</em> Name matches <em>expression</em> Expression.  <a href="#a25fc533cbbb09fb86fac1d536629edac">More...</a><br /></td></tr>
 <tr class="separator:a25fc533cbbb09fb86fac1d536629edac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Dokan functions helpers for user <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> implementation. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a25fc533cbbb09fb86fac1d536629edac"></a>
 <div class="memitem">
 <div class="memproto">
@@ -148,7 +153,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check whether <em>name</em> Name matches <em>expression</em> Expression. </p>
-<p>This method is mainly used in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern to filter the result. ">IDokanOperations.FindFilesWithPattern</a> to filter a list of possible files. For example "F0_&amp;lt;&amp;quot;*" match "f0_001.txt" </p><dl class="section see"><dt>See also</dt><dd><a href="http://msdn.microsoft.com/en-us/library/ff546850(v=VS.85).aspx">See FsRtlIsNameInExpression routine (MSDN)</a> </dd></dl>
+<p>This method is mainly used in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a00bec2a413ac1c7d9c714c4e80c9d764" title="Same as FindFiles but with a search pattern to filter the result. ">IDokanOperations.FindFilesWithPattern</a> to filter a list of possible files. For example "F0_&amp;lt;&amp;quot;*" match "f0_001.txt" </p><dl class="section see"><dt>See also</dt><dd><a href="http://msdn.microsoft.com/en-us/library/ff546850(v=VS.85).aspx">See FsRtlIsNameInExpression routine (MSDN)</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">expression</td><td>The matching pattern. Can contain: ?, *, &lt;, &quot;, &gt;.</td></tr>

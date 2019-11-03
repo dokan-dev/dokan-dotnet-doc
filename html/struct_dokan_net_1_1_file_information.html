@@ -108,7 +108,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:a38847e871b5f45a2fe6514cb322c1f16"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dokan_net_1_1_file_information.html#a38847e871b5f45a2fe6514cb322c1f16">FileName</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a38847e871b5f45a2fe6514cb322c1f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the name of the file or directory.  <a href="#a38847e871b5f45a2fe6514cb322c1f16">More...</a><br /></td></tr>
+<tr class="memdesc:a38847e871b5f45a2fe6514cb322c1f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the name of the file or directory. <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8d76bad88397aa8cd053ac662a224e2d" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a> required the file path when other operations only need the file name.  <a href="#a38847e871b5f45a2fe6514cb322c1f16">More...</a><br /></td></tr>
 <tr class="separator:a38847e871b5f45a2fe6514cb322c1f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a933a967a022f91ed7d28e1608f2f0f1c"><td class="memItemLeft" align="right" valign="top">FileAttributes&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dokan_net_1_1_file_information.html#a933a967a022f91ed7d28e1608f2f0f1c">Attributes</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a933a967a022f91ed7d28e1608f2f0f1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets the <code>FileAttributes</code> for the file or directory.  <a href="#a933a967a022f91ed7d28e1608f2f0f1c">More...</a><br /></td></tr>
@@ -129,10 +129,10 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Used to provide file information to Dokan during operations by </p>
 <ul>
-<li><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a27e65773b35352683b9b269a54e43e4b" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a></li>
-<li><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad51643a31c941fc781181e8929d3b969" title="List all files in the path requested ">IDokanOperations.FindFiles</a></li>
-<li><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae7ec3c2770d85940b909b7cd0e3589c5" title="Retrieve all NTFS Streams informations on the file. This is only called if DokanOptions.AltStream is enabled. ">IDokanOperations.FindStreams</a></li>
-<li><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a3c05700fe6694e7ec218ed1583fb39d8" title="Same as FindFiles but with a search pattern to filter the result. ">IDokanOperations.FindFilesWithPattern</a>. </li>
+<li><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8d76bad88397aa8cd053ac662a224e2d" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a></li>
+<li><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a393962f0bc54dfdd1ddd882ba047b1f5" title="List all files in the path requested ">IDokanOperations.FindFiles</a></li>
+<li><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae0a14e8cdb6b4bbee687ceff7396e588" title="Retrieve all NTFS Streams informations on the file. This is only called if DokanOptions.AltStream is enabled. ">IDokanOperations.FindStreams</a></li>
+<li><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a00bec2a413ac1c7d9c714c4e80c9d764" title="Same as FindFiles but with a search pattern to filter the result. ">IDokanOperations.FindFilesWithPattern</a>. </li>
 </ul>
 </div><h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="a933a967a022f91ed7d28e1608f2f0f1c"></a>
@@ -197,7 +197,7 @@ Properties</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets or sets the name of the file or directory. </p>
+<p>Gets or sets the name of the file or directory. <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8d76bad88397aa8cd053ac662a224e2d" title="Get specific informations on a file. ">IDokanOperations.GetFileInformation</a> required the file path when other operations only need the file name. </p>
 
 </div>
 </div>

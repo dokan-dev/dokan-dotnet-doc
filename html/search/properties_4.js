@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isdirectory',['IsDirectory',['../class_dokan_net_1_1_dokan_file_info.html#afbb9e08595d9c6ee7b3815a3aaa5b8bf',1,'DokanNet::DokanFileInfo']]]
+  ['filename',['FileName',['../struct_dokan_net_1_1_file_information.html#a38847e871b5f45a2fe6514cb322c1f16',1,'DokanNet::FileInformation']]]
 ];

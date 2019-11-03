@@ -13,6 +13,7 @@ var searchData=
   ['differenceatdc',['DifferenceAtDc',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a587dee25984a214792659fbf01bd1b62',1,'DokanNet']]],
   ['directorynotempty',['DirectoryNotEmpty',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a7c0bff4c1e77d7a423be79445178c557',1,'DokanNet']]],
   ['directorynotrm',['DirectoryNotRm',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acb4b14f548334110d3351344588f9b1e',1,'DokanNet']]],
+  ['disableoplocks',['DisableOplocks',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6add2b9497723a161b7f44caa4fb62f7ce',1,'DokanNet']]],
   ['diskfull',['DiskFull',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4f080d03a8ddd688d27f7d7cd8e6d41e',1,'DokanNet']]],
   ['dllmightbeinsecure',['DllMightBeInsecure',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a67d9e43115ea475aae0089ae6b0d530f',1,'DokanNet']]],
   ['dllnotfound',['DllNotFound',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a75abd814925cea1e24de9e114ccf6604',1,'DokanNet']]],
