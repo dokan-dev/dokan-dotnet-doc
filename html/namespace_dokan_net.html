@@ -172,7 +172,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6ae970794cd5c979c49156fe71c48d7811">DokanOptions.EnableNotificationAPI</a> = 512, 
 <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6add2b9497723a161b7f44caa4fb62f7ce">DokanOptions.DisableOplocks</a> = 1024, 
 <br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6afa93233177d7f7c65034c89046ae8ce6">DokanOptions.EnableFCBGC</a> = 2048
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6afa93233177d7f7c65034c89046ae8ce6">DokanOptions.EnableFCBGC</a> = 2048, 
+<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a2e61af9ffed7f8131f400829e5d2abf3">DokanOptions.\File</a>, 
+<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a4015e9ce43edfb0668ddaa973ebc7e87">DokanOptions.are</a>, 
+<b>CaseSensitive</b> = 4096, 
+<br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a5a610de667cc44de251a83b2312eec69">DokanOptions.EnableNetworkUnmount</a> = 8192
 <br />
  }<tr class="memdesc:a8b96a20dbe630fffdb505ca7ff3c32a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan mount options used to describe dokan device behavior.  <a href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">More...</a><br /></td></tr>
 </td></tr>
@@ -728,6 +733,15 @@ Enumerations</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6afa93233177d7f7c65034c89046ae8ce6"></a>EnableFCBGC&#160;</td><td class="fielddoc">
 <p>Enable Fcb Garbage collection The advantage of the GC approach is that it prevents filter drivers from exponentially slowing down procedures like zip file extraction due to repeatedly rebuilding state that they attach to the FCB header. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a2e61af9ffed7f8131f400829e5d2abf3"></a>\File&#160;</td><td class="fielddoc">
+<p>Enable Case sensitive path. By default all path are case insensitive. For case sensitive: &amp;  </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a4015e9ce43edfb0668ddaa973ebc7e87"></a>are&#160;</td><td class="fielddoc">
+<p>different files but for case insensitive they are the same. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a5a610de667cc44de251a83b2312eec69"></a>EnableNetworkUnmount&#160;</td><td class="fielddoc">
+<p>Enables unmounting of network drives via file explorer </p>
 </td></tr>
 </table>
 
