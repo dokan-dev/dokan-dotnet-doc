@@ -1,21 +1,12 @@
 var searchData=
 [
-  ['abandoned',['Abandoned',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a255de8cd6ee11ed4dc01a19844c1271e',1,'DokanNet']]],
-  ['abandonedwait0',['AbandonedWait0',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4980bfc9368e1d286ca39cce6f2e797a',1,'DokanNet']]],
-  ['abandonedwait1',['AbandonedWait1',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aacee9cf96bdde9eafec36e5641a9703e',1,'DokanNet']]],
-  ['abandonedwait2',['AbandonedWait2',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aaeb1daabebcd7a143def300d1c7a5237',1,'DokanNet']]],
-  ['abandonedwait3',['AbandonedWait3',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a22c3fcb00c61a721c6334d97a6b3fc6b',1,'DokanNet']]],
-  ['abandonedwait63',['AbandonedWait63',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab1a1c1f271efb6b2d8b328c8f6cf92ac',1,'DokanNet']]],
-  ['accessdenied',['AccessDenied',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acbcc0759909213e7cdba1f0cbf253126',1,'DokanNet']]],
-  ['accesssystemsecurity',['AccessSystemSecurity',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720aca556d817e2efb9285235d5da0e28a8b',1,'DokanNet']]],
-  ['accessviolation',['AccessViolation',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac86b6caf254b06854e24c5c4510c5f85',1,'DokanNet']]],
-  ['accountdisabled',['AccountDisabled',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a037ebf45ec2803c1ea4e18283dd65ec8',1,'DokanNet']]],
-  ['accountrestriction',['AccountRestriction',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a43c4eef8b5208c3de6b97aa0fbc0f624',1,'DokanNet']]],
-  ['agentsexhausted',['AgentsExhausted',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a44ebb75a9aca1ae2b7339306016ff158',1,'DokanNet']]],
-  ['alerted',['Alerted',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab40cfb33b5b3f7c0e48f37b691513ef0',1,'DokanNet']]],
-  ['alreadycommitted',['AlreadyCommitted',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a49df42a3a569ff9c1933d4116377255f',1,'DokanNet']]],
-  ['altstream',['AltStream',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6ad8fe8feefa750b9723759954632c391f',1,'DokanNet']]],
-  ['appenddata',['AppendData',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720afb0842088cddfff4746fea0f6a0afd01',1,'DokanNet']]],
-  ['are',['are',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a4015e9ce43edfb0668ddaa973ebc7e87',1,'DokanNet']]],
-  ['arrayboundsexceeded',['ArrayBoundsExceeded',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae045f93c8b16d405f06bc8ca6cb970d1',1,'DokanNet']]]
+  ['badfiletype',['BadFileType',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a58d21a16c766f90e206f0397a0fa9eb1',1,'DokanNet']]],
+  ['badinheritanceacl',['BadInheritanceAcl',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a89d950f3868c74f1ca5a2d35c7d34b1b',1,'DokanNet']]],
+  ['badinitialpc',['BadInitialPc',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a63064da018e50a0a049ee5ab8842abb5',1,'DokanNet']]],
+  ['badinitialstack',['BadInitialStack',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4b8ed0a02f1949e0b71ce35727cf8a78',1,'DokanNet']]],
+  ['badstack',['BadStack',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af9669a6597fcc4bf3cec3fbb245a2227',1,'DokanNet']]],
+  ['badworkingsetlimit',['BadWorkingSetLimit',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acb8f96e0eae7fd98921ac03b835c3a4c',1,'DokanNet']]],
+  ['breakpoint',['Breakpoint',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a7129472c5eb598faf47e4e877f2618fd',1,'DokanNet']]],
+  ['bufferoverflow',['BufferOverflow',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a68ec6e62c5fcbbb68b5ce093bdd60717',1,'DokanNet']]],
+  ['buffertoosmall',['BufferTooSmall',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ab801c4d44abd4738b7f69c4e390ed61d',1,'DokanNet']]]
 ];

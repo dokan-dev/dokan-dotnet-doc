@@ -1,23 +1,10 @@
 var searchData=
 [
-  ['filecheckedout',['FileCheckedOut',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a942db714b4c2b95e193b976fefb899bf',1,'DokanNet']]],
-  ['fileclosed',['FileClosed',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6120bd326934e956c89721dcb787117e',1,'DokanNet']]],
-  ['filedeleted',['FileDeleted',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2dffe9b335e135751350836e774b23e7',1,'DokanNet']]],
-  ['fileforcedclosed',['FileForcedClosed',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac4282b1dd103f15a1b97eb061002d6a3',1,'DokanNet']]],
-  ['fileidentitynotpersistent',['FileIdentityNotPersistent',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a98ace0a47b904526bf49b16f988a2ca7',1,'DokanNet']]],
-  ['fileinvalid',['FileInvalid',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209af35bce0a1a7b4dc9c67260c07e52dd4e',1,'DokanNet']]],
-  ['filelockconflict',['FileLockConflict',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a30cc27d11e4ee6626d86d19fb25723cc',1,'DokanNet']]],
-  ['filelockedwithonlyreaders',['FileLockedWithOnlyReaders',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa9e0929bb11d121d82be27cd1d3eba7d',1,'DokanNet']]],
-  ['filelockedwithwriters',['FileLockedWithWriters',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae3dd2f66bdbaf63aa04aa94fa94d1730',1,'DokanNet']]],
-  ['filerenamed',['FileRenamed',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aeab2dee5d0c84776effe3c43221b807c',1,'DokanNet']]],
-  ['filetoolarge',['FileTooLarge',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a39e3f1d705b11a3afd05cb4127140ef9',1,'DokanNet']]],
-  ['fixeddrive',['FixedDrive',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a2b5e39dc8372c99a6fa12b6d3c6b8c88',1,'DokanNet']]],
-  ['floatdenormaloperand',['FloatDenormalOperand',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209abac23b645a7fa571f217d95a2e34ea9d',1,'DokanNet']]],
-  ['floatdividebyzero',['FloatDivideByZero',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a68c508657e9f92c21ad1661f60998cc9',1,'DokanNet']]],
-  ['floatinexactresult',['FloatInexactResult',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a275dee5eca10bb07cda7baabf1a0f4e3',1,'DokanNet']]],
-  ['floatinvalidoperation',['FloatInvalidOperation',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5e528f3f703634e06af0e2fa54495872',1,'DokanNet']]],
-  ['floatoverflow',['FloatOverflow',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac6dac0e0b109e698d01934d1779d7e80',1,'DokanNet']]],
-  ['floatstackcheck',['FloatStackCheck',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ac454e5dc193fbbab5be21d4e3833c62a',1,'DokanNet']]],
-  ['floatunderflow',['FloatUnderflow',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a70ff7b4feb2313482b96be3d2ea79a37',1,'DokanNet']]],
-  ['formsauthrequired',['FormsAuthRequired',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a56723b762e2ac6341fb1ca5409bfd86a',1,'DokanNet']]]
+  ['genericall',['GenericAll',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a8c96bd43f485eaae63016d4d96279546',1,'DokanNet']]],
+  ['genericexecute',['GenericExecute',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a2590aa05c13a089855c36062a36c2279',1,'DokanNet']]],
+  ['genericread',['GenericRead',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720ae94aab556e7fb8e739eeb1d24ce5db63',1,'DokanNet']]],
+  ['genericwrite',['GenericWrite',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a9a803576ff84a1f98a9d56984d3b1559',1,'DokanNet']]],
+  ['groupexists',['GroupExists',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a643dac31026c30b6be4f2b8ebd518a84',1,'DokanNet']]],
+  ['guardpageviolation',['GuardPageViolation',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa97af09be048086360072b6cf2e4b4bc',1,'DokanNet']]],
+  ['guidsexhausted',['GuidsExhausted',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a07bee0bcdec621c263e67b3fad9a1350',1,'DokanNet']]]
 ];
