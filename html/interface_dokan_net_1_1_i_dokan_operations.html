@@ -28,7 +28,7 @@
         <nav class="navbar navbar-default" role="navigation">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand">Dokan-dotnet 1.5.0.0</a>
+                    <a class="navbar-brand">Dokan-dotnet 2.0.0.0</a>
                 </div>
             </div>
         </nav>
@@ -182,9 +182,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:adf4c4c9d79cb338f4248b7bd9b4b4aed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adf4c4c9d79cb338f4248b7bd9b4b4aed">SetFileSecurity</a> (string fileName, FileSystemSecurity security, AccessControlSections sections, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:adf4c4c9d79cb338f4248b7bd9b4b4aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the security of a file or directory object.  <a href="#adf4c4c9d79cb338f4248b7bd9b4b4aed">More...</a><br /></td></tr>
 <tr class="separator:adf4c4c9d79cb338f4248b7bd9b4b4aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab890fb0b14c238c27e26194df1875a4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ab890fb0b14c238c27e26194df1875a4a">Mounted</a> (<a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:ab890fb0b14c238c27e26194df1875a4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when Dokan succeed to mount the volume.  <a href="#ab890fb0b14c238c27e26194df1875a4a">More...</a><br /></td></tr>
-<tr class="separator:ab890fb0b14c238c27e26194df1875a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb76998a1ca3a36a944f8a585c1863df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acb76998a1ca3a36a944f8a585c1863df">Mounted</a> (string mountPoint, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memdesc:acb76998a1ca3a36a944f8a585c1863df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when Dokan succeed to mount the volume.  <a href="#acb76998a1ca3a36a944f8a585c1863df">More...</a><br /></td></tr>
+<tr class="separator:acb76998a1ca3a36a944f8a585c1863df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb92a29b8d0831c5114b6fe5aa1f0218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afb92a29b8d0831c5114b6fe5aa1f0218">Unmounted</a> (<a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:afb92a29b8d0831c5114b6fe5aa1f0218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when Dokan is unmounting the volume.  <a href="#afb92a29b8d0831c5114b6fe5aa1f0218">More...</a><br /></td></tr>
 <tr class="separator:afb92a29b8d0831c5114b6fe5aa1f0218"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -196,7 +196,7 @@ Public Member Functions</h2></td></tr>
 <div class="textblock"><p>Dokan API callbacks interface. </p>
 <p>A interface of callbacks that describe all Dokan API operation that will be called when Windows access to the file system.</p>
 <p>All this callbacks can return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="Error - {Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a> if you dont want to support one of them. Be aware that returning such value to important callbacks such <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a>/<a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acfc6839771400332d0b407ceafa65d72" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">ReadFile</a>/... would make the filesystem not working or unstable. </p>
-<p>This is the same struct as <code>DOKAN_OPERATIONS</code> (dokan.h) in the C++ version of <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a>.</p>
+<p>This is the same struct as <code>DOKAN_OPERATIONS</code> (dokan.h) in the C version of <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="adde3db9404d5acf64632fbbb556bbec2"></a>
 <div class="memitem">
@@ -886,23 +886,35 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ab890fb0b14c238c27e26194df1875a4a"></a>
+<a class="anchor" id="acb76998a1ca3a36a944f8a585c1863df"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.Mounted </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a>&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>mountPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a>&#160;</td>
+          <td class="paramname"><em>info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Is called when Dokan succeed to mount the volume. </p>
+<p>If <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6aa2ded7048f566ba78b285a02bc9d087f" title="Use mount manager.">DokanOptions.MountManager</a> is enabled and the drive letter requested is busy, the <em>mountPoint</em>  can contain a different drive letter that the mount manager assigned us. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">mountPoint</td><td>The mount point assign to the instance.</td></tr>
     <tr><td class="paramname">info</td><td>An <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html" title="Dokan file information interface. ">IDokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
@@ -1335,7 +1347,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ab890fb0b14c238c27e26194df1875a4a" title="Is called when Dokan succeed to mount the volume. ">Mounted</a></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acb76998a1ca3a36a944f8a585c1863df" title="Is called when Dokan succeed to mount the volume. ">Mounted</a></dd></dl>
 
 </div>
 </div>

@@ -13,7 +13,7 @@ var searchData=
   ['remotefileversionmismatch',['RemoteFileVersionMismatch',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6b0ea4268e921a630cef9900ec2fcbd1',1,'DokanNet']]],
   ['removabledrive',['RemovableDrive',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6aa1a9f7bd5437f518e9afb2fe890baabe',1,'DokanNet']]],
   ['removemountpoint',['RemoveMountPoint',['../class_dokan_net_1_1_dokan.html#a5b3d76480ead72d65b4083ff45ff5d4a',1,'DokanNet::Dokan']]],
-  ['rename',['Rename',['../class_dokan_net_1_1_dokan_1_1_notify.html#aa4181247da9b22d66e8197989f3d02ee',1,'DokanNet::Dokan::Notify']]],
+  ['rename',['Rename',['../class_dokan_net_1_1_dokan_1_1_notify.html#a175e36d58cbf147c5b70e11c30ec02e8',1,'DokanNet::Dokan::Notify']]],
   ['reparse',['Reparse',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa7f364d3e8041f72eaaa1ade7e74d8da',1,'DokanNet']]],
   ['reparseobject',['ReparseObject',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a137369ee596210a9cedaf7479bdcfbe1',1,'DokanNet']]],
   ['requestcanceled',['RequestCanceled',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a1a816592286f73ef46ba3b41838f8afc',1,'DokanNet']]],

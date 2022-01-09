@@ -5,5 +5,6 @@ var searchData=
   ['dokanexception',['DokanException',['../class_dokan_net_1_1_dokan_exception.html',1,'DokanNet']]],
   ['dokanfileinfo',['DokanFileInfo',['../class_dokan_net_1_1_dokan_file_info.html',1,'DokanNet']]],
   ['dokanhelper',['DokanHelper',['../class_dokan_net_1_1_dokan_helper.html',1,'DokanNet']]],
+  ['dokaninstance',['DokanInstance',['../class_dokan_net_1_1_dokan_instance.html',1,'DokanNet']]],
   ['dokanresult',['DokanResult',['../class_dokan_net_1_1_dokan_result.html',1,'DokanNet']]]
 ];
