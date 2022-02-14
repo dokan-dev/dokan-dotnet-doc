@@ -975,7 +975,7 @@ Static Public Attributes</h2></td></tr>
     <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
     <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
     <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Number of threads to be used internally by Dokan library. More thread will handle more event at the same time.</td></tr>
+    <tr><td class="paramname">singleThread</td><td>Only use a single thread to process events. This is highly not recommended as can easily create a bottleneck.</td></tr>
     <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
   </table>
   </dd>
@@ -1051,7 +1051,7 @@ Static Public Attributes</h2></td></tr>
     <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
     <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
     <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Number of threads to be used internally by Dokan library. More thread will handle more event at the same time.</td></tr>
+    <tr><td class="paramname">singleThread</td><td>Only use a single thread to process events. This is highly not recommended as can easily create a bottleneck.</td></tr>
     <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
     <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
   </table>
@@ -1134,7 +1134,7 @@ Static Public Attributes</h2></td></tr>
     <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
     <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
     <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Number of threads to be used internally by Dokan library. More thread will handle more event at the same time.</td></tr>
+    <tr><td class="paramname">singleThread</td><td>Only use a single thread to process events. This is highly not recommended as can easily create a bottleneck.</td></tr>
     <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
     <tr><td class="paramname">timeout</td><td>Max timeout in ms of each request before dokan give up.</td></tr>
     <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
@@ -1224,7 +1224,7 @@ Static Public Attributes</h2></td></tr>
     <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
     <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
     <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Number of threads to be used internally by Dokan library. More thread will handle more event at the same time.</td></tr>
+    <tr><td class="paramname">singleThread</td><td>Only use a single thread to process events. This is highly not recommended as can easily create a bottleneck.</td></tr>
     <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
     <tr><td class="paramname">timeout</td><td>Max timeout in ms of each request before dokan give up.</td></tr>
     <tr><td class="paramname">uncName</td><td>UNC name used for network volume.</td></tr>
@@ -1327,7 +1327,7 @@ Static Public Attributes</h2></td></tr>
     <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
     <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
     <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Number of threads to be used internally by Dokan library. More thread will handle more event at the same time.</td></tr>
+    <tr><td class="paramname">singleThread</td><td>Only use a single thread to process events. This is highly not recommended as can easily create a bottleneck.</td></tr>
     <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
     <tr><td class="paramname">timeout</td><td>Max timeout in ms of each request before dokan give up.</td></tr>
     <tr><td class="paramname">uncName</td><td>UNC name used for network volume.</td></tr>
