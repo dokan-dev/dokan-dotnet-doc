@@ -96,99 +96,66 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="class_dokan_net_1_1_dokan-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">DokanNet.Dokan Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>Helper and extension methods to Dokan.  
+<p>Helper methods to Dokan.  
  <a href="class_dokan_net_1_1_dokan.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for DokanNet.Dokan:</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_dokan_net_1_1_dokan.png" usemap="#DokanNet.Dokan_map" alt=""/>
+  <map id="DokanNet.Dokan_map" name="DokanNet.Dokan_map">
+</map>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_1_1_notify.html">Notify</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> User FS file-change notifications  <a href="class_dokan_net_1_1_dokan_1_1_notify.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> User FS file-change notifications  <a href="class_dokan_net_1_1_dokan_1_1_notify.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a4deaef52827f829b7cf15c72de16fd29"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a4deaef52827f829b7cf15c72de16fd29">Init</a> ()</td></tr>
-<tr class="memdesc:a4deaef52827f829b7cf15c72de16fd29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all required <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> internal resources.  <a href="#a4deaef52827f829b7cf15c72de16fd29">More...</a><br /></td></tr>
-<tr class="separator:a4deaef52827f829b7cf15c72de16fd29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c8534bcd3e9226eb185fb632f41787c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a7c8534bcd3e9226eb185fb632f41787c">Shutdown</a> ()</td></tr>
-<tr class="memdesc:a7c8534bcd3e9226eb185fb632f41787c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release all allocated resources by <a class="el" href="class_dokan_net_1_1_dokan.html#a4deaef52827f829b7cf15c72de16fd29" title="Initialize all required Dokan internal resources. ">Init</a> when they are no longer needed.  <a href="#a7c8534bcd3e9226eb185fb632f41787c">More...</a><br /></td></tr>
-<tr class="separator:a7c8534bcd3e9226eb185fb632f41787c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5166c38bbe42cb737aac4e09b117503"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#ac5166c38bbe42cb737aac4e09b117503">Mount</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:ac5166c38bbe42cb737aac4e09b117503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API.  <a href="#ac5166c38bbe42cb737aac4e09b117503">More...</a><br /></td></tr>
-<tr class="separator:ac5166c38bbe42cb737aac4e09b117503"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2ff823c243a33432c874b0e30aebd544"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a2ff823c243a33432c874b0e30aebd544">Mount</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:a2ff823c243a33432c874b0e30aebd544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API.  <a href="#a2ff823c243a33432c874b0e30aebd544">More...</a><br /></td></tr>
-<tr class="separator:a2ff823c243a33432c874b0e30aebd544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5fae22d7b1a6f76118b35ccca959c578"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a5fae22d7b1a6f76118b35ccca959c578">Mount</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, bool singleThread, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:a5fae22d7b1a6f76118b35ccca959c578"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API.  <a href="#a5fae22d7b1a6f76118b35ccca959c578">More...</a><br /></td></tr>
-<tr class="separator:a5fae22d7b1a6f76118b35ccca959c578"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8394004f118f11894143a18df5733dd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#ac8394004f118f11894143a18df5733dd">Mount</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, bool singleThread, int version, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:ac8394004f118f11894143a18df5733dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API.  <a href="#ac8394004f118f11894143a18df5733dd">More...</a><br /></td></tr>
-<tr class="separator:ac8394004f118f11894143a18df5733dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aff8ffa4671c59ecaa51492f605d4f518"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#aff8ffa4671c59ecaa51492f605d4f518">Mount</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, bool singleThread, int version, TimeSpan timeout, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:aff8ffa4671c59ecaa51492f605d4f518"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API.  <a href="#aff8ffa4671c59ecaa51492f605d4f518">More...</a><br /></td></tr>
-<tr class="separator:aff8ffa4671c59ecaa51492f605d4f518"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dae947cad796068fd7da452175b5687"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a2dae947cad796068fd7da452175b5687">Mount</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, bool singleThread, int version, TimeSpan timeout, string uncName, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:a2dae947cad796068fd7da452175b5687"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API.  <a href="#a2dae947cad796068fd7da452175b5687">More...</a><br /></td></tr>
-<tr class="separator:a2dae947cad796068fd7da452175b5687"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aecaa71fc5d9cbf4bd1df49547b6916d0"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#aecaa71fc5d9cbf4bd1df49547b6916d0">Mount</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, bool singleThread, int version, TimeSpan timeout, string uncName=null, int allocationUnitSize=512, int sectorSize=512, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:aecaa71fc5d9cbf4bd1df49547b6916d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API.  <a href="#aecaa71fc5d9cbf4bd1df49547b6916d0">More...</a><br /></td></tr>
-<tr class="separator:aecaa71fc5d9cbf4bd1df49547b6916d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa82e0c50aa58da44228ad0c8bc2125f7"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#aa82e0c50aa58da44228ad0c8bc2125f7">CreateFileSystem</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:aa82e0c50aa58da44228ad0c8bc2125f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount.  <a href="#aa82e0c50aa58da44228ad0c8bc2125f7">More...</a><br /></td></tr>
-<tr class="separator:aa82e0c50aa58da44228ad0c8bc2125f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b4e4df41ab79ee7584cf49dcd947c52"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a4b4e4df41ab79ee7584cf49dcd947c52">CreateFileSystem</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:a4b4e4df41ab79ee7584cf49dcd947c52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount.  <a href="#a4b4e4df41ab79ee7584cf49dcd947c52">More...</a><br /></td></tr>
-<tr class="separator:a4b4e4df41ab79ee7584cf49dcd947c52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adcd60971252f806cabe70ff26729ab38"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#adcd60971252f806cabe70ff26729ab38">CreateFileSystem</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, bool singleThread, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:adcd60971252f806cabe70ff26729ab38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount.  <a href="#adcd60971252f806cabe70ff26729ab38">More...</a><br /></td></tr>
-<tr class="separator:adcd60971252f806cabe70ff26729ab38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a123108695248ffa12053c8c2c8e03c30"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a123108695248ffa12053c8c2c8e03c30">CreateFileSystem</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, bool singleThread, int version, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:a123108695248ffa12053c8c2c8e03c30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount.  <a href="#a123108695248ffa12053c8c2c8e03c30">More...</a><br /></td></tr>
-<tr class="separator:a123108695248ffa12053c8c2c8e03c30"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac70e6b0139cfe93e0ca94bc9d13d7160"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#ac70e6b0139cfe93e0ca94bc9d13d7160">CreateFileSystem</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, bool singleThread, int version, TimeSpan timeout, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:ac70e6b0139cfe93e0ca94bc9d13d7160"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount.  <a href="#ac70e6b0139cfe93e0ca94bc9d13d7160">More...</a><br /></td></tr>
-<tr class="separator:ac70e6b0139cfe93e0ca94bc9d13d7160"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13561a69c716a5f1f9175d16a1e7e24e"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a13561a69c716a5f1f9175d16a1e7e24e">CreateFileSystem</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, bool singleThread, int version, TimeSpan timeout, string uncName, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:a13561a69c716a5f1f9175d16a1e7e24e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount.  <a href="#a13561a69c716a5f1f9175d16a1e7e24e">More...</a><br /></td></tr>
-<tr class="separator:a13561a69c716a5f1f9175d16a1e7e24e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a749d5b1583db1d774f0687596a9bf799"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a749d5b1583db1d774f0687596a9bf799">CreateFileSystem</a> (this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a> operations, string mountPoint, <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> mountOptions, bool singleThread, int version, TimeSpan timeout, string uncName=null, int allocationUnitSize=512, int sectorSize=512, <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger=null)</td></tr>
-<tr class="memdesc:a749d5b1583db1d774f0687596a9bf799"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount.  <a href="#a749d5b1583db1d774f0687596a9bf799">More...</a><br /></td></tr>
-<tr class="separator:a749d5b1583db1d774f0687596a9bf799"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315badc34a65940638e4cabdb04241bc"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a315badc34a65940638e4cabdb04241bc">IsFileSystemRunning</a> (this <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a> dokanInstance)</td></tr>
-<tr class="memdesc:a315badc34a65940638e4cabdb04241bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if the FileSystem is still running or not.  <a href="#a315badc34a65940638e4cabdb04241bc">More...</a><br /></td></tr>
-<tr class="separator:a315badc34a65940638e4cabdb04241bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e6df07f3c712968fcf8f070ee9f9beb"><td class="memItemLeft" align="right" valign="top">static uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb">WaitForFileSystemClosed</a> (this <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a> dokanInstance, uint milliSeconds)</td></tr>
-<tr class="memdesc:a6e6df07f3c712968fcf8f070ee9f9beb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until the FileSystem is unmount.  <a href="#a6e6df07f3c712968fcf8f070ee9f9beb">More...</a><br /></td></tr>
-<tr class="separator:a6e6df07f3c712968fcf8f070ee9f9beb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad021d139d76b4a5590ff4498afafe116"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#ad021d139d76b4a5590ff4498afafe116">Unmount</a> (char driveLetter)</td></tr>
-<tr class="memdesc:ad021d139d76b4a5590ff4498afafe116"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount a dokan device from a driver letter.  <a href="#ad021d139d76b4a5590ff4498afafe116">More...</a><br /></td></tr>
-<tr class="separator:ad021d139d76b4a5590ff4498afafe116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b3d76480ead72d65b4083ff45ff5d4a"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a5b3d76480ead72d65b4083ff45ff5d4a">RemoveMountPoint</a> (string mountPoint)</td></tr>
-<tr class="memdesc:a5b3d76480ead72d65b4083ff45ff5d4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount a dokan device from a mount point.  <a href="#a5b3d76480ead72d65b4083ff45ff5d4a">More...</a><br /></td></tr>
-<tr class="separator:a5b3d76480ead72d65b4083ff45ff5d4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a0dc22bacf03ee466a301cb1be99d9881"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a0dc22bacf03ee466a301cb1be99d9881">Dokan</a> (<a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a> logger)</td></tr>
+<tr class="memdesc:a0dc22bacf03ee466a301cb1be99d9881"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize all required <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> internal resources.  <a href="#a0dc22bacf03ee466a301cb1be99d9881">More...</a><br /></td></tr>
+<tr class="separator:a0dc22bacf03ee466a301cb1be99d9881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85c9cf3a2aabe53401a8035c8e7e241"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#ae85c9cf3a2aabe53401a8035c8e7e241">Unmount</a> (char driveLetter)</td></tr>
+<tr class="memdesc:ae85c9cf3a2aabe53401a8035c8e7e241"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount a dokan device from a driver letter.  <a href="#ae85c9cf3a2aabe53401a8035c8e7e241">More...</a><br /></td></tr>
+<tr class="separator:ae85c9cf3a2aabe53401a8035c8e7e241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2f3a078230d11d2cee76f7ed3eb38fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#aa2f3a078230d11d2cee76f7ed3eb38fd">RemoveMountPoint</a> (string mountPoint)</td></tr>
+<tr class="memdesc:aa2f3a078230d11d2cee76f7ed3eb38fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount a dokan device from a mount point.  <a href="#aa2f3a078230d11d2cee76f7ed3eb38fd">More...</a><br /></td></tr>
+<tr class="separator:aa2f3a078230d11d2cee76f7ed3eb38fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8deb02c8009a3cf60e665e6269f89fbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8deb02c8009a3cf60e665e6269f89fbe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> ()</td></tr>
+<tr class="separator:a8deb02c8009a3cf60e665e6269f89fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a53ca33429619a9ab843c91a0abd1bb6d"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a53ca33429619a9ab843c91a0abd1bb6d">Version</a> =&gt; (int)NativeMethods.DokanVersion()</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a53ca33429619a9ab843c91a0abd1bb6d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a53ca33429619a9ab843c91a0abd1bb6d">Version</a> =&gt; (int)NativeMethods.DokanVersion()</td></tr>
 <tr class="memdesc:a53ca33429619a9ab843c91a0abd1bb6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve native dokan dll version supported.  <a href="#a53ca33429619a9ab843c91a0abd1bb6d">More...</a><br /></td></tr>
 <tr class="separator:a53ca33429619a9ab843c91a0abd1bb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2643aef15febc17ca2d39088753fb8bf"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a2643aef15febc17ca2d39088753fb8bf">DriverVersion</a> =&gt; (int)NativeMethods.DokanDriverVersion()</td></tr>
+<tr class="memitem:a2643aef15febc17ca2d39088753fb8bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a2643aef15febc17ca2d39088753fb8bf">DriverVersion</a> =&gt; (int)NativeMethods.DokanDriverVersion()</td></tr>
 <tr class="memdesc:a2643aef15febc17ca2d39088753fb8bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve native dokan driver version supported.  <a href="#a2643aef15febc17ca2d39088753fb8bf">More...</a><br /></td></tr>
 <tr class="separator:a2643aef15febc17ca2d39088753fb8bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a90331e5fcfb05a05417a02c110b085e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90331e5fcfb05a05417a02c110b085e1"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> (bool disposing)</td></tr>
+<tr class="separator:a90331e5fcfb05a05417a02c110b085e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Helper and extension methods to Dokan. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aa82e0c50aa58da44228ad0c8bc2125f7"></a>
+<div class="textblock"><p>Helper methods to Dokan. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a0dc22bacf03ee466a301cb1be99d9881"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -196,120 +163,33 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a> DokanNet.Dokan.CreateFileSystem </td>
+          <td class="memname">DokanNet.Dokan.Dokan </td>
           <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
+          <td class="paramname"><em>logger</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount. </p>
+<p>Initialize all required <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> internal resources. </p>
+<p>This needs to be called only once before trying to use Mount or CreateFileSystem for the first time. Otherwise both will fail and raise an exception. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount instance context that can be used for related instance calls like <a class="el" href="class_dokan_net_1_1_dokan.html#a315badc34a65940638e4cabdb04241bc" title="Check if the FileSystem is still running or not. ">IsFileSystemRunning</a></dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4b4e4df41ab79ee7584cf49dcd947c52"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a> DokanNet.Dokan.CreateFileSystem </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
     <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount instance context that can be used for related instance calls like <a class="el" href="class_dokan_net_1_1_dokan.html#a315badc34a65940638e4cabdb04241bc" title="Check if the FileSystem is still running or not. ">IsFileSystemRunning</a></dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="adcd60971252f806cabe70ff26729ab38"></a>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa2f3a078230d11d2cee76f7ed3eb38fd"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -317,1044 +197,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a> DokanNet.Dokan.CreateFileSystem </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>singleThread</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Number of threads to be used internally by Dokan library. More thread will handle more event at the same time.</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount instance context that can be used for related instance calls like <a class="el" href="class_dokan_net_1_1_dokan.html#a315badc34a65940638e4cabdb04241bc" title="Check if the FileSystem is still running or not. ">IsFileSystemRunning</a></dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a123108695248ffa12053c8c2c8e03c30"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a> DokanNet.Dokan.CreateFileSystem </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>singleThread</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Number of threads to be used internally by Dokan library. More thread will handle more event at the same time.</td></tr>
-    <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount instance context that can be used for related instance calls like <a class="el" href="class_dokan_net_1_1_dokan.html#a315badc34a65940638e4cabdb04241bc" title="Check if the FileSystem is still running or not. ">IsFileSystemRunning</a></dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac70e6b0139cfe93e0ca94bc9d13d7160"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a> DokanNet.Dokan.CreateFileSystem </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>singleThread</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TimeSpan&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Number of threads to be used internally by Dokan library. More thread will handle more event at the same time.</td></tr>
-    <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
-    <tr><td class="paramname">timeout</td><td>Max timeout in ms of each request before dokan give up.</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount instance context that can be used for related instance calls like <a class="el" href="class_dokan_net_1_1_dokan.html#a315badc34a65940638e4cabdb04241bc" title="Check if the FileSystem is still running or not. ">IsFileSystemRunning</a></dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a13561a69c716a5f1f9175d16a1e7e24e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a> DokanNet.Dokan.CreateFileSystem </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>singleThread</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TimeSpan&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>uncName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Number of threads to be used internally by Dokan library. More thread will handle more event at the same time.</td></tr>
-    <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
-    <tr><td class="paramname">timeout</td><td>Max timeout in ms of each request before dokan give up.</td></tr>
-    <tr><td class="paramname">uncName</td><td>UNC name used for network volume.</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount instance context that can be used for related instance calls like <a class="el" href="class_dokan_net_1_1_dokan.html#a315badc34a65940638e4cabdb04241bc" title="Check if the FileSystem is still running or not. ">IsFileSystemRunning</a></dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a749d5b1583db1d774f0687596a9bf799"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a> DokanNet.Dokan.CreateFileSystem </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>singleThread</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TimeSpan&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>uncName</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>allocationUnitSize</em> = <code>512</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sectorSize</em> = <code>512</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API. This function returns directly on device mount or on failure. <a class="el" href="class_dokan_net_1_1_dokan.html#a6e6df07f3c712968fcf8f070ee9f9beb" title="Wait until the FileSystem is unmount. ">WaitForFileSystemClosed</a> can be used to wait until the device is unmount. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Number of threads to be used internally by Dokan library. More thread will handle more event at the same time.</td></tr>
-    <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
-    <tr><td class="paramname">timeout</td><td>Max timeout in ms of each request before dokan give up.</td></tr>
-    <tr><td class="paramname">uncName</td><td>UNC name used for network volume.</td></tr>
-    <tr><td class="paramname">allocationUnitSize</td><td>Allocation Unit Size of the volume. This will behave on the file size.</td></tr>
-    <tr><td class="paramname">sectorSize</td><td>Sector Size of the volume. This will behave on the file size.</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount instance context that can be used for related instance calls like <a class="el" href="class_dokan_net_1_1_dokan.html#a315badc34a65940638e4cabdb04241bc" title="Check if the FileSystem is still running or not. ">IsFileSystemRunning</a></dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a4deaef52827f829b7cf15c72de16fd29"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DokanNet.Dokan.Init </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initialize all required <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> internal resources. </p>
-<p>This needs to be called only once before trying to use <a class="el" href="class_dokan_net_1_1_dokan.html#ac5166c38bbe42cb737aac4e09b117503" title="Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have ca...">Mount</a> or <a class="el" href="class_dokan_net_1_1_dokan.html#aa82e0c50aa58da44228ad0c8bc2125f7" title="Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API...">CreateFileSystem</a> for the first time. Otherwise both will fail and raise an exception. </p>
-
-</div>
-</div>
-<a class="anchor" id="a315badc34a65940638e4cabdb04241bc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool DokanNet.Dokan.IsFileSystemRunning </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a>&#160;</td>
-          <td class="paramname"><em>dokanInstance</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check if the FileSystem is still running or not. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by <a class="el" href="class_dokan_net_1_1_dokan.html#aa82e0c50aa58da44228ad0c8bc2125f7" title="Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API...">CreateFileSystem</a>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Whether the FileSystem is still running or not.</dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac5166c38bbe42cb737aac4e09b117503"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DokanNet.Dokan.Mount </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a2ff823c243a33432c874b0e30aebd544"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DokanNet.Dokan.Mount </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a5fae22d7b1a6f76118b35ccca959c578"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DokanNet.Dokan.Mount </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>singleThread</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Only use a single thread to process events. This is highly not recommended as can easily create a bottleneck.</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="ac8394004f118f11894143a18df5733dd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DokanNet.Dokan.Mount </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>singleThread</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Only use a single thread to process events. This is highly not recommended as can easily create a bottleneck.</td></tr>
-    <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aff8ffa4671c59ecaa51492f605d4f518"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DokanNet.Dokan.Mount </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>singleThread</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TimeSpan&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Only use a single thread to process events. This is highly not recommended as can easily create a bottleneck.</td></tr>
-    <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
-    <tr><td class="paramname">timeout</td><td>Max timeout in ms of each request before dokan give up.</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a2dae947cad796068fd7da452175b5687"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DokanNet.Dokan.Mount </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>singleThread</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TimeSpan&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>uncName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Only use a single thread to process events. This is highly not recommended as can easily create a bottleneck.</td></tr>
-    <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
-    <tr><td class="paramname">timeout</td><td>Max timeout in ms of each request before dokan give up.</td></tr>
-    <tr><td class="paramname">uncName</td><td>UNC name used for network volume.</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="aecaa71fc5d9cbf4bd1df49547b6916d0"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void DokanNet.Dokan.Mount </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html">IDokanOperations</a>&#160;</td>
-          <td class="paramname"><em>operations</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mountPoint</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a>&#160;</td>
-          <td class="paramname"><em>mountOptions</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>singleThread</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>version</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">TimeSpan&#160;</td>
-          <td class="paramname"><em>timeout</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>uncName</em> = <code>null</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>allocationUnitSize</em> = <code>512</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>sectorSize</em> = <code>512</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html">ILogger</a>&#160;</td>
-          <td class="paramname"><em>logger</em> = <code>null</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have called DokanInit previously to use this API. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">operations</td><td>Instance of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that will be called for each request made by the kernel.</td></tr>
-    <tr><td class="paramname">mountPoint</td><td>Mount point. Can be <code>M:\</code> (drive letter) or <code>C:\mount\dokan</code> (path in NTFS).</td></tr>
-    <tr><td class="paramname">mountOptions</td><td><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6" title="Dokan mount options used to describe dokan device behavior. ">DokanOptions</a> features enable for the mount.</td></tr>
-    <tr><td class="paramname">singleThread</td><td>Only use a single thread to process events. This is highly not recommended as can easily create a bottleneck.</td></tr>
-    <tr><td class="paramname">version</td><td>Version of the dokan features requested (Version "123" is equal to Dokan version 1.2.3).</td></tr>
-    <tr><td class="paramname">timeout</td><td>Max timeout in ms of each request before dokan give up.</td></tr>
-    <tr><td class="paramname">uncName</td><td>UNC name used for network volume.</td></tr>
-    <tr><td class="paramname">allocationUnitSize</td><td>Allocation Unit Size of the volume. This will behave on the file size.</td></tr>
-    <tr><td class="paramname">sectorSize</td><td>Sector Size of the volume. This will behave on the file size.</td></tr>
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_dokan_net_1_1_dokan_exception.html" title="The dokan exception. ">DokanException</a></td><td>If the mount fails.</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="a5b3d76480ead72d65b4083ff45ff5d4a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool DokanNet.Dokan.RemoveMountPoint </td>
+          <td class="memname">bool DokanNet.Dokan.RemoveMountPoint </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>mountPoint</em></td><td>)</td>
@@ -1363,7 +206,7 @@ Static Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1379,7 +222,7 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a7c8534bcd3e9226eb185fb632f41787c"></a>
+<a class="anchor" id="ae85c9cf3a2aabe53401a8035c8e7e241"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1387,33 +230,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static void DokanNet.Dokan.Shutdown </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Release all allocated resources by <a class="el" href="class_dokan_net_1_1_dokan.html#a4deaef52827f829b7cf15c72de16fd29" title="Initialize all required Dokan internal resources. ">Init</a> when they are no longer needed. </p>
-<p>This should be called when the application no longer expects to create a new FileSystem with <a class="el" href="class_dokan_net_1_1_dokan.html#ac5166c38bbe42cb737aac4e09b117503" title="Mount a new Dokan Volume. This function block until the device is unmount. It is mandatory to have ca...">Mount</a> or <a class="el" href="class_dokan_net_1_1_dokan.html#aa82e0c50aa58da44228ad0c8bc2125f7" title="Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API...">CreateFileSystem</a> and after all devices are unmount. </p>
-
-</div>
-</div>
-<a class="anchor" id="ad021d139d76b4a5590ff4498afafe116"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static bool DokanNet.Dokan.Unmount </td>
+          <td class="memname">bool DokanNet.Dokan.Unmount </td>
           <td>(</td>
           <td class="paramtype">char&#160;</td>
           <td class="paramname"><em>driveLetter</em></td><td>)</td>
@@ -1422,7 +239,7 @@ Static Public Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1438,79 +255,15 @@ Static Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6e6df07f3c712968fcf8f070ee9f9beb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static uint DokanNet.Dokan.WaitForFileSystemClosed </td>
-          <td>(</td>
-          <td class="paramtype">this <a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a>&#160;</td>
-          <td class="paramname"><em>dokanInstance</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint&#160;</td>
-          <td class="paramname"><em>milliSeconds</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Wait until the FileSystem is unmount. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by <a class="el" href="class_dokan_net_1_1_dokan.html#aa82e0c50aa58da44228ad0c8bc2125f7" title="Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API...">CreateFileSystem</a>.</td></tr>
-    <tr><td class="paramname">milliSeconds</td><td>The time-out interval, in milliseconds. If a nonzero value is specified, the function waits until the object is signaled or the interval elapses. If <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">milliSeconds</td><td>is zero, the function does not enter a wait state if the object is not signaled; it always returns immediately. If <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">milliSeconds</td><td>is INFINITE, the function will return only when the object is signaled.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject">WaitForSingleObject</a> for a description of return values.</dd></dl>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="a2643aef15febc17ca2d39088753fb8bf"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int DokanNet.Dokan.DriverVersion =&gt; (int)NativeMethods.DokanDriverVersion()</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Retrieve native dokan driver version supported. </p>
@@ -1521,19 +274,11 @@ Static Public Attributes</h2></td></tr>
 <a class="anchor" id="a53ca33429619a9ab843c91a0abd1bb6d"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int DokanNet.Dokan.Version =&gt; (int)NativeMethods.DokanVersion()</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Retrieve native dokan dll version supported. </p>

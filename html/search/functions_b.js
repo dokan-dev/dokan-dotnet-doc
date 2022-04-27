@@ -1,7 +1,7 @@
 var searchData=
 [
   ['unlockfile',['UnlockFile',['../interface_dokan_net_1_1_i_dokan_operations.html#ab397e7dfc7788131dd2af9d2577e5b3f',1,'DokanNet::IDokanOperations']]],
-  ['unmount',['Unmount',['../class_dokan_net_1_1_dokan.html#ad021d139d76b4a5590ff4498afafe116',1,'DokanNet::Dokan']]],
+  ['unmount',['Unmount',['../class_dokan_net_1_1_dokan.html#ae85c9cf3a2aabe53401a8035c8e7e241',1,'DokanNet::Dokan']]],
   ['unmounted',['Unmounted',['../interface_dokan_net_1_1_i_dokan_operations.html#afb92a29b8d0831c5114b6fe5aa1f0218',1,'DokanNet::IDokanOperations']]],
   ['update',['Update',['../class_dokan_net_1_1_dokan_1_1_notify.html#a2685f711e367500f4e35b67fe07609c8',1,'DokanNet::Dokan::Notify']]]
 ];

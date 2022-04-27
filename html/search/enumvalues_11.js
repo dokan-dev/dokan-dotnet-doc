@@ -16,7 +16,7 @@ var searchData=
   ['specialgroup',['SpecialGroup',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aab19e92d13db656fd5486912b734bcf6',1,'DokanNet']]],
   ['specialuser',['SpecialUser',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad2e711c75efc9ef59115c960fd553f79',1,'DokanNet']]],
   ['starterror',['StartError',['../namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7cac05e12ecefead2984856c67e685327df',1,'DokanNet']]],
-  ['stderroutput',['StderrOutput',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a4f6d71cceccbcb25f0d92039afd3cd70',1,'DokanNet']]],
+  ['stderroutput',['StderrOutput',['../namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a4f6d71cceccbcb25f0d92039afd3cd70',1,'DokanNet']]],
   ['streamminiversionnotfound',['StreamMiniversionNotFound',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209afbc0e91fbd175c6a15607f1986597287',1,'DokanNet']]],
   ['streamminiversionnotvalid',['StreamMiniversionNotValid',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a24a05ff63870c2aa827bb5013881c8e3',1,'DokanNet']]],
   ['success',['Success',['../namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7ca505a83f220c02df2f85c3810cd9ceb38',1,'DokanNet.Success()'],['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38',1,'DokanNet.Success()']]],

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['mockdokanfileinfo',['MockDokanFileInfo',['../class_dokan_net_1_1_mock_dokan_file_info.html',1,'DokanNet']]]
+  ['logger',['Logger',['../class_dokan_net_1_1_logging_1_1_logger.html',1,'DokanNet::Logging']]],
+  ['loggerextensions',['LoggerExtensions',['../class_dokan_net_1_1_logging_1_1_logger_extensions.html',1,'DokanNet::Logging']]]
 ];

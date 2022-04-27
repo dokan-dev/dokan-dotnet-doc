@@ -118,7 +118,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simple buffer pool for buffers used by <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acfc6839771400332d0b407ceafa65d72" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">IDokanOperations.ReadFile</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a0f25541dcc4821ba0f49be194e416975" title="WriteFile callback on the file previously opened in CreateFile It can be called by different thread a...">IDokanOperations.WriteFile</a> to avoid excessive Gen2 garbage collections due to large buffer allocation on the large object heap (LOH). <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html">Dokan</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper and extension methods to Dokan.  <a href="class_dokan_net_1_1_dokan.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Helper methods to Dokan.  <a href="class_dokan_net_1_1_dokan.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_exception.html">DokanException</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dokan exception.  <a href="class_dokan_net_1_1_dokan_exception.html#details">More...</a><br /></td></tr>
@@ -133,13 +133,17 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan functions helpers for user <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> implementation.  <a href="class_dokan_net_1_1_dokan_helper.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_instance.html">DokanInstance</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created by <a class="el" href="class_dokan_net_1_1_dokan.html#aa82e0c50aa58da44228ad0c8bc2125f7" title="Mount a new Dokan Volume. It is mandatory to have called DokanInit previously to use this API...">Dokan.CreateFileSystem</a>. It holds all the resources required to be alive for the time of the mount.  <a href="class_dokan_net_1_1_dokan_instance.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Created by Dokan.CreateFileSystem. It holds all the resources required to be alive for the time of the mount.  <a href="class_dokan_net_1_1_dokan_instance.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_instance_builder.html">DokanInstanceBuilder</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>DokanOperationProxy</b></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The dokan operation proxy. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan_result.html">DokanResult</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines common result status codes in <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> for Dokan operations.  <a href="class_dokan_net_1_1_dokan_result.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_extensions.html">Extensions</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to provide file information to Dokan during operations by  <a href="struct_dokan_net_1_1_file_information.html#details">More...</a><br /></td></tr>
@@ -157,35 +161,35 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a sub-interface of <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html" title="Dokan API callbacks interface. ">IDokanOperations</a> that can optionally be implemented to get access to the raw, unmanaged buffers for <a class="el" href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a30cd20639acdd667002c7deb76df5c2e" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">ReadFile()</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a3eeb79bb7dd93c93262ae11cb6f574f0" title="WriteFile callback on the file previously opened in CreateFile It can be called by different thread a...">WriteFile()</a> for performance optimization. Marshalling the unmanaged buffers to and from byte[] arrays for every call of these APIs incurs an extra copy that can be avoided by reading from or writing directly to the unmanaged buffers.  <a href="interface_dokan_net_1_1_i_dokan_operations_unsafe.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html">MockDokanFileInfo</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mockable <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> file information on the current operation.  <a href="class_dokan_net_1_1_mock_dokan_file_info.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mockable <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> file information on the current operation.  <a href="class_dokan_net_1_1_mock_dokan_file_info.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><b>NativeStructWrapper</b></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a8b96a20dbe630fffdb505ca7ff3c32a6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanOptions</a> : long { <br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a2b5e39dc8372c99a6fa12b6d3c6b8c88">DokanOptions.FixedDrive</a> = 0, 
-<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6afe2e30f9ad4dc8f704457dfbd9c782ed">DokanOptions.DebugMode</a> = 1, 
-<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a4f6d71cceccbcb25f0d92039afd3cd70">DokanOptions.StderrOutput</a> = 2, 
-<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6ad8fe8feefa750b9723759954632c391f">DokanOptions.AltStream</a> = 4, 
+<tr class="memitem:afa8f35624a0a01a366f366fd2172c7f2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2">DokanOptions</a> : uint { <br />
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a2b5e39dc8372c99a6fa12b6d3c6b8c88">DokanOptions.FixedDrive</a> = 0, 
+<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2afe2e30f9ad4dc8f704457dfbd9c782ed">DokanOptions.DebugMode</a> = 1, 
+<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a4f6d71cceccbcb25f0d92039afd3cd70">DokanOptions.StderrOutput</a> = 2, 
+<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2ad8fe8feefa750b9723759954632c391f">DokanOptions.AltStream</a> = 4, 
 <br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a57da18a8e1746b49db5386ee136c594c">DokanOptions.WriteProtection</a> = 8, 
-<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6af9a84196014cf6417761dfb69a085bb9">DokanOptions.NetworkDrive</a> = 16, 
-<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6aa1a9f7bd5437f518e9afb2fe890baabe">DokanOptions.RemovableDrive</a> = 32, 
-<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6aa2ded7048f566ba78b285a02bc9d087f">DokanOptions.MountManager</a> = 64, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a57da18a8e1746b49db5386ee136c594c">DokanOptions.WriteProtection</a> = 8, 
+<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2af9a84196014cf6417761dfb69a085bb9">DokanOptions.NetworkDrive</a> = 16, 
+<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2aa1a9f7bd5437f518e9afb2fe890baabe">DokanOptions.RemovableDrive</a> = 32, 
+<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2aa2ded7048f566ba78b285a02bc9d087f">DokanOptions.MountManager</a> = 64, 
 <br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a80d08dd9dedb771d8a7e94aaf9e0bf7d">DokanOptions.CurrentSession</a> = 128, 
-<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d">DokanOptions.UserModeLock</a> = 256, 
-<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6ae970794cd5c979c49156fe71c48d7811">DokanOptions.EnableNotificationAPI</a> = 512, 
-<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6aaef186eb5e4f306317a661d4b96e397d">DokanOptions.CaseSensitive</a> = 1024, 
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a80d08dd9dedb771d8a7e94aaf9e0bf7d">DokanOptions.CurrentSession</a> = 128, 
+<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a9518e529935303da3e746d7a850fed4d">DokanOptions.UserModeLock</a> = 256, 
+<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2ae970794cd5c979c49156fe71c48d7811">DokanOptions.EnableNotificationAPI</a> = 512, 
+<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2aaef186eb5e4f306317a661d4b96e397d">DokanOptions.CaseSensitive</a> = 1024, 
 <br />
-&#160;&#160;<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a5a610de667cc44de251a83b2312eec69">DokanOptions.EnableNetworkUnmount</a> = 2048, 
-<a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6a81d3351fc05776a25cec9b02c96b6c60">DokanOptions.DispatchDriverLogs</a> = 4096
+&#160;&#160;<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a5a610de667cc44de251a83b2312eec69">DokanOptions.EnableNetworkUnmount</a> = 2048, 
+<a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a81d3351fc05776a25cec9b02c96b6c60">DokanOptions.DispatchDriverLogs</a> = 4096
 <br />
- }<tr class="memdesc:a8b96a20dbe630fffdb505ca7ff3c32a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan mount options used to describe dokan device behavior.  <a href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">More...</a><br /></td></tr>
+ }<tr class="memdesc:afa8f35624a0a01a366f366fd2172c7f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dokan mount options used to describe dokan device behavior.  <a href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2">More...</a><br /></td></tr>
 </td></tr>
-<tr class="separator:a8b96a20dbe630fffdb505ca7ff3c32a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:afa8f35624a0a01a366f366fd2172c7f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab66850a3fb636b2ee11b3d63edb42a7c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7c">DokanStatus</a> : int { <br />
 &#160;&#160;<a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7ca505a83f220c02df2f85c3810cd9ceb38">DokanStatus.Success</a> = 0, 
 <a class="el" href="namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7ca902b0d55fddef6f8d651fe1035b7d4bd">DokanStatus.Error</a> = -1, 
@@ -678,7 +682,7 @@ Enumerations</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Base namespace for Dokan. </p>
 </div><h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6"></a>
+<a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -686,7 +690,7 @@ Enumerations</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6">DokanNet.DokanOptions</a> : long</td>
+          <td class="memname">enum <a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2">DokanNet.DokanOptions</a> : uint</td>
         </tr>
       </table>
   </td>
@@ -696,48 +700,48 @@ Enumerations</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount options used to describe dokan device behavior. </p>
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> mount options used to describe dokan device behavior. </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a2b5e39dc8372c99a6fa12b6d3c6b8c88"></a>FixedDrive&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2a2b5e39dc8372c99a6fa12b6d3c6b8c88"></a>FixedDrive&#160;</td><td class="fielddoc">
 <p>Fixed Drive.</p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6afe2e30f9ad4dc8f704457dfbd9c782ed"></a>DebugMode&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2afe2e30f9ad4dc8f704457dfbd9c782ed"></a>DebugMode&#160;</td><td class="fielddoc">
 <p>Enable output debug message.</p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a4f6d71cceccbcb25f0d92039afd3cd70"></a>StderrOutput&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2a4f6d71cceccbcb25f0d92039afd3cd70"></a>StderrOutput&#160;</td><td class="fielddoc">
 <p>Enable output debug message to stderr.</p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6ad8fe8feefa750b9723759954632c391f"></a>AltStream&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2ad8fe8feefa750b9723759954632c391f"></a>AltStream&#160;</td><td class="fielddoc">
 <p>Use alternate stream.</p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a57da18a8e1746b49db5386ee136c594c"></a>WriteProtection&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2a57da18a8e1746b49db5386ee136c594c"></a>WriteProtection&#160;</td><td class="fielddoc">
 <p>Enable mount drive as write-protected.</p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6af9a84196014cf6417761dfb69a085bb9"></a>NetworkDrive&#160;</td><td class="fielddoc">
-<p>Use network drive - <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> network provider need to be installed.</p>
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2af9a84196014cf6417761dfb69a085bb9"></a>NetworkDrive&#160;</td><td class="fielddoc">
+<p>Use network drive - <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> network provider need to be installed.</p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6aa1a9f7bd5437f518e9afb2fe890baabe"></a>RemovableDrive&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2aa1a9f7bd5437f518e9afb2fe890baabe"></a>RemovableDrive&#160;</td><td class="fielddoc">
 <p>Use removable drive.</p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6aa2ded7048f566ba78b285a02bc9d087f"></a>MountManager&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2aa2ded7048f566ba78b285a02bc9d087f"></a>MountManager&#160;</td><td class="fielddoc">
 <p>Use mount manager.</p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a80d08dd9dedb771d8a7e94aaf9e0bf7d"></a>CurrentSession&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2a80d08dd9dedb771d8a7e94aaf9e0bf7d"></a>CurrentSession&#160;</td><td class="fielddoc">
 <p>Mount the drive on current session only.</p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a9518e529935303da3e746d7a850fed4d"></a>UserModeLock&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2a9518e529935303da3e746d7a850fed4d"></a>UserModeLock&#160;</td><td class="fielddoc">
 <p>Enable Lockfile/Unlockfile operations.</p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6ae970794cd5c979c49156fe71c48d7811"></a>EnableNotificationAPI&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2ae970794cd5c979c49156fe71c48d7811"></a>EnableNotificationAPI&#160;</td><td class="fielddoc">
 <p>Enable methods in <a class="el" href="class_dokan_net_1_1_dokan_1_1_notify.html" title="Dokan User FS file-change notifications ">Dokan.Notify</a>, which require this library to maintain a special handle while the file system is mounted. Without this flag, the methods in that inner class always return false if invoked. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6aaef186eb5e4f306317a661d4b96e397d"></a>CaseSensitive&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2aaef186eb5e4f306317a661d4b96e397d"></a>CaseSensitive&#160;</td><td class="fielddoc">
 <p>Enable Case sensitive path. By default all path are case insensitive. For case sensitive: \dir\File and \diR\file are different files but for case insensitive they are the same. </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a5a610de667cc44de251a83b2312eec69"></a>EnableNetworkUnmount&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2a5a610de667cc44de251a83b2312eec69"></a>EnableNetworkUnmount&#160;</td><td class="fielddoc">
 <p>Enables unmounting of network drives via file explorer </p>
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a8b96a20dbe630fffdb505ca7ff3c32a6a81d3351fc05776a25cec9b02c96b6c60"></a>DispatchDriverLogs&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="afa8f35624a0a01a366f366fd2172c7f2a81d3351fc05776a25cec9b02c96b6c60"></a>DispatchDriverLogs&#160;</td><td class="fielddoc">
 <p>Forward the kernel driver global and volume logs to the userland </p>
 </td></tr>
 </table>
@@ -765,28 +769,28 @@ Enumerations</h2></td></tr>
 <p>Error codes returned by DokanMain. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7ca505a83f220c02df2f85c3810cd9ceb38"></a>Success&#160;</td><td class="fielddoc">
-<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount succeed. </p>
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> mount succeed. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7ca902b0d55fddef6f8d651fe1035b7d4bd"></a>Error&#160;</td><td class="fielddoc">
-<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount error. </p>
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> mount error. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7cae756afb8bb44b7fd8bd67f527a64f72c"></a>DriveLetterError&#160;</td><td class="fielddoc">
-<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed - Bad drive letter. </p>
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> mount failed - Bad drive letter. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7cae28ab79d32d9af2494af89e91f795319"></a>DriverInstallError&#160;</td><td class="fielddoc">
-<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed - Can't install driver. </p>
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> mount failed - Can't install driver. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7cac05e12ecefead2984856c67e685327df"></a>StartError&#160;</td><td class="fielddoc">
-<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed - Driver answer that something is wrong. </p>
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> mount failed - Driver answer that something is wrong. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7ca5e79e6a248bdf445ed0c75ffd789da1d"></a>MountError&#160;</td><td class="fielddoc">
-<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed. Can't assign a drive letter or mount point. Probably already used by another volume. </p>
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> mount failed. Can't assign a drive letter or mount point. Probably already used by another volume. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7cab04e2661eec05ffca78b094d97a47cca"></a>MountPointError&#160;</td><td class="fielddoc">
-<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed. Mount point is invalid. </p>
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> mount failed. Mount point is invalid. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ab66850a3fb636b2ee11b3d63edb42a7caa5f526f48d6a999526db3cd888205288"></a>VersionError&#160;</td><td class="fielddoc">
-<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper and extension methods to Dokan. ">Dokan</a> mount failed. Requested an incompatible version. </p>
+<p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> mount failed. Requested an incompatible version. </p>
 </td></tr>
 </table>
 

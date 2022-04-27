@@ -10,7 +10,7 @@ var searchData=
   ['recursivedispatch',['RecursiveDispatch',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209abb87ae00160b7029591a657e2c8eea8a',1,'DokanNet']]],
   ['registryrecovered',['RegistryRecovered',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a58d1fc0d84f607bb24c80e7d839c0e7b',1,'DokanNet']]],
   ['remotefileversionmismatch',['RemoteFileVersionMismatch',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a6b0ea4268e921a630cef9900ec2fcbd1',1,'DokanNet']]],
-  ['removabledrive',['RemovableDrive',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6aa1a9f7bd5437f518e9afb2fe890baabe',1,'DokanNet']]],
+  ['removabledrive',['RemovableDrive',['../namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2aa1a9f7bd5437f518e9afb2fe890baabe',1,'DokanNet']]],
   ['reparse',['Reparse',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aa7f364d3e8041f72eaaa1ade7e74d8da',1,'DokanNet']]],
   ['reparseobject',['ReparseObject',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a137369ee596210a9cedaf7479bdcfbe1',1,'DokanNet']]],
   ['requestcanceled',['RequestCanceled',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a1a816592286f73ef46ba3b41838f8afc',1,'DokanNet']]],

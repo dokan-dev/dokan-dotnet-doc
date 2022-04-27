@@ -1,7 +1,7 @@
 var searchData=
 [
   ['namedstreams',['NamedStreams',['../namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a55093eda98a143ae71b8188a4052fb1c',1,'DokanNet']]],
-  ['networkdrive',['NetworkDrive',['../namespace_dokan_net.html#a8b96a20dbe630fffdb505ca7ff3c32a6af9a84196014cf6417761dfb69a085bb9',1,'DokanNet']]],
+  ['networkdrive',['NetworkDrive',['../namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2af9a84196014cf6417761dfb69a085bb9',1,'DokanNet']]],
   ['nocache',['NoCache',['../class_dokan_net_1_1_dokan_file_info.html#a5ae772f3564391ecea23b87903b788ec',1,'DokanNet.DokanFileInfo.NoCache()'],['../interface_dokan_net_1_1_i_dokan_file_info.html#a33fa0bc19c3bfc629420a20a388f7533',1,'DokanNet.IDokanFileInfo.NoCache()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#a5819119495b59bf70dc1c6dd0934d2e2',1,'DokanNet.MockDokanFileInfo.NoCache()']]],
   ['noeasonfile',['NoEasOnFile',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a29329b1368aacdfdad34031915877a79',1,'DokanNet']]],
   ['noimpersonationtoken',['NoImpersonationToken',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a11616104a467853badae5ef93717de9e',1,'DokanNet']]],
