@@ -11,5 +11,6 @@ var searchData=
   ['objecttypemismatch',['ObjectTypeMismatch',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aae0736bae2b59a20d813ec0847206aab',1,'DokanNet']]],
   ['oplockbreakinprogress',['OpLockBreakInProgress',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a07795859b15d4bba8f02e803d024227d',1,'DokanNet']]],
   ['options',['Options',['../class_dokan_net_1_1_native_1_1_d_o_k_a_n___o_p_t_i_o_n_s.html#a0fae27d98c5698b04f17799561a4f83e',1,'DokanNet::Native::DOKAN_OPTIONS']]],
+  ['optionsconfigurationdelegate',['OptionsConfigurationDelegate',['../class_dokan_net_1_1_dokan_instance_builder.html#af0464c7836a6063960a777d551f08acd',1,'DokanNet::DokanInstanceBuilder']]],
   ['ordinalnotfound',['OrdinalNotFound',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a127693fcef013fdfc2deee7db8487b8a',1,'DokanNet']]]
 ];

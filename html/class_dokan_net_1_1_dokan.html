@@ -133,8 +133,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa2f3a078230d11d2cee76f7ed3eb38fd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#aa2f3a078230d11d2cee76f7ed3eb38fd">RemoveMountPoint</a> (string mountPoint)</td></tr>
 <tr class="memdesc:aa2f3a078230d11d2cee76f7ed3eb38fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmount a dokan device from a mount point.  <a href="#aa2f3a078230d11d2cee76f7ed3eb38fd">More...</a><br /></td></tr>
 <tr class="separator:aa2f3a078230d11d2cee76f7ed3eb38fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8deb02c8009a3cf60e665e6269f89fbe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8deb02c8009a3cf60e665e6269f89fbe"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> ()</td></tr>
+<tr class="memitem:a8deb02c8009a3cf60e665e6269f89fbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a8deb02c8009a3cf60e665e6269f89fbe">Dispose</a> ()</td></tr>
+<tr class="memdesc:a8deb02c8009a3cf60e665e6269f89fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispose the native <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> Library resources  <a href="#a8deb02c8009a3cf60e665e6269f89fbe">More...</a><br /></td></tr>
 <tr class="separator:a8deb02c8009a3cf60e665e6269f89fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -148,8 +148,8 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a90331e5fcfb05a05417a02c110b085e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90331e5fcfb05a05417a02c110b085e1"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> (bool disposing)</td></tr>
+<tr class="memitem:a90331e5fcfb05a05417a02c110b085e1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_dokan.html#a90331e5fcfb05a05417a02c110b085e1">Dispose</a> (bool disposing)</td></tr>
+<tr class="memdesc:a90331e5fcfb05a05417a02c110b085e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dispose the native <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> Library resources  <a href="#a90331e5fcfb05a05417a02c110b085e1">More...</a><br /></td></tr>
 <tr class="separator:a90331e5fcfb05a05417a02c110b085e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -178,10 +178,10 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> (
 </div><div class="memdoc">
 
 <p>Initialize all required <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> internal resources. </p>
-<p>This needs to be called only once before trying to use Mount or CreateFileSystem for the first time. Otherwise both will fail and raise an exception. </p>
+<p>This needs to be called only once before trying to use DokanInstance.DokanInstance for the first time. Otherwise both will fail and raise an exception. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html" title="Base namespace for Dokan. ">DokanNet</a> debug informations.</td></tr>
+    <tr><td class="paramname">logger</td><td>ILogger that will log all <a class="el" href="namespace_dokan_net.html">DokanNet</a> debug informations.</td></tr>
   </table>
   </dd>
 </dl>
@@ -189,6 +189,63 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>Dispose</b> (
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a90331e5fcfb05a05417a02c110b085e1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void DokanNet.Dokan.Dispose </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>disposing</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dispose the native <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> Library resources </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">disposing</td><td>Whether this was called from <a class="el" href="class_dokan_net_1_1_dokan.html#a8deb02c8009a3cf60e665e6269f89fbe" title="Dispose the native Dokan Library resources ">Dispose()</a></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a8deb02c8009a3cf60e665e6269f89fbe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DokanNet.Dokan.Dispose </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dispose the native <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> Library resources </p>
+
+</div>
+</div>
 <a class="anchor" id="aa2f3a078230d11d2cee76f7ed3eb38fd"></a>
 <div class="memitem">
 <div class="memproto">

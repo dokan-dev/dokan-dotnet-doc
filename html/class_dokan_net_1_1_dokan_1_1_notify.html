@@ -125,7 +125,7 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> User FS file-change notifications </p>
-<p>If <a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2ae970794cd5c979c49156fe71c48d7811" title="Enable methods in Dokan.Notify, which require this library to maintain a special handle while the fil...">DokanOptions.EnableNotificationAPI</a> is passed to Dokan.Mount, the application implementing the user file system can notify the <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> kernel driver of external file- and directory-changes.</p>
+<p>If <a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2ae970794cd5c979c49156fe71c48d7811" title="Enable methods in Dokan.Notify, which require this library to maintain a special handle while the fil...">DokanOptions.EnableNotificationAPI</a> is passed to DOKAN_OPTIONS.Options, the application implementing the user file system can notify the <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> kernel driver of external file- and directory-changes.</p>
 <p>For example, the mirror application can notify the driver about changes made in the mirrored directory so that those changes will be automatically reflected in the implemented mirror file system.</p>
 <p>This requires the filePath passed to the respective methods to include the absolute path of the changed file including the drive-letter and the path to the mount point, e.g. "C:\Dokan\ChangedFile.txt".</p>
 <p>These functions SHOULD NOT be called from within the implemented file system and thus be independent of any <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> file system operation. /remarks&gt; </p>
@@ -171,7 +171,7 @@ Static Public Member Functions</h2></td></tr>
 <p><a class="el" href="class_dokan_net_1_1_dokan_1_1_notify.html" title="Dokan User FS file-change notifications ">Notify</a> <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> that a file or directory has been created. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanCreateFileSystem</td></tr>
+    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanInstance.DokanInstance</td></tr>
     <tr><td class="paramname">filePath</td><td>Absolute path to the file or directory, including the mount-point of the file system.</td></tr>
     <tr><td class="paramname">isDirectory</td><td>Indicates if the path is a directory.</td></tr>
   </table>
@@ -222,7 +222,7 @@ Static Public Member Functions</h2></td></tr>
 <p><a class="el" href="class_dokan_net_1_1_dokan_1_1_notify.html" title="Dokan User FS file-change notifications ">Notify</a> <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> that a file or directory has been deleted. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanCreateFileSystem</td></tr>
+    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanInstance.DokanInstance</td></tr>
     <tr><td class="paramname">filePath</td><td>Absolute path to the file or directory, including the mount-point of the file system.</td></tr>
     <tr><td class="paramname">isDirectory</td><td>Indicates if the path is a directory.</td></tr>
   </table>
@@ -286,7 +286,7 @@ Static Public Member Functions</h2></td></tr>
 <p><a class="el" href="class_dokan_net_1_1_dokan_1_1_notify.html" title="Dokan User FS file-change notifications ">Notify</a> <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> that a file or directory has been renamed. This method supports in-place rename for file/directory within the same parent. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanCreateFileSystem</td></tr>
+    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanInstance.DokanInstance</td></tr>
     <tr><td class="paramname">oldPath</td><td>Old, absolute path to the file or directory, including the mount-point of the file system.</td></tr>
     <tr><td class="paramname">newPath</td><td>New, absolute path to the file or directory, including the mount-point of the file system.</td></tr>
     <tr><td class="paramname">isDirectory</td><td>Indicates if the path is a directory.</td></tr>
@@ -334,7 +334,7 @@ Static Public Member Functions</h2></td></tr>
 <p><a class="el" href="class_dokan_net_1_1_dokan_1_1_notify.html" title="Dokan User FS file-change notifications ">Notify</a> <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> that file or directory attributes have changed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanCreateFileSystem</td></tr>
+    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanInstance.DokanInstance</td></tr>
     <tr><td class="paramname">filePath</td><td>Absolute path to the file or directory, including the mount-point of the file system.</td></tr>
   </table>
   </dd>
@@ -379,7 +379,7 @@ Static Public Member Functions</h2></td></tr>
 <p><a class="el" href="class_dokan_net_1_1_dokan_1_1_notify.html" title="Dokan User FS file-change notifications ">Notify</a> <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a> that file or directory extended attributes have changed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanCreateFileSystem</td></tr>
+    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanInstance.DokanInstance</td></tr>
     <tr><td class="paramname">filePath</td><td>Absolute path to the file or directory, including the mount-point of the file system.</td></tr>
   </table>
   </dd>

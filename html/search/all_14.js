@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['validate',['Validate',['../class_dokan_net_1_1_dokan_instance_builder.html#a5af77ae294968eff571d5ee3e4c057f1',1,'DokanNet::DokanInstanceBuilder']]],
   ['version',['Version',['../class_dokan_net_1_1_dokan.html#a53ca33429619a9ab843c91a0abd1bb6d',1,'DokanNet.Dokan.Version()'],['../class_dokan_net_1_1_native_1_1_d_o_k_a_n___o_p_t_i_o_n_s.html#a9b17d7f405204d8c1dccf07271f61e48',1,'DokanNet.Native.DOKAN_OPTIONS.Version()']]],
   ['versionerror',['VersionError',['../namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7caa5f526f48d6a999526db3cd888205288',1,'DokanNet']]],
   ['virusdeleted',['VirusDeleted',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a1ffbc7bc752040cf33435a35f8a4be92',1,'DokanNet']]],

@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['info',['Info',['../class_dokan_net_1_1_logging_1_1_console_logger.html#aa848f07b006839eaea108b1230ce84dc',1,'DokanNet.Logging.ConsoleLogger.Info()'],['../class_dokan_net_1_1_logging_1_1_debug_view_logger.html#ad775a63017ba6013d612ad14336dd2bc',1,'DokanNet.Logging.DebugViewLogger.Info()'],['../interface_dokan_net_1_1_logging_1_1_i_logger.html#a6e00f5f65df532fd323aede33c6fbaaf',1,'DokanNet.Logging.ILogger.Info()'],['../class_dokan_net_1_1_logging_1_1_logger.html#aa398de46081f93c14fc58f118e1333f7',1,'DokanNet.Logging.Logger.Info()'],['../class_dokan_net_1_1_logging_1_1_null_logger.html#ac4c4dbdd5668bb4daf6efd66dba53956',1,'DokanNet.Logging.NullLogger.Info()'],['../class_dokan_net_1_1_logging_1_1_trace_logger.html#a79db0d9b67b7f14b0a75e4bcc4ede013',1,'DokanNet.Logging.TraceLogger.Info()']]],
-  ['isfilesystemrunning',['IsFileSystemRunning',['../class_dokan_net_1_1_extensions.html#a770e0ec11f0c72f88105b055b5b5b7d4',1,'DokanNet::Extensions']]]
+  ['getdiskfreespace',['GetDiskFreeSpace',['../interface_dokan_net_1_1_i_dokan_operations.html#a96354e72e735f0a7fb0ee680aa9b6c33',1,'DokanNet::IDokanOperations']]],
+  ['getfileinformation',['GetFileInformation',['../interface_dokan_net_1_1_i_dokan_operations.html#a8d76bad88397aa8cd053ac662a224e2d',1,'DokanNet::IDokanOperations']]],
+  ['getfilesecurity',['GetFileSecurity',['../interface_dokan_net_1_1_i_dokan_operations.html#ad36b44542393fbfd453d8496fba3c172',1,'DokanNet::IDokanOperations']]],
+  ['getformat',['GetFormat',['../class_dokan_net_1_1_format_providers.html#a9f25dc50a003e2e763bf64182a3cf5a8',1,'DokanNet::FormatProviders']]],
+  ['getrequestor',['GetRequestor',['../class_dokan_net_1_1_dokan_file_info.html#aed4f7da802a9fe3097517f86287b109e',1,'DokanNet.DokanFileInfo.GetRequestor()'],['../interface_dokan_net_1_1_i_dokan_file_info.html#acf99e02c4464458dfee51093204fd0e6',1,'DokanNet.IDokanFileInfo.GetRequestor()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#a50b1cfb00e0cf316f1e7c1a101c7c31b',1,'DokanNet.MockDokanFileInfo.GetRequestor()']]],
+  ['getvolumeinformation',['GetVolumeInformation',['../interface_dokan_net_1_1_i_dokan_operations.html#a70090af77e751984c1a0ee55181a5492',1,'DokanNet::IDokanOperations']]]
 ];

@@ -101,6 +101,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">DokanNet.Extensions Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="class_dokan_net_1_1_dokan_instance.html" title="Created by DokanInstance.DokanInstance. It holds all the resources required to be alive for the time ...">DokanInstance</a> extensions allowing to check whether it is running or to wait until it is unmount.  
+ <a href="class_dokan_net_1_1_extensions.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -111,7 +114,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:ab853fe4f57bbb52c51e37ba6b8afd3cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Wait until the FileSystem is unmount.  <a href="#ab853fe4f57bbb52c51e37ba6b8afd3cd">More...</a><br /></td></tr>
 <tr class="separator:ab853fe4f57bbb52c51e37ba6b8afd3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="class_dokan_net_1_1_dokan_instance.html" title="Created by DokanInstance.DokanInstance. It holds all the resources required to be alive for the time ...">DokanInstance</a> extensions allowing to check whether it is running or to wait until it is unmount. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a770e0ec11f0c72f88105b055b5b5b7d4"></a>
 <div class="memitem">
 <div class="memproto">
@@ -137,7 +142,7 @@ Static Public Member Functions</h2></td></tr>
 <p>Check if the FileSystem is still running or not. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by CreateFileSystem.</td></tr>
+    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanInstance.DokanInstance.</td></tr>
   </table>
   </dd>
 </dl>
@@ -180,24 +185,12 @@ Static Public Member Functions</h2></td></tr>
 <p>Wait until the FileSystem is unmount. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by CreateFileSystem.</td></tr>
-    <tr><td class="paramname">milliSeconds</td><td>The time-out interval, in milliseconds. If a nonzero value is specified, the function waits until the object is signaled or the interval elapses. If <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">milliSeconds</td><td>is zero, the function does not enter a wait state if the object is not signaled; it always returns immediately. If <dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">milliSeconds</td><td>is INFINITE, the function will return only when the object is signaled.</td></tr>
+    <tr><td class="paramname">dokanInstance</td><td>The dokan mount context created by DokanInstance.DokanInstance.</td></tr>
+    <tr><td class="paramname">milliSeconds</td><td>The time-out interval, in milliseconds. If a nonzero value is specified, the function waits until the object is signaled or the interval elapses. If set to zero, the function does not enter a wait state if the object is not signaled; it always returns immediately. If set to INFINITE, the function will return only when the object is signaled.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>See <a href="https://docs.microsoft.com/en-us/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject">WaitForSingleObject</a> for a description of return values.</dd></dl>
-</td></tr>
-  </table>
-  </dd>
-</dl>
-</td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

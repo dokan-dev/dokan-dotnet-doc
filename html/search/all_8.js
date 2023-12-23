@@ -64,5 +64,6 @@ var searchData=
   ['ioprivilegefailed',['IoPrivilegeFailed',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae26216b1ea565517d829d14350e68fb9',1,'DokanNet']]],
   ['iotimeout',['IoTimeout',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a5bc733872619646c783551fe99206507',1,'DokanNet']]],
   ['isdirectory',['IsDirectory',['../class_dokan_net_1_1_dokan_file_info.html#afbb9e08595d9c6ee7b3815a3aaa5b8bf',1,'DokanNet.DokanFileInfo.IsDirectory()'],['../interface_dokan_net_1_1_i_dokan_file_info.html#a74e72f90f92ff19c7f41485b3529566c',1,'DokanNet.IDokanFileInfo.IsDirectory()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#a55dbc586068bc5a5a4e65f1433ea9d29',1,'DokanNet.MockDokanFileInfo.IsDirectory()']]],
+  ['isdisposed',['IsDisposed',['../class_dokan_net_1_1_dokan_instance.html#a4b60e6e9d194e3cf81ce5b90031c882b',1,'DokanNet::DokanInstance']]],
   ['isfilesystemrunning',['IsFileSystemRunning',['../class_dokan_net_1_1_extensions.html#a770e0ec11f0c72f88105b055b5b5b7d4',1,'DokanNet::Extensions']]]
 ];

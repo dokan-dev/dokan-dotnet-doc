@@ -1,11 +1,10 @@
 var searchData=
 [
-  ['debug',['Debug',['../class_dokan_net_1_1_logging_1_1_console_logger.html#a9503037d3e7e11830651fcb34fafa666',1,'DokanNet.Logging.ConsoleLogger.Debug()'],['../class_dokan_net_1_1_logging_1_1_debug_view_logger.html#a3df43ed3cbd5f4739653c082d7f2e96f',1,'DokanNet.Logging.DebugViewLogger.Debug()'],['../interface_dokan_net_1_1_logging_1_1_i_logger.html#aaecbcd7972c0bf929e86136d9c507130',1,'DokanNet.Logging.ILogger.Debug()'],['../class_dokan_net_1_1_logging_1_1_logger.html#a616b711a12c932dda069cedab1e7652b',1,'DokanNet.Logging.Logger.Debug()'],['../class_dokan_net_1_1_logging_1_1_null_logger.html#a6201e761cbee03d0c9fc78811374e032',1,'DokanNet.Logging.NullLogger.Debug()'],['../class_dokan_net_1_1_logging_1_1_trace_logger.html#a80d9afba83a5c81c8cfc51924aa9a047',1,'DokanNet.Logging.TraceLogger.Debug()']]],
-  ['debugviewlogger',['DebugViewLogger',['../class_dokan_net_1_1_logging_1_1_debug_view_logger.html#a3b5d63ce065364efb25d9b99ff5f37ce',1,'DokanNet::Logging::DebugViewLogger']]],
-  ['delete',['Delete',['../class_dokan_net_1_1_dokan_1_1_notify.html#aaa1564cd5496562929199ba2be246a73',1,'DokanNet::Dokan::Notify']]],
-  ['deletedirectory',['DeleteDirectory',['../interface_dokan_net_1_1_i_dokan_operations.html#a9fb40197acde5114178d4f04ecfa0753',1,'DokanNet::IDokanOperations']]],
-  ['deletefile',['DeleteFile',['../interface_dokan_net_1_1_i_dokan_operations.html#aedae368efd764c21992e7b989ff2987b',1,'DokanNet::IDokanOperations']]],
-  ['dokan',['Dokan',['../class_dokan_net_1_1_dokan.html#a0dc22bacf03ee466a301cb1be99d9881',1,'DokanNet::Dokan']]],
-  ['dokanformat',['DokanFormat',['../class_dokan_net_1_1_format_providers.html#a261df858f92afbb1acaf7257548bda2e',1,'DokanNet::FormatProviders']]],
-  ['dokanisnameinexpression',['DokanIsNameInExpression',['../class_dokan_net_1_1_dokan_helper.html#a25fc533cbbb09fb86fac1d536629edac',1,'DokanNet::DokanHelper']]]
+  ['cleanup',['Cleanup',['../interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2',1,'DokanNet::IDokanOperations']]],
+  ['closefile',['CloseFile',['../interface_dokan_net_1_1_i_dokan_operations.html#a04bfe1e94be2356078c157199c8c5113',1,'DokanNet::IDokanOperations']]],
+  ['configurelogger',['ConfigureLogger',['../class_dokan_net_1_1_dokan_instance_builder.html#a3b606ea7ca8affe511ff8b889056d523',1,'DokanNet::DokanInstanceBuilder']]],
+  ['configureoptions',['ConfigureOptions',['../class_dokan_net_1_1_dokan_instance_builder.html#ae8be315f1dd1d5f84f64d9ce19af9212',1,'DokanNet::DokanInstanceBuilder']]],
+  ['consolelogger',['ConsoleLogger',['../class_dokan_net_1_1_logging_1_1_console_logger.html#a2fb688a8349e5c0717ef9a5cee60c1ff',1,'DokanNet::Logging::ConsoleLogger']]],
+  ['create',['Create',['../class_dokan_net_1_1_dokan_1_1_notify.html#a27994d8db6fae62f4bb4095a9a058aa8',1,'DokanNet::Dokan::Notify']]],
+  ['createfile',['CreateFile',['../interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d',1,'DokanNet::IDokanOperations']]]
 ];

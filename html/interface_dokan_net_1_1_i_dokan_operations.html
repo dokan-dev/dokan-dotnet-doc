@@ -558,7 +558,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Retrieve all NTFS Streams informations on the file. This is only called if <a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2ad8fe8feefa750b9723759954632c391f" title="Use alternate stream.">DokanOptions.AltStream</a> is enabled. </p>
 <p>For files, the first item in <em>streams</em>  is information about the default data stream <code>"::$DATA"</code>.</p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.8.0. You must specify the version in Dokan.Mount(IDokanOperations, string, DokanOptions,int, int, TimeSpan, string, int,int, Logging.ILogger).</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.8.0. You must specify the <a class="el" href="class_dokan_net_1_1_native_1_1_d_o_k_a_n___o_p_t_i_o_n_s.html#a9b17d7f405204d8c1dccf07271f61e48" title="Version of the dokan features requested (version &quot;123&quot; is equal to Dokan version 1.2.3). ">Native.DOKAN_OPTIONS.Version</a> during DokanInstance.DokanInstance.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
@@ -744,7 +744,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Get specified information about the security of a file or directory. </p>
 <p>If <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="Error - {Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a> is returned, dokan library will handle the request by building a sddl of the current process user with authenticate user rights for context menu. </p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the version in Dokan.Mount(IDokanOperations, string, DokanOptions,int, int, TimeSpan, string, int,int, Logging.ILogger).</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the <a class="el" href="class_dokan_net_1_1_native_1_1_d_o_k_a_n___o_p_t_i_o_n_s.html#a9b17d7f405204d8c1dccf07271f61e48" title="Version of the dokan features requested (version &quot;123&quot; is equal to Dokan version 1.2.3). ">Native.DOKAN_OPTIONS.Version</a> during DokanInstance.DokanInstance.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
@@ -1199,7 +1199,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the security of a file or directory object. </p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the version in Dokan.Mount(IDokanOperations, string, DokanOptions,int, int, TimeSpan, string, int,int, Logging.ILogger).</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the <a class="el" href="class_dokan_net_1_1_native_1_1_d_o_k_a_n___o_p_t_i_o_n_s.html#a9b17d7f405204d8c1dccf07271f61e48" title="Version of the dokan features requested (version &quot;123&quot; is equal to Dokan version 1.2.3). ">Native.DOKAN_OPTIONS.Version</a> during DokanInstance.DokanInstance.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
