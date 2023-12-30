@@ -107,17 +107,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a76eaf871ef38b1cfe1d568ce33395bf5"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_logging_1_1_logger_extensions.html#a76eaf871ef38b1cfe1d568ce33395bf5">FormatMessageForLogging</a> (this string message, string category=null, string loggerName=&quot;&quot;)</td></tr>
-<tr class="memdesc:a76eaf871ef38b1cfe1d568ce33395bf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a log message.  <a href="#a76eaf871ef38b1cfe1d568ce33395bf5">More...</a><br /></td></tr>
-<tr class="separator:a76eaf871ef38b1cfe1d568ce33395bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97a14de12e6808d941dff8f0a05a4bd7"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_logging_1_1_logger_extensions.html#a97a14de12e6808d941dff8f0a05a4bd7">FormatMessageForLogging</a> (this string message, bool addDateTime=false, string category=null, string loggerName=&quot;&quot;)</td></tr>
-<tr class="memdesc:a97a14de12e6808d941dff8f0a05a4bd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a log message.  <a href="#a97a14de12e6808d941dff8f0a05a4bd7">More...</a><br /></td></tr>
-<tr class="separator:a97a14de12e6808d941dff8f0a05a4bd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d574b2c1a64f707b36eef299708133"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_logging_1_1_logger_extensions.html#a80d574b2c1a64f707b36eef299708133">FormatMessageForLogging</a> (this string message, string category=null, string loggerName=&quot;&quot;, DateTimeFormatInfo dateTimeFormatInfo=null)</td></tr>
+<tr class="memdesc:a80d574b2c1a64f707b36eef299708133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a log message.  <a href="#a80d574b2c1a64f707b36eef299708133">More...</a><br /></td></tr>
+<tr class="separator:a80d574b2c1a64f707b36eef299708133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205407c7d44252862fe113574854b0d8"><td class="memItemLeft" align="right" valign="top">static string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_logging_1_1_logger_extensions.html#a205407c7d44252862fe113574854b0d8">FormatMessageForLogging</a> (this string message, bool addDateTime=false, string category=null, string loggerName=&quot;&quot;, DateTimeFormatInfo dateTimeFormatInfo=null)</td></tr>
+<tr class="memdesc:a205407c7d44252862fe113574854b0d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Format a log message.  <a href="#a205407c7d44252862fe113574854b0d8">More...</a><br /></td></tr>
+<tr class="separator:a205407c7d44252862fe113574854b0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Extension functions to log messages. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a76eaf871ef38b1cfe1d568ce33395bf5"></a>
+<a class="anchor" id="a80d574b2c1a64f707b36eef299708133"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -140,7 +140,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>loggerName</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramname"><em>loggerName</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTimeFormatInfo&#160;</td>
+          <td class="paramname"><em>dateTimeFormatInfo</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -161,6 +167,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">message</td><td>Message to format.</td></tr>
     <tr><td class="paramname">category</td><td>Optional category to add to the log message.</td></tr>
     <tr><td class="paramname">loggerName</td><td>Optional log name to at to the log message.</td></tr>
+    <tr><td class="paramname">dateTimeFormatInfo</td><td>An object that supplies format information for DateTime.</td></tr>
   </table>
   </dd>
 </dl>
@@ -168,7 +175,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a97a14de12e6808d941dff8f0a05a4bd7"></a>
+<a class="anchor" id="a205407c7d44252862fe113574854b0d8"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -197,7 +204,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>loggerName</em> = <code>&quot;&quot;</code>&#160;</td>
+          <td class="paramname"><em>loggerName</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">DateTimeFormatInfo&#160;</td>
+          <td class="paramname"><em>dateTimeFormatInfo</em> = <code>null</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -219,6 +232,7 @@ Static Public Member Functions</h2></td></tr>
     <tr><td class="paramname">addDateTime</td><td>If date and time shout be added to the log message.</td></tr>
     <tr><td class="paramname">category</td><td>Optional category to add to the log message.</td></tr>
     <tr><td class="paramname">loggerName</td><td>Optional log name to at to the log message.</td></tr>
+    <tr><td class="paramname">dateTimeFormatInfo</td><td>An object that supplies format information for DateTime.</td></tr>
   </table>
   </dd>
 </dl>

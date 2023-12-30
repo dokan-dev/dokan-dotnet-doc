@@ -23,7 +23,7 @@ var searchData=
   ['configurelogger',['ConfigureLogger',['../class_dokan_net_1_1_dokan_instance_builder.html#a3b606ea7ca8affe511ff8b889056d523',1,'DokanNet::DokanInstanceBuilder']]],
   ['configureoptions',['ConfigureOptions',['../class_dokan_net_1_1_dokan_instance_builder.html#ae8be315f1dd1d5f84f64d9ce19af9212',1,'DokanNet::DokanInstanceBuilder']]],
   ['consolelogger',['ConsoleLogger',['../class_dokan_net_1_1_logging_1_1_console_logger.html',1,'DokanNet::Logging']]],
-  ['consolelogger',['ConsoleLogger',['../class_dokan_net_1_1_logging_1_1_console_logger.html#a2fb688a8349e5c0717ef9a5cee60c1ff',1,'DokanNet::Logging::ConsoleLogger']]],
+  ['consolelogger',['ConsoleLogger',['../class_dokan_net_1_1_logging_1_1_console_logger.html#a0630045695ebdcc5ea479e4885baeb91',1,'DokanNet::Logging::ConsoleLogger']]],
   ['context',['Context',['../class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592',1,'DokanNet.DokanFileInfo.Context()'],['../interface_dokan_net_1_1_i_dokan_file_info.html#a1643be2b432e92d952a5c7a2a3665de8',1,'DokanNet.IDokanFileInfo.Context()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#a08fd974b25d1c86e62109cce619796e0',1,'DokanNet.MockDokanFileInfo.Context()']]],
   ['controlcexit',['ControlCExit',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a42d5eff5d46155151eae2631dbad985c',1,'DokanNet']]],
   ['couldnotresizelog',['CouldNotResizeLog',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a8869f52b6cc9866497b0728663a68bf8',1,'DokanNet']]],
