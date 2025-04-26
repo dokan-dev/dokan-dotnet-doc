@@ -148,9 +148,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a55dbc586068bc5a5a4e65f1433ea9d29"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a55dbc586068bc5a5a4e65f1433ea9d29">IsDirectory</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a55dbc586068bc5a5a4e65f1433ea9d29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether a filename references a directory. Must be set in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d" title="CreateFile is called each time a request is made on a file system object. ">IDokanOperations.CreateFile</a> if the file is to appear to be a folder.  <a href="#a55dbc586068bc5a5a4e65f1433ea9d29">More...</a><br /></td></tr>
 <tr class="separator:a55dbc586068bc5a5a4e65f1433ea9d29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c7d9166afe2652505f65fb9556e35e3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a3c7d9166afe2652505f65fb9556e35e3">DeleteOnClose</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:a3c7d9166afe2652505f65fb9556e35e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the file has to be deleted during the <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">IDokanOperations.Cleanup</a> event.  <a href="#a3c7d9166afe2652505f65fb9556e35e3">More...</a><br /></td></tr>
-<tr class="separator:a3c7d9166afe2652505f65fb9556e35e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4207a58e9fb3408aa6788bf6c8d3f623"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a4207a58e9fb3408aa6788bf6c8d3f623">DeletePending</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a4207a58e9fb3408aa6788bf6c8d3f623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the file has to be deleted during the <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">IDokanOperations.Cleanup</a> event.  <a href="#a4207a58e9fb3408aa6788bf6c8d3f623">More...</a><br /></td></tr>
+<tr class="separator:a4207a58e9fb3408aa6788bf6c8d3f623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a751990f0424c8ba47609f819a7e98a81"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a751990f0424c8ba47609f819a7e98a81">PagingIo</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a751990f0424c8ba47609f819a7e98a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read or write is paging IO.  <a href="#a751990f0424c8ba47609f819a7e98a81">More...</a><br /></td></tr>
 <tr class="separator:a751990f0424c8ba47609f819a7e98a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,9 +170,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a1643be2b432e92d952a5c7a2a3665de8 inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a1643be2b432e92d952a5c7a2a3665de8">Context</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a1643be2b432e92d952a5c7a2a3665de8 inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets context that can be used to carry information between operation. The Context can carry whatever type like <code>System.IO.FileStream</code>, <code>struct</code>, <code>int</code>, or internal reference that will help the implementation understand the request context of the event.  <a href="#a1643be2b432e92d952a5c7a2a3665de8">More...</a><br /></td></tr>
 <tr class="separator:a1643be2b432e92d952a5c7a2a3665de8 inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5c7919408fa8828b1d5166c25d137f7 inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#af5c7919408fa8828b1d5166c25d137f7">DeleteOnClose</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:af5c7919408fa8828b1d5166c25d137f7 inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the file has to be delete during the <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">IDokanOperations.Cleanup</a> event.  <a href="#af5c7919408fa8828b1d5166c25d137f7">More...</a><br /></td></tr>
-<tr class="separator:af5c7919408fa8828b1d5166c25d137f7 inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8de29c93ed09f0b99236d4afcfc75b inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a6a8de29c93ed09f0b99236d4afcfc75b">DeletePending</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6a8de29c93ed09f0b99236d4afcfc75b inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the file has to be delete during the <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">IDokanOperations.Cleanup</a> event.  <a href="#a6a8de29c93ed09f0b99236d4afcfc75b">More...</a><br /></td></tr>
+<tr class="separator:a6a8de29c93ed09f0b99236d4afcfc75b inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e72f90f92ff19c7f41485b3529566c inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a74e72f90f92ff19c7f41485b3529566c">IsDirectory</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a74e72f90f92ff19c7f41485b3529566c inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether it requesting a directory file. Must be set in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d" title="CreateFile is called each time a request is made on a file system object. ">IDokanOperations.CreateFile</a> if the file appear to be a folder.  <a href="#a74e72f90f92ff19c7f41485b3529566c">More...</a><br /></td></tr>
 <tr class="separator:a74e72f90f92ff19c7f41485b3529566c inherit properties_interface_dokan_net_1_1_i_dokan_file_info"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -310,7 +310,7 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a3c7d9166afe2652505f65fb9556e35e3"></a>
+<a class="anchor" id="a4207a58e9fb3408aa6788bf6c8d3f623"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -318,7 +318,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool DokanNet.MockDokanFileInfo.DeleteOnClose</td>
+          <td class="memname">bool DokanNet.MockDokanFileInfo.DeletePending</td>
         </tr>
       </table>
   </td>

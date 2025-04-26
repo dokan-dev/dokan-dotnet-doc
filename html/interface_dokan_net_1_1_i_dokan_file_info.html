@@ -130,9 +130,9 @@ Properties</h2></td></tr>
 <tr class="memitem:a1643be2b432e92d952a5c7a2a3665de8"><td class="memItemLeft" align="right" valign="top">object&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a1643be2b432e92d952a5c7a2a3665de8">Context</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a1643be2b432e92d952a5c7a2a3665de8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets context that can be used to carry information between operation. The Context can carry whatever type like <code>System.IO.FileStream</code>, <code>struct</code>, <code>int</code>, or internal reference that will help the implementation understand the request context of the event.  <a href="#a1643be2b432e92d952a5c7a2a3665de8">More...</a><br /></td></tr>
 <tr class="separator:a1643be2b432e92d952a5c7a2a3665de8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af5c7919408fa8828b1d5166c25d137f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#af5c7919408fa8828b1d5166c25d137f7">DeleteOnClose</a><code> [get, set]</code></td></tr>
-<tr class="memdesc:af5c7919408fa8828b1d5166c25d137f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the file has to be delete during the <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">IDokanOperations.Cleanup</a> event.  <a href="#af5c7919408fa8828b1d5166c25d137f7">More...</a><br /></td></tr>
-<tr class="separator:af5c7919408fa8828b1d5166c25d137f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a8de29c93ed09f0b99236d4afcfc75b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a6a8de29c93ed09f0b99236d4afcfc75b">DeletePending</a><code> [get, set]</code></td></tr>
+<tr class="memdesc:a6a8de29c93ed09f0b99236d4afcfc75b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether the file has to be delete during the <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">IDokanOperations.Cleanup</a> event.  <a href="#a6a8de29c93ed09f0b99236d4afcfc75b">More...</a><br /></td></tr>
+<tr class="separator:a6a8de29c93ed09f0b99236d4afcfc75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e72f90f92ff19c7f41485b3529566c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a74e72f90f92ff19c7f41485b3529566c">IsDirectory</a><code> [get, set]</code></td></tr>
 <tr class="memdesc:a74e72f90f92ff19c7f41485b3529566c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets or sets a value indicating whether it requesting a directory file. Must be set in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d" title="CreateFile is called each time a request is made on a file system object. ">IDokanOperations.CreateFile</a> if the file appear to be a folder.  <a href="#a74e72f90f92ff19c7f41485b3529566c">More...</a><br /></td></tr>
 <tr class="separator:a74e72f90f92ff19c7f41485b3529566c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -226,7 +226,7 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af5c7919408fa8828b1d5166c25d137f7"></a>
+<a class="anchor" id="a6a8de29c93ed09f0b99236d4afcfc75b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -234,7 +234,7 @@ Properties</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool DokanNet.IDokanFileInfo.DeleteOnClose</td>
+          <td class="memname">bool DokanNet.IDokanFileInfo.DeletePending</td>
         </tr>
       </table>
   </td>
