@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['readfile',['ReadFile',['../interface_dokan_net_1_1_i_dokan_operations.html#acfc6839771400332d0b407ceafa65d72',1,'DokanNet.IDokanOperations.ReadFile()'],['../interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a30cd20639acdd667002c7deb76df5c2e',1,'DokanNet.IDokanOperationsUnsafe.ReadFile()']]],
-  ['removemountpoint',['RemoveMountPoint',['../class_dokan_net_1_1_dokan.html#aa2f3a078230d11d2cee76f7ed3eb38fd',1,'DokanNet::Dokan']]],
-  ['rename',['Rename',['../class_dokan_net_1_1_dokan_1_1_notify.html#a175e36d58cbf147c5b70e11c30ec02e8',1,'DokanNet::Dokan::Notify']]]
+  ['ondisposed',['OnDisposed',['../class_dokan_instance.html#adab40ec0c428fadeaf1878716d42bcb4',1,'DokanInstance']]],
+  ['ondisposing',['OnDisposing',['../class_dokan_instance.html#a4d25433a40f925065b5236e41b0feac1',1,'DokanInstance']]],
+  ['optionsconfigurationdelegate',['OptionsConfigurationDelegate',['../class_dokan_instance_builder.html#a1e88fadc8cd3472ac729b8eb295e11ee',1,'DokanInstanceBuilder']]]
 ];

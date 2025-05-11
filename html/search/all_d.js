@@ -1,16 +1,12 @@
 var searchData=
 [
-  ['objectnamecollision',['ObjectNameCollision',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a06214eeec5a3e849ee7b3f1aa888e5a2',1,'DokanNet']]],
-  ['objectnameexists',['ObjectNameExists',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ad1a0fcc7dd6c4189f1edd099bf7b0386',1,'DokanNet']]],
-  ['objectnameinvalid',['ObjectNameInvalid',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209ae1528f19ff1a584c211d07c18d3b68ea',1,'DokanNet']]],
-  ['objectnamenotfound',['ObjectNameNotFound',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0aa7fa6b105327c13daac2d070c1d8c6',1,'DokanNet']]],
-  ['objectnolongerexists',['ObjectNoLongerExists',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a59903b03a0dc2cc8a3a98eb564fee452',1,'DokanNet']]],
-  ['objectpathinvalid',['ObjectPathInvalid',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a2c798b0b854d03dfa596d761d739b69b',1,'DokanNet']]],
-  ['objectpathnotfound',['ObjectPathNotFound',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4e9aef496cde0a3cc70114838e250fcc',1,'DokanNet']]],
-  ['objectpathsyntaxbad',['ObjectPathSyntaxBad',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a7a5685ad9c8459b6bd54ed6b12021f33',1,'DokanNet']]],
-  ['objecttypemismatch',['ObjectTypeMismatch',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209aae0736bae2b59a20d813ec0847206aab',1,'DokanNet']]],
-  ['oplockbreakinprogress',['OpLockBreakInProgress',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a07795859b15d4bba8f02e803d024227d',1,'DokanNet']]],
-  ['options',['Options',['../class_dokan_net_1_1_native_1_1_d_o_k_a_n___o_p_t_i_o_n_s.html#a0fae27d98c5698b04f17799561a4f83e',1,'DokanNet::Native::DOKAN_OPTIONS']]],
-  ['optionsconfigurationdelegate',['OptionsConfigurationDelegate',['../class_dokan_net_1_1_dokan_instance_builder.html#af0464c7836a6063960a777d551f08acd',1,'DokanNet::DokanInstanceBuilder']]],
-  ['ordinalnotfound',['OrdinalNotFound',['../namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a127693fcef013fdfc2deee7db8487b8a',1,'DokanNet']]]
+  ['readattributes',['ReadAttributes',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a29d5eebe071ec16a16eaf04b7cf717f5',1,'DokanNet']]],
+  ['readdata',['ReadData',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a9737b198b43957e0daee34be05d34687',1,'DokanNet']]],
+  ['readextendedattributes',['ReadExtendedAttributes',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a721920642d6f43e0f5d2172e0afee463',1,'DokanNet']]],
+  ['readfile',['ReadFile',['../interface_dokan_net_1_1_i_dokan_operations.html#acfc6839771400332d0b407ceafa65d72',1,'DokanNet.IDokanOperations.ReadFile()'],['../interface_i_dokan_operations2.html#afe02a5ca8a28ad328d41dfeba1ea5d25',1,'IDokanOperations2.ReadFile()'],['../interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a30cd20639acdd667002c7deb76df5c2e',1,'DokanNet.IDokanOperationsUnsafe.ReadFile()']]],
+  ['readpermissions',['ReadPermissions',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720ae1c92b30b08d486bf4793cf49a55d6af',1,'DokanNet']]],
+  ['removabledrive',['RemovableDrive',['../namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2aa1a9f7bd5437f518e9afb2fe890baabe',1,'DokanNet']]],
+  ['removemountpoint',['RemoveMountPoint',['../class_dokan_net_1_1_dokan.html#aa2f3a078230d11d2cee76f7ed3eb38fd',1,'DokanNet::Dokan']]],
+  ['rename',['Rename',['../class_dokan_net_1_1_dokan_1_1_notify.html#a175e36d58cbf147c5b70e11c30ec02e8',1,'DokanNet::Dokan::Notify']]],
+  ['reserved',['Reserved',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a942d4e37dd5607ab68e54755540d4a47',1,'DokanNet']]]
 ];

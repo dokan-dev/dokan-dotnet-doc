@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error',['Error',['../class_dokan_net_1_1_dokan_result.html#ad18dbf2559d8779303378211c74767b3',1,'DokanNet::DokanResult']]]
+  ['error',['Error',['../class_dokan_result.html#ac9301fd07c2071d13527be9ea9dfb19e',1,'DokanResult']]]
 ];

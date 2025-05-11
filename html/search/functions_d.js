@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['unlockfile',['UnlockFile',['../interface_dokan_net_1_1_i_dokan_operations.html#ab397e7dfc7788131dd2af9d2577e5b3f',1,'DokanNet::IDokanOperations']]],
-  ['unmount',['Unmount',['../class_dokan_net_1_1_dokan.html#ae85c9cf3a2aabe53401a8035c8e7e241',1,'DokanNet::Dokan']]],
-  ['unmounted',['Unmounted',['../interface_dokan_net_1_1_i_dokan_operations.html#afb92a29b8d0831c5114b6fe5aa1f0218',1,'DokanNet::IDokanOperations']]],
-  ['update',['Update',['../class_dokan_net_1_1_dokan_1_1_notify.html#a2685f711e367500f4e35b67fe07609c8',1,'DokanNet::Dokan::Notify']]]
+  ['tontstatus',['ToNtStatus',['../class_dokan_helper.html#aaf68bca19088a09bdc9572188e5cd919',1,'DokanHelper']]],
+  ['tostring',['ToString',['../struct_dokan_file_info.html#ae66917a1ba4fc2965513a5c93746fc8d',1,'DokanFileInfo.ToString()'],['../struct_find_file_information.html#a4da62f4f9c0bf1957079dad980373cee',1,'FindFileInformation.ToString()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#a01adab5aa82bc165adfcf6ca953a8d54',1,'DokanNet.MockDokanFileInfo.ToString()']]],
+  ['tryresettimeout',['TryResetTimeout',['../struct_dokan_file_info.html#adfe7fecbeb751333dd252912cf890b1e',1,'DokanFileInfo.TryResetTimeout()'],['../interface_dokan_net_1_1_i_dokan_file_info.html#afdfb54d5c5b1d93e71e82b54bb60afda',1,'DokanNet.IDokanFileInfo.TryResetTimeout()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#ae98b6b75d14ebe9a472a4d17b0ddd720',1,'DokanNet.MockDokanFileInfo.TryResetTimeout()']]]
 ];

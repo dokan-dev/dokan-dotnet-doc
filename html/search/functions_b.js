@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['setallocationsize',['SetAllocationSize',['../interface_dokan_net_1_1_i_dokan_operations.html#a75484ffd8aa9ab6268252609ae7ce08c',1,'DokanNet::IDokanOperations']]],
-  ['setendoffile',['SetEndOfFile',['../interface_dokan_net_1_1_i_dokan_operations.html#a14e1c9fd1ef5f9c7357763ddc9a6baf2',1,'DokanNet::IDokanOperations']]],
-  ['setfileattributes',['SetFileAttributes',['../interface_dokan_net_1_1_i_dokan_operations.html#a6cf222e861b2da1a9e39065f9bcec961',1,'DokanNet::IDokanOperations']]],
-  ['setfilesecurity',['SetFileSecurity',['../interface_dokan_net_1_1_i_dokan_operations.html#adf4c4c9d79cb338f4248b7bd9b4b4aed',1,'DokanNet::IDokanOperations']]],
-  ['setfiletime',['SetFileTime',['../interface_dokan_net_1_1_i_dokan_operations.html#aec83b9cd1891b8dd66bd4ba922cc4560',1,'DokanNet::IDokanOperations']]]
+  ['readfile',['ReadFile',['../interface_dokan_net_1_1_i_dokan_operations.html#acfc6839771400332d0b407ceafa65d72',1,'DokanNet.IDokanOperations.ReadFile()'],['../interface_i_dokan_operations2.html#afe02a5ca8a28ad328d41dfeba1ea5d25',1,'IDokanOperations2.ReadFile()'],['../interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a30cd20639acdd667002c7deb76df5c2e',1,'DokanNet.IDokanOperationsUnsafe.ReadFile()']]],
+  ['removemountpoint',['RemoveMountPoint',['../class_dokan_net_1_1_dokan.html#aa2f3a078230d11d2cee76f7ed3eb38fd',1,'DokanNet::Dokan']]],
+  ['rename',['Rename',['../class_dokan_net_1_1_dokan_1_1_notify.html#a175e36d58cbf147c5b70e11c30ec02e8',1,'DokanNet::Dokan::Notify']]]
 ];

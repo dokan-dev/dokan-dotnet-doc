@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['fileexists',['FileExists',['../class_dokan_net_1_1_dokan_result.html#a3582421ade0bda9c7c12407fce39d212',1,'DokanNet::DokanResult']]],
-  ['filenotfound',['FileNotFound',['../class_dokan_net_1_1_dokan_result.html#a0cf6ca8b504412f39193bb05e0b37795',1,'DokanNet::DokanResult']]]
+  ['fileexists',['FileExists',['../class_dokan_result.html#ac5191e9d864da0e1288acf0d8586042e',1,'DokanResult']]],
+  ['filenotfound',['FileNotFound',['../class_dokan_result.html#a76791d56099252086e7a049da3bd1706',1,'DokanResult']]]
 ];

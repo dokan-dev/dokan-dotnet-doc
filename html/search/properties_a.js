@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['synchronousio',['SynchronousIo',['../interface_dokan_net_1_1_i_dokan_file_info.html#a84816c4d2faab46da6ca804521cdc573',1,'DokanNet.IDokanFileInfo.SynchronousIo()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#a5592af122da9a3b4f689d9ba8177b601',1,'DokanNet.MockDokanFileInfo.SynchronousIo()']]]
+  ['options',['Options',['../class_d_o_k_a_n___o_p_t_i_o_n_s.html#a9606ac2ab64772f4e8b048f6cc274a78',1,'DOKAN_OPTIONS']]]
 ];

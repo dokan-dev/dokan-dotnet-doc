@@ -116,7 +116,7 @@ Inheritance diagram for DokanNet.IDokanOperations:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:afd9af53ebfaf7f07247980a1a704413d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d">CreateFile</a> (string fileName, <a class="el" href="namespace_dokan_net.html#a067e91641dd61c40300faa7085610720">FileAccess</a> access, FileShare share, FileMode mode, FileOptions options, FileAttributes attributes, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:afd9af53ebfaf7f07247980a1a704413d"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d">CreateFile</a> (string fileName, <a class="el" href="namespace_dokan_net.html#a067e91641dd61c40300faa7085610720">FileAccess</a> access, FileShare share, FileMode mode, FileOptions options, FileAttributes attributes, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:afd9af53ebfaf7f07247980a1a704413d"><td class="mdescLeft">&#160;</td><td class="mdescRight">CreateFile is called each time a request is made on a file system object.  <a href="#afd9af53ebfaf7f07247980a1a704413d">More...</a><br /></td></tr>
 <tr class="separator:afd9af53ebfaf7f07247980a1a704413d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde3db9404d5acf64632fbbb556bbec2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2">Cleanup</a> (string fileName, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
@@ -125,77 +125,77 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a04bfe1e94be2356078c157199c8c5113"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a04bfe1e94be2356078c157199c8c5113">CloseFile</a> (string fileName, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a04bfe1e94be2356078c157199c8c5113"><td class="mdescLeft">&#160;</td><td class="mdescRight">CloseFile is called at the end of the life of the context.  <a href="#a04bfe1e94be2356078c157199c8c5113">More...</a><br /></td></tr>
 <tr class="separator:a04bfe1e94be2356078c157199c8c5113"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acfc6839771400332d0b407ceafa65d72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acfc6839771400332d0b407ceafa65d72">ReadFile</a> (string fileName, byte[] buffer, out int bytesRead, long offset, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:acfc6839771400332d0b407ceafa65d72"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acfc6839771400332d0b407ceafa65d72">ReadFile</a> (string fileName, byte[] buffer, out int bytesRead, long offset, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:acfc6839771400332d0b407ceafa65d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">ReadFile callback on the file previously opened in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a>. It can be called by different thread at the same time, therefor the read has to be thread safe.  <a href="#acfc6839771400332d0b407ceafa65d72">More...</a><br /></td></tr>
 <tr class="separator:acfc6839771400332d0b407ceafa65d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f25541dcc4821ba0f49be194e416975"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a0f25541dcc4821ba0f49be194e416975">WriteFile</a> (string fileName, byte[] buffer, out int bytesWritten, long offset, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a0f25541dcc4821ba0f49be194e416975"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a0f25541dcc4821ba0f49be194e416975">WriteFile</a> (string fileName, byte[] buffer, out int bytesWritten, long offset, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a0f25541dcc4821ba0f49be194e416975"><td class="mdescLeft">&#160;</td><td class="mdescRight">WriteFile callback on the file previously opened in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> It can be called by different thread at the same time, therefor the write/context has to be thread safe.  <a href="#a0f25541dcc4821ba0f49be194e416975">More...</a><br /></td></tr>
 <tr class="separator:a0f25541dcc4821ba0f49be194e416975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf757d91a6ae0e4ca8fd16d2f13b019f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#abf757d91a6ae0e4ca8fd16d2f13b019f">FlushFileBuffers</a> (string fileName, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:abf757d91a6ae0e4ca8fd16d2f13b019f"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#abf757d91a6ae0e4ca8fd16d2f13b019f">FlushFileBuffers</a> (string fileName, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:abf757d91a6ae0e4ca8fd16d2f13b019f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears buffers for this context and causes any buffered data to be written to the file.  <a href="#abf757d91a6ae0e4ca8fd16d2f13b019f">More...</a><br /></td></tr>
 <tr class="separator:abf757d91a6ae0e4ca8fd16d2f13b019f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d76bad88397aa8cd053ac662a224e2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8d76bad88397aa8cd053ac662a224e2d">GetFileInformation</a> (string fileName, out <a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a> fileInfo, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a8d76bad88397aa8cd053ac662a224e2d"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a8d76bad88397aa8cd053ac662a224e2d">GetFileInformation</a> (string fileName, out <a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a> fileInfo, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a8d76bad88397aa8cd053ac662a224e2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get specific informations on a file.  <a href="#a8d76bad88397aa8cd053ac662a224e2d">More...</a><br /></td></tr>
 <tr class="separator:a8d76bad88397aa8cd053ac662a224e2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a393962f0bc54dfdd1ddd882ba047b1f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a393962f0bc54dfdd1ddd882ba047b1f5">FindFiles</a> (string fileName, out IList&lt; <a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a> &gt; files, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a393962f0bc54dfdd1ddd882ba047b1f5"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a393962f0bc54dfdd1ddd882ba047b1f5">FindFiles</a> (string fileName, out IList&lt; <a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a> &gt; files, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a393962f0bc54dfdd1ddd882ba047b1f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">List all files in the path requested  <a href="#a393962f0bc54dfdd1ddd882ba047b1f5">More...</a><br /></td></tr>
 <tr class="separator:a393962f0bc54dfdd1ddd882ba047b1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00bec2a413ac1c7d9c714c4e80c9d764"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a00bec2a413ac1c7d9c714c4e80c9d764">FindFilesWithPattern</a> (string fileName, string searchPattern, out IList&lt; <a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a> &gt; files, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a00bec2a413ac1c7d9c714c4e80c9d764"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a00bec2a413ac1c7d9c714c4e80c9d764">FindFilesWithPattern</a> (string fileName, string searchPattern, out IList&lt; <a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a> &gt; files, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a00bec2a413ac1c7d9c714c4e80c9d764"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a393962f0bc54dfdd1ddd882ba047b1f5" title="List all files in the path requested ">FindFiles</a> but with a search pattern to filter the result.  <a href="#a00bec2a413ac1c7d9c714c4e80c9d764">More...</a><br /></td></tr>
 <tr class="separator:a00bec2a413ac1c7d9c714c4e80c9d764"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cf222e861b2da1a9e39065f9bcec961"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a6cf222e861b2da1a9e39065f9bcec961">SetFileAttributes</a> (string fileName, FileAttributes attributes, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a6cf222e861b2da1a9e39065f9bcec961"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a6cf222e861b2da1a9e39065f9bcec961">SetFileAttributes</a> (string fileName, FileAttributes attributes, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a6cf222e861b2da1a9e39065f9bcec961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set file attributes on a specific file.  <a href="#a6cf222e861b2da1a9e39065f9bcec961">More...</a><br /></td></tr>
 <tr class="separator:a6cf222e861b2da1a9e39065f9bcec961"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec83b9cd1891b8dd66bd4ba922cc4560"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aec83b9cd1891b8dd66bd4ba922cc4560">SetFileTime</a> (string fileName, DateTime?creationTime, DateTime?lastAccessTime, DateTime?lastWriteTime, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:aec83b9cd1891b8dd66bd4ba922cc4560"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aec83b9cd1891b8dd66bd4ba922cc4560">SetFileTime</a> (string fileName, DateTime?creationTime, DateTime?lastAccessTime, DateTime?lastWriteTime, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:aec83b9cd1891b8dd66bd4ba922cc4560"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set file times on a specific file. If DateTime is <code>null</code>, this should not be updated.  <a href="#aec83b9cd1891b8dd66bd4ba922cc4560">More...</a><br /></td></tr>
 <tr class="separator:aec83b9cd1891b8dd66bd4ba922cc4560"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedae368efd764c21992e7b989ff2987b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aedae368efd764c21992e7b989ff2987b">DeleteFile</a> (string fileName, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:aedae368efd764c21992e7b989ff2987b"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aedae368efd764c21992e7b989ff2987b">DeleteFile</a> (string fileName, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:aedae368efd764c21992e7b989ff2987b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if it is possible to delete a file.  <a href="#aedae368efd764c21992e7b989ff2987b">More...</a><br /></td></tr>
 <tr class="separator:aedae368efd764c21992e7b989ff2987b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fb40197acde5114178d4f04ecfa0753"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a9fb40197acde5114178d4f04ecfa0753">DeleteDirectory</a> (string fileName, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a9fb40197acde5114178d4f04ecfa0753"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a9fb40197acde5114178d4f04ecfa0753">DeleteDirectory</a> (string fileName, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a9fb40197acde5114178d4f04ecfa0753"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if it is possible to delete a directory.  <a href="#a9fb40197acde5114178d4f04ecfa0753">More...</a><br /></td></tr>
 <tr class="separator:a9fb40197acde5114178d4f04ecfa0753"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a17f957c5748c24de318e03a3eb614b5b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a17f957c5748c24de318e03a3eb614b5b">MoveFile</a> (string oldName, string newName, bool replace, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a17f957c5748c24de318e03a3eb614b5b"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a17f957c5748c24de318e03a3eb614b5b">MoveFile</a> (string oldName, string newName, bool replace, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a17f957c5748c24de318e03a3eb614b5b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a file or directory to a new location.  <a href="#a17f957c5748c24de318e03a3eb614b5b">More...</a><br /></td></tr>
 <tr class="separator:a17f957c5748c24de318e03a3eb614b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14e1c9fd1ef5f9c7357763ddc9a6baf2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a14e1c9fd1ef5f9c7357763ddc9a6baf2">SetEndOfFile</a> (string fileName, long length, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a14e1c9fd1ef5f9c7357763ddc9a6baf2"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a14e1c9fd1ef5f9c7357763ddc9a6baf2">SetEndOfFile</a> (string fileName, long length, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a14e1c9fd1ef5f9c7357763ddc9a6baf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetEndOfFile is used to truncate or extend a file (physical file size).  <a href="#a14e1c9fd1ef5f9c7357763ddc9a6baf2">More...</a><br /></td></tr>
 <tr class="separator:a14e1c9fd1ef5f9c7357763ddc9a6baf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a75484ffd8aa9ab6268252609ae7ce08c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a75484ffd8aa9ab6268252609ae7ce08c">SetAllocationSize</a> (string fileName, long length, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a75484ffd8aa9ab6268252609ae7ce08c"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a75484ffd8aa9ab6268252609ae7ce08c">SetAllocationSize</a> (string fileName, long length, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a75484ffd8aa9ab6268252609ae7ce08c"><td class="mdescLeft">&#160;</td><td class="mdescRight">SetAllocationSize is used to truncate or extend a file.  <a href="#a75484ffd8aa9ab6268252609ae7ce08c">More...</a><br /></td></tr>
 <tr class="separator:a75484ffd8aa9ab6268252609ae7ce08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ce27d3e41bcc1327ea0e9e7e2dde8a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a6ce27d3e41bcc1327ea0e9e7e2dde8a4">LockFile</a> (string fileName, long offset, long length, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a6ce27d3e41bcc1327ea0e9e7e2dde8a4"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a6ce27d3e41bcc1327ea0e9e7e2dde8a4">LockFile</a> (string fileName, long offset, long length, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a6ce27d3e41bcc1327ea0e9e7e2dde8a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lock file at a specific offset and data length. This is only used if <a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a9518e529935303da3e746d7a850fed4d" title="Enable Lockfile/Unlockfile operations.">DokanOptions.UserModeLock</a> is enabled.  <a href="#a6ce27d3e41bcc1327ea0e9e7e2dde8a4">More...</a><br /></td></tr>
 <tr class="separator:a6ce27d3e41bcc1327ea0e9e7e2dde8a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab397e7dfc7788131dd2af9d2577e5b3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ab397e7dfc7788131dd2af9d2577e5b3f">UnlockFile</a> (string fileName, long offset, long length, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:ab397e7dfc7788131dd2af9d2577e5b3f"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ab397e7dfc7788131dd2af9d2577e5b3f">UnlockFile</a> (string fileName, long offset, long length, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:ab397e7dfc7788131dd2af9d2577e5b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlock file at a specific offset and data length. This is only used if <a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a9518e529935303da3e746d7a850fed4d" title="Enable Lockfile/Unlockfile operations.">DokanOptions.UserModeLock</a> is enabled.  <a href="#ab397e7dfc7788131dd2af9d2577e5b3f">More...</a><br /></td></tr>
 <tr class="separator:ab397e7dfc7788131dd2af9d2577e5b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96354e72e735f0a7fb0ee680aa9b6c33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a96354e72e735f0a7fb0ee680aa9b6c33">GetDiskFreeSpace</a> (out long freeBytesAvailable, out long totalNumberOfBytes, out long totalNumberOfFreeBytes, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a96354e72e735f0a7fb0ee680aa9b6c33"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a96354e72e735f0a7fb0ee680aa9b6c33">GetDiskFreeSpace</a> (out long freeBytesAvailable, out long totalNumberOfBytes, out long totalNumberOfFreeBytes, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a96354e72e735f0a7fb0ee680aa9b6c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves information about the amount of space that is available on a disk volume, which is the total amount of space, the total amount of free space, and the total amount of free space available to the user that is associated with the calling thread.  <a href="#a96354e72e735f0a7fb0ee680aa9b6c33">More...</a><br /></td></tr>
 <tr class="separator:a96354e72e735f0a7fb0ee680aa9b6c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70090af77e751984c1a0ee55181a5492"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a70090af77e751984c1a0ee55181a5492">GetVolumeInformation</a> (out string volumeLabel, out <a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30">FileSystemFeatures</a> features, out string fileSystemName, out uint maximumComponentLength, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a70090af77e751984c1a0ee55181a5492"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a70090af77e751984c1a0ee55181a5492">GetVolumeInformation</a> (out string volumeLabel, out FileSystemFeatures features, out string fileSystemName, out uint maximumComponentLength, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:a70090af77e751984c1a0ee55181a5492"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves information about the file system and volume associated with the specified root directory.  <a href="#a70090af77e751984c1a0ee55181a5492">More...</a><br /></td></tr>
 <tr class="separator:a70090af77e751984c1a0ee55181a5492"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad36b44542393fbfd453d8496fba3c172"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad36b44542393fbfd453d8496fba3c172">GetFileSecurity</a> (string fileName, out FileSystemSecurity security, AccessControlSections sections, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
-<tr class="memdesc:ad36b44542393fbfd453d8496fba3c172"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get specified information about the security of a file or directory.  <a href="#ad36b44542393fbfd453d8496fba3c172">More...</a><br /></td></tr>
-<tr class="separator:ad36b44542393fbfd453d8496fba3c172"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf4c4c9d79cb338f4248b7bd9b4b4aed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adf4c4c9d79cb338f4248b7bd9b4b4aed">SetFileSecurity</a> (string fileName, FileSystemSecurity security, AccessControlSections sections, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:a04a53ef1f715251ec048bb8b15aaf86c"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a04a53ef1f715251ec048bb8b15aaf86c">GetFileSecurity</a> (string fileName, out FileSystemSecurity?security, AccessControlSections sections, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memdesc:a04a53ef1f715251ec048bb8b15aaf86c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get specified information about the security of a file or directory.  <a href="#a04a53ef1f715251ec048bb8b15aaf86c">More...</a><br /></td></tr>
+<tr class="separator:a04a53ef1f715251ec048bb8b15aaf86c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4c4c9d79cb338f4248b7bd9b4b4aed"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adf4c4c9d79cb338f4248b7bd9b4b4aed">SetFileSecurity</a> (string fileName, FileSystemSecurity security, AccessControlSections sections, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:adf4c4c9d79cb338f4248b7bd9b4b4aed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the security of a file or directory object.  <a href="#adf4c4c9d79cb338f4248b7bd9b4b4aed">More...</a><br /></td></tr>
 <tr class="separator:adf4c4c9d79cb338f4248b7bd9b4b4aed"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acb76998a1ca3a36a944f8a585c1863df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acb76998a1ca3a36a944f8a585c1863df">Mounted</a> (string mountPoint, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:acb76998a1ca3a36a944f8a585c1863df"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acb76998a1ca3a36a944f8a585c1863df">Mounted</a> (string mountPoint, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:acb76998a1ca3a36a944f8a585c1863df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when Dokan succeed to mount the volume.  <a href="#acb76998a1ca3a36a944f8a585c1863df">More...</a><br /></td></tr>
 <tr class="separator:acb76998a1ca3a36a944f8a585c1863df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb92a29b8d0831c5114b6fe5aa1f0218"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afb92a29b8d0831c5114b6fe5aa1f0218">Unmounted</a> (<a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:afb92a29b8d0831c5114b6fe5aa1f0218"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afb92a29b8d0831c5114b6fe5aa1f0218">Unmounted</a> (<a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:afb92a29b8d0831c5114b6fe5aa1f0218"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is called when Dokan is unmounting the volume.  <a href="#afb92a29b8d0831c5114b6fe5aa1f0218">More...</a><br /></td></tr>
 <tr class="separator:afb92a29b8d0831c5114b6fe5aa1f0218"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a14e8cdb6b4bbee687ceff7396e588"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae0a14e8cdb6b4bbee687ceff7396e588">FindStreams</a> (string fileName, out IList&lt; <a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a> &gt; streams, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
+<tr class="memitem:ae0a14e8cdb6b4bbee687ceff7396e588"><td class="memItemLeft" align="right" valign="top">NtStatus&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ae0a14e8cdb6b4bbee687ceff7396e588">FindStreams</a> (string fileName, out IList&lt; <a class="el" href="struct_dokan_net_1_1_file_information.html">FileInformation</a> &gt; streams, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a> info)</td></tr>
 <tr class="memdesc:ae0a14e8cdb6b4bbee687ceff7396e588"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve all NTFS Streams informations on the file. This is only called if <a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2ad8fe8feefa750b9723759954632c391f" title="Use alternate stream.">DokanOptions.AltStream</a> is enabled.  <a href="#ae0a14e8cdb6b4bbee687ceff7396e588">More...</a><br /></td></tr>
 <tr class="separator:ae0a14e8cdb6b4bbee687ceff7396e588"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Dokan API callbacks interface. </p>
 <p>A interface of callbacks that describe all Dokan API operation that will be called when Windows access to the file system.</p>
-<p>All this callbacks can return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="Error - {Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a> if you dont want to support one of them. Be aware that returning such value to important callbacks such <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a>/<a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acfc6839771400332d0b407ceafa65d72" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">ReadFile</a>/... would make the filesystem not working or unstable. </p>
+<p>All this callbacks can return NtStatus.NotImplemented if you dont want to support one of them. Be aware that returning such value to important callbacks such <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a>/<a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acfc6839771400332d0b407ceafa65d72" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">ReadFile</a>/... would make the filesystem not working or unstable. </p>
 <p>This is the same struct as <code>DOKAN_OPERATIONS</code> (dokan.h) in the C version of <a class="el" href="class_dokan_net_1_1_dokan.html" title="Helper methods to Dokan. ">Dokan</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="adde3db9404d5acf64632fbbb556bbec2"></a>
@@ -280,7 +280,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.CreateFile </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.CreateFile </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -330,8 +330,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>CreateFile is called each time a request is made on a file system object. </p>
-<p>In case <em>mode</em>  is <code>FileMode.OpenOrCreate</code> and <code>FileMode.Create</code> and CreateFile are successfully opening a already existing file, you have to return <a class="el" href="class_dokan_net_1_1_dokan_result.html#a9bfec75279093838a53807e0f98c7437" title="Error - Cannot create a file when that file already exists. ">DokanResult.AlreadyExists</a> instead of <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="Success - The operation completed successfully. ">NtStatus.Success</a>.</p>
-<p>If the file is a directory, CreateFile is also called. In this case, CreateFile should return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="Success - The operation completed successfully. ">NtStatus.Success</a> when that directory can be opened and <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a74e72f90f92ff19c7f41485b3529566c" title="Gets or sets a value indicating whether it requesting a directory file. Must be set in IDokanOperatio...">IDokanFileInfo.IsDirectory</a> must be set to <code>true</code>. On the other hand, if <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a74e72f90f92ff19c7f41485b3529566c" title="Gets or sets a value indicating whether it requesting a directory file. Must be set in IDokanOperatio...">IDokanFileInfo.IsDirectory</a> is set to <code>true</code> but the path target a file, you need to return <a class="el" href="class_dokan_net_1_1_dokan_result.html#ad6ecffb7d3b044ec6d57f33f0f2a8e09" title="Error - A directory semantics call was made but the accessed file was not a directory. ">DokanResult.NotADirectory</a></p>
+<p>In case <em>mode</em>  is <code>FileMode.OpenOrCreate</code> and <code>FileMode.Create</code> and CreateFile are successfully opening a already existing file, you have to return <a class="el" href="class_dokan_result.html#ac50422a22e2e5d2d81e0d88ef5b4f65b" title="Error - Cannot create a file when that file already exists. ">DokanResult.AlreadyExists</a> instead of NtStatus.Success.</p>
+<p>If the file is a directory, CreateFile is also called. In this case, CreateFile should return NtStatus.Success when that directory can be opened and <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a74e72f90f92ff19c7f41485b3529566c" title="Gets or sets a value indicating whether it requesting a directory file. Must be set in IDokanOperatio...">IDokanFileInfo.IsDirectory</a> must be set to <code>true</code>. On the other hand, if <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a74e72f90f92ff19c7f41485b3529566c" title="Gets or sets a value indicating whether it requesting a directory file. Must be set in IDokanOperatio...">IDokanFileInfo.IsDirectory</a> is set to <code>true</code> but the path target a file, you need to return <a class="el" href="class_dokan_result.html#ad4bee6e53707684878a4e983227a664d" title="Error - A directory semantics call was made but the accessed file was not a directory. ">DokanResult.NotADirectory</a></p>
 <p><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a1643be2b432e92d952a5c7a2a3665de8" title="Gets or sets context that can be used to carry information between operation. The Context can carry w...">IDokanFileInfo.Context</a> can be used to store data (like <code>FileStream</code>) that can be retrieved in all other request related to the context. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -345,7 +345,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd>See <a href="https://msdn.microsoft.com/en-us/library/windows/hardware/ff566424(v=vs.85).aspx">ZwCreateFile (MSDN)</a> for more information about the parameters of this callback. </dd></dl>
 
 </div>
@@ -355,7 +355,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.DeleteDirectory </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.DeleteDirectory </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -375,9 +375,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if it is possible to delete a directory. </p>
-<p>You should NOT delete the file in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a9fb40197acde5114178d4f04ecfa0753" title="Check if it is possible to delete a directory. ">DeleteDirectory</a>, but instead you must only check whether you can delete the file or not, and return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="Success - The operation completed successfully. ">NtStatus.Success</a> (when you can delete it) or appropriate error codes such as <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acbcc0759909213e7cdba1f0cbf253126" title="Error - {Access Denied} A process has requested access to an object but has not been granted those ac...">NtStatus.AccessDenied</a>, <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a4e9aef496cde0a3cc70114838e250fcc" title="Error - {Path Not Found} The path does not exist. ">NtStatus.ObjectPathNotFound</a>, <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0aa7fa6b105327c13daac2d070c1d8c6" title="Error - The object name is not found. ">NtStatus.ObjectNameNotFound</a>.</p>
+<p>You should NOT delete the file in <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a9fb40197acde5114178d4f04ecfa0753" title="Check if it is possible to delete a directory. ">DeleteDirectory</a>, but instead you must only check whether you can delete the file or not, and return NtStatus.Success (when you can delete it) or appropriate error codes such as NtStatus.AccessDenied, NtStatus.ObjectPathNotFound, NtStatus.ObjectNameNotFound.</p>
 <p>DeleteFile will also be called with <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a6a8de29c93ed09f0b99236d4afcfc75b" title="Gets or sets a value indicating whether the file has to be delete during the IDokanOperations.Cleanup event. ">IDokanFileInfo.DeletePending</a> set to <code>false</code> to notify the driver when the file is no longer requested to be deleted.</p>
-<p>When you return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="Success - The operation completed successfully. ">NtStatus.Success</a>, you get a <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a> call afterwards with <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a6a8de29c93ed09f0b99236d4afcfc75b" title="Gets or sets a value indicating whether the file has to be delete during the IDokanOperations.Cleanup event. ">IDokanFileInfo.DeletePending</a> set to <code>true</code> and only then you have to actually delete the file being closed. </p>
+<p>When you return NtStatus.Success, you get a <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a> call afterwards with <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a6a8de29c93ed09f0b99236d4afcfc75b" title="Gets or sets a value indicating whether the file has to be delete during the IDokanOperations.Cleanup event. ">IDokanFileInfo.DeletePending</a> set to <code>true</code> and only then you have to actually delete the file being closed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
@@ -385,7 +385,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return <a class="el" href="class_dokan_net_1_1_dokan_result.html#adfa597d0b079dca15d7d0cd9e8f882d1" title="Success - The operation completed successfully. ">DokanResult.Success</a> if file can be delete or <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> appropriate.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Return <a class="el" href="class_dokan_result.html#a42a1e88df7fb1ac943d66089a78491d6" title="Success - The operation completed successfully. ">DokanResult.Success</a> if file can be delete or NtStatus appropriate.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#aedae368efd764c21992e7b989ff2987b" title="Check if it is possible to delete a file. ">DeleteFile</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a></dd></dl>
 
 </div>
@@ -395,7 +395,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.DeleteFile </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.DeleteFile </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -415,9 +415,9 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Check if it is possible to delete a file. </p>
-<p>You should NOT delete the file in DeleteFile, but instead you must only check whether you can delete the file or not, and return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="Success - The operation completed successfully. ">NtStatus.Success</a> (when you can delete it) or appropriate error codes such as <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209acbcc0759909213e7cdba1f0cbf253126" title="Error - {Access Denied} A process has requested access to an object but has not been granted those ac...">NtStatus.AccessDenied</a>, <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a0aa7fa6b105327c13daac2d070c1d8c6" title="Error - The object name is not found. ">NtStatus.ObjectNameNotFound</a>.</p>
+<p>You should NOT delete the file in DeleteFile, but instead you must only check whether you can delete the file or not, and return NtStatus.Success (when you can delete it) or appropriate error codes such as NtStatus.AccessDenied, NtStatus.ObjectNameNotFound.</p>
 <p>DeleteFile will also be called with <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a6a8de29c93ed09f0b99236d4afcfc75b" title="Gets or sets a value indicating whether the file has to be delete during the IDokanOperations.Cleanup event. ">IDokanFileInfo.DeletePending</a> set to <code>false</code> to notify the driver when the file is no longer requested to be deleted.</p>
-<p>When you return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a505a83f220c02df2f85c3810cd9ceb38" title="Success - The operation completed successfully. ">NtStatus.Success</a>, you get a <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a> call afterwards with <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a6a8de29c93ed09f0b99236d4afcfc75b" title="Gets or sets a value indicating whether the file has to be delete during the IDokanOperations.Cleanup event. ">IDokanFileInfo.DeletePending</a> set to <code>true</code> and only then you have to actually delete the file being closed. </p>
+<p>When you return NtStatus.Success, you get a <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a> call afterwards with <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a6a8de29c93ed09f0b99236d4afcfc75b" title="Gets or sets a value indicating whether the file has to be delete during the IDokanOperations.Cleanup event. ">IDokanFileInfo.DeletePending</a> set to <code>true</code> and only then you have to actually delete the file being closed. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
@@ -425,7 +425,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return <a class="el" href="class_dokan_net_1_1_dokan_result.html#adfa597d0b079dca15d7d0cd9e8f882d1" title="Success - The operation completed successfully. ">DokanResult.Success</a> if file can be delete or <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> appropriate.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Return <a class="el" href="class_dokan_result.html#a42a1e88df7fb1ac943d66089a78491d6" title="Success - The operation completed successfully. ">DokanResult.Success</a> if file can be delete or NtStatus appropriate.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a9fb40197acde5114178d4f04ecfa0753" title="Check if it is possible to delete a directory. ">DeleteDirectory</a>, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a></dd></dl>
 
 </div>
@@ -435,7 +435,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.FindFiles </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.FindFiles </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -461,7 +461,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>List all files in the path requested </p>
-<p><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a00bec2a413ac1c7d9c714c4e80c9d764" title="Same as FindFiles but with a search pattern to filter the result. ">FindFilesWithPattern</a> is checking first. If it is not implemented or returns <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="Error - {Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a>, then FindFiles is called. </p>
+<p><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a00bec2a413ac1c7d9c714c4e80c9d764" title="Same as FindFiles but with a search pattern to filter the result. ">FindFilesWithPattern</a> is checking first. If it is not implemented or returns NtStatus.NotImplemented, then FindFiles is called. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
@@ -470,7 +470,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a00bec2a413ac1c7d9c714c4e80c9d764" title="Same as FindFiles but with a search pattern to filter the result. ">FindFilesWithPattern</a></dd></dl>
 
 </div>
@@ -480,7 +480,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.FindFilesWithPattern </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.FindFilesWithPattern </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -521,7 +521,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a393962f0bc54dfdd1ddd882ba047b1f5" title="List all files in the path requested ">FindFiles</a></dd></dl>
 
 </div>
@@ -531,7 +531,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.FindStreams </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.FindStreams </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -558,7 +558,7 @@ Public Member Functions</h2></td></tr>
 
 <p>Retrieve all NTFS Streams informations on the file. This is only called if <a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2ad8fe8feefa750b9723759954632c391f" title="Use alternate stream.">DokanOptions.AltStream</a> is enabled. </p>
 <p>For files, the first item in <em>streams</em>  is information about the default data stream <code>"::$DATA"</code>.</p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.8.0. You must specify the <a class="el" href="class_dokan_net_1_1_native_1_1_d_o_k_a_n___o_p_t_i_o_n_s.html#a9b17d7f405204d8c1dccf07271f61e48" title="Version of the dokan features requested (version &quot;123&quot; is equal to Dokan version 1.2.3). ">Native.DOKAN_OPTIONS.Version</a> during DokanInstance.DokanInstance.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.8.0. You must specify the Native.DOKAN_OPTIONS.Version during DokanInstance.DokanInstance.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
@@ -567,7 +567,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Return <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Return NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa364424(v=vs.85).aspx">FindFirstStreamW function (MSDN)</a> </dd>
 <dd>
 <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa365993(v=vs.85).aspx">About KTM (MSDN)</a> </dd></dl>
@@ -579,7 +579,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.FlushFileBuffers </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.FlushFileBuffers </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -606,7 +606,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 
 </div>
 </div>
@@ -615,7 +615,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.GetDiskFreeSpace </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.GetDiskFreeSpace </td>
           <td>(</td>
           <td class="paramtype">out long&#160;</td>
           <td class="paramname"><em>freeBytesAvailable</em>, </td>
@@ -657,7 +657,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa364937(v=vs.85).aspx">GetDiskFreeSpaceEx function (MSDN)</a> <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a70090af77e751984c1a0ee55181a5492" title="Retrieves information about the file system and volume associated with the specified root directory...">GetVolumeInformation</a></dd></dl>
 </dd></dl>
 
@@ -668,7 +668,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.GetFileInformation </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.GetFileInformation </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -702,16 +702,16 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ad36b44542393fbfd453d8496fba3c172"></a>
+<a class="anchor" id="a04a53ef1f715251ec048bb8b15aaf86c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.GetFileSecurity </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.GetFileSecurity </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -719,7 +719,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">out FileSystemSecurity&#160;</td>
+          <td class="paramtype">out FileSystemSecurity?&#160;</td>
           <td class="paramname"><em>security</em>, </td>
         </tr>
         <tr>
@@ -743,8 +743,8 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Get specified information about the security of a file or directory. </p>
-<p>If <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="Error - {Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a> is returned, dokan library will handle the request by building a sddl of the current process user with authenticate user rights for context menu. </p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the <a class="el" href="class_dokan_net_1_1_native_1_1_d_o_k_a_n___o_p_t_i_o_n_s.html#a9b17d7f405204d8c1dccf07271f61e48" title="Version of the dokan features requested (version &quot;123&quot; is equal to Dokan version 1.2.3). ">Native.DOKAN_OPTIONS.Version</a> during DokanInstance.DokanInstance.</dd></dl>
+<p>If NtStatus.NotImplemented is returned, dokan library will handle the request by building a sddl of the current process user with authenticate user rights for context menu. </p>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the Native.DOKAN_OPTIONS.Version during DokanInstance.DokanInstance.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File or directory name.</td></tr>
@@ -754,7 +754,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adf4c4c9d79cb338f4248b7bd9b4b4aed" title="Sets the security of a file or directory object. ">SetFileSecurity</a></dd>
 <dd>
 <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa446639(v=vs.85).aspx">GetFileSecurity function (MSDN)</a> </dd></dl>
@@ -766,7 +766,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.GetVolumeInformation </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.GetVolumeInformation </td>
           <td>(</td>
           <td class="paramtype">out string&#160;</td>
           <td class="paramname"><em>volumeLabel</em>, </td>
@@ -774,7 +774,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">out <a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30">FileSystemFeatures</a>&#160;</td>
+          <td class="paramtype">out FileSystemFeatures&#160;</td>
           <td class="paramname"><em>features</em>, </td>
         </tr>
         <tr>
@@ -805,8 +805,8 @@ Public Member Functions</h2></td></tr>
 
 <p>Retrieves information about the file system and volume associated with the specified root directory. </p>
 <p>Neither GetVolumeInformation nor <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a96354e72e735f0a7fb0ee680aa9b6c33" title="Retrieves information about the amount of space that is available on a disk volume, which is the total amount of space, the total amount of free space, and the total amount of free space available to the user that is associated with the calling thread. ">GetDiskFreeSpace</a> save the <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a1643be2b432e92d952a5c7a2a3665de8" title="Gets or sets context that can be used to carry information between operation. The Context can carry w...">IDokanFileInfo.Context</a>. Before these methods are called, <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afd9af53ebfaf7f07247980a1a704413d" title="CreateFile is called each time a request is made on a file system object. ">CreateFile</a> may not be called. (ditto <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a04bfe1e94be2356078c157199c8c5113" title="CloseFile is called at the end of the life of the context. ">CloseFile</a> and <a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#adde3db9404d5acf64632fbbb556bbec2" title="Receipt of this request indicates that the last handle for a file object that is associated with the ...">Cleanup</a>).</p>
-<p><a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30a8182fddd26c19c338b2f62a887601a7f" title="Specified volume is read-only. ">FileSystemFeatures.ReadOnlyVolume</a> is automatically added to the <em>features</em>  if <a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a57da18a8e1746b49db5386ee136c594c" title="Enable mount drive as write-protected.">DokanOptions.WriteProtection</a> was specified when the volume was mounted.</p>
-<p>If <a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209a997ca4ce119685f40f03a9a8a6c5346e" title="Error - {Not Implemented} The requested operation is not implemented. ">NtStatus.NotImplemented</a> is returned, the Dokan kernel driver use following settings by default: </p><table class="doxtable">
+<p>FileSystemFeatures.ReadOnlyVolume is automatically added to the <em>features</em>  if <a class="el" href="namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a57da18a8e1746b49db5386ee136c594c" title="Enable mount drive as write-protected.">DokanOptions.WriteProtection</a> was specified when the volume was mounted.</p>
+<p>If NtStatus.NotImplemented is returned, the Dokan kernel driver use following settings by default: </p><table class="doxtable">
 <tr>
 <th>Parameter </th><th>Default value  </th></tr>
 <tr>
@@ -823,14 +823,14 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">volumeLabel</td><td>Volume name</td></tr>
-    <tr><td class="paramname">features</td><td><a class="el" href="namespace_dokan_net.html#a0e59c383e7aa7666852adcfa27b03b30" title="Defines feature flags for the file system. ">FileSystemFeatures</a> with features enabled on the volume.</td></tr>
+    <tr><td class="paramname">features</td><td>FileSystemFeatures with features enabled on the volume.</td></tr>
     <tr><td class="paramname">fileSystemName</td><td>The name of the specified volume.</td></tr>
     <tr><td class="paramname">maximumComponentLength</td><td>File name component that the specified file system supports.</td></tr>
     <tr><td class="paramname">info</td><td>An <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html" title="Dokan file information interface. ">IDokanFileInfo</a> with information about the file or directory.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa364993(v=vs.85).aspx">GetVolumeInformation function (MSDN)</a> </dd></dl>
 
 </div>
@@ -840,7 +840,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.LockFile </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.LockFile </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -881,7 +881,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ab397e7dfc7788131dd2af9d2577e5b3f" title="Unlock file at a specific offset and data length. This is only used if DokanOptions.UserModeLock is enabled. ">UnlockFile</a></dd></dl>
 
 </div>
@@ -891,7 +891,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.Mounted </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.Mounted </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>mountPoint</em>, </td>
@@ -919,7 +919,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <p><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#afb92a29b8d0831c5114b6fe5aa1f0218" title="Is called when Dokan is unmounting the volume. ">Unmounted</a> </p>
 
 </div>
@@ -929,7 +929,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.MoveFile </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.MoveFile </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>oldName</em>, </td>
@@ -970,7 +970,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 
 </div>
 </div>
@@ -979,7 +979,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.ReadFile </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.ReadFile </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -1027,7 +1027,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a0f25541dcc4821ba0f49be194e416975" title="WriteFile callback on the file previously opened in CreateFile It can be called by different thread a...">WriteFile</a></dd></dl>
 
 </div>
@@ -1037,7 +1037,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.SetAllocationSize </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.SetAllocationSize </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -1071,7 +1071,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 
 </div>
 </div>
@@ -1080,7 +1080,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.SetEndOfFile </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.SetEndOfFile </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -1114,7 +1114,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 
 </div>
 </div>
@@ -1123,7 +1123,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.SetFileAttributes </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.SetFileAttributes </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -1158,7 +1158,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 
 </div>
 </div>
@@ -1167,7 +1167,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.SetFileSecurity </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.SetFileSecurity </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -1199,7 +1199,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sets the security of a file or directory object. </p>
-<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the <a class="el" href="class_dokan_net_1_1_native_1_1_d_o_k_a_n___o_p_t_i_o_n_s.html#a9b17d7f405204d8c1dccf07271f61e48" title="Version of the dokan features requested (version &quot;123&quot; is equal to Dokan version 1.2.3). ">Native.DOKAN_OPTIONS.Version</a> during DokanInstance.DokanInstance.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>Supported since version 0.6.0. You must specify the Native.DOKAN_OPTIONS.Version during DokanInstance.DokanInstance.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">fileName</td><td>File path requested by the Kernel on the FileSystem.</td></tr>
@@ -1209,8 +1209,8 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#ad36b44542393fbfd453d8496fba3c172" title="Get specified information about the security of a file or directory. ">GetFileSecurity</a></dd>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a04a53ef1f715251ec048bb8b15aaf86c" title="Get specified information about the security of a file or directory. ">GetFileSecurity</a></dd>
 <dd>
 <a href="https://msdn.microsoft.com/en-us/library/windows/desktop/aa379577(v=vs.85).aspx">SetFileSecurity function (MSDN)</a> </dd></dl>
 
@@ -1221,7 +1221,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.SetFileTime </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.SetFileTime </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -1270,7 +1270,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 
 </div>
 </div>
@@ -1279,7 +1279,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.UnlockFile </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.UnlockFile </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -1320,7 +1320,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#a6ce27d3e41bcc1327ea0e9e7e2dde8a4" title="Lock file at a specific offset and data length. This is only used if DokanOptions.UserModeLock is enabled. ">LockFile</a></dd></dl>
 
 </div>
@@ -1330,7 +1330,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.Unmounted </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.Unmounted </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html">IDokanFileInfo</a>&#160;</td>
           <td class="paramname"><em>info</em></td><td>)</td>
@@ -1346,7 +1346,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acb76998a1ca3a36a944f8a585c1863df" title="Is called when Dokan succeed to mount the volume. ">Mounted</a></dd></dl>
 
 </div>
@@ -1356,7 +1356,7 @@ Public Member Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209">NtStatus</a> DokanNet.IDokanOperations.WriteFile </td>
+          <td class="memname">NtStatus DokanNet.IDokanOperations.WriteFile </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
           <td class="paramname"><em>fileName</em>, </td>
@@ -1404,7 +1404,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespace_dokan_net.html#a864b51f40c1d93f1b3b0327ef5c9b209" title="NT status values. ">NtStatus</a> or <a class="el" href="class_dokan_net_1_1_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>NtStatus or <a class="el" href="class_dokan_result.html" title="Defines common result status codes in NtStatus for Dokan operations. ">DokanResult</a> appropriate to the request result.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="interface_dokan_net_1_1_i_dokan_operations.html#acfc6839771400332d0b407ceafa65d72" title="ReadFile callback on the file previously opened in CreateFile. It can be called by different thread a...">ReadFile</a></dd></dl>
 
 </div>

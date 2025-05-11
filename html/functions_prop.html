@@ -80,6 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="functions_func.html"><span>Functions</span></a></li>
       <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li class="current"><a href="functions_prop.html"><span>Properties</span></a></li>
+      <li><a href="functions_evnt.html"><span>Events</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
@@ -89,13 +90,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
       <li><a href="#index_f"><span>f</span></a></li>
+      <li><a href="#index_g"><span>g</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
       <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_n"><span>n</span></a></li>
+      <li><a href="#index_o"><span>o</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
+      <li><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
       <li class="current"><a href="#index_w"><span>w</span></a></li>
     </ul>
   </div>
@@ -118,20 +123,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 &#160;
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
+<li>AllocationUnitSize
+: <a class="el" href="class_d_o_k_a_n___o_p_t_i_o_n_s.html#ad6a06de9506fa63d3f868f6c9f32279b">DOKAN_OPTIONS</a>
+</li>
 <li>Attributes
-: <a class="el" href="struct_dokan_net_1_1_file_information.html#a933a967a022f91ed7d28e1608f2f0f1c">DokanNet.FileInformation</a>
+: <a class="el" href="struct_by_handle_file_information.html#a6b9973e22cfb0c430e6e855d3907cbb7">ByHandleFileInformation</a>
+, <a class="el" href="struct_dokan_net_1_1_file_information.html#a933a967a022f91ed7d28e1608f2f0f1c">DokanNet.FileInformation</a>
+, <a class="el" href="struct_find_file_information.html#a02f26295b4e4dc5bcc516e7955c31e65">FindFileInformation</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
 <li>Context
-: <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#ade36ce0f3cc96c63a324c861ff2a3592">DokanNet.DokanFileInfo</a>
+: <a class="el" href="struct_dokan_file_info.html#aa495a04672d66abfd01cdd810b01a451">DokanFileInfo</a>
 , <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a1643be2b432e92d952a5c7a2a3665de8">DokanNet.IDokanFileInfo</a>
 , <a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a08fd974b25d1c86e62109cce619796e0">DokanNet.MockDokanFileInfo</a>
 </li>
 <li>CreationTime
-: <a class="el" href="struct_dokan_net_1_1_file_information.html#abdbbbea971e03ec94ab39f0ea79848a6">DokanNet.FileInformation</a>
+: <a class="el" href="struct_by_handle_file_information.html#aa1d0397e0f2c520daa836a2ac0a0e603">ByHandleFileInformation</a>
+, <a class="el" href="struct_dokan_net_1_1_file_information.html#abdbbbea971e03ec94ab39f0ea79848a6">DokanNet.FileInformation</a>
+, <a class="el" href="struct_find_file_information.html#aae74702dab36cbd012beb20c2a2db1b2">FindFileInformation</a>
 </li>
 </ul>
 
@@ -141,9 +153,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="interface_dokan_net_1_1_logging_1_1_i_logger.html#a30e3071d0bc32f5725d51b9e3cd60395">DokanNet.Logging.ILogger</a>
 </li>
 <li>DeletePending
-: <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#afd161145fcbe2dba18e9c856d5f98611">DokanNet.DokanFileInfo</a>
+: <a class="el" href="struct_dokan_file_info.html#a15b6387993e3bb7c446fba871acc1084">DokanFileInfo</a>
 , <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a6a8de29c93ed09f0b99236d4afcfc75b">DokanNet.IDokanFileInfo</a>
 , <a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a4207a58e9fb3408aa6788bf6c8d3f623">DokanNet.MockDokanFileInfo</a>
+</li>
+<li>DirectoryListingTimeoutResetIntervalMs
+: <a class="el" href="interface_i_dokan_operations2.html#ab99d763b7c53da7f3380802b44490ee6">IDokanOperations2</a>
 </li>
 </ul>
 
@@ -156,40 +171,61 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>FileIndex
+: <a class="el" href="struct_by_handle_file_information.html#aa04e944cc6b6b4505cd8113cd20d3e65">ByHandleFileInformation</a>
+</li>
 <li>FileName
 : <a class="el" href="struct_dokan_net_1_1_file_information.html#a38847e871b5f45a2fe6514cb322c1f16">DokanNet.FileInformation</a>
+, <a class="el" href="struct_find_file_information.html#afb82e64166a18353cc37416ed1dcde61">FindFileInformation</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
+<li>GlobalContext
+: <a class="el" href="class_d_o_k_a_n___o_p_t_i_o_n_s.html#a6092bf96d102b2c138ee94e69914fcc4">DOKAN_OPTIONS</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>IsDirectory
-: <a class="el" href="class_dokan_net_1_1_dokan_file_info.html#afbb9e08595d9c6ee7b3815a3aaa5b8bf">DokanNet.DokanFileInfo</a>
+: <a class="el" href="struct_dokan_file_info.html#a3c160ed92e9971200a21eef223e34394">DokanFileInfo</a>
 , <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a74e72f90f92ff19c7f41485b3529566c">DokanNet.IDokanFileInfo</a>
 , <a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a55dbc586068bc5a5a4e65f1433ea9d29">DokanNet.MockDokanFileInfo</a>
 </li>
 <li>IsDisposed
-: <a class="el" href="class_dokan_net_1_1_dokan_instance.html#a4b60e6e9d194e3cf81ce5b90031c882b">DokanNet.DokanInstance</a>
+: <a class="el" href="class_dokan_instance.html#aa59cbe09ee97f09f39566cd8152b3435">DokanInstance</a>
+</li>
+<li>IsDisposing
+: <a class="el" href="class_dokan_instance.html#afce6342d55fba66906df0ee95736b598">DokanInstance</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_l"></a>- l -</h3><ul>
 <li>LastAccessTime
-: <a class="el" href="struct_dokan_net_1_1_file_information.html#ab6a11c13757fad48196856e9d09c6b84">DokanNet.FileInformation</a>
+: <a class="el" href="struct_by_handle_file_information.html#ad15fd6a1cd04bf45c735283ca6fd1e5a">ByHandleFileInformation</a>
+, <a class="el" href="struct_dokan_net_1_1_file_information.html#ab6a11c13757fad48196856e9d09c6b84">DokanNet.FileInformation</a>
+, <a class="el" href="struct_find_file_information.html#ac4d969e7286db92977ea6d374393a3e7">FindFileInformation</a>
 </li>
 <li>LastWriteTime
-: <a class="el" href="struct_dokan_net_1_1_file_information.html#a387a02a48da59e93567a41360f891a39">DokanNet.FileInformation</a>
+: <a class="el" href="struct_by_handle_file_information.html#af5fa556c60053b5d049dd8b9edd7067a">ByHandleFileInformation</a>
+, <a class="el" href="struct_dokan_net_1_1_file_information.html#a387a02a48da59e93567a41360f891a39">DokanNet.FileInformation</a>
+, <a class="el" href="struct_find_file_information.html#a019cd67e795ea0d09184729214a7a9f1">FindFileInformation</a>
 </li>
 <li>Length
-: <a class="el" href="struct_dokan_net_1_1_file_information.html#abcf7f0b52c9433fbe3b46ee9f8ab3dc0">DokanNet.FileInformation</a>
+: <a class="el" href="struct_by_handle_file_information.html#ae7843959e5a42e27fbca488f0891892c">ByHandleFileInformation</a>
+, <a class="el" href="struct_dokan_net_1_1_file_information.html#abcf7f0b52c9433fbe3b46ee9f8ab3dc0">DokanNet.FileInformation</a>
+, <a class="el" href="struct_find_file_information.html#a90d14e83c83bb1f1c81076bb18d190ab">FindFileInformation</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
 <li>MountPoint
-: <a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a9a26e4cce94f5f1fff70c6b76503e398">DokanNet.MockDokanFileInfo</a>
+: <a class="el" href="class_d_o_k_a_n___o_p_t_i_o_n_s.html#a4c11ba312f1b0cd6f08097003a6cb273">DOKAN_OPTIONS</a>
+, <a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a9a26e4cce94f5f1fff70c6b76503e398">DokanNet.MockDokanFileInfo</a>
 </li>
 </ul>
 
@@ -198,6 +234,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>NoCache
 : <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a33fa0bc19c3bfc629420a20a388f7533">DokanNet.IDokanFileInfo</a>
 , <a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a5819119495b59bf70dc1c6dd0934d2e2">DokanNet.MockDokanFileInfo</a>
+</li>
+<li>NumberOfLinks
+: <a class="el" href="struct_by_handle_file_information.html#a5ea71e69b1a79bfa66ca7bb9f234fd90">ByHandleFileInformation</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_o"></a>- o -</h3><ul>
+<li>Options
+: <a class="el" href="class_d_o_k_a_n___o_p_t_i_o_n_s.html#a9606ac2ab64772f4e8b048f6cc274a78">DOKAN_OPTIONS</a>
 </li>
 </ul>
 
@@ -208,13 +254,23 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a751990f0424c8ba47609f819a7e98a81">DokanNet.MockDokanFileInfo</a>
 </li>
 <li>ProcessId
-: <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a272914a1c5d0d28a8817b3c5b4df56e4">DokanNet.IDokanFileInfo</a>
+: <a class="el" href="struct_dokan_file_info.html#a55e4552cd8c08c0303dbe2f8e4f6e0ed">DokanFileInfo</a>
+, <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a272914a1c5d0d28a8817b3c5b4df56e4">DokanNet.IDokanFileInfo</a>
 , <a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a772eda8db35b4541e76eef19b087bf12">DokanNet.MockDokanFileInfo</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>SectorSize
+: <a class="el" href="class_d_o_k_a_n___o_p_t_i_o_n_s.html#aeb264492775a5d96116328b61d638ce2">DOKAN_OPTIONS</a>
+</li>
+<li>ShortFileName
+: <a class="el" href="struct_find_file_information.html#af6abe2b62d6fd5d124ae5d7fafea8201">FindFileInformation</a>
+</li>
+<li>SingleThread
+: <a class="el" href="class_d_o_k_a_n___o_p_t_i_o_n_s.html#ae2ada1078f978544472e7fc52e945004">DOKAN_OPTIONS</a>
+</li>
 <li>SynchronousIo
 : <a class="el" href="interface_dokan_net_1_1_i_dokan_file_info.html#a84816c4d2faab46da6ca804521cdc573">DokanNet.IDokanFileInfo</a>
 , <a class="el" href="class_dokan_net_1_1_mock_dokan_file_info.html#a5592af122da9a3b4f689d9ba8177b601">DokanNet.MockDokanFileInfo</a>
@@ -224,7 +280,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_t"></a>- t -</h3><ul>
 <li>TimeOut
-: <a class="el" href="class_dokan_net_1_1_native_1_1_d_o_k_a_n___o_p_t_i_o_n_s.html#a0332df3c16e3f5d38b0144b82a6ff58e">DokanNet.Native.DOKAN_OPTIONS</a>
+: <a class="el" href="class_d_o_k_a_n___o_p_t_i_o_n_s.html#aa7aa294e8a121c7adb63e28fa4bc9399">DOKAN_OPTIONS</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>UNCName
+: <a class="el" href="class_d_o_k_a_n___o_p_t_i_o_n_s.html#aa2ddd0a5026ccb918022be0528948f86">DOKAN_OPTIONS</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>Version
+: <a class="el" href="class_d_o_k_a_n___o_p_t_i_o_n_s.html#a2ef0d99c16c9fdade97c645b15820570">DOKAN_OPTIONS</a>
+</li>
+<li>VolumeSecurityDescriptor
+: <a class="el" href="class_d_o_k_a_n___o_p_t_i_o_n_s.html#ac8ce8583ae8f0f0f39252d508b3e86fd">DOKAN_OPTIONS</a>
+</li>
+<li>VolumeSecurityDescriptorLength
+: <a class="el" href="class_d_o_k_a_n___o_p_t_i_o_n_s.html#a66c8c19bd3658b3355deb2d987c6a616">DOKAN_OPTIONS</a>
 </li>
 </ul>
 

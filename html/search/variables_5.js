@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['globalcontext',['GlobalContext',['../class_dokan_net_1_1_native_1_1_d_o_k_a_n___o_p_t_i_o_n_s.html#a64856d16253ea13301c48931d394c63e',1,'DokanNet::Native::DOKAN_OPTIONS']]]
+  ['internalerror',['InternalError',['../class_dokan_result.html#aad62f033472c77a3c04b818e187d2764',1,'DokanResult']]],
+  ['invalidhandle',['InvalidHandle',['../class_dokan_result.html#afd681ed9f87cbdc600ddf6557d323488',1,'DokanResult']]],
+  ['invalidname',['InvalidName',['../class_dokan_result.html#a653332bb3dc2ec5f02013c6ee77fab28',1,'DokanResult']]],
+  ['invalidparameter',['InvalidParameter',['../class_dokan_result.html#a0c9f553dd3cf82be295477c031c350cd',1,'DokanResult']]]
 ];

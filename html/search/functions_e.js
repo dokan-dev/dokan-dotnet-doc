@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['validate',['Validate',['../class_dokan_net_1_1_dokan_instance_builder.html#a5af77ae294968eff571d5ee3e4c057f1',1,'DokanNet::DokanInstanceBuilder']]]
+  ['unlockfile',['UnlockFile',['../interface_dokan_net_1_1_i_dokan_operations.html#ab397e7dfc7788131dd2af9d2577e5b3f',1,'DokanNet.IDokanOperations.UnlockFile()'],['../interface_i_dokan_operations2.html#a0be24015ae9311545d0d84934512764e',1,'IDokanOperations2.UnlockFile()']]],
+  ['unmount',['Unmount',['../class_dokan_net_1_1_dokan.html#ae85c9cf3a2aabe53401a8035c8e7e241',1,'DokanNet::Dokan']]],
+  ['unmounted',['Unmounted',['../interface_dokan_net_1_1_i_dokan_operations.html#afb92a29b8d0831c5114b6fe5aa1f0218',1,'DokanNet.IDokanOperations.Unmounted()'],['../interface_i_dokan_operations2.html#a1b0fd6dd1e10a5614fe84b2b98a3aca3',1,'IDokanOperations2.Unmounted()']]],
+  ['update',['Update',['../class_dokan_net_1_1_dokan_1_1_notify.html#a2685f711e367500f4e35b67fe07609c8',1,'DokanNet::Dokan::Notify']]]
 ];
