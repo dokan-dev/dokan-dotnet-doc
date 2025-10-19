@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['readattributes',['ReadAttributes',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a29d5eebe071ec16a16eaf04b7cf717f5',1,'DokanNet']]],
-  ['readdata',['ReadData',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a9737b198b43957e0daee34be05d34687',1,'DokanNet']]],
-  ['readextendedattributes',['ReadExtendedAttributes',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a721920642d6f43e0f5d2172e0afee463',1,'DokanNet']]],
-  ['readpermissions',['ReadPermissions',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720ae1c92b30b08d486bf4793cf49a55d6af',1,'DokanNet']]],
-  ['removabledrive',['RemovableDrive',['../namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2aa1a9f7bd5437f518e9afb2fe890baabe',1,'DokanNet']]],
-  ['reserved',['Reserved',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a942d4e37dd5607ab68e54755540d4a47',1,'DokanNet']]]
+  ['setownership',['SetOwnership',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720ac242c2d183b9e5e8c5b2bfade197c97b',1,'DokanNet']]],
+  ['starterror',['StartError',['../namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7cac05e12ecefead2984856c67e685327df',1,'DokanNet']]],
+  ['success',['Success',['../namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7ca505a83f220c02df2f85c3810cd9ceb38',1,'DokanNet']]],
+  ['synchronize',['Synchronize',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720ab18b960c57a784907dc1cd97ba8a8065',1,'DokanNet']]]
 ];

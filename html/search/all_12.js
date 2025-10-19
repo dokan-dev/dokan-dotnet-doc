@@ -8,6 +8,5 @@ var searchData=
   ['writedata',['WriteData',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a6e1b51cfac84762d246873062581366d',1,'DokanNet']]],
   ['writeextendedattributes',['WriteExtendedAttributes',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720adda2caf384dfda99dc7d5accaf2b8135',1,'DokanNet']]],
   ['writefile',['WriteFile',['../interface_dokan_net_1_1_i_dokan_operations.html#a0f25541dcc4821ba0f49be194e416975',1,'DokanNet.IDokanOperations.WriteFile()'],['../interface_i_dokan_operations2.html#a314c2049911ff35a5e93f4a5b6ef526a',1,'IDokanOperations2.WriteFile()'],['../interface_dokan_net_1_1_i_dokan_operations_unsafe.html#a3eeb79bb7dd93c93262ae11cb6f574f0',1,'DokanNet.IDokanOperationsUnsafe.WriteFile()']]],
-  ['writeprotection',['WriteProtection',['../namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a57da18a8e1746b49db5386ee136c594c',1,'DokanNet']]],
   ['writetoendoffile',['WriteToEndOfFile',['../struct_dokan_file_info.html#a4823dc9b950f5e232a7697a868a3f147',1,'DokanFileInfo.WriteToEndOfFile()'],['../interface_dokan_net_1_1_i_dokan_file_info.html#aa9951f947efb042bfa59dcd058b5e1f5',1,'DokanNet.IDokanFileInfo.WriteToEndOfFile()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#a76bbdaf6bac38948f078b1bd3573ea64',1,'DokanNet.MockDokanFileInfo.WriteToEndOfFile()']]]
 ];

@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['networkdrive',['NetworkDrive',['../namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2af9a84196014cf6417761dfb69a085bb9',1,'DokanNet']]],
-  ['none',['None',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a6adf97f83acf6453d4a6a4b1070f3754',1,'DokanNet']]]
+  ['readattributes',['ReadAttributes',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a29d5eebe071ec16a16eaf04b7cf717f5',1,'DokanNet']]],
+  ['readdata',['ReadData',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a9737b198b43957e0daee34be05d34687',1,'DokanNet']]],
+  ['readextendedattributes',['ReadExtendedAttributes',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a721920642d6f43e0f5d2172e0afee463',1,'DokanNet']]],
+  ['readpermissions',['ReadPermissions',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720ae1c92b30b08d486bf4793cf49a55d6af',1,'DokanNet']]],
+  ['reserved',['Reserved',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a942d4e37dd5607ab68e54755540d4a47',1,'DokanNet']]]
 ];

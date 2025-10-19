@@ -11,7 +11,6 @@ var searchData=
   ['shortfilename',['ShortFileName',['../struct_find_file_information.html#af6abe2b62d6fd5d124ae5d7fafea8201',1,'FindFileInformation']]],
   ['singlethread',['SingleThread',['../class_d_o_k_a_n___o_p_t_i_o_n_s.html#ae2ada1078f978544472e7fc52e945004',1,'DOKAN_OPTIONS']]],
   ['starterror',['StartError',['../namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7cac05e12ecefead2984856c67e685327df',1,'DokanNet']]],
-  ['stderroutput',['StderrOutput',['../namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a4f6d71cceccbcb25f0d92039afd3cd70',1,'DokanNet']]],
   ['success',['Success',['../class_dokan_result.html#a42a1e88df7fb1ac943d66089a78491d6',1,'DokanResult.Success()'],['../namespace_dokan_net.html#ab66850a3fb636b2ee11b3d63edb42a7ca505a83f220c02df2f85c3810cd9ceb38',1,'DokanNet.Success()']]],
   ['synchronize',['Synchronize',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720ab18b960c57a784907dc1cd97ba8a8065',1,'DokanNet']]],
   ['synchronousio',['SynchronousIo',['../struct_dokan_file_info.html#ae76e6afebc221cea97a5ce5e5481c468',1,'DokanFileInfo.SynchronousIo()'],['../interface_dokan_net_1_1_i_dokan_file_info.html#a84816c4d2faab46da6ca804521cdc573',1,'DokanNet.IDokanFileInfo.SynchronousIo()'],['../class_dokan_net_1_1_mock_dokan_file_info.html#a5592af122da9a3b4f689d9ba8177b601',1,'DokanNet.MockDokanFileInfo.SynchronousIo()']]]

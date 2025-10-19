@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['usermodelock',['UserModeLock',['../namespace_dokan_net.html#afa8f35624a0a01a366f366fd2172c7f2a9518e529935303da3e746d7a850fed4d',1,'DokanNet']]]
+  ['writeattributes',['WriteAttributes',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a70e88a144f018b27557a6d1f7bfdc027',1,'DokanNet']]],
+  ['writedata',['WriteData',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720a6e1b51cfac84762d246873062581366d',1,'DokanNet']]],
+  ['writeextendedattributes',['WriteExtendedAttributes',['../namespace_dokan_net.html#a067e91641dd61c40300faa7085610720adda2caf384dfda99dc7d5accaf2b8135',1,'DokanNet']]]
 ];
